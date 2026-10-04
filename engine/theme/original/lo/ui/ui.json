@@ -1,0 +1,114 @@
+{
+ "coin_idle.png": {
+  "w": 116.0,
+  "h": 118.0
+ },
+ "coin_fist.png": {
+  "w": 116.0,
+  "h": 118.0
+ },
+ "coin_skull.png": {
+  "w": 116.0,
+  "h": 118.0
+ },
+ "coin_parrot.png": {
+  "w": 116.0,
+  "h": 118.0
+ },
+ "cursor.png": {
+  "w": 80.0,
+  "h": 56.0
+ },
+ "cursor_hot.png": {
+  "w": 80.0,
+  "h": 56.0
+ },
+ "cursor_wait.png": {
+  "w": 80.0,
+  "h": 56.0
+ },
+ "inv_next.png": {
+  "w": 80.0,
+  "h": 40.0
+ },
+ "inv_prev.png": {
+  "w": 80.0,
+  "h": 40.0
+ },
+ "dlg_up.png": {
+  "w": 32.0,
+  "h": 40.0
+ },
+ "dlg_down.png": {
+  "w": 32.0,
+  "h": 32.0
+ },
+ "chest.png": {
+  "w": 640.0,
+  "h": 472.0
+ },
+ "arrow_N.png": {
+  "w": 80.0,
+  "h": 56.0
+ },
+ "arrow_N_hot.png": {
+  "w": 80.0,
+  "h": 56.0
+ },
+ "arrow_NE.png": {
+  "w": 80.0,
+  "h": 56.0
+ },
+ "arrow_NE_hot.png": {
+  "w": 80.0,
+  "h": 56.0
+ },
+ "arrow_E.png": {
+  "w": 80.0,
+  "h": 56.0
+ },
+ "arrow_E_hot.png": {
+  "w": 80.0,
+  "h": 56.0
+ },
+ "arrow_SE.png": {
+  "w": 80.0,
+  "h": 56.0
+ },
+ "arrow_SE_hot.png": {
+  "w": 80.0,
+  "h": 56.0
+ },
+ "arrow_S.png": {
+  "w": 80.0,
+  "h": 56.0
+ },
+ "arrow_S_hot.png": {
+  "w": 80.0,
+  "h": 56.0
+ },
+ "arrow_SW.png": {
+  "w": 80.0,
+  "h": 56.0
+ },
+ "arrow_SW_hot.png": {
+  "w": 80.0,
+  "h": 56.0
+ },
+ "arrow_W.png": {
+  "w": 80.0,
+  "h": 56.0
+ },
+ "arrow_W_hot.png": {
+  "w": 80.0,
+  "h": 56.0
+ },
+ "arrow_NW.png": {
+  "w": 80.0,
+  "h": 56.0
+ },
+ "arrow_NW_hot.png": {
+  "w": 80.0,
+  "h": 56.0
+ }
+}

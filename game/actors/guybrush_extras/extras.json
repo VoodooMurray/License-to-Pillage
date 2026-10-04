@@ -1,0 +1,135 @@
+{
+ "note": "License to Pillage: Guybrush's portrait poses, composed by tools/byog/ltp_extras.py on the player's machine from his own CMI frames (stand body cel 31, head cel 52; sour = his gritted-teeth head cel 243) + pose_overlay.png (our art: Filbert + an eye patch). Positions: logical px relative to the feet.",
+ "cels": [
+  {
+   "cel": 9000,
+   "name": "pose_pose",
+   "parts": [
+    [
+     31,
+     -36,
+     -196
+    ],
+    [
+     52,
+     -9,
+     -257
+    ]
+   ],
+   "overlays": [
+    [
+     "pose_overlay.png",
+     -36.77,
+     -233.26
+    ]
+   ]
+  },
+  {
+   "cel": 9001,
+   "name": "pose_pose_sour",
+   "parts": [
+    [
+     31,
+     -36,
+     -196
+    ],
+    [
+     243,
+     -9,
+     -257
+    ]
+   ],
+   "overlays": [
+    [
+     "pose_overlay.png",
+     -36.77,
+     -233.26
+    ]
+   ]
+  }
+ ],
+ "anims": {
+  "pose_E": {
+   "anim": 0,
+   "family": "pose",
+   "dir": "E",
+   "loop": true,
+   "fps": 12,
+   "limbs": [
+    {
+     "limb": 0,
+     "op": "set",
+     "frames": [
+      {
+       "cels": [
+        {
+         "cel": 9000,
+         "x": 0,
+         "y": 0
+        }
+       ],
+       "hold": 1
+      }
+     ],
+     "loop_to": 0
+    },
+    {
+     "limb": 1,
+     "op": "stop"
+    }
+   ]
+  },
+  "pose_sour_E": {
+   "anim": 0,
+   "family": "pose_sour",
+   "dir": "E",
+   "loop": true,
+   "fps": 12,
+   "limbs": [
+    {
+     "limb": 0,
+     "op": "set",
+     "frames": [
+      {
+       "cels": [
+        {
+         "cel": 9001,
+         "x": 0,
+         "y": 0
+        }
+       ],
+       "hold": 1
+      }
+     ],
+     "loop_to": 0
+    },
+    {
+     "limb": 1,
+     "op": "stop"
+    }
+   ]
+  }
+ },
+ "roles": {
+  "pose": {
+   "N": "pose_E",
+   "NE": "pose_E",
+   "E": "pose_E",
+   "SE": "pose_E",
+   "S": "pose_E",
+   "SW": "pose_E",
+   "W": "pose_E",
+   "NW": "pose_E"
+  },
+  "pose_sour": {
+   "N": "pose_sour_E",
+   "NE": "pose_sour_E",
+   "E": "pose_sour_E",
+   "SE": "pose_sour_E",
+   "S": "pose_sour_E",
+   "SW": "pose_sour_E",
+   "W": "pose_sour_E",
+   "NW": "pose_sour_E"
+  }
+ }
+}

@@ -1,0 +1,200 @@
+{
+ "id": "squid",
+ "scale": 4,
+ "fps": 12,
+ "cels": {
+  "0": {
+   "file": "cels/0000.webp",
+   "w": 62.75,
+   "h": 41.75
+  },
+  "1": {
+   "file": "cels/0001.webp",
+   "w": 66.0,
+   "h": 47.75
+  },
+  "2": {
+   "file": "cels/0002.webp",
+   "w": 63.75,
+   "h": 41.5
+  },
+  "3": {
+   "file": "cels/0003.webp",
+   "w": 66.0,
+   "h": 46.75
+  }
+ },
+ "anims": {
+  "stand": {
+   "fps": 12,
+   "loop": true,
+   "limbs": [
+    {
+     "limb": 0,
+     "frames": [
+      {
+       "cels": [
+        {
+         "cel": 0,
+         "x": -29.75,
+         "y": -43.25
+        }
+       ],
+       "hold": 30
+      },
+      {
+       "cels": [
+        {
+         "cel": 1,
+         "x": -33.0,
+         "y": -49.25
+        }
+       ],
+       "hold": 8
+      },
+      {
+       "cels": [
+        {
+         "cel": 0,
+         "x": -29.75,
+         "y": -43.25
+        }
+       ],
+       "hold": 40
+      }
+     ]
+    }
+   ]
+  },
+  "talk": {
+   "fps": 12,
+   "loop": true,
+   "limbs": [
+    {
+     "limb": 0,
+     "frames": [
+      {
+       "cels": [
+        {
+         "cel": 0,
+         "x": -29.75,
+         "y": -43.25
+        }
+       ],
+       "hold": 3
+      },
+      {
+       "cels": [
+        {
+         "cel": 1,
+         "x": -33.0,
+         "y": -49.25
+        }
+       ],
+       "hold": 3
+      }
+     ]
+    }
+   ]
+  },
+  "look": {
+   "fps": 12,
+   "loop": false,
+   "limbs": [
+    {
+     "limb": 0,
+     "frames": [
+      {
+       "cels": [
+        {
+         "cel": 1,
+         "x": -33.0,
+         "y": -49.25
+        }
+       ],
+       "hold": 18
+      }
+     ]
+    }
+   ]
+  },
+  "blush": {
+   "fps": 12,
+   "loop": false,
+   "limbs": [
+    {
+     "limb": 0,
+     "frames": [
+      {
+       "cels": [
+        {
+         "cel": 3,
+         "x": -33.0,
+         "y": -48.25
+        }
+       ],
+       "hold": 24
+      },
+      {
+       "cels": [
+        {
+         "cel": 2,
+         "x": -30.75,
+         "y": -43.25
+        }
+       ],
+       "hold": 12
+      }
+     ]
+    }
+   ]
+  },
+  "ink": {
+   "fps": 12,
+   "loop": false,
+   "limbs": [
+    {
+     "limb": 0,
+     "frames": [
+      {
+       "cels": [
+        {
+         "cel": 2,
+         "x": -30.75,
+         "y": -43.25
+        }
+       ],
+       "hold": 6
+      }
+     ]
+    }
+   ]
+  },
+  "hide": {
+   "fps": 12,
+   "loop": true,
+   "limbs": [
+    {
+     "limb": 0,
+     "frames": [
+      {
+       "cels": [
+        {
+         "cel": 2,
+         "x": -30.75,
+         "y": -43.25
+        }
+       ],
+       "hold": 60
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "roles": {
+  "stand": "stand",
+  "talk": "talk",
+  "walk": "stand"
+ }
+}

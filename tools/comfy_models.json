@@ -1,0 +1,9 @@
+{
+  "note": "File names of the models on your ComfyUI server that the level editor's generate buttons use. Change them to match your server. edit_lora is optional: a LoRA file name used with picture edits, or empty for none.",
+  "klein_unet": "flux-2-klein-9b-fp8.safetensors",
+  "klein_text_encoder": "qwen_3_8b_fp8mixed.safetensors",
+  "flux2_vae": "flux2-vae.safetensors",
+  "background_removal": "birefnet.safetensors",
+  "sam3": "sam3.1_multiplex_fp16.safetensors",
+  "edit_lora": ""
+}

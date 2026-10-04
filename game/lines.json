@@ -1,0 +1,3554 @@
+[
+ {
+  "speaker": "guybrush",
+  "text": "My number: nine million and then some. My grandchildren will be so proud when it's called.",
+  "file": "game/game.js",
+  "line": 30
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'm not eating my place in line.",
+  "file": "game/game.js",
+  "line": 31
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Ticket number seven. It's covered in little notches. Gnawed, I think. By a skeleton.",
+  "file": "game/game.js",
+  "line": 35
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I know where it's been. That's the problem.",
+  "file": "game/game.js",
+  "line": 36
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A long, soft feather from the feather duster. Very tickly.",
+  "file": "game/game.js",
+  "line": 40
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Hee hee! Stop it, Guybrush!",
+  "file": "game/game.js",
+  "line": 41
+ },
+ {
+  "speaker": "guybrush",
+  "text": "...I really need to get off this island.",
+  "file": "game/game.js",
+  "line": 41
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It tickles my nose. Ah... ah... no. False alarm.",
+  "file": "game/game.js",
+  "line": 42
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I dip the feather in the squid ink and... voila! One quill.",
+  "file": "game/game.js",
+  "line": 47
+ },
+ {
+  "speaker": "guybrush",
+  "text": "My old schoolteacher would be so proud. She always said I'd end up with a criminal record.",
+  "file": "game/game.js",
+  "line": 48
+ },
+ {
+  "speaker": "guybrush",
+  "text": "The feather needs some ink before I can write with it.",
+  "file": "game/game.js",
+  "line": 50
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Form 27-B/6: Application for Piratical Licensure. It has more boxes than a shipping company.",
+  "file": "game/game.js",
+  "line": 55
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It tastes like bureaucracy. Dry, with a hint of despair.",
+  "file": "game/game.js",
+  "line": 56
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I need something to write with, not something to pour on it.",
+  "file": "game/game.js",
+  "line": 59
+ },
+ {
+  "speaker": "guybrush",
+  "text": "My completed application. My handwriting is terrible, but my piracy is magnificent.",
+  "file": "game/game.js",
+  "line": 64
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Not after all that work.",
+  "file": "game/game.js",
+  "line": 65
+ },
+ {
+  "speaker": "guybrush",
+  "text": "An empty ink bottle. The second saddest kind of bottle, after an empty grog bottle.",
+  "file": "game/game.js",
+  "line": 69
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's empty. I checked. Twice.",
+  "file": "game/game.js",
+  "line": 70
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A bottle of regulation squid ink. Freshly squeezed.",
+  "file": "game/game.js",
+  "line": 74
+ },
+ {
+  "speaker": "guybrush",
+  "text": "No way! It's regulation ink. I'd be drinking evidence.",
+  "file": "game/game.js",
+  "line": 75
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Lime juice and squid ink. That's either invisible ink or a very bad cocktail.",
+  "file": "game/game.js",
+  "line": 80
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I could ink over 'calamari'... but the squid has already seen it. The damage is done.",
+  "file": "game/game.js",
+  "line": 81
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A makeshift quill, dripping with squid ink. I'm practically a notary.",
+  "file": "game/game.js",
+  "line": 86
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'd end up with a blue tongue. Well, a black tongue. Squid ink.",
+  "file": "game/game.js",
+  "line": 87
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's inky enough already.",
+  "file": "game/game.js",
+  "line": 88
+ },
+ {
+  "speaker": "guybrush",
+  "text": "The Salty Squid Tavern. TONIGHT'S SPECIAL: FRIED CALAMARI, served with a wedge of lime. Not a good night to be a squid.",
+  "file": "game/game.js",
+  "line": 92
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'm hungry, but I'm not eating the menu.",
+  "file": "game/game.js",
+  "line": 93
+ },
+ {
+  "speaker": "guybrush",
+  "text": "An eye patch from the Lost and Found. I hope the previous owner found a replacement. Or at least his way home.",
+  "file": "game/game.js",
+  "line": 97
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'll save it for the portrait. When I wear it, I walk into things.",
+  "file": "game/game.js",
+  "line": 98
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I don't know where it's been. Well, I know one place it's been.",
+  "file": "game/game.js",
+  "line": 99
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Filbert, the filing parrot. He has a tiny clerk's visor and an enormous opinion of himself.",
+  "file": "game/game.js",
+  "line": 103
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Say something, Filbert.",
+  "file": "game/game.js",
+  "line": 104
+ },
+ {
+  "speaker": "filbert",
+  "text": "SQUAWK! Form 27-B/6! Form 27-B/6!",
+  "file": "game/game.js",
+  "line": 104
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Who's a pretty bird?",
+  "file": "game/game.js",
+  "line": 105
+ },
+ {
+  "speaker": "filbert",
+  "text": "SQUAWK! Flattery must be submitted in writing!",
+  "file": "game/game.js",
+  "line": 105
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A Scurvy-B-Gone lime. Just looking at it makes my face pucker.",
+  "file": "game/game.js",
+  "line": 110
+ },
+ {
+  "speaker": "guybrush",
+  "text": "YEEOWCH! That's SOUR!",
+  "file": "game/game.js",
+  "line": 114
+ },
+ {
+  "speaker": "guybrush",
+  "text": "My face is stuck like this! No, wait. It's back.",
+  "file": "game/game.js",
+  "line": 115
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Well, that was a waste of a perfectly good scowl.",
+  "file": "game/game.js",
+  "line": 116
+ },
+ {
+  "speaker": "guybrush",
+  "text": "My license portrait: eye patch, parrot, and the most fearsome scowl in the Caribbean. I look terrible. It's perfect.",
+  "file": "game/game.js",
+  "line": 123
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Monsieur Daube would have me keelhauled.",
+  "file": "game/game.js",
+  "line": 125
+ },
+ {
+  "speaker": "guybrush",
+  "text": "The long-lost APPROVED stamp! Its ink pad dried up sometime around 1672.",
+  "file": "game/game.js",
+  "line": 129
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It tastes like 1672.",
+  "file": "game/game.js",
+  "line": 130
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I dab the stamp in the squid ink.",
+  "file": "game/game.js",
+  "line": 135
+ },
+ {
+  "speaker": "guybrush",
+  "text": "APPROVED has never looked so good.",
+  "file": "game/game.js",
+  "line": 136
+ },
+ {
+  "speaker": "guybrush",
+  "text": "The APPROVED stamp, dripping with fresh squid ink. It's the most powerful object in the Caribbean.",
+  "file": "game/game.js",
+  "line": 142
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'd end up with APPROVED on my tongue. Actually, that sounds kind of nice.",
+  "file": "game/game.js",
+  "line": 143
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A candle stub from the Archives. It's been on duty since 1672. It's earned a rest.",
+  "file": "game/game.js",
+  "line": 147
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's a candle, not a breadstick.",
+  "file": "game/game.js",
+  "line": 148
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A rubber chicken with a candle on top. The saddest birthday cake in the Caribbean.",
+  "file": "game/game.js",
+  "line": 149
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A rubber chicken with no pulley in the middle. It's completely useless. I love it.",
+  "file": "game/game.js",
+  "line": 153
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Nope. Still no pulley.",
+  "file": "game/game.js",
+  "line": 154
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It tastes like rubber. And a little like chicken.",
+  "file": "game/game.js",
+  "line": 155
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Rubber chicken isn't on the menu. Lucky chicken.",
+  "file": "game/game.js",
+  "line": 156
+ },
+ {
+  "speaker": "guybrush",
+  "text": "My Pirate License! Stamped, signed and portraited. I am officially, legally, bureaucratically a pirate.",
+  "file": "game/game.js",
+  "line": 160
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'm not eating the only approved document in the Caribbean.",
+  "file": "game/game.js",
+  "line": 161
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I don't see anything special about it.",
+  "file": "game/game.js",
+  "line": 167
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It looks exactly like it looks.",
+  "file": "game/game.js",
+  "line": 167
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Hmm. Nope, nothing.",
+  "file": "game/game.js",
+  "line": 167
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I can't pick that up.",
+  "file": "game/game.js",
+  "line": 168
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I don't think that would do anything.",
+  "file": "game/game.js",
+  "line": 168
+ },
+ {
+  "speaker": "guybrush",
+  "text": "That's not going to work.",
+  "file": "game/game.js",
+  "line": 168
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'd rather not.",
+  "file": "game/game.js",
+  "line": 168
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'm not putting that in my mouth.",
+  "file": "game/game.js",
+  "line": 169
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'm hungry, but not THAT hungry.",
+  "file": "game/game.js",
+  "line": 169
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'd better not push my luck.",
+  "file": "game/game.js",
+  "line": 170
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I don't think that would be appreciated.",
+  "file": "game/game.js",
+  "line": 170
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I don't think it'll answer.",
+  "file": "game/game.js",
+  "line": 171
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's not much of a conversationalist.",
+  "file": "game/game.js",
+  "line": 171
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I don't think they want that.",
+  "file": "game/game.js",
+  "line": 172
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I think I'll hang on to that.",
+  "file": "game/game.js",
+  "line": 172
+ },
+ {
+  "speaker": "guybrush",
+  "text": "That doesn't work.",
+  "file": "game/game.js",
+  "line": 173
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I can't use those together.",
+  "file": "game/game.js",
+  "line": 173
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Nope. That didn't do anything.",
+  "file": "game/game.js",
+  "line": 173
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I can't combine those.",
+  "file": "game/game.js",
+  "line": 174
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Those don't go together.",
+  "file": "game/game.js",
+  "line": 174
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's in my inventory. Where it belongs.",
+  "file": "game/game.js",
+  "line": 175
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I can't use that by itself.",
+  "file": "game/game.js",
+  "line": 176
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I need to use it with something.",
+  "file": "game/game.js",
+  "line": 176
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I don't want to eat that.",
+  "file": "game/game.js",
+  "line": 177
+ },
+ {
+  "speaker": "guybrush",
+  "text": "That's not food. Probably.",
+  "file": "game/game.js",
+  "line": 177
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "What? Who's knocking? Oh. It's you. The unlicensed one.",
+  "file": "game/rooms/harbor.js",
+  "line": 13
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "Harbor Master speaking. Licenses only.",
+  "file": "game/rooms/harbor.js",
+  "line": 14
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Can you raise the gate for me?",
+  "file": "game/rooms/harbor.js",
+  "line": 17
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Why does a pirate need a license?",
+  "file": "game/rooms/harbor.js",
+  "line": 18
+ },
+ {
+  "speaker": "guybrush",
+  "text": "What do I need for a license?",
+  "file": "game/rooms/harbor.js",
+  "line": 19
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Has anybody ever gotten one?",
+  "file": "game/rooms/harbor.js",
+  "line": 20
+ },
+ {
+  "speaker": "guybrush",
+  "text": "What if I just ram the gate?",
+  "file": "game/rooms/harbor.js",
+  "line": 21
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Nice window.",
+  "file": "game/rooms/harbor.js",
+  "line": 22
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Ever heard of Captain Blackwood?",
+  "file": "game/rooms/harbor.js",
+  "line": 23
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Never mind.",
+  "file": "game/rooms/harbor.js",
+  "line": 24
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "Show me a license and I'll raise it faster than you can say 'excessive bureaucracy'.",
+  "file": "game/rooms/harbor.js",
+  "line": 27
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "The Governor says it makes piracy respectable. Also, the license fees pay for the gate.",
+  "file": "game/rooms/harbor.js",
+  "line": 30
+ },
+ {
+  "speaker": "guybrush",
+  "text": "So I'm paying for my own prison?",
+  "file": "game/rooms/harbor.js",
+  "line": 31
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "Now you're thinking like a taxpayer.",
+  "file": "game/rooms/harbor.js",
+  "line": 32
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "Ask at the Authority. They'll give you a list. Then another list. Then a list of lists.",
+  "file": "game/rooms/harbor.js",
+  "line": 34
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "Not since 1672. But I'm told they're very close.",
+  "file": "game/rooms/harbor.js",
+  "line": 37
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "In a rowboat? Be my guest. I'm running low on firewood.",
+  "file": "game/rooms/harbor.js",
+  "line": 40
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "Blackwood? Walked into the Licensing Authority in 1654. Never walked out.",
+  "file": "game/rooms/harbor.js",
+  "line": 43
+ },
+ {
+  "speaker": "guybrush",
+  "text": "So he's still in there?",
+  "file": "game/rooms/harbor.js",
+  "line": 44
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "Either that, or he got filed.",
+  "file": "game/rooms/harbor.js",
+  "line": 45
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "It's a regulation window. Thank you for noticing.",
+  "file": "game/rooms/harbor.js",
+  "line": 48
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "Nobody ever notices the window.",
+  "file": "game/rooms/harbor.js",
+  "line": 49
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "Mind the paperwork.",
+  "file": "game/rooms/harbor.js",
+  "line": 52
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Behold! One Pirate License. Stamped APPROVED.",
+  "file": "game/rooms/harbor.js",
+  "line": 59
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "...",
+  "file": "game/rooms/harbor.js",
+  "line": 60
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "Let me see that.",
+  "file": "game/rooms/harbor.js",
+  "line": 61
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "Signed... portraited... APPROVED?!",
+  "file": "game/rooms/harbor.js",
+  "line": 63
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "Well, I'll be keelhauled. First one since 1672.",
+  "file": "game/rooms/harbor.js",
+  "line": 64
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "RAISING THE GATE!",
+  "file": "game/rooms/harbor.js",
+  "line": 65
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Port Papeleo, it's been a pleasure. Well, it's been paperwork.",
+  "file": "game/rooms/harbor.js",
+  "line": 72
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Next stop: Isla Agria!",
+  "file": "game/rooms/harbor.js",
+  "line": 73
+ },
+ {
+  "speaker": "agatha",
+  "text": "Now serving... number eight.",
+  "file": "game/rooms/harbor.js",
+  "line": 85
+ },
+ {
+  "speaker": "mort",
+  "text": "EIGHT?! What happened to SEVEN?!",
+  "file": "game/rooms/harbor.js",
+  "line": 87
+ },
+ {
+  "speaker": "agatha",
+  "text": "Next.",
+  "file": "game/rooms/harbor.js",
+  "line": 89
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Not yet. I didn't come all this way to leave without a clue to Blackwood's treasure.",
+  "file": "game/rooms/harbor.js",
+  "line": 98
+ },
+ {
+  "speaker": "painter",
+  "text": "Ah. Not mine. My great-great-grandfather's. Captain Blackwood, 1654.",
+  "file": "game/rooms/harbor.js",
+  "line": 104
+ },
+ {
+  "speaker": "painter",
+  "text": "He never came back to collect it.",
+  "file": "game/rooms/harbor.js",
+  "line": 105
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Can I take a closer look?",
+  "file": "game/rooms/harbor.js",
+  "line": 106
+ },
+ {
+  "speaker": "painter",
+  "text": "Look, but do not touch. It is older than my mustache.",
+  "file": "game/rooms/harbor.js",
+  "line": 107
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Wait a minute... that's Mort! With skin!",
+  "file": "game/rooms/harbor.js",
+  "line": 109
+ },
+ {
+  "speaker": "guybrush",
+  "text": "So that's Captain Blackwood. Sour-looking fellow.",
+  "file": "game/rooms/harbor.js",
+  "line": 110
+ },
+ {
+  "speaker": "guybrush",
+  "text": "He's holding a lime... and a map! An island with two peaks, a grove of trees, and a big red X!",
+  "file": "game/rooms/harbor.js",
+  "line": 111
+ },
+ {
+  "speaker": "painter",
+  "text": "My ancestor painted only ze truth. Down to ze last lime.",
+  "file": "game/rooms/harbor.js",
+  "line": 112
+ },
+ {
+  "speaker": "painter",
+  "text": "Ze lime was for ze scowl. A family secret.",
+  "file": "game/rooms/harbor.js",
+  "line": 113
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Two peaks and lime trees. Now where have I seen limes around here?",
+  "file": "game/rooms/harbor.js",
+  "line": 116
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Two peaks, lime trees... It's the island on Blackwood's map! Isla Agria!",
+  "file": "game/rooms/harbor.js",
+  "line": 123
+ },
+ {
+  "speaker": "guybrush",
+  "text": "That's my next stop. Now I just have to get out of this harbor.",
+  "file": "game/rooms/harbor.js",
+  "line": 124
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A massive iron portcullis, lowered right into the water between the towers. Now THAT'S a closed-door policy.",
+  "file": "game/rooms/harbor.js",
+  "line": 164
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It weighs more than the whole island. And lifting it probably requires a permit.",
+  "file": "game/rooms/harbor.js",
+  "line": 165
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'm not licking government property. It's illegal AND it's rusty.",
+  "file": "game/rooms/harbor.js",
+  "line": 166
+ },
+ {
+  "speaker": "guybrush",
+  "text": "If this chicken had a pulley in the middle, I could zip-line right over the gate. It doesn't.",
+  "file": "game/rooms/harbor.js",
+  "line": 169
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A shuttered window in the watchtower. The Harbor Master lurks in there, guarding his gate.",
+  "file": "game/rooms/harbor.js",
+  "line": 177
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "Whatever that is, I don't want it. I want a LICENSE.",
+  "file": "game/rooms/harbor.js",
+  "line": 188
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Two squat stone watchtowers guard the harbor mouth. They're the only things on this island that work overtime.",
+  "file": "game/rooms/harbor.js",
+  "line": 195
+ },
+ {
+  "speaker": "guybrush",
+  "text": "They're solid stone. And solidly unhelpful.",
+  "file": "game/rooms/harbor.js",
+  "line": 196
+ },
+ {
+  "speaker": "guybrush",
+  "text": "My trusty rowboat. It's got a slow leak and a fast oar.",
+  "file": "game/rooms/harbor.js",
+  "line": 206
+ },
+ {
+  "speaker": "guybrush",
+  "text": "First I'd better show my license to the Harbor Master. Otherwise that gate stays down.",
+  "file": "game/rooms/harbor.js",
+  "line": 208
+ },
+ {
+  "speaker": "guybrush",
+  "text": "No point. That gate would stop a man-o'-war, never mind a rowboat with a slow leak.",
+  "file": "game/rooms/harbor.js",
+  "line": 209
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It tastes like barnacles and regret.",
+  "file": "game/rooms/harbor.js",
+  "line": 211
+ },
+ {
+  "speaker": "guybrush",
+  "text": "The sun's going down. So are my chances of leaving on time.",
+  "file": "game/rooms/harbor.js",
+  "line": 215
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'm not swimming. The sharks here are licensed.",
+  "file": "game/rooms/harbor.js",
+  "line": 216
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Salt water. I'd rather have grog.",
+  "file": "game/rooms/harbor.js",
+  "line": 217
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A rickety wooden pier. Half the planks are missing. The other half are thinking about it.",
+  "file": "game/rooms/harbor.js",
+  "line": 222
+ },
+ {
+  "speaker": "guybrush",
+  "text": "The door of the Caribbean Pirate Licensing Authority. Carved over it: 'WE WILL GET TO YOU.'",
+  "file": "game/rooms/harbor.js",
+  "line": 228
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'm not kissing a government building. That's how they get you.",
+  "file": "game/rooms/harbor.js",
+  "line": 229
+ },
+ {
+  "speaker": "guybrush",
+  "text": "The Caribbean Pirate Licensing Authority. The building leans a little to the left. Even the architecture is tired of waiting.",
+  "file": "game/rooms/harbor.js",
+  "line": 234
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I should use the door. That's what doors are for.",
+  "file": "game/rooms/harbor.js",
+  "line": 235
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It says: CARIBBEAN PIRATE LICENSING AUTHORITY. Established 1650. Approving since... hmm. That part's been painted over.",
+  "file": "game/rooms/harbor.js",
+  "line": 239
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's too high. Also, stealing government property requires Form 88-Q.",
+  "file": "game/rooms/harbor.js",
+  "line": 240
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's the official notice board.",
+  "file": "game/rooms/harbor.js",
+  "line": 245
+ },
+ {
+  "speaker": "guybrush",
+  "text": "'NOTICE: Piracy without a license is strictly forbidden. Violators will be fined, keelhauled, and then fined for the keelhauling.'",
+  "file": "game/rooms/harbor.js",
+  "line": 246
+ },
+ {
+  "speaker": "guybrush",
+  "text": "'LOST: one eye, brown, answers to Lefty. If found, please contact the Lost and Found. We'll be looking out for it.'",
+  "file": "game/rooms/harbor.js",
+  "line": 247
+ },
+ {
+  "speaker": "guybrush",
+  "text": "And a menu from the Salty Squid Tavern.",
+  "file": "game/rooms/harbor.js",
+  "line": 248
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'd better not take down official notices. The menu, on the other hand, is fair game.",
+  "file": "game/rooms/harbor.js",
+  "line": 250
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's a menu from the Salty Squid Tavern. TONIGHT'S SPECIAL: FRIED CALAMARI, served with a wedge of lime.",
+  "file": "game/rooms/harbor.js",
+  "line": 256
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'll borrow this. I'm not hungry, but I am a pirate.",
+  "file": "game/rooms/harbor.js",
+  "line": 262
+ },
+ {
+  "speaker": "guybrush",
+  "text": "'Tonight's special: FRIED CALAMARI!'",
+  "file": "game/rooms/harbor.js",
+  "line": 264
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I hope the squid didn't hear that.",
+  "file": "game/rooms/harbor.js",
+  "line": 264
+ },
+ {
+  "speaker": "guybrush",
+  "text": "The basin's full of squid ink now. It's like a giant inkwell. A giant, fishy inkwell.",
+  "file": "game/rooms/harbor.js",
+  "line": 273
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A fountain dedicated to the Great Squid of Papeleo, patron saint of paperwork.",
+  "file": "game/rooms/harbor.js",
+  "line": 274
+ },
+ {
+  "speaker": "guybrush",
+  "text": "There's a real squid hiding in the basin.",
+  "file": "game/rooms/harbor.js",
+  "line": 275
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'm not taking a bath in a public fountain. Not before dark, anyway.",
+  "file": "game/rooms/harbor.js",
+  "line": 277
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Drink squid ink? I'm a pirate, not a fountain pen.",
+  "file": "game/rooms/harbor.js",
+  "line": 279
+ },
+ {
+  "speaker": "guybrush",
+  "text": "The water's full of squid. I'll pass.",
+  "file": "game/rooms/harbor.js",
+  "line": 280
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Squid with a wedge of lime? That's just cruel.",
+  "file": "game/rooms/harbor.js",
+  "line": 286
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A fruit stall. The sign says: 'SCURVY-B-GONE LIMES. Honor system. One piece of eight.'",
+  "file": "game/rooms/harbor.js",
+  "line": 294
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Limes from Isla Agria. Blackwood's island.",
+  "file": "game/rooms/harbor.js",
+  "line": 295
+ },
+ {
+  "speaker": "guybrush",
+  "text": "The crates are stamped 'ISLA AGRIA', with a little picture of an island. An island with two peaks.",
+  "file": "game/rooms/harbor.js",
+  "line": 297
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I already have a lime. I'm not greedy. Just dishonest.",
+  "file": "game/rooms/harbor.js",
+  "line": 301
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Honor system, huh?",
+  "file": "game/rooms/harbor.js",
+  "line": 303
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'm a pirate. My honor is flexible.",
+  "file": "game/rooms/harbor.js",
+  "line": 305
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Another one for the road. The honor system is really working out for me.",
+  "file": "game/rooms/harbor.js",
+  "line": 306
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'd rather take one to go.",
+  "file": "game/rooms/harbor.js",
+  "line": 310
+ },
+ {
+  "speaker": "guybrush",
+  "text": "An empty canvas, waiting for its next fearsome pirate.",
+  "file": "game/rooms/harbor.js",
+  "line": 315
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A blank canvas on an easel, waiting for a fearsome pirate face. Or mine.",
+  "file": "game/rooms/harbor.js",
+  "line": 316
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'd better not touch his canvas. He looks like he bites.",
+  "file": "game/rooms/harbor.js",
+  "line": 318
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Captain Blackwood's old license portrait. Let's have another look at that map.",
+  "file": "game/rooms/harbor.js",
+  "line": 324
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Two peaks, lime trees and a big red X.",
+  "file": "game/rooms/harbor.js",
+  "line": 326
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Sample portraits of pirates. Every single one has an eye patch, a parrot and a terrible scowl.",
+  "file": "game/rooms/harbor.js",
+  "line": 328
+ },
+ {
+  "speaker": "guybrush",
+  "text": "There's a pattern here.",
+  "file": "game/rooms/harbor.js",
+  "line": 329
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Wait, that one's just a parrot wearing an eye patch.",
+  "file": "game/rooms/harbor.js",
+  "line": 330
+ },
+ {
+  "speaker": "guybrush",
+  "text": "One of them is much older than the rest. And much darker.",
+  "file": "game/rooms/harbor.js",
+  "line": 331
+ },
+ {
+  "speaker": "guybrush",
+  "text": "They're not for sale. They're 'for inspiration'.",
+  "file": "game/rooms/harbor.js",
+  "line": 333
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A palm tree. The only thing on this island that doesn't need a permit to grow.",
+  "file": "game/rooms/harbor.js",
+  "line": 337
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'm not climbing it. I left my climbing permit at home.",
+  "file": "game/rooms/harbor.js",
+  "line": 338
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Steps up to the Licensing Authority. They're worn smooth by the shuffling feet of applicants.",
+  "file": "game/rooms/harbor.js",
+  "line": 342
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A tall, skinny artist with a mustache you could hang laundry on.",
+  "file": "game/rooms/harbor.js",
+  "line": 351
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'd better not. He's holding a very pointy paintbrush.",
+  "file": "game/rooms/harbor.js",
+  "line": 352
+ },
+ {
+  "speaker": "painter",
+  "text": "A lime? Non, monsieur. I do not paint still lifes. Not since the Incident.",
+  "file": "game/rooms/harbor.js",
+  "line": 357
+ },
+ {
+  "speaker": "painter",
+  "text": "A rubber chicken? Monsieur, this is a portrait studio, not a circus.",
+  "file": "game/rooms/harbor.js",
+  "line": 358
+ },
+ {
+  "speaker": "painter",
+  "text": "Paperwork! Pah! I am an artist! Take that to Madame Stampwell.",
+  "file": "game/rooms/harbor.js",
+  "line": 359
+ },
+ {
+  "speaker": "painter",
+  "text": "You wish me to sign it again? It is already my finest work.",
+  "file": "game/rooms/harbor.js",
+  "line": 361
+ },
+ {
+  "speaker": "painter",
+  "text": "Fried calamari! Ah, the Salty Squid! Their lime wedges are magnifique.",
+  "file": "game/rooms/harbor.js",
+  "line": 362
+ },
+ {
+  "speaker": "painter",
+  "text": "Non, merci. I have everything I need. Except talent in my clients.",
+  "file": "game/rooms/harbor.js",
+  "line": 363
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A small, nervous squid. It keeps looking at me like I'm a waiter.",
+  "file": "game/rooms/harbor.js",
+  "line": 370
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It slips right out of my hands. Squids are very slippery. Also very rude.",
+  "file": "game/rooms/harbor.js",
+  "line": 371
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Hello there, little squid!",
+  "file": "game/rooms/harbor.js",
+  "line": 373
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's giving me the silent treatment. Squids are terrible conversationalists.",
+  "file": "game/rooms/harbor.js",
+  "line": 375
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It won't ink on command. I'd have to give it a really good reason.",
+  "file": "game/rooms/harbor.js",
+  "line": 383
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'm not squeezing lime on a live squid. I'm not a monster.",
+  "file": "game/rooms/harbor.js",
+  "line": 385
+ },
+ {
+  "speaker": "guybrush",
+  "text": "The squid is not impressed by my rubber chicken. Nobody ever is.",
+  "file": "game/rooms/harbor.js",
+  "line": 386
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's just water. I need squid INK, not squid water.",
+  "file": "game/rooms/harbor.js",
+  "line": 407
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Regulation squid ink. Freshly squeezed.",
+  "file": "game/rooms/harbor.js",
+  "line": 412
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's already scared out of its wits. And out of its ink.",
+  "file": "game/rooms/harbor.js",
+  "line": 417
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Pssst! Hey, squid! Look what's on the menu tonight!",
+  "file": "game/rooms/harbor.js",
+  "line": 419
+ },
+ {
+  "speaker": "guybrush",
+  "text": "'FRIED CALAMARI, served with a wedge of lime!'",
+  "file": "game/rooms/harbor.js",
+  "line": 421
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Sorry, little guy. It's nothing personal. It's paperwork.",
+  "file": "game/rooms/harbor.js",
+  "line": 428
+ },
+ {
+  "speaker": "painter",
+  "text": "Bonjour! Jacques-Louis Daube, Guild-certified license portraitist, at your service.",
+  "file": "game/rooms/harbor.js",
+  "line": 435
+ },
+ {
+  "speaker": "painter",
+  "text": "You need a portrait, non?",
+  "file": "game/rooms/harbor.js",
+  "line": 436
+ },
+ {
+  "speaker": "guybrush",
+  "text": "How did you know?",
+  "file": "game/rooms/harbor.js",
+  "line": 437
+ },
+ {
+  "speaker": "painter",
+  "text": "Everyone on this island needs a portrait. Nobody on this island has a license. It is a very good business.",
+  "file": "game/rooms/harbor.js",
+  "line": 438
+ },
+ {
+  "speaker": "painter",
+  "text": "Ah, my favorite client! Still scowling magnificently?",
+  "file": "game/rooms/harbor.js",
+  "line": 440
+ },
+ {
+  "speaker": "painter",
+  "text": "Bonjour again, monsieur!",
+  "file": "game/rooms/harbor.js",
+  "line": 442
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Please paint my license portrait.",
+  "file": "game/rooms/harbor.js",
+  "line": 446
+ },
+ {
+  "speaker": "guybrush",
+  "text": "What were the three marks again?",
+  "file": "game/rooms/harbor.js",
+  "line": 447
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Where am I supposed to find all that?",
+  "file": "game/rooms/harbor.js",
+  "line": 448
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Who are the pirates in your sample portraits?",
+  "file": "game/rooms/harbor.js",
+  "line": 449
+ },
+ {
+  "speaker": "guybrush",
+  "text": "What about that old, dark one?",
+  "file": "game/rooms/harbor.js",
+  "line": 450
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Nice mustache.",
+  "file": "game/rooms/harbor.js",
+  "line": 451
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'll be back.",
+  "file": "game/rooms/harbor.js",
+  "line": 452
+ },
+ {
+  "speaker": "painter",
+  "text": "Hmm.",
+  "file": "game/rooms/harbor.js",
+  "line": 456
+ },
+ {
+  "speaker": "painter",
+  "text": "Non. Non, non, non.",
+  "file": "game/rooms/harbor.js",
+  "line": 457
+ },
+ {
+  "speaker": "painter",
+  "text": "Monsieur, you look like a tax collector with a hangover.",
+  "file": "game/rooms/harbor.js",
+  "line": 458
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'll have you know I'm a mighty pirate!",
+  "file": "game/rooms/harbor.js",
+  "line": 459
+ },
+ {
+  "speaker": "painter",
+  "text": "Then where is your eye patch? Your parrot? Your fearsome scowl?",
+  "file": "game/rooms/harbor.js",
+  "line": 460
+ },
+ {
+  "speaker": "painter",
+  "text": "The Guild has rules: a license portrait must show the three marks of the pirate.",
+  "file": "game/rooms/harbor.js",
+  "line": 461
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Can't you just paint them in?",
+  "file": "game/rooms/harbor.js",
+  "line": 462
+ },
+ {
+  "speaker": "painter",
+  "text": "I am an ARTIST, monsieur, not a liar. I paint only ze truth.",
+  "file": "game/rooms/harbor.js",
+  "line": 463
+ },
+ {
+  "speaker": "painter",
+  "text": "...For liars I charge extra. And you cannot afford it.",
+  "file": "game/rooms/harbor.js",
+  "line": 464
+ },
+ {
+  "speaker": "painter",
+  "text": "One: the eye patch, the mark of a pirate who has seen too much.",
+  "file": "game/rooms/harbor.js",
+  "line": 467
+ },
+ {
+  "speaker": "painter",
+  "text": "Two: the parrot, a pirate's loyal friend and accountant.",
+  "file": "game/rooms/harbor.js",
+  "line": 468
+ },
+ {
+  "speaker": "painter",
+  "text": "Three: the scowl, the face of a man who has just been denied a license.",
+  "file": "game/rooms/harbor.js",
+  "line": 469
+ },
+ {
+  "speaker": "painter",
+  "text": "Monsieur, I am a painter, not a treasure map.",
+  "file": "game/rooms/harbor.js",
+  "line": 472
+ },
+ {
+  "speaker": "painter",
+  "text": "My masterpieces! Every one of them fearsome, one-eyed and parroted.",
+  "file": "game/rooms/harbor.js",
+  "line": 475
+ },
+ {
+  "speaker": "painter",
+  "text": "Every one of them denied a license, of course. But beautifully painted!",
+  "file": "game/rooms/harbor.js",
+  "line": 476
+ },
+ {
+  "speaker": "painter",
+  "text": "Merci. It is registered with the Authority as a lethal weapon.",
+  "file": "game/rooms/harbor.js",
+  "line": 481
+ },
+ {
+  "speaker": "painter",
+  "text": "Adieu! And do not come back without a parrot!",
+  "file": "game/rooms/harbor.js",
+  "line": 483
+ },
+ {
+  "speaker": "painter",
+  "text": "I have already painted you, monsieur. Once was enough for both of us.",
+  "file": "game/rooms/harbor.js",
+  "line": 491
+ },
+ {
+  "speaker": "painter",
+  "text": "An eye patch! Very good!",
+  "file": "game/rooms/harbor.js",
+  "line": 494
+ },
+ {
+  "speaker": "painter",
+  "text": "But a pirate with no parrot is just a man with a sore eye. Come back when you have both.",
+  "file": "game/rooms/harbor.js",
+  "line": 495
+ },
+ {
+  "speaker": "painter",
+  "text": "A parrot! Magnifique!",
+  "file": "game/rooms/harbor.js",
+  "line": 497
+ },
+ {
+  "speaker": "filbert",
+  "text": "SQUAWK! Form 27-B/6!",
+  "file": "game/rooms/harbor.js",
+  "line": 498
+ },
+ {
+  "speaker": "painter",
+  "text": "...Does he always do that?",
+  "file": "game/rooms/harbor.js",
+  "line": 499
+ },
+ {
+  "speaker": "painter",
+  "text": "But where is your eye patch? Come back with the eye patch.",
+  "file": "game/rooms/harbor.js",
+  "line": 500
+ },
+ {
+  "speaker": "painter",
+  "text": "An eye patch AND a parrot! At last, a real pirate!",
+  "file": "game/rooms/harbor.js",
+  "line": 503
+ },
+ {
+  "speaker": "painter",
+  "text": "Put on the patch. Perch the parrot on your shoulder. Stand there. Non, there!",
+  "file": "game/rooms/harbor.js",
+  "line": 504
+ },
+ {
+  "speaker": "filbert",
+  "text": "SQUAWK! Portrait! Form 61-P!",
+  "file": "game/rooms/harbor.js",
+  "line": 508
+ },
+ {
+  "speaker": "painter",
+  "text": "Now... the most important part.",
+  "file": "game/rooms/harbor.js",
+  "line": 509
+ },
+ {
+  "speaker": "painter",
+  "text": "The SCOWL!",
+  "file": "game/rooms/harbor.js",
+  "line": 510
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Grrrrr!",
+  "file": "game/rooms/harbor.js",
+  "line": 533
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I can't do it.",
+  "file": "game/rooms/harbor.js",
+  "line": 536
+ },
+ {
+  "speaker": "painter",
+  "text": "Non! That is not a scowl, that is indigestion!",
+  "file": "game/rooms/harbor.js",
+  "line": 539
+ },
+ {
+  "speaker": "guybrush",
+  "text": "(Taxes... tariffs... license fees...)",
+  "file": "game/rooms/harbor.js",
+  "line": 541
+ },
+ {
+  "speaker": "painter",
+  "text": "Closer. But now you look like a man thinking about taxes.",
+  "file": "game/rooms/harbor.js",
+  "line": 542
+ },
+ {
+  "speaker": "painter",
+  "text": "Something SOUR, monsieur! Think SOUR!",
+  "file": "game/rooms/harbor.js",
+  "line": 543
+ },
+ {
+  "speaker": "painter",
+  "text": "Then come back when you can. And bring something sour!",
+  "file": "game/rooms/harbor.js",
+  "line": 547
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Mmmph!",
+  "file": "game/rooms/harbor.js",
+  "line": 559
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Sour! SOUR! SO SOUR!",
+  "file": "game/rooms/harbor.js",
+  "line": 561
+ },
+ {
+  "speaker": "painter",
+  "text": "YES! THAT FACE! Such fury! Such bile!",
+  "file": "game/rooms/harbor.js",
+  "line": 562
+ },
+ {
+  "speaker": "painter",
+  "text": "Do not move! Not a muscle!",
+  "file": "game/rooms/harbor.js",
+  "line": 563
+ },
+ {
+  "speaker": "painter",
+  "text": "Et voila!",
+  "file": "game/rooms/harbor.js",
+  "line": 568
+ },
+ {
+  "speaker": "painter",
+  "text": "My greatest work. I shall call it: 'Man Who Has Just Eaten a Lime'.",
+  "file": "game/rooms/harbor.js",
+  "line": 571
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's... fearsome.",
+  "file": "game/rooms/harbor.js",
+  "line": 572
+ },
+ {
+  "speaker": "filbert",
+  "text": "SQUAWK! Overtime! Back to the archives!",
+  "file": "game/rooms/harbor.js",
+  "line": 573
+ },
+ {
+  "speaker": "painter",
+  "text": "I shall keep the eye patch, for future clients. Here is your portrait. Take it to Madame Stampwell.",
+  "file": "game/rooms/harbor.js",
+  "line": 576
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Port Papeleo! The last place anybody saw Captain Mortimer Blackwood and his legendary treasure.",
+  "file": "game/rooms/harbor.js",
+  "line": 594
+ },
+ {
+  "speaker": "guybrush",
+  "text": "That was in 1654. The trail's gone a little cold.",
+  "file": "game/rooms/harbor.js",
+  "line": 595
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Hey! What's the big idea?",
+  "file": "game/rooms/harbor.js",
+  "line": 606
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "Welcome to Port Papeleo! Pleasure or piracy?",
+  "file": "game/rooms/harbor.js",
+  "line": 609
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Piracy! I'm Guybrush Threepwood, mighty pirate!",
+  "file": "game/rooms/harbor.js",
+  "line": 610
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "License, please.",
+  "file": "game/rooms/harbor.js",
+  "line": 611
+ },
+ {
+  "speaker": "guybrush",
+  "text": "...License?",
+  "file": "game/rooms/harbor.js",
+  "line": 612
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "Pirate License. Issued by the Caribbean Pirate Licensing Authority. Stamped, signed and portraited.",
+  "file": "game/rooms/harbor.js",
+  "line": 613
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Since when does piracy need a license?",
+  "file": "game/rooms/harbor.js",
+  "line": 614
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "Since 1650. We only got the gate on Tuesday.",
+  "file": "game/rooms/harbor.js",
+  "line": 615
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "Sorry. No license, no leaving.",
+  "file": "game/rooms/harbor.js",
+  "line": 616
+ },
+ {
+  "speaker": "guybrush",
+  "text": "And where would a mighty pirate get one of these licenses?",
+  "file": "game/rooms/harbor.js",
+  "line": 617
+ },
+ {
+  "speaker": "harbormaster",
+  "text": "Big pink building. Take a number. Mind the skeleton.",
+  "file": "game/rooms/harbor.js",
+  "line": 618
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Skeleton?",
+  "file": "game/rooms/harbor.js",
+  "line": 622
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Oh well. How hard can it be?",
+  "file": "game/rooms/harbor.js",
+  "line": 625
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Hi! I'm Guybrush Threepwood, mighty pirate!",
+  "file": "game/rooms/office.js",
+  "line": 10
+ },
+ {
+  "speaker": "agatha",
+  "text": "Do you have a license to be a mighty pirate?",
+  "file": "game/rooms/office.js",
+  "line": 11
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Uh... no.",
+  "file": "game/rooms/office.js",
+  "line": 12
+ },
+ {
+  "speaker": "agatha",
+  "text": "Then you're just a man in a puffy shirt. Next.",
+  "file": "game/rooms/office.js",
+  "line": 13
+ },
+ {
+  "speaker": "agatha",
+  "text": "Mr. Threepwood. Number seven. What now?",
+  "file": "game/rooms/office.js",
+  "line": 15
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'd like to apply for a Pirate License.",
+  "file": "game/rooms/office.js",
+  "line": 21
+ },
+ {
+  "speaker": "guybrush",
+  "text": "How's my application doing?",
+  "file": "game/rooms/office.js",
+  "line": 22
+ },
+ {
+  "speaker": "guybrush",
+  "text": "What number are you serving?",
+  "file": "game/rooms/office.js",
+  "line": 23
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Can't you just skip to my number?",
+  "file": "game/rooms/office.js",
+  "line": 24
+ },
+ {
+  "speaker": "guybrush",
+  "text": "What's with the stamp?",
+  "file": "game/rooms/office.js",
+  "line": 25
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Why don't you look for the APPROVED stamp?",
+  "file": "game/rooms/office.js",
+  "line": 26
+ },
+ {
+  "speaker": "guybrush",
+  "text": "What about the skeleton on the bench?",
+  "file": "game/rooms/office.js",
+  "line": 27
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Where would I get squid ink?",
+  "file": "game/rooms/office.js",
+  "line": 28
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Nice hairdo.",
+  "file": "game/rooms/office.js",
+  "line": 29
+ },
+ {
+  "speaker": "guybrush",
+  "text": "This place reminds me of the D.M.V.",
+  "file": "game/rooms/office.js",
+  "line": 30
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Goodbye.",
+  "file": "game/rooms/office.js",
+  "line": 31
+ },
+ {
+  "speaker": "agatha",
+  "text": "There are three requirements.",
+  "file": "game/rooms/office.js",
+  "line": 34
+ },
+ {
+  "speaker": "agatha",
+  "text": "One: take a number, and wait until it is called.",
+  "file": "game/rooms/office.js",
+  "line": 35
+ },
+ {
+  "speaker": "agatha",
+  "text": "Two: Form 27-B/6, Application for Piratical Licensure, completed in regulation squid ink.",
+  "file": "game/rooms/office.js",
+  "line": 36
+ },
+ {
+  "speaker": "agatha",
+  "text": "Three: an official license portrait, painted by the Guild-certified portraitist in the square.",
+  "file": "game/rooms/office.js",
+  "line": 37
+ },
+ {
+  "speaker": "agatha",
+  "text": "Then I stamp it. Approved, or denied.",
+  "file": "game/rooms/office.js",
+  "line": 38
+ },
+ {
+  "speaker": "guybrush",
+  "text": "What are the odds?",
+  "file": "game/rooms/office.js",
+  "line": 39
+ },
+ {
+  "speaker": "agatha",
+  "text": "Of 'denied'? Excellent.",
+  "file": "game/rooms/office.js",
+  "line": 40
+ },
+ {
+  "speaker": "agatha",
+  "text": "Seven.",
+  "file": "game/rooms/office.js",
+  "line": 46
+ },
+ {
+  "speaker": "guybrush",
+  "text": "And after seven?",
+  "file": "game/rooms/office.js",
+  "line": 47
+ },
+ {
+  "speaker": "agatha",
+  "text": "Eight. I'm very good at counting.",
+  "file": "game/rooms/office.js",
+  "line": 48
+ },
+ {
+  "speaker": "agatha",
+  "text": "Skip? SKIP? Young man, this is a queue, not a game of hopscotch.",
+  "file": "game/rooms/office.js",
+  "line": 51
+ },
+ {
+  "speaker": "agatha",
+  "text": "It's regulation. I lost the hand in an unfortunate filing accident.",
+  "file": "game/rooms/office.js",
+  "line": 54
+ },
+ {
+  "speaker": "agatha",
+  "text": "The stamp says DENIED.",
+  "file": "game/rooms/office.js",
+  "line": 55
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Only DENIED?",
+  "file": "game/rooms/office.js",
+  "line": 56
+ },
+ {
+  "speaker": "agatha",
+  "text": "The APPROVED stamp was lost in the Archives in 1672. We've been denying ever since.",
+  "file": "game/rooms/office.js",
+  "line": 57
+ },
+ {
+  "speaker": "agatha",
+  "text": "Efficiency has never been higher.",
+  "file": "game/rooms/office.js",
+  "line": 58
+ },
+ {
+  "speaker": "agatha",
+  "text": "In the Archives? Nobody who goes into the Archives ever comes back out.",
+  "file": "game/rooms/office.js",
+  "line": 61
+ },
+ {
+  "speaker": "guybrush",
+  "text": "What happens to them?",
+  "file": "game/rooms/office.js",
+  "line": 62
+ },
+ {
+  "speaker": "agatha",
+  "text": "They get filed.",
+  "file": "game/rooms/office.js",
+  "line": 63
+ },
+ {
+  "speaker": "agatha",
+  "text": "Mr. Mortimer. Number seven. He's been waiting since 1654.",
+  "file": "game/rooms/office.js",
+  "line": 66
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Why don't you serve him?",
+  "file": "game/rooms/office.js",
+  "line": 67
+ },
+ {
+  "speaker": "agatha",
+  "text": "He has to come to the counter. Those are the rules.",
+  "file": "game/rooms/office.js",
+  "line": 68
+ },
+ {
+  "speaker": "guybrush",
+  "text": "But he's dead!",
+  "file": "game/rooms/office.js",
+  "line": 69
+ },
+ {
+  "speaker": "agatha",
+  "text": "Then he should have filled out Form 91: Notice of Death. In triplicate.",
+  "file": "game/rooms/office.js",
+  "line": 70
+ },
+ {
+  "speaker": "agatha",
+  "text": "From a squid, I would imagine.",
+  "file": "game/rooms/office.js",
+  "line": 73
+ },
+ {
+  "speaker": "agatha",
+  "text": "Squids ink when they are frightened. Much like applicants.",
+  "file": "game/rooms/office.js",
+  "line": 74
+ },
+ {
+  "speaker": "agatha",
+  "text": "It's regulation height. Two feet, four inches.",
+  "file": "game/rooms/office.js",
+  "line": 77
+ },
+ {
+  "speaker": "guybrush",
+  "text": "What's in it?",
+  "file": "game/rooms/office.js",
+  "line": 78
+ },
+ {
+  "speaker": "agatha",
+  "text": "Forms.",
+  "file": "game/rooms/office.js",
+  "line": 79
+ },
+ {
+  "speaker": "agatha",
+  "text": "The Department of Marine Vessels? Amateurs.",
+  "file": "game/rooms/office.js",
+  "line": 82
+ },
+ {
+  "speaker": "agatha",
+  "text": "The D.M.V. takes a day of your life. We take the rest of it.",
+  "file": "game/rooms/office.js",
+  "line": 83
+ },
+ {
+  "speaker": "mort",
+  "text": "Hear, hear!",
+  "file": "game/rooms/office.js",
+  "line": 84
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Ahem. I believe I'm next.",
+  "file": "game/rooms/office.js",
+  "line": 94
+ },
+ {
+  "speaker": "agatha",
+  "text": "Number seven. After all these years.",
+  "file": "game/rooms/office.js",
+  "line": 95
+ },
+ {
+  "speaker": "agatha",
+  "text": "Now serving... number seven.",
+  "file": "game/rooms/office.js",
+  "line": 97
+ },
+ {
+  "speaker": "mort",
+  "text": "Eh? What? Did somebody call my number?",
+  "file": "game/rooms/office.js",
+  "line": 98
+ },
+ {
+  "speaker": "agatha",
+  "text": "No.",
+  "file": "game/rooms/office.js",
+  "line": 99
+ },
+ {
+  "speaker": "mort",
+  "text": "Ah. Good. Wouldn't want to lose my place.",
+  "file": "game/rooms/office.js",
+  "line": 100
+ },
+ {
+  "speaker": "agatha",
+  "text": "Very well, Mr. Threepwood. Form 27-B/6 and your license portrait, please.",
+  "file": "game/rooms/office.js",
+  "line": 103
+ },
+ {
+  "speaker": "agatha",
+  "text": "I still need your completed Form 27-B/6 and your license portrait.",
+  "file": "game/rooms/office.js",
+  "line": 108
+ },
+ {
+  "speaker": "agatha",
+  "text": "I still need your completed Form 27-B/6.",
+  "file": "game/rooms/office.js",
+  "line": 109
+ },
+ {
+  "speaker": "agatha",
+  "text": "I still need your license portrait.",
+  "file": "game/rooms/office.js",
+  "line": 110
+ },
+ {
+  "speaker": "agatha",
+  "text": "Everything is in order. I've never seen that before. It's very unsettling.",
+  "file": "game/rooms/office.js",
+  "line": 112
+ },
+ {
+  "speaker": "agatha",
+  "text": "But I only have DENIED. Find the APPROVED stamp, and I'll approve you.",
+  "file": "game/rooms/office.js",
+  "line": 113
+ },
+ {
+  "speaker": "agatha",
+  "text": "Nine million, nine hundred and ninety-nine thousand, nine hundred and ninety-nine?",
+  "file": "game/rooms/office.js",
+  "line": 121
+ },
+ {
+  "speaker": "agatha",
+  "text": "Please wait until your number is called.",
+  "file": "game/rooms/office.js",
+  "line": 122
+ },
+ {
+  "speaker": "guybrush",
+  "text": "And when will that be?",
+  "file": "game/rooms/office.js",
+  "line": 123
+ },
+ {
+  "speaker": "agatha",
+  "text": "Next century. Possibly the one after.",
+  "file": "game/rooms/office.js",
+  "line": 124
+ },
+ {
+  "speaker": "agatha",
+  "text": "Take a number, please.",
+  "file": "game/rooms/office.js",
+  "line": 128
+ },
+ {
+  "speaker": "agatha",
+  "text": "It's blank.",
+  "file": "game/rooms/office.js",
+  "line": 131
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I was hoping you wouldn't notice.",
+  "file": "game/rooms/office.js",
+  "line": 132
+ },
+ {
+  "speaker": "agatha",
+  "text": "I notice everything. Fill it in. In squid ink.",
+  "file": "game/rooms/office.js",
+  "line": 133
+ },
+ {
+  "speaker": "agatha",
+  "text": "Name: Guybrush Threepwood. Occupation: pirate.",
+  "file": "game/rooms/office.js",
+  "line": 140
+ },
+ {
+  "speaker": "agatha",
+  "text": "Limbs: yes. Previous acts of piracy: 'several'.",
+  "file": "game/rooms/office.js",
+  "line": 141
+ },
+ {
+  "speaker": "agatha",
+  "text": "Hmm. It seems to be in order.",
+  "file": "game/rooms/office.js",
+  "line": 142
+ },
+ {
+  "speaker": "agatha",
+  "text": "Eye patch. Parrot. Scowl.",
+  "file": "game/rooms/office.js",
+  "line": 151
+ },
+ {
+  "speaker": "agatha",
+  "text": "It's you, all right. Acceptable.",
+  "file": "game/rooms/office.js",
+  "line": 153
+ },
+ {
+  "speaker": "agatha",
+  "text": "The APPROVED stamp! Good heavens. Where did you find it?",
+  "file": "game/rooms/office.js",
+  "line": 158
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Under L. For 'Lost'.",
+  "file": "game/rooms/office.js",
+  "line": 159
+ },
+ {
+  "speaker": "agatha",
+  "text": "Of course. Unfortunately it's bone dry. A dry stamp is no stamp at all.",
+  "file": "game/rooms/office.js",
+  "line": 160
+ },
+ {
+  "speaker": "agatha",
+  "text": "It takes regulation squid ink. Like everything else.",
+  "file": "game/rooms/office.js",
+  "line": 161
+ },
+ {
+  "speaker": "agatha",
+  "text": "The APPROVED stamp! Freshly inked! I'll keep it right here.",
+  "file": "game/rooms/office.js",
+  "line": 168
+ },
+ {
+  "speaker": "agatha",
+  "text": "You've already been served. Don't be greedy.",
+  "file": "game/rooms/office.js",
+  "line": 172
+ },
+ {
+  "speaker": "agatha",
+  "text": "It's already approved. Don't push your luck.",
+  "file": "game/rooms/office.js",
+  "line": 174
+ },
+ {
+  "speaker": "agatha",
+  "text": "That isn't regulation paperwork.",
+  "file": "game/rooms/office.js",
+  "line": 175
+ },
+ {
+  "speaker": "agatha",
+  "text": "Unfortunately, I can only stamp it DENIED.",
+  "file": "game/rooms/office.js",
+  "line": 185
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Funny you should say that...",
+  "file": "game/rooms/office.js",
+  "line": 187
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Funny you should say that. Although mine's a little dry.",
+  "file": "game/rooms/office.js",
+  "line": 189
+ },
+ {
+  "speaker": "agatha",
+  "text": "Then it's no use to me. It takes regulation squid ink. Like everything else.",
+  "file": "game/rooms/office.js",
+  "line": 190
+ },
+ {
+  "speaker": "guybrush",
+  "text": "What about the APPROVED stamp?",
+  "file": "game/rooms/office.js",
+  "line": 192
+ },
+ {
+  "speaker": "agatha",
+  "text": "Lost in the Archives in 1672. Find it, and I'll stamp you. But nobody ever finds anything in the Archives.",
+  "file": "game/rooms/office.js",
+  "line": 193
+ },
+ {
+  "speaker": "agatha",
+  "text": "Form: complete. Portrait: acceptable. Number seven: served.",
+  "file": "game/rooms/office.js",
+  "line": 199
+ },
+ {
+  "speaker": "agatha",
+  "text": "That leaves only the stamp.",
+  "file": "game/rooms/office.js",
+  "line": 200
+ },
+ {
+  "speaker": "agatha",
+  "text": "Hmm. It fits.",
+  "file": "game/rooms/office.js",
+  "line": 202
+ },
+ {
+  "speaker": "agatha",
+  "text": "APPROVED.",
+  "file": "game/rooms/office.js",
+  "line": 207
+ },
+ {
+  "speaker": "agatha",
+  "text": "How odd. I feel almost cheerful.",
+  "file": "game/rooms/office.js",
+  "line": 209
+ },
+ {
+  "speaker": "agatha",
+  "text": "It will pass.",
+  "file": "game/rooms/office.js",
+  "line": 210
+ },
+ {
+  "speaker": "agatha",
+  "text": "Your Pirate License, Mr. Threepwood.",
+  "file": "game/rooms/office.js",
+  "line": 211
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Thanks! You won't regret this!",
+  "file": "game/rooms/office.js",
+  "line": 214
+ },
+ {
+  "speaker": "agatha",
+  "text": "I already do. Next!",
+  "file": "game/rooms/office.js",
+  "line": 215
+ },
+ {
+  "speaker": "agatha",
+  "text": "A rubber chicken. Is that supposed to be a bribe?",
+  "file": "game/rooms/office.js",
+  "line": 220
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Would it work?",
+  "file": "game/rooms/office.js",
+  "line": 221
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'm not opening that again. That tentacle looked like it wanted to take over the world.",
+  "file": "game/rooms/office.js",
+  "line": 227
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Odd, there's a slight draft coming out of the clock.",
+  "file": "game/rooms/office.js",
+  "line": 229
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Hello?",
+  "file": "game/rooms/office.js",
+  "line": 236
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A secret laboratory, three portable toilets and a purple tentacle.",
+  "file": "game/rooms/office.js",
+  "line": 240
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I think I just opened the wrong adventure.",
+  "file": "game/rooms/office.js",
+  "line": 241
+ },
+ {
+  "speaker": "agatha",
+  "text": "We don't talk about the clock.",
+  "file": "game/rooms/office.js",
+  "line": 242
+ },
+ {
+  "speaker": "mort",
+  "text": "Shhh! They might call my number!",
+  "file": "game/rooms/office.js",
+  "line": 248
+ },
+ {
+  "speaker": "mort",
+  "text": "Still number seven. I can feel it in my bones. Which is all I've got.",
+  "file": "game/rooms/office.js",
+  "line": 250
+ },
+ {
+  "speaker": "mort",
+  "text": "Shhh! Any minute now.",
+  "file": "game/rooms/office.js",
+  "line": 252
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Who are you?",
+  "file": "game/rooms/office.js",
+  "line": 256
+ },
+ {
+  "speaker": "guybrush",
+  "text": "How long have you been waiting?",
+  "file": "game/rooms/office.js",
+  "line": 257
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Where did you bury your treasure?",
+  "file": "game/rooms/office.js",
+  "line": 258
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Your treasure is on Isla Agria, isn't it?",
+  "file": "game/rooms/office.js",
+  "line": 259
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Why don't you just go up to the counter?",
+  "file": "game/rooms/office.js",
+  "line": 260
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Can I have your ticket?",
+  "file": "game/rooms/office.js",
+  "line": 261
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Aren't you, um... dead?",
+  "file": "game/rooms/office.js",
+  "line": 262
+ },
+ {
+  "speaker": "guybrush",
+  "text": "What happened to your eyes?",
+  "file": "game/rooms/office.js",
+  "line": 263
+ },
+ {
+  "speaker": "guybrush",
+  "text": "What's the worst part about being a skeleton?",
+  "file": "game/rooms/office.js",
+  "line": 264
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Do you need anything?",
+  "file": "game/rooms/office.js",
+  "line": 265
+ },
+ {
+  "speaker": "mort",
+  "text": "Mortimer Blackwood, captain of the good ship Patience. I came in to renew my license.",
+  "file": "game/rooms/office.js",
+  "line": 270
+ },
+ {
+  "speaker": "guybrush",
+  "text": "When was that?",
+  "file": "game/rooms/office.js",
+  "line": 271
+ },
+ {
+  "speaker": "mort",
+  "text": "1654. I was thirty-two. I had hair. And skin.",
+  "file": "game/rooms/office.js",
+  "line": 272
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Wait. Captain Mortimer Blackwood? THE Captain Blackwood? I've been following your trail!",
+  "file": "game/rooms/office.js",
+  "line": 273
+ },
+ {
+  "speaker": "mort",
+  "text": "Trail? I've been sitting right here.",
+  "file": "game/rooms/office.js",
+  "line": 274
+ },
+ {
+  "speaker": "mort",
+  "text": "Ah, the treasure. I remember it like it was yesterday.",
+  "file": "game/rooms/office.js",
+  "line": 278
+ },
+ {
+  "speaker": "mort",
+  "text": "...Which it wasn't. It was 1654. I don't remember a thing.",
+  "file": "game/rooms/office.js",
+  "line": 279
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Nothing at all?",
+  "file": "game/rooms/office.js",
+  "line": 280
+ },
+ {
+  "speaker": "mort",
+  "text": "Only that I had my license portrait done that morning. Out in the square. Sour business. Very sour.",
+  "file": "game/rooms/office.js",
+  "line": 281
+ },
+ {
+  "speaker": "mort",
+  "text": "Isla Agria! The lime groves! It's all coming back to me!",
+  "file": "game/rooms/office.js",
+  "line": 284
+ },
+ {
+  "speaker": "mort",
+  "text": "Go on, lad. Dig it up. I can't leave. I'd lose my place in line.",
+  "file": "game/rooms/office.js",
+  "line": 285
+ },
+ {
+  "speaker": "mort",
+  "text": "What year is it now?",
+  "file": "game/rooms/office.js",
+  "line": 288
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's... later than 1654.",
+  "file": "game/rooms/office.js",
+  "line": 289
+ },
+ {
+  "speaker": "mort",
+  "text": "Then too long.",
+  "file": "game/rooms/office.js",
+  "line": 290
+ },
+ {
+  "speaker": "mort",
+  "text": "And lose my place in line? Are you mad?",
+  "file": "game/rooms/office.js",
+  "line": 293
+ },
+ {
+  "speaker": "guybrush",
+  "text": "There's nobody else in line!",
+  "file": "game/rooms/office.js",
+  "line": 294
+ },
+ {
+  "speaker": "mort",
+  "text": "That's what they WANT you to think.",
+  "file": "game/rooms/office.js",
+  "line": 295
+ },
+ {
+  "speaker": "mort",
+  "text": "Over my dead body.",
+  "file": "game/rooms/office.js",
+  "line": 297
+ },
+ {
+  "speaker": "guybrush",
+  "text": "That's... not much of an obstacle.",
+  "file": "game/rooms/office.js",
+  "line": 298
+ },
+ {
+  "speaker": "mort",
+  "text": "It's the principle of the thing!",
+  "file": "game/rooms/office.js",
+  "line": 299
+ },
+ {
+  "speaker": "mort",
+  "text": "I prefer 'patiently deceased'.",
+  "file": "game/rooms/office.js",
+  "line": 302
+ },
+ {
+  "speaker": "mort",
+  "text": "Fell out in 1702. Can't read a thing anymore. Not even my own ticket.",
+  "file": "game/rooms/office.js",
+  "line": 305
+ },
+ {
+  "speaker": "mort",
+  "text": "But I know it's seven. I can feel the notches.",
+  "file": "game/rooms/office.js",
+  "line": 306
+ },
+ {
+  "speaker": "mort",
+  "text": "The drafts. Every little breeze goes straight through my ribs.",
+  "file": "game/rooms/office.js",
+  "line": 309
+ },
+ {
+  "speaker": "mort",
+  "text": "And I'm terribly ticklish. Always have been.",
+  "file": "game/rooms/office.js",
+  "line": 310
+ },
+ {
+  "speaker": "mort",
+  "text": "A cushion. After all these years on this bench, my coccyx is the only bone I can still feel.",
+  "file": "game/rooms/office.js",
+  "line": 313
+ },
+ {
+  "speaker": "mort",
+  "text": "Not again! My ribs are still rattling!",
+  "file": "game/rooms/office.js",
+  "line": 322
+ },
+ {
+  "speaker": "guybrush",
+  "text": "If I grab his ticket, he'll notice an empty hand. Even without eyes.",
+  "file": "game/rooms/office.js",
+  "line": 324
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'd need something to slip into it.",
+  "file": "game/rooms/office.js",
+  "line": 325
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Coochie coochie coo!",
+  "file": "game/rooms/office.js",
+  "line": 332
+ },
+ {
+  "speaker": "mort",
+  "text": "Hee! Hee hee! Stop it! Stop it! HAHAHAHA!",
+  "file": "game/rooms/office.js",
+  "line": 333
+ },
+ {
+  "speaker": "mort",
+  "text": "Not the ribs! Anything but the RIBS! HAHAHA!",
+  "file": "game/rooms/office.js",
+  "line": 334
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Whoops! You dropped your ticket. Here you go.",
+  "file": "game/rooms/office.js",
+  "line": 352
+ },
+ {
+  "speaker": "mort",
+  "text": "Thank ye, lad. Wouldn't want to lose THAT. I've got a good feeling about today.",
+  "file": "game/rooms/office.js",
+  "line": 357
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Lucky number seven.",
+  "file": "game/rooms/office.js",
+  "line": 358
+ },
+ {
+  "speaker": "guybrush",
+  "text": "The way out. The only thing in here that moves quickly.",
+  "file": "game/rooms/office.js",
+  "line": 387
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A door marked 'ARCHIVES. STAFF ONLY.'",
+  "file": "game/rooms/office.js",
+  "line": 394
+ },
+ {
+  "speaker": "agatha",
+  "text": "It isn't locked.",
+  "file": "game/rooms/office.js",
+  "line": 397
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Aren't you going to stop me?",
+  "file": "game/rooms/office.js",
+  "line": 398
+ },
+ {
+  "speaker": "agatha",
+  "text": "Nobody ever comes back out of the Archives. It's self-regulating.",
+  "file": "game/rooms/office.js",
+  "line": 399
+ },
+ {
+  "speaker": "guybrush",
+  "text": "NOW SERVING: 8. Progress!",
+  "file": "game/rooms/office.js",
+  "line": 409
+ },
+ {
+  "speaker": "guybrush",
+  "text": "NOW SERVING: 7.",
+  "file": "game/rooms/office.js",
+  "line": 410
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Judging by the cobwebs, it's been seven for a while.",
+  "file": "game/rooms/office.js",
+  "line": 411
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's out of reach. Like everything else in this building.",
+  "file": "game/rooms/office.js",
+  "line": 413
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A take-a-number machine. The numbers go up. The service doesn't.",
+  "file": "game/rooms/office.js",
+  "line": 418
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I already have a number. A very, very big number.",
+  "file": "game/rooms/office.js",
+  "line": 420
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Number nine million, nine hundred and ninety-nine thousand, nine hundred and ninety-nine.",
+  "file": "game/rooms/office.js",
+  "line": 424
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'd better get comfortable.",
+  "file": "game/rooms/office.js",
+  "line": 425
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's not a candy dispenser. I checked.",
+  "file": "game/rooms/office.js",
+  "line": 427
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Forms. Hundreds of them. There's even a form for requesting forms.",
+  "file": "game/rooms/office.js",
+  "line": 432
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I've already got my form. Any more and I'd need a form for my forms.",
+  "file": "game/rooms/office.js",
+  "line": 434
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Form 27-B/6: Application for Piratical Licensure.",
+  "file": "game/rooms/office.js",
+  "line": 438
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Only one copy? I was promised triplicate.",
+  "file": "game/rooms/office.js",
+  "line": 439
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A pen. Wait a minute... it's carved into the counter!",
+  "file": "game/rooms/office.js",
+  "line": 446
+ },
+ {
+  "speaker": "guybrush",
+  "text": "An anti-theft pen. Nobody can steal it. Nobody can use it, either.",
+  "file": "game/rooms/office.js",
+  "line": 447
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's carved right into the wood. Very secure. Completely useless.",
+  "file": "game/rooms/office.js",
+  "line": 449
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I can't fill in a form with a woodcarving.",
+  "file": "game/rooms/office.js",
+  "line": 451
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I could ink it and make a lovely print of a pen. That won't fill in my form, though.",
+  "file": "game/rooms/office.js",
+  "line": 452
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A little brass bell. 'Ring for service.'",
+  "file": "game/rooms/office.js",
+  "line": 458
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Better not. She looks like she files things permanently.",
+  "file": "game/rooms/office.js",
+  "line": 461
+ },
+ {
+  "speaker": "agatha",
+  "text": "I am right here.",
+  "file": "game/rooms/office.js",
+  "line": 465
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Just checking.",
+  "file": "game/rooms/office.js",
+  "line": 465
+ },
+ {
+  "speaker": "agatha",
+  "text": "Ring that again and I'll file you under 'Deceased'.",
+  "file": "game/rooms/office.js",
+  "line": 466
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's not that kind of bell.",
+  "file": "game/rooms/office.js",
+  "line": 468
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A service counter behind thick glass. Thick enough to stop a cannonball. Or a complaint.",
+  "file": "game/rooms/office.js",
+  "line": 473
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'm not climbing over. There's probably a form for that. Form 1: Climbing Over the Counter.",
+  "file": "game/rooms/office.js",
+  "line": 474
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Mountains of paperwork. Somewhere in there is an approved application. Probably.",
+  "file": "game/rooms/office.js",
+  "line": 478
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A grandfather clock, stopped at five to five. Around here, even the clock is waiting.",
+  "file": "game/rooms/office.js",
+  "line": 484
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A little brass plate says: 'Edison Clock Company.' Never heard of them.",
+  "file": "game/rooms/office.js",
+  "line": 485
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'd better not wind it. Time might actually start moving in here, and then where would we be?",
+  "file": "game/rooms/office.js",
+  "line": 488
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Through the window I can see the harbor. And my boat. And the sea gate. Mostly the gate.",
+  "file": "game/rooms/office.js",
+  "line": 492
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's painted shut. Probably regulation.",
+  "file": "game/rooms/office.js",
+  "line": 493
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A potted palm. The only thing in here that's growing.",
+  "file": "game/rooms/office.js",
+  "line": 497
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'm not eating the office plant. That's how it starts.",
+  "file": "game/rooms/office.js",
+  "line": 498
+ },
+ {
+  "speaker": "guybrush",
+  "text": "The plaque says 'Our Valued Applicants, 1650 to Present'. None of them looks approved.",
+  "file": "game/rooms/office.js",
+  "line": 508
+ },
+ {
+  "speaker": "guybrush",
+  "text": "They're nailed to the wall. Much like their applications.",
+  "file": "game/rooms/office.js",
+  "line": 509
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A waiting bench, polished smooth by centuries of waiting.",
+  "file": "game/rooms/office.js",
+  "line": 514
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'd sit down, but I'm afraid I'd never get up again.",
+  "file": "game/rooms/office.js",
+  "line": 515
+ },
+ {
+  "speaker": "guybrush",
+  "text": "The clerk. Her name tag says 'Agatha Stampwell'.",
+  "file": "game/rooms/office.js",
+  "line": 525
+ },
+ {
+  "speaker": "guybrush",
+  "text": "She's got a towering beehive, spectacles on a chain and a rubber stamp for a left hand.",
+  "file": "game/rooms/office.js",
+  "line": 526
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'm not going to push her. She looks like she'd push back. With a stamp.",
+  "file": "game/rooms/office.js",
+  "line": 528
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A skeleton in a tattered captain's coat.",
+  "file": "game/rooms/office.js",
+  "line": 538
+ },
+ {
+  "speaker": "guybrush",
+  "text": "He's clutching a ticket in his bony fingers. A death grip. Literally.",
+  "file": "game/rooms/office.js",
+  "line": 539
+ },
+ {
+  "speaker": "guybrush",
+  "text": "He's clutching my old ticket. He looks very hopeful. As hopeful as a skull can look.",
+  "file": "game/rooms/office.js",
+  "line": 540
+ },
+ {
+  "speaker": "guybrush",
+  "text": "He's got my nine-million-something now. He can keep it.",
+  "file": "game/rooms/office.js",
+  "line": 544
+ },
+ {
+  "speaker": "mort",
+  "text": "Hands off! I'm warning you, I'm VERY ticklish.",
+  "file": "game/rooms/office.js",
+  "line": 545
+ },
+ {
+  "speaker": "mort",
+  "text": "Nothing but ribs, you see.",
+  "file": "game/rooms/office.js",
+  "line": 546
+ },
+ {
+  "speaker": "guybrush",
+  "text": "He's not going to trade seven for nine million-something. Not willingly, anyway.",
+  "file": "game/rooms/office.js",
+  "line": 553
+ },
+ {
+  "speaker": "mort",
+  "text": "I don't have a tongue, lad. I'd just get lime all over my jaw.",
+  "file": "game/rooms/office.js",
+  "line": 555
+ },
+ {
+  "speaker": "mort",
+  "text": "A chicken? I haven't eaten since 1654. I'm not starting with rubber.",
+  "file": "game/rooms/office.js",
+  "line": 556
+ },
+ {
+  "speaker": "mort",
+  "text": "I don't want that. I want my number called.",
+  "file": "game/rooms/office.js",
+  "line": 557
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Wow. It's like a cathedral dedicated to waiting.",
+  "file": "game/rooms/office.js",
+  "line": 573
+ },
+ {
+  "speaker": "mort",
+  "text": "Hee hee! Hee! Shut the door, lad! The draft tickles my ribs!",
+  "file": "game/rooms/office.js",
+  "line": 575
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Sorry!",
+  "file": "game/rooms/office.js",
+  "line": 578
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A rubber chicken!",
+  "file": "game/rooms/records.js",
+  "line": 12
+ },
+ {
+  "speaker": "guybrush",
+  "text": "...Without a pulley in the middle. What good is a rubber chicken without a pulley?",
+  "file": "game/rooms/records.js",
+  "line": 13
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'll take it anyway. Old habits.",
+  "file": "game/rooms/records.js",
+  "line": 14
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Nothing else I need. Unless I want three left gloves.",
+  "file": "game/rooms/records.js",
+  "line": 21
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Finders keepers.",
+  "file": "game/rooms/records.js",
+  "line": 28
+ },
+ {
+  "speaker": "guybrush",
+  "text": "One candle is plenty. The others are still on duty.",
+  "file": "game/rooms/records.js",
+  "line": 34
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Youch!",
+  "file": "game/rooms/records.js",
+  "line": 37
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Pappapisshu!",
+  "file": "game/rooms/records.js",
+  "line": 38
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Hey, it went out that time! Now I have a candle. And no fingerprints.",
+  "file": "game/rooms/records.js",
+  "line": 42
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Let's see. A drawer for every letter of the alphabet. And a few letters I've never heard of.",
+  "file": "game/rooms/records.js",
+  "line": 46
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A, for 'Approved'.",
+  "file": "game/rooms/records.js",
+  "line": 59
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's empty. There's a cobweb in it. The cobweb has also been denied.",
+  "file": "game/rooms/records.js",
+  "line": 60
+ },
+ {
+  "speaker": "guybrush",
+  "text": "D, for 'Denied'. It's so full it's bulging.",
+  "file": "game/rooms/records.js",
+  "line": 62
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'd better close it before it explodes.",
+  "file": "game/rooms/records.js",
+  "line": 63
+ },
+ {
+  "speaker": "guybrush",
+  "text": "L, for 'Lost'.",
+  "file": "game/rooms/records.js",
+  "line": 67
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A lost cause... a lost weekend... a lost sock...",
+  "file": "game/rooms/records.js",
+  "line": 68
+ },
+ {
+  "speaker": "guybrush",
+  "text": "...and the APPROVED stamp!",
+  "file": "game/rooms/records.js",
+  "line": 69
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Lost since 1672, and filed exactly where it belongs. Bureaucracy works in mysterious ways.",
+  "file": "game/rooms/records.js",
+  "line": 72
+ },
+ {
+  "speaker": "guybrush",
+  "text": "L, for 'Lost'. A lost cause and a lost weekend. I'll leave them where they are.",
+  "file": "game/rooms/records.js",
+  "line": 76
+ },
+ {
+  "speaker": "guybrush",
+  "text": "S, for 'Stamps'.",
+  "file": "game/rooms/records.js",
+  "line": 78
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's empty, except for a little note: 'See L.'",
+  "file": "game/rooms/records.js",
+  "line": 79
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Z, for 'Snooze'. There's a tiny pillow in here. Someone's been napping on the job.",
+  "file": "game/rooms/records.js",
+  "line": 81
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Filbert's on my shoulder. He's... not a great listener.",
+  "file": "game/rooms/records.js",
+  "line": 88
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Hello, Polly!",
+  "file": "game/rooms/records.js",
+  "line": 93
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Where is the APPROVED stamp?",
+  "file": "game/rooms/records.js",
+  "line": 94
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Polly want a cracker?",
+  "file": "game/rooms/records.js",
+  "line": 95
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Want to be in a portrait?",
+  "file": "game/rooms/records.js",
+  "line": 96
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Do you know any sea shanties?",
+  "file": "game/rooms/records.js",
+  "line": 97
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Bye, bird.",
+  "file": "game/rooms/records.js",
+  "line": 98
+ },
+ {
+  "speaker": "filbert",
+  "text": "SQUAWK! Filbert! Filed under F!",
+  "file": "game/rooms/records.js",
+  "line": 102
+ },
+ {
+  "speaker": "filbert",
+  "text": "SQUAWK! Lost! Lost since 1672!",
+  "file": "game/rooms/records.js",
+  "line": 104
+ },
+ {
+  "speaker": "filbert",
+  "text": "SQUAWK! Cracker? Form 12-C! Six weeks!",
+  "file": "game/rooms/records.js",
+  "line": 107
+ },
+ {
+  "speaker": "filbert",
+  "text": "SQUAWK! No form, no field trip!",
+  "file": "game/rooms/records.js",
+  "line": 110
+ },
+ {
+  "speaker": "filbert",
+  "text": "Way hey, and stamp it DENIED! Way hey, and stamp it DENIED! Way hey, and stamp it DENIED! Early in the morning!",
+  "file": "game/rooms/records.js",
+  "line": 114
+ },
+ {
+  "speaker": "guybrush",
+  "text": "That's not how that song goes.",
+  "file": "game/rooms/records.js",
+  "line": 115
+ },
+ {
+  "speaker": "filbert",
+  "text": "SQUAWK! Revised edition!",
+  "file": "game/rooms/records.js",
+  "line": 116
+ },
+ {
+  "speaker": "filbert",
+  "text": "SQUAWK! Next!",
+  "file": "game/rooms/records.js",
+  "line": 118
+ },
+ {
+  "speaker": "guybrush",
+  "text": "The cage is empty. Filbert's with me.",
+  "file": "game/rooms/records.js",
+  "line": 125
+ },
+ {
+  "speaker": "filbert",
+  "text": "SQUAWK! Overtime is over! Do not disturb! SQUAWK!",
+  "file": "game/rooms/records.js",
+  "line": 127
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Come on out, birdie.",
+  "file": "game/rooms/records.js",
+  "line": 131
+ },
+ {
+  "speaker": "filbert",
+  "text": "SQUAWK! No form, no service! SQUAWK!",
+  "file": "game/rooms/records.js",
+  "line": 132
+ },
+ {
+  "speaker": "filbert",
+  "text": "SQUAWK! Form 27-B/6! Applicant escort! Let's go!",
+  "file": "game/rooms/records.js",
+  "line": 138
+ },
+ {
+  "speaker": "guybrush",
+  "text": "He hopped right onto my shoulder. He's lighter than he sounds.",
+  "file": "game/rooms/records.js",
+  "line": 141
+ },
+ {
+  "speaker": "guybrush",
+  "text": "The door back to the office. I made it into the Archives AND I can leave. That must be a first.",
+  "file": "game/rooms/records.js",
+  "line": 168
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A filing cabinet with a drawer for every letter of the alphabet. Very organized. Suspiciously organized.",
+  "file": "game/rooms/records.js",
+  "line": 174
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A feather duster, soft and very tickly. It hasn't touched a speck of dust in years.",
+  "file": "game/rooms/records.js",
+  "line": 180
+ },
+ {
+  "speaker": "guybrush",
+  "text": "One feather is plenty.",
+  "file": "game/rooms/records.js",
+  "line": 182
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'll just take one feather. I'm a pirate, not a monster.",
+  "file": "game/rooms/records.js",
+  "line": 185
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Achoo! It's dustier than the things it's supposed to dust.",
+  "file": "game/rooms/records.js",
+  "line": 187
+ },
+ {
+  "speaker": "guybrush",
+  "text": "An empty ink bottle. Even the ink ran out of patience in here.",
+  "file": "game/rooms/records.js",
+  "line": 193
+ },
+ {
+  "speaker": "guybrush",
+  "text": "An empty ink bottle. Every pirate needs one. Well, every bureaucratic pirate.",
+  "file": "game/rooms/records.js",
+  "line": 198
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A writing desk, buried in unfinished paperwork. The candles have been burning since 1672.",
+  "file": "game/rooms/records.js",
+  "line": 203
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's full of half-written denials. I don't want to disturb anyone's work.",
+  "file": "game/rooms/records.js",
+  "line": 204
+ },
+ {
+  "speaker": "guybrush",
+  "text": "The Lost and Found. An old boot, a broken spyglass, three left gloves...",
+  "file": "game/rooms/records.js",
+  "line": 210
+ },
+ {
+  "speaker": "guybrush",
+  "text": "...and a wooden leg with a note: 'Gone for a walk.'",
+  "file": "game/rooms/records.js",
+  "line": 211
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Is that a rubber chicken in there?",
+  "file": "game/rooms/records.js",
+  "line": 212
+ },
+ {
+  "speaker": "guybrush",
+  "text": "And there's an eye patch lying next to it.",
+  "file": "game/rooms/records.js",
+  "line": 213
+ },
+ {
+  "speaker": "guybrush",
+  "text": "An eye patch, lost and found. Mostly lost.",
+  "file": "game/rooms/records.js",
+  "line": 221
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A mountain of DENIED applications. There's a little flag on top. It's also been denied.",
+  "file": "game/rooms/records.js",
+  "line": 226
+ },
+ {
+  "speaker": "guybrush",
+  "text": "If I pull one out, the whole mountain comes down. That's how avalanches start. And audits.",
+  "file": "game/rooms/records.js",
+  "line": 227
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Every application ever denied, from 1650 to the present. Mostly the present.",
+  "file": "game/rooms/records.js",
+  "line": 231
+ },
+ {
+  "speaker": "guybrush",
+  "text": "I'd need a map. And a snack. And a will.",
+  "file": "game/rooms/records.js",
+  "line": 232
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A rolling library ladder. It rolls, but it never gets anywhere. Very bureaucratic.",
+  "file": "game/rooms/records.js",
+  "line": 236
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Up there it's just more paperwork. With a view.",
+  "file": "game/rooms/records.js",
+  "line": 237
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A stained-glass window showing Saint Papeleo, blessing a stack of forms.",
+  "file": "game/rooms/records.js",
+  "line": 241
+ },
+ {
+  "speaker": "guybrush",
+  "text": "One candle fewer. Nobody will notice. Nobody in here notices anything.",
+  "file": "game/rooms/records.js",
+  "line": 247
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Candles, melted down to stubs. Someone's been doing a lot of overtime.",
+  "file": "game/rooms/records.js",
+  "line": 248
+ },
+ {
+  "speaker": "guybrush",
+  "text": "An empty birdcage. Filbert's out on business.",
+  "file": "game/rooms/records.js",
+  "line": 254
+ },
+ {
+  "speaker": "guybrush",
+  "text": "An ornate birdcage. There's a green parrot inside wearing a tiny clerk's visor.",
+  "file": "game/rooms/records.js",
+  "line": 254
+ },
+ {
+  "speaker": "guybrush",
+  "text": "A green parrot wearing a tiny clerk's visor. The name plate on the cage says 'FILBERT. Filing Parrot, Grade 3.'",
+  "file": "game/rooms/records.js",
+  "line": 264
+ },
+ {
+  "speaker": "filbert",
+  "text": "SQUAWK! Citrus! Form 9-L!",
+  "file": "game/rooms/records.js",
+  "line": 271
+ },
+ {
+  "speaker": "filbert",
+  "text": "SQUAWK! Not a form! Not interested! SQUAWK!",
+  "file": "game/rooms/records.js",
+  "line": 272
+ },
+ {
+  "speaker": "guybrush",
+  "text": "The Archives. It smells like old paper and older regrets.",
+  "file": "game/rooms/records.js",
+  "line": 289
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Guybrush Threepwood.",
+  "file": "game/scripts/form.js",
+  "line": 5
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Guybrush Threepwood, Mighty Pirate.",
+  "file": "game/scripts/form.js",
+  "line": 6
+ },
+ {
+  "speaker": "guybrush",
+  "text": "The 'Mighty Pirate' part is legally binding, right?",
+  "file": "game/scripts/form.js",
+  "line": 6
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Captain Guybrush 'The Terror' Threepwood.",
+  "file": "game/scripts/form.js",
+  "line": 7
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Too much? Nah.",
+  "file": "game/scripts/form.js",
+  "line": 7
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Pirate.",
+  "file": "game/scripts/form.js",
+  "line": 10
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Mighty pirate.",
+  "file": "game/scripts/form.js",
+  "line": 11
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Pirate (license pending).",
+  "file": "game/scripts/form.js",
+  "line": 12
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Honesty is the best policy. Second best, after piracy.",
+  "file": "game/scripts/form.js",
+  "line": 12
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Four, all original.",
+  "file": "game/scripts/form.js",
+  "line": 15
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Three and two halves.",
+  "file": "game/scripts/form.js",
+  "line": 16
+ },
+ {
+  "speaker": "guybrush",
+  "text": "That's four. I think. Math was never my strong suit.",
+  "file": "game/scripts/form.js",
+  "line": 16
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Does a rubber chicken count?",
+  "file": "game/scripts/form.js",
+  "line": 17
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Better cross that out.",
+  "file": "game/scripts/form.js",
+  "line": 17
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Defeated the ghost pirate LeChuck. Several times.",
+  "file": "game/scripts/form.js",
+  "line": 20
+ },
+ {
+  "speaker": "guybrush",
+  "text": "They'll never believe that.",
+  "file": "game/scripts/form.js",
+  "line": 20
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Stole a lime. On the honor system.",
+  "file": "game/scripts/form.js",
+  "line": 21
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Filled out this form with a stolen feather.",
+  "file": "game/scripts/form.js",
+  "line": 22
+ },
+ {
+  "speaker": "guybrush",
+  "text": "It's a confession AND an application. Efficient!",
+  "file": "game/scripts/form.js",
+  "line": 22
+ },
+ {
+  "speaker": "guybrush",
+  "text": "To leave this island.",
+  "file": "game/scripts/form.js",
+  "line": 25
+ },
+ {
+  "speaker": "guybrush",
+  "text": "To pillage legally.",
+  "file": "game/scripts/form.js",
+  "line": 26
+ },
+ {
+  "speaker": "guybrush",
+  "text": "To find a lost treasure.",
+  "file": "game/scripts/form.js",
+  "line": 27
+ },
+ {
+  "speaker": "guybrush",
+  "text": "They'll probably want a cut. Too late now.",
+  "file": "game/scripts/form.js",
+  "line": 27
+ },
+ {
+  "speaker": "guybrush",
+  "text": "Peer pressure.",
+  "file": "game/scripts/form.js",
+  "line": 28
+ },
+ {
+  "speaker": "guybrush",
+  "text": "All right, Form 27-B/6. Let's do this.",
+  "file": "game/scripts/form.js",
+  "line": 34
+ },
+ {
+  "speaker": "guybrush",
+  "text": "And... signed. With a flourish.",
+  "file": "game/scripts/form.js",
+  "line": 47
+ },
+ {
+  "speaker": "guybrush",
+  "text": "That's the most official thing I've ever done.",
+  "file": "game/scripts/form.js",
+  "line": 48
+ }
+]

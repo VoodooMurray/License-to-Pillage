@@ -1,0 +1,4373 @@
+{
+"name": "License to Pillage",
+"version": "0.1.0",
+"built": "2026-10-04",
+"source_commit": "7264bde+dirty",
+"files": [
+{
+"path": "CLAUDE.md",
+"bytes": 5158,
+"sha256": "8662fbdb4a9761399d35aeb35827fcd8734fba0f05c4d9a752ff2061000d8e86"
+},
+{
+"path": "Install.bat",
+"bytes": 395,
+"sha256": "cc619b1f4c6f3afe997987be0b405ba938d337d4d9bcf2c918858105d4e3dced"
+},
+{
+"path": "Install.command",
+"bytes": 567,
+"sha256": "24a77fbed5f5dadd93803fe41116d55688a9cf8b9bc25cdb7e48a673bcedbeda"
+},
+{
+"path": "Level Editor.bat",
+"bytes": 397,
+"sha256": "bebf1fc320f99a1cf371e27746c51d2a54677322924b34656fefd41250e505ed"
+},
+{
+"path": "Level Editor.command",
+"bytes": 570,
+"sha256": "aa64a7b52bf68eb3c636057e218a396c7a09e7f8309eaba3613f03ed03cc3969"
+},
+{
+"path": "Play in Browser.bat",
+"bytes": 391,
+"sha256": "b4f6a46bd0da7f9a91e00cbab5ffb7559c44736004fbb5b0a6cbe8f78e0d26f6"
+},
+{
+"path": "Play in Browser.command",
+"bytes": 567,
+"sha256": "3de2f09d2356f62e8d89980dd5b0cbcc55abd9bbffa857d9956057ed9c15ff75"
+},
+{
+"path": "Play in ScummVM.bat",
+"bytes": 403,
+"sha256": "4d17615a0fd5a1937b93594928290f97bd15f77666203b61c27416d7413795eb"
+},
+{
+"path": "Play in ScummVM.command",
+"bytes": 575,
+"sha256": "106ba6ccabcbb7c5e7de471a8a1c0e6a5a476ae350358fb706721707c80a5ee4"
+},
+{
+"path": "README.md",
+"bytes": 9382,
+"sha256": "dbe471b0634461815354a25cb932d26b4c8380d64d04807b0ec07fd1d6b7839c"
+},
+{
+"path": "VERSION",
+"bytes": 6,
+"sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
+},
+{
+"path": "index.html",
+"bytes": 620,
+"sha256": "c8d7cdd9188b0ffd2065aa4f7b429e867ea0c6f328194faca825dc198014c450"
+},
+{
+"path": "install.sh",
+"bytes": 132,
+"sha256": "31658da21d9bbf3923c1b6ad9813139392029ffed2533497aad456bdf0ecf66d"
+},
+{
+"path": "level-editor.sh",
+"bytes": 135,
+"sha256": "eacdddf4412c0864e82e683fd4d583e2ef00c38e812cd7d51d587cce102c4487"
+},
+{
+"path": "play-browser.sh",
+"bytes": 129,
+"sha256": "17c9c5565b3aa4fb927b114d3d8da29a4cd03c0ab3310b6000a23c96cc0337f1"
+},
+{
+"path": "play-scummvm.sh",
+"bytes": 137,
+"sha256": "4b1c3a380c671e478cfdfbe61f401e26a388a7fdac16a9338d9aebf487d823b6"
+},
+{
+"path": "setup.py",
+"bytes": 28619,
+"sha256": "b4f87071fe4c83afde2a1074cb7e604a6e2a48cb5e3a7d8f1473b29694d8c9f9"
+},
+{
+"path": "sw.js",
+"bytes": 3720,
+"sha256": "154ca2b7d6d4ebc85ac9d65368ce7f63dcdfcf6ef30ab75a0cd8942b003e3689"
+},
+{
+"path": "docs/DESIGN_spoilers.md",
+"bytes": 12788,
+"sha256": "b8e7364d77c04278bd869b53ad8d83174204450870311d4659cc957a5651cbe3"
+},
+{
+"path": "engine/actor.js",
+"bytes": 9791,
+"sha256": "abe65e789bd7bae9a3372ba40bcad5469450b9540f590cac4c28a15811a2eed6"
+},
+{
+"path": "engine/assets.js",
+"bytes": 2308,
+"sha256": "9480e0448068754d7575fb9fb7bc56f745b243f024ef4e9eb487066dae8a4432"
+},
+{
+"path": "engine/audio.js",
+"bytes": 3854,
+"sha256": "fc526f4b02bc24c3704103e0043dde9217e7299421bc686d4a699b5cdc003f3e"
+},
+{
+"path": "engine/costume.js",
+"bytes": 4040,
+"sha256": "e268edc3dfb919d9bcc349997ca90c090ba20341b1be68088054d8e62925dae6"
+},
+{
+"path": "engine/ega.js",
+"bytes": 6246,
+"sha256": "77f988e4ba0724f51e37f46989c6a71f9aea632c70dce060c268f8c38d538ed7"
+},
+{
+"path": "engine/engine.js",
+"bytes": 65866,
+"sha256": "39a8e0e644dd55eb0006eafe59311709571f49bedd4084f5f1b1479e8fba91d0"
+},
+{
+"path": "engine/font.js",
+"bytes": 2719,
+"sha256": "88b54314ce78615fce62fb296bf03eba339feee19def31900fcbaafe8fb456f3"
+},
+{
+"path": "engine/i18n.js",
+"bytes": 2075,
+"sha256": "040d48c5cf3c039819993ecce943da1284cf86926f65f39dab825df62b54a3b3"
+},
+{
+"path": "engine/lowres.js",
+"bytes": 8517,
+"sha256": "3930f88ee43427e5e4da86a6563612483e9022df55323b3aa88527c70ffa6acc"
+},
+{
+"path": "engine/main.js",
+"bytes": 4809,
+"sha256": "26d4c402964a85490822b06fa509a8e12098afa169a93f2d562865c4c8423e7f"
+},
+{
+"path": "engine/room.js",
+"bytes": 6146,
+"sha256": "a3ef1b6a7b622341ee33d311281c52fe2828a6cb386c4696491ce74ca118096e"
+},
+{
+"path": "engine/steps.js",
+"bytes": 7071,
+"sha256": "be7739a8253c4403552274285cacc2f24ca2a6b2e0141b1634d88b27709e4176"
+},
+{
+"path": "engine/testapi.js",
+"bytes": 4213,
+"sha256": "9430eb1c4e4ebbd2df2fe36754c8f5733dc4f063af0f1c542552d44f00071fb9"
+},
+{
+"path": "engine/util.js",
+"bytes": 1666,
+"sha256": "9f7b1ada22ce12d4a412990034d8275ff533050ed8c33db34f52d142dad95701"
+},
+{
+"path": "engine/walk.js",
+"bytes": 4598,
+"sha256": "14b668be1c8d846da4ae7ef579d2e0f074f7378fc023a547d4eafe9beef65497"
+},
+{
+"path": "engine/byog/byog.js",
+"bytes": 29203,
+"sha256": "a6dfff42b6f6342297780eeb33152c2135a2a8c657d62f334b1de60133056d2b"
+},
+{
+"path": "engine/byog/hdpack.js",
+"bytes": 3559,
+"sha256": "3b5952634d9f7999fab18a3b25ab7217ae322009d1da881056bf8d1f18867c7c"
+},
+{
+"path": "engine/byog/voicepack.js",
+"bytes": 3705,
+"sha256": "e94f6fa36f0ae0ded11b347472828d329fbe7e98f4195cf67ce9d21ea3dfc873"
+},
+{
+"path": "engine/byog/worker.js",
+"bytes": 11723,
+"sha256": "a560284182c9b10e21e82cc8470a872e1d0a340c236df2ad8ee4f196a8efe51b"
+},
+{
+"path": "engine/byog/zip.js",
+"bytes": 3932,
+"sha256": "484528a4e9856babfbc73139223f8ad47020c3017f889ce1101395a509a9628a"
+},
+{
+"path": "engine/byog/pyodide/LICENSE-Pyodide-MPL-2.0.txt",
+"bytes": 16725,
+"sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+},
+{
+"path": "engine/byog/pyodide/numpy-2.2.5-cp313-cp313-pyodide_2025_0_wasm32.whl",
+"bytes": 3109648,
+"sha256": "3db3c4f3e0448f4d62a85c262692f1260ccd8a91335442bd2442f21ffeddb558"
+},
+{
+"path": "engine/byog/pyodide/pillow-11.3.0-cp313-cp313-pyodide_2025_0_wasm32.whl",
+"bytes": 1058399,
+"sha256": "52984112ca668d60291a7868011a04d66baf526d27e5eaef0a8a16e7ef22ab6c"
+},
+{
+"path": "engine/byog/pyodide/pyodide-lock.json",
+"bytes": 109732,
+"sha256": "f6e6f42f451f42affbbcddb00e8c9a3278dcbf399f57aab9f3f568839a7ff4a6"
+},
+{
+"path": "engine/byog/pyodide/pyodide.asm.js",
+"bytes": 1073033,
+"sha256": "b22e5831eade9ff10e6fe2c811c68688cd91f10154377b4f80debcf5bafa1e56"
+},
+{
+"path": "engine/byog/pyodide/pyodide.asm.wasm",
+"bytes": 8645967,
+"sha256": "5effb6a1a6cc4a1a85bec4622701aa797c031e1de923cbbaf2ad47abdc4ab325"
+},
+{
+"path": "engine/byog/pyodide/pyodide.mjs",
+"bytes": 16347,
+"sha256": "635a6da3218fe4e5668da595acfe8b5ce77453d597d602f19a423dd250653441"
+},
+{
+"path": "engine/byog/pyodide/python_stdlib.zip",
+"bytes": 2416866,
+"sha256": "71fee17f88a6260ec8c9c7c063533ee59c021fdc88a1ce76247378d3c4a35f4c"
+},
+{
+"path": "engine/editor/ai.js",
+"bytes": 18471,
+"sha256": "1a2d9f7e4bf1c4a844b760de288fa026f2f2ad96a4dd3418ee43fc97cedae7ae"
+},
+{
+"path": "engine/editor/api.js",
+"bytes": 4372,
+"sha256": "1c59f9ac33ec4fb5a379dc2cc43d32a6c2a233ffb635d908fdccd9755e458560"
+},
+{
+"path": "engine/editor/arrivals.js",
+"bytes": 9930,
+"sha256": "25b69091bbbc5e062bd41b252fdb887d15e6db093ed949c09910bd4c087d36d0"
+},
+{
+"path": "engine/editor/build.js",
+"bytes": 4352,
+"sha256": "6967cedfd3e08280617a46a368f9018cbc3acd66ee6e30e96e582ade7efc96f4"
+},
+{
+"path": "engine/editor/editor.css",
+"bytes": 20408,
+"sha256": "6cb81aa237e9160d53e41ce844a4e9a19faaa4512f0bb8e7fc108a3e8b3d0abb"
+},
+{
+"path": "engine/editor/editor.js",
+"bytes": 29918,
+"sha256": "eee8b43964852dde75a8589217c81b59619fa3ee6ae165fd99721fa19a87dc41"
+},
+{
+"path": "engine/editor/geom.js",
+"bytes": 3934,
+"sha256": "d2fe86a8c152988742fd5250fc50bcc1a9354ee23c447cb3dbc8d8b7bd8f9327"
+},
+{
+"path": "engine/editor/history.js",
+"bytes": 1418,
+"sha256": "64e8b887c3fc943f7742a9d78a7f4d9cfffac853383083501befce8e74c5a565"
+},
+{
+"path": "engine/editor/hitmap.js",
+"bytes": 2114,
+"sha256": "105c211b858241a72a78023f252b0c1a7a4b8c6343a833f7784b1730e1727372"
+},
+{
+"path": "engine/editor/lint.js",
+"bytes": 9403,
+"sha256": "8c8f180687e13cfbc3b200afe5f2f410340425cb30099e720df7553fb892f6fb"
+},
+{
+"path": "engine/editor/model.js",
+"bytes": 9521,
+"sha256": "4993d71e188c060e12926ee269ea1c92e845fa07f154d7cb1d34d280fd488e90"
+},
+{
+"path": "engine/editor/overlay.js",
+"bytes": 10922,
+"sha256": "7d2d017ae628914e72de7570ac5c1889e66798c56e107dfad3e7e4fe0ac69518"
+},
+{
+"path": "engine/editor/panel.js",
+"bytes": 66610,
+"sha256": "c865df49086d651b1ef1a1000da6dc31407d76c1c1ebe8b56a485774d0166512"
+},
+{
+"path": "engine/editor/paths.js",
+"bytes": 4806,
+"sha256": "7ee5036a53b414b6c42427310f190b494c31bf6236242ca394288b26e858e593"
+},
+{
+"path": "engine/editor/project.js",
+"bytes": 42020,
+"sha256": "77dacb2cf1a28222a6ef5cc27e735eb306f4dae11a810f31cc0b76408ed95c1c"
+},
+{
+"path": "engine/editor/puzzle.js",
+"bytes": 31688,
+"sha256": "f1943c985fc7b9b5ca75e4cdd155ea32ffd9cb32f8de13d1c3152c6330f1be81"
+},
+{
+"path": "engine/editor/scale.js",
+"bytes": 4272,
+"sha256": "c830e7c691aacfe3cf67c1fb558e81bbab55c185b0162e06e805d21afce1db3b"
+},
+{
+"path": "engine/editor/scripts.js",
+"bytes": 17333,
+"sha256": "d5c48546f8c5261b4fce2701be8f29f998647ac26d9a597d0fa3710e95f95724"
+},
+{
+"path": "engine/editor/snap.js",
+"bytes": 2716,
+"sha256": "d6d183295178747d23260dfdf91e870c004b1552355704430c52ef757eff3117"
+},
+{
+"path": "engine/editor/tools.js",
+"bytes": 28825,
+"sha256": "08f47819164bb4dfa8723443038268c22054cfbcf427fa0c8858a9718985a255"
+},
+{
+"path": "engine/lang/de.json",
+"bytes": 771,
+"sha256": "333aa60170060fb65673d8c9413870d53cff25c741eece2fac61bfc62ca51127"
+},
+{
+"path": "engine/lang/es.json",
+"bytes": 760,
+"sha256": "fd19c82fd730558db85c3d07ff8ee9d2c17e4277e08df34400faae7101f48f9f"
+},
+{
+"path": "engine/lang/fr.json",
+"bytes": 775,
+"sha256": "658282095a4496ee07898e90f86cb18d2897ab9724a356a0aa2f791692bb09b7"
+},
+{
+"path": "engine/lang/it.json",
+"bytes": 746,
+"sha256": "9611fe788ea4647bb183534eaf22a6994cdf2b5cefa7709f62bccf887f9d68f7"
+},
+{
+"path": "engine/theme/original/theme.json",
+"bytes": 217,
+"sha256": "6bbaa50e12fa4227d897fd14be3baf36cf6db896e33ffe938644f69e3cf6fd4a"
+},
+{
+"path": "engine/theme/original/fonts/font1.json",
+"bytes": 6303,
+"sha256": "c0e23df99b006d97667929f17c7ca413c4e2affc48f8752551ecfa8bd26e5487"
+},
+{
+"path": "engine/theme/original/fonts/font1.png",
+"bytes": 230968,
+"sha256": "b92980295a14516db56c9772440ecaabeb39d809dcef7729bdb21735f2cec490"
+},
+{
+"path": "engine/theme/original/fonts/font3.json",
+"bytes": 5900,
+"sha256": "7cd14d2a8e41a3d1bf566e8b3c57c66b9f19ce594d7e1158ec1ddb14888fc014"
+},
+{
+"path": "engine/theme/original/fonts/font3.png",
+"bytes": 136928,
+"sha256": "f21e69f0f9998c843b917006c5fc9ed1b97ae7da25b8f942e309842fcbc288d4"
+},
+{
+"path": "engine/theme/original/fonts/font4.json",
+"bytes": 6291,
+"sha256": "56b52498e2c8a1ef06a62fcaad1d3eac2af8e85a6e7bbcc04cc99540a4973103"
+},
+{
+"path": "engine/theme/original/fonts/font4.png",
+"bytes": 231798,
+"sha256": "a95842945ecf162058e86c14eb579339a1f97de4392f58f8bedefc049491794d"
+},
+{
+"path": "engine/theme/original/lo/palette.json",
+"bytes": 2388,
+"sha256": "c28455c869f652d70956e3b010cdd0eed4905d027d955d76cb24210d188d82c5"
+},
+{
+"path": "engine/theme/original/lo/fonts/font1.json",
+"bytes": 6303,
+"sha256": "c0e23df99b006d97667929f17c7ca413c4e2affc48f8752551ecfa8bd26e5487"
+},
+{
+"path": "engine/theme/original/lo/fonts/font1.png",
+"bytes": 16185,
+"sha256": "d44c61eaf20b81c06cb6c9a0d72730f92e704adfce41765f4e7ebf64d6eb23d0"
+},
+{
+"path": "engine/theme/original/lo/fonts/font3.json",
+"bytes": 5900,
+"sha256": "7cd14d2a8e41a3d1bf566e8b3c57c66b9f19ce594d7e1158ec1ddb14888fc014"
+},
+{
+"path": "engine/theme/original/lo/fonts/font3.png",
+"bytes": 9600,
+"sha256": "5a05c96a59ceb47bb84b1dd55842d9b07daf0128309c62de15449f8463e95832"
+},
+{
+"path": "engine/theme/original/lo/fonts/font4.json",
+"bytes": 6291,
+"sha256": "56b52498e2c8a1ef06a62fcaad1d3eac2af8e85a6e7bbcc04cc99540a4973103"
+},
+{
+"path": "engine/theme/original/lo/fonts/font4.png",
+"bytes": 17262,
+"sha256": "126c3a95e6e1334eae9677542cd6af0708301f01387a59763f3952954e892e6d"
+},
+{
+"path": "engine/theme/original/lo/ui/arrow_E.png",
+"bytes": 1354,
+"sha256": "802927796e268c4061cb8a5012923d266d5e1faee7a43525d1815d3fc767b4fe"
+},
+{
+"path": "engine/theme/original/lo/ui/arrow_E_hot.png",
+"bytes": 1318,
+"sha256": "727c2552d165b386239d46031eb87f230edb0c3f64030bf5603b475e5c24cc7c"
+},
+{
+"path": "engine/theme/original/lo/ui/arrow_N.png",
+"bytes": 1344,
+"sha256": "46a9301dbb5d1ba0152c04b135fee6a4255e1a1f715def49e8a65a07a28b1696"
+},
+{
+"path": "engine/theme/original/lo/ui/arrow_NE.png",
+"bytes": 1495,
+"sha256": "4e3862aa11c197f36b4e61582dbadca720173e1dc5ef72f71020370fecef197c"
+},
+{
+"path": "engine/theme/original/lo/ui/arrow_NE_hot.png",
+"bytes": 1448,
+"sha256": "3ac7a9054175aaa697b61f89fadaba0b469b44739c7538e30d613dea1d7e3684"
+},
+{
+"path": "engine/theme/original/lo/ui/arrow_NW.png",
+"bytes": 1519,
+"sha256": "44e2dd9c81b5ba228fbbf215c2879cbdaa056f4641b819506d9bd750ebe4b4b8"
+},
+{
+"path": "engine/theme/original/lo/ui/arrow_NW_hot.png",
+"bytes": 1486,
+"sha256": "4bbd9a6283019c65add5e104bed91482da4201d04b4c466cde674024ba8fc30f"
+},
+{
+"path": "engine/theme/original/lo/ui/arrow_N_hot.png",
+"bytes": 1322,
+"sha256": "068e1059a210e1ec826d009b50ac7fee8fde1afcda99c8ad055743c5b6c95497"
+},
+{
+"path": "engine/theme/original/lo/ui/arrow_S.png",
+"bytes": 1333,
+"sha256": "bf5e9f1c490580266c94345a35d95bb1fab1ea3764a8f2e385db8dd38c732769"
+},
+{
+"path": "engine/theme/original/lo/ui/arrow_SE.png",
+"bytes": 1472,
+"sha256": "5f20277c7c6f7ff2dfdf01aad49c24b9bf859f80da7680cd5cbc983c3f5fe496"
+},
+{
+"path": "engine/theme/original/lo/ui/arrow_SE_hot.png",
+"bytes": 1431,
+"sha256": "06c15403ede4997ad169ef513cee29d8b302a070105b98964c15638d96ea4e20"
+},
+{
+"path": "engine/theme/original/lo/ui/arrow_SW.png",
+"bytes": 1462,
+"sha256": "18608940917f50d0ad895646f8023e3812ab1cd0e4b2100e4f824017b72a1e7e"
+},
+{
+"path": "engine/theme/original/lo/ui/arrow_SW_hot.png",
+"bytes": 1431,
+"sha256": "ad00fd2253f982df5265ca21759f270c61d1b1ffe8f78ef23213a083bef27644"
+},
+{
+"path": "engine/theme/original/lo/ui/arrow_S_hot.png",
+"bytes": 1305,
+"sha256": "ac5f595a9b503c26a7a50818f1a5ae53c2f7439db24b1088dd74a5ee89c936a1"
+},
+{
+"path": "engine/theme/original/lo/ui/arrow_W.png",
+"bytes": 1332,
+"sha256": "494ff5845bc0e78f38b403cfed48e0ddc38d9bcb3dbc75fd66bc272e5a38b803"
+},
+{
+"path": "engine/theme/original/lo/ui/arrow_W_hot.png",
+"bytes": 1307,
+"sha256": "ac0780950a6e4b84ba398babfbb4273b8485fdc7f8f501d78f93bf0ee9d910a4"
+},
+{
+"path": "engine/theme/original/lo/ui/chest.png",
+"bytes": 465506,
+"sha256": "eea74a13c0fe7836eb67528b0dd7074525adb8786a2cadcc86f84a0ea4c2757d"
+},
+{
+"path": "engine/theme/original/lo/ui/coin_fist.png",
+"bytes": 22803,
+"sha256": "83e1d8708231553e904daf45bfad020328f93050f5936b0cbed6365fd930d5ee"
+},
+{
+"path": "engine/theme/original/lo/ui/coin_idle.png",
+"bytes": 22258,
+"sha256": "a5a0e958422ab256b4a46d571265473aac9d6c4ca6eb66b3ca36f5fa46644844"
+},
+{
+"path": "engine/theme/original/lo/ui/coin_parrot.png",
+"bytes": 22863,
+"sha256": "cbfb2ca56a5225972a465e73e9284f4b823398db4a214a599213b952e4ff4e4a"
+},
+{
+"path": "engine/theme/original/lo/ui/coin_skull.png",
+"bytes": 22755,
+"sha256": "38020023d4715346bf9041a334882c1774e72c571a13ea6547e30d8b64bfe235"
+},
+{
+"path": "engine/theme/original/lo/ui/cursor.png",
+"bytes": 2031,
+"sha256": "737417cfbe367ac7c347163e953b2d3c3526db725aac84766aecc9bf5cee9eab"
+},
+{
+"path": "engine/theme/original/lo/ui/cursor_hot.png",
+"bytes": 1950,
+"sha256": "3dfbd2c8de78759bd516ee3b787600af69435572d0342854527a1a936ac7cae7"
+},
+{
+"path": "engine/theme/original/lo/ui/cursor_wait.png",
+"bytes": 3887,
+"sha256": "c866787779fa73496f8db44f6d54915ded2445ff888eabf945b46c11cd894df0"
+},
+{
+"path": "engine/theme/original/lo/ui/dlg_down.png",
+"bytes": 1047,
+"sha256": "5b3af116e6fc4f221d3364ff1b12cda3cb036a3eb5806ec58a534e95a40a1358"
+},
+{
+"path": "engine/theme/original/lo/ui/dlg_up.png",
+"bytes": 1172,
+"sha256": "3ce53cd85716d763e028739af1ca2b668f3ba24b3bc74164f182358510915de6"
+},
+{
+"path": "engine/theme/original/lo/ui/inv_next.png",
+"bytes": 1909,
+"sha256": "7e0e31a2c63e9c9611b2ba276513c6d6d18b04fa94a0857162e8e0db32234a7d"
+},
+{
+"path": "engine/theme/original/lo/ui/inv_prev.png",
+"bytes": 1935,
+"sha256": "69854fe1c2630e1ce9719407e476a187d7496939ca31021c3612366cb912c813"
+},
+{
+"path": "engine/theme/original/lo/ui/ui.json",
+"bytes": 1385,
+"sha256": "a4180ba9043408b8ed124dcaeb11d58869f415266b15e0b1145c3237049fcea3"
+},
+{
+"path": "engine/theme/original/ui/arrow_E.png",
+"bytes": 3040,
+"sha256": "620e3a1c3ae7191bfb75d8e6a142e0950f52dd9f4346460d3d49975a66b8d8fc"
+},
+{
+"path": "engine/theme/original/ui/arrow_E_hot.png",
+"bytes": 2876,
+"sha256": "bd8378b51830676cbe125cafa0662f1702ba86ee40cdb7cdc71f4394cce87290"
+},
+{
+"path": "engine/theme/original/ui/arrow_N.png",
+"bytes": 2796,
+"sha256": "1751da597aa98846c617652b853d4c3e8d2835f3214ec40af5ac7ff9faee4050"
+},
+{
+"path": "engine/theme/original/ui/arrow_NE.png",
+"bytes": 3873,
+"sha256": "de7e537cde7fec0615e3e38c6b820a1d644d6dabd1a5268d3a8b6f20c91157cc"
+},
+{
+"path": "engine/theme/original/ui/arrow_NE_hot.png",
+"bytes": 3576,
+"sha256": "9d13a39918da6be8ded114a10f2d982c6b54649eba5f06f6c3f74cc6a2a603f7"
+},
+{
+"path": "engine/theme/original/ui/arrow_NW.png",
+"bytes": 4117,
+"sha256": "cb1249f821a0def56247492481a6968aef9aabb7d6a356c2af637c0d9d183e47"
+},
+{
+"path": "engine/theme/original/ui/arrow_NW_hot.png",
+"bytes": 3778,
+"sha256": "63a94d3193477f450afb40c54000a5980af5852c3fdc0b297709b438769a1d1e"
+},
+{
+"path": "engine/theme/original/ui/arrow_N_hot.png",
+"bytes": 2683,
+"sha256": "8318cfff8d5484b1eba0ac0f3f2347780aec89d02524d1aaba55f7066622eeb9"
+},
+{
+"path": "engine/theme/original/ui/arrow_S.png",
+"bytes": 2909,
+"sha256": "2ff6faa7d41b2adefeca61a462c34f55e90a648df6254efe9e935fd9ff76f957"
+},
+{
+"path": "engine/theme/original/ui/arrow_SE.png",
+"bytes": 3900,
+"sha256": "35b3694099967c095512dac91e334e3e8dfcfcb70f2056eab1b7f6f946dcf268"
+},
+{
+"path": "engine/theme/original/ui/arrow_SE_hot.png",
+"bytes": 3614,
+"sha256": "880bf4a0ebad79d4d8e52f1b7d560dface5175bcd08810c99c8e396eafa7bd66"
+},
+{
+"path": "engine/theme/original/ui/arrow_SW.png",
+"bytes": 3777,
+"sha256": "f448323ea93e03f6875f3ca6ce0cbff9012eed43a572fe2cd72bb9d9d20dbf34"
+},
+{
+"path": "engine/theme/original/ui/arrow_SW_hot.png",
+"bytes": 3489,
+"sha256": "8e392121c55243c3163cde3df8954464ab50dab712f2fe968ec776f9c1801d42"
+},
+{
+"path": "engine/theme/original/ui/arrow_S_hot.png",
+"bytes": 2729,
+"sha256": "cd68ef2b713a8c689a9f16d10760221bdd5bcd947f52dfdc01368236b383614e"
+},
+{
+"path": "engine/theme/original/ui/arrow_W.png",
+"bytes": 2999,
+"sha256": "271b7f81067b2f639d3f0a29db44f4f1e848188c858d9e1364e5c95e2c52df11"
+},
+{
+"path": "engine/theme/original/ui/arrow_W_hot.png",
+"bytes": 2843,
+"sha256": "45907cb700bb8b31a05191b3a4a7c2e85dd21187d52244e05fa07df8f701a6b9"
+},
+{
+"path": "engine/theme/original/ui/chest.png",
+"bytes": 5585551,
+"sha256": "c055c905560a32f620edeeee6d4c26c7d611c84ebe3c008f5e20d59f1e681610"
+},
+{
+"path": "engine/theme/original/ui/coin_fist.png",
+"bytes": 131951,
+"sha256": "723c40c4f0dc9a74505f6c53987822b8869cb139b4fe2eaf5ec1085404b941ab"
+},
+{
+"path": "engine/theme/original/ui/coin_idle.png",
+"bytes": 126478,
+"sha256": "5f3097d07588841d2305ea4a454a466d0ee1e1572e5b6102a47f28cef093aaec"
+},
+{
+"path": "engine/theme/original/ui/coin_parrot.png",
+"bytes": 132227,
+"sha256": "e0c52039ed4c0564697169f9a25597a6f38972fc0b45698c6018508157a1e302"
+},
+{
+"path": "engine/theme/original/ui/coin_skull.png",
+"bytes": 129779,
+"sha256": "7f4570351e845ac864b0304748cd0bbb73363e24b2e4a5168a7316ab3a83f344"
+},
+{
+"path": "engine/theme/original/ui/cursor.png",
+"bytes": 7297,
+"sha256": "836fdd6eb3d7076850870210f772c8e8fa95f9d726fe9c95f3586e0d4c42b2db"
+},
+{
+"path": "engine/theme/original/ui/cursor_hot.png",
+"bytes": 6859,
+"sha256": "04b5338ca54dfadc85620693d5ea473d333e3260fc94202306d6f01d327b7954"
+},
+{
+"path": "engine/theme/original/ui/cursor_wait.png",
+"bytes": 18949,
+"sha256": "532bb0a6dc02a57feb9bd6f63e25905e15750714c1a2691b819e47cc23627104"
+},
+{
+"path": "engine/theme/original/ui/dlg_down.png",
+"bytes": 2078,
+"sha256": "a5d22baedadac05148ea620bf7685b4acf0d3ff9e155edc10970750e09e5eba4"
+},
+{
+"path": "engine/theme/original/ui/dlg_up.png",
+"bytes": 1967,
+"sha256": "1bc948d58bcae05a930973c323800bdecb30c481e196aa5916ba095392c1b921"
+},
+{
+"path": "engine/theme/original/ui/inv_next.png",
+"bytes": 2437,
+"sha256": "c393131ee3e822e8012336f85f34f1efc4a30ddc52b0f0de40994fc451be10d7"
+},
+{
+"path": "engine/theme/original/ui/inv_prev.png",
+"bytes": 2653,
+"sha256": "1cb6fc5b3f814d748dff1011379d9ba247161bf51e8abe67ee942d68d818d53e"
+},
+{
+"path": "engine/theme/original/ui/ui.json",
+"bytes": 1385,
+"sha256": "a4180ba9043408b8ed124dcaeb11d58869f415266b15e0b1145c3237049fcea3"
+},
+{
+"path": "game/game.js",
+"bytes": 10686,
+"sha256": "0903a1c5eb73097f47eee1013eab9fb62afe9880655b9641df2d4eb2d30739e5"
+},
+{
+"path": "game/lines.json",
+"bytes": 82772,
+"sha256": "b064895d8e587427f7620a42ec792158e6220a19eb687903a8d9c0e594542e6b"
+},
+{
+"path": "game/theme.json",
+"bytes": 3,
+"sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+},
+{
+"path": "game/voice.json",
+"bytes": 22465,
+"sha256": "9edb9cd058391b6798e90d842d3518b6a6bf1871651e2d5cff3bc31d4cdec73e"
+},
+{
+"path": "game/actors/agatha/actor.json",
+"bytes": 5710,
+"sha256": "656b6c98388931f921f7819d05d8e0f0e8118f089b7348e3d8619e0df893e4de"
+},
+{
+"path": "game/actors/agatha/cels/0000.png",
+"bytes": 7691,
+"sha256": "bb8943583adbe89f612a018e7f3b1468307ed76c7e8a970f6a80bcad0f8e9b5e"
+},
+{
+"path": "game/actors/agatha/cels/0000.webp",
+"bytes": 72704,
+"sha256": "f7f27f2c3153fff91e0e66171e3227725d5efbc9d0159cb36da39862e7658302"
+},
+{
+"path": "game/actors/agatha/cels/0001.png",
+"bytes": 7877,
+"sha256": "f217968551129be3c2b181fad27008e487795611cc4da107ab5bbdd7aa0f7d9d"
+},
+{
+"path": "game/actors/agatha/cels/0001.webp",
+"bytes": 72684,
+"sha256": "ff0cd61d94c598724fb369fa172a17727c937cc4d36837f4dcef85ea339a7cfb"
+},
+{
+"path": "game/actors/agatha/cels/0002.webp",
+"bytes": 70078,
+"sha256": "e423e67c0947b1ecc13d57b14d01cbe7ca0a4f64566a4b247624c2a0170da837"
+},
+{
+"path": "game/actors/agatha/cels/0003.webp",
+"bytes": 78622,
+"sha256": "9ef89c9a9e2844d85432ef1d5618d3e6153e1e5139a5cdfd96ae045fc7cd08af"
+},
+{
+"path": "game/actors/agatha/cels/0004.webp",
+"bytes": 72836,
+"sha256": "2e19b452afb78b50a4be2a0e6a2cc878dbc4e5b81ab708a9fa85a91f32ec9e7d"
+},
+{
+"path": "game/actors/agatha/cels/0005.webp",
+"bytes": 72880,
+"sha256": "b65b5c578f97100dcebc92562eb3600933179257ed26039cb69c826b9704bf0e"
+},
+{
+"path": "game/actors/agatha/cels/0006.webp",
+"bytes": 72888,
+"sha256": "ee1afa3179e508662a63cf640ae294f1740247de2b009a7dafda656eb2a48010"
+},
+{
+"path": "game/actors/filbert/actor.json",
+"bytes": 2020,
+"sha256": "2bbd0997909e1e16eba10452e36bd0f41fa3c94474e7b36f84236f9f17e66240"
+},
+{
+"path": "game/actors/filbert/cels/0000.png",
+"bytes": 6089,
+"sha256": "b83cd44da455f3f032ad9e0c34074609bf9d934b92065d94667e838decfc2ed0"
+},
+{
+"path": "game/actors/filbert/cels/0000.webp",
+"bytes": 51452,
+"sha256": "b3d595bc8397753d0e4cf6cdda46f8a58e84b3b2e1be700cf8248fb4d15fc52c"
+},
+{
+"path": "game/actors/filbert/cels/0001.png",
+"bytes": 6228,
+"sha256": "6cfb2db1885c52bfcd76938bb303e12b89ff2db17c96eeeaa2e57b743694118e"
+},
+{
+"path": "game/actors/filbert/cels/0001.webp",
+"bytes": 52372,
+"sha256": "4c502baa7946f1eca20bc6447115e91a189bc55a9ee7cb71552d67dbde299878"
+},
+{
+"path": "game/actors/filbert/cels/0002.webp",
+"bytes": 51366,
+"sha256": "2fd03612bb564dd20c6e6a77e9137f494dd4c743ccaa2da6f97b60bf7e6f5138"
+},
+{
+"path": "game/actors/guybrush_extras/extras.json",
+"bytes": 2001,
+"sha256": "4572a53c14db3280efd0c85e311c556c1db5cc2390eb44c769e5fceb46dbc705"
+},
+{
+"path": "game/actors/guybrush_extras/pose_overlay.png",
+"bytes": 37589,
+"sha256": "15be6428993226e9ea938829e5844f9e70a8eb5758b6b92d8a6190946040ca88"
+},
+{
+"path": "game/actors/mort/actor.json",
+"bytes": 6509,
+"sha256": "bc4e050c70d3bf8b20b3e8c5f9154ed6984abc2b23d5d5507e930d99f233ba37"
+},
+{
+"path": "game/actors/mort/cels/0000.png",
+"bytes": 6885,
+"sha256": "0c9e58535a9d1ac717ab6df232becd6986fb8c2746715a6e7089e8eab916cd6b"
+},
+{
+"path": "game/actors/mort/cels/0000.webp",
+"bytes": 72596,
+"sha256": "6b0382dd56bf0817c4c7474fb51aaa3745943743175195f45394c1f4aae6d550"
+},
+{
+"path": "game/actors/mort/cels/0001.png",
+"bytes": 7101,
+"sha256": "5295c491c4a48265bf3979754a49b6a410082822749e07d18eb37b7f701f3698"
+},
+{
+"path": "game/actors/mort/cels/0001.webp",
+"bytes": 72712,
+"sha256": "2911d4e8a24fe5eaf337d6ded531859076272ee44eba9757e9d5912227cde97c"
+},
+{
+"path": "game/actors/mort/cels/0002.webp",
+"bytes": 67404,
+"sha256": "cf1f45c1c9e82a0da6f54370978f9ae0f0714ef6329d092be76326a2849e7577"
+},
+{
+"path": "game/actors/mort/cels/0003.webp",
+"bytes": 68028,
+"sha256": "72d1efbf6d121631320c032dd82cc4f883087f8a69dae1c8524ff58b7df7c585"
+},
+{
+"path": "game/actors/mort/cels/0004.webp",
+"bytes": 72022,
+"sha256": "8b2413fd32394ab7cfe84185cb775d5e748c942eb5d9186ee81182a7624cb2ce"
+},
+{
+"path": "game/actors/mort/cels/0005.webp",
+"bytes": 72676,
+"sha256": "33327b4ced17f9357c278f0abe234e558546705ef77b88e7913cc843e12cb3af"
+},
+{
+"path": "game/actors/painter/actor.json",
+"bytes": 6504,
+"sha256": "b4e4b67cc4d4c0b73974013007236e20601a6bae9e8402f6a3b04aef785bc831"
+},
+{
+"path": "game/actors/painter/cels/0000.png",
+"bytes": 7811,
+"sha256": "5e65c7fc5a929916b8849c31cccc779939dbd12ddc690d166e113480e4a12b6d"
+},
+{
+"path": "game/actors/painter/cels/0000.webp",
+"bytes": 96360,
+"sha256": "bfbc3caa42b6dc85bad26e626938cc8de9c7d93e32f35642287a4b85a0e97b23"
+},
+{
+"path": "game/actors/painter/cels/0001.png",
+"bytes": 7954,
+"sha256": "a1dd6698e33a62cdf6322c1ed4bfecbf2e0130a7eb46ea18dd71e0c973ae596f"
+},
+{
+"path": "game/actors/painter/cels/0001.webp",
+"bytes": 95754,
+"sha256": "505d7fde36dd5b8205a3de659548c446f27456aeeb9a00f7f01bb08c70abb61b"
+},
+{
+"path": "game/actors/painter/cels/0002.webp",
+"bytes": 98970,
+"sha256": "fb29512c913ad049afc4ed18ef6eb50cd634a223d10668f12fa8438efac2794b"
+},
+{
+"path": "game/actors/painter/cels/0003.webp",
+"bytes": 94604,
+"sha256": "57cdb088c45de34002ae7d8e66f57a97868a465e4fdb95a841e60fa5f62b820a"
+},
+{
+"path": "game/actors/painter/cels/0004.webp",
+"bytes": 117494,
+"sha256": "e017a0160ff8e1b922ef1372efb3a5904f970276a3ced8ba02eee6f22e9fc442"
+},
+{
+"path": "game/actors/painter/cels/0005.webp",
+"bytes": 96082,
+"sha256": "b95e42679bddc5b61d143564475e17300f30a827eba08c4ed05b3a1ec3b4f0b4"
+},
+{
+"path": "game/actors/painter/cels/0006.webp",
+"bytes": 96460,
+"sha256": "aa60f95959dc3b45244a95eb56ca207c1cfd61ee14db41de947905493a84da79"
+},
+{
+"path": "game/actors/painter/cels/0007.webp",
+"bytes": 97266,
+"sha256": "46989a8d528c770cb7b1fa5235e63dff6871efc7959c3a825b976bbd8b16e403"
+},
+{
+"path": "game/actors/squid/actor.json",
+"bytes": 2573,
+"sha256": "f5d34d3daa70cd11f88f39861819f78830415f3daf61e538b8a7e776e6b50725"
+},
+{
+"path": "game/actors/squid/cels/0000.png",
+"bytes": 1787,
+"sha256": "c5c898c8bf09bd0cfc93a7543efa9e68df8b6b757ab6afe52710544381af6156"
+},
+{
+"path": "game/actors/squid/cels/0000.webp",
+"bytes": 15700,
+"sha256": "dbb25ce82f830448961b20122441b185a3a52b143a25256c6fd7e877112a1a71"
+},
+{
+"path": "game/actors/squid/cels/0001.png",
+"bytes": 1787,
+"sha256": "c5c898c8bf09bd0cfc93a7543efa9e68df8b6b757ab6afe52710544381af6156"
+},
+{
+"path": "game/actors/squid/cels/0001.webp",
+"bytes": 15080,
+"sha256": "622142beeb6d2ca10151e8de36f7373619aff64cafefee4e272aaaaad85dc529"
+},
+{
+"path": "game/actors/squid/cels/0002.webp",
+"bytes": 11562,
+"sha256": "b2d3a4a5f0590c95221544062b00fb939eb0b4a9e3e64d3da453b609fa452d42"
+},
+{
+"path": "game/actors/squid/cels/0003.webp",
+"bytes": 14978,
+"sha256": "6ac6d5498628f3f02500f366220cee20c61b423db13aeb44dbac118c40028fdc"
+},
+{
+"path": "game/art/blackwood_portrait.jpg",
+"bytes": 1528711,
+"sha256": "f3d60672a68200906e5fb1630c0cc3c4b04120b13359a17cb6e3b91ba21d49f6"
+},
+{
+"path": "game/art/chapter.jpg",
+"bytes": 1174299,
+"sha256": "0734defc70be26df4721ae2defcce04b1ff9b0d90068f1049265011ea6eb84b7"
+},
+{
+"path": "game/art/dott_lab.jpg",
+"bytes": 553415,
+"sha256": "0a324e331cc5a03ca9efed7b53fef6ba24dd1c0d64475b4aacc919b0e2294025"
+},
+{
+"path": "game/art/portrait_reveal.jpg",
+"bytes": 1731454,
+"sha256": "19786868a0e35887db85b365e9165ca6595ed8575bc0538d09a140e0747a0a2f"
+},
+{
+"path": "game/art/the_end.jpg",
+"bytes": 1174339,
+"sha256": "a862e7bef6f58a3b57971e0ba00fa37a47b52037ff7b8d4550b72fad3735158d"
+},
+{
+"path": "game/art/title.jpg",
+"bytes": 1113862,
+"sha256": "f80b95532fbf1dd7c04d2953a3d360a7056ff65989a13f8fd3cc592c2f0aaa8b"
+},
+{
+"path": "game/items/bottle.png",
+"bytes": 37538,
+"sha256": "577c5863e1d229e04fce7b7572b4d383cf903a722a8c2ff46271176d180ae8fd"
+},
+{
+"path": "game/items/candle.png",
+"bytes": 52373,
+"sha256": "b9eff9b97c2cbcf6ec0629166c22e45d66d90b1888879b39123df227f2e3f17b"
+},
+{
+"path": "game/items/chicken.png",
+"bytes": 51063,
+"sha256": "6288bdc691b67590acf3de08fc528da0fb37ada08f347eaaf7122501837c30d6"
+},
+{
+"path": "game/items/eyepatch.png",
+"bytes": 24974,
+"sha256": "045bcf8087b7bc62c1e9eb8d344a53bd822156856cb9b3807b196829e397bd67"
+},
+{
+"path": "game/items/feather.png",
+"bytes": 26439,
+"sha256": "9f1b4ec4155ae3b4ef9325e9b873d3dc41ce160e9455fc42c19860f01bb7a5bd"
+},
+{
+"path": "game/items/form.png",
+"bytes": 47107,
+"sha256": "4c976bcbdab696d1b84c43373bedad73ab31d3d67e00648854225289772c5aeb"
+},
+{
+"path": "game/items/form_done.png",
+"bytes": 51535,
+"sha256": "959f9c603ffdde4ab33e02fe468729dc00415cd297782f50e053a2e679c82316"
+},
+{
+"path": "game/items/ink.png",
+"bytes": 37519,
+"sha256": "d5d7e7a2c54694c2350aac2e709d2ace92f7e45614e0872a1454c8bfeb0aae21"
+},
+{
+"path": "game/items/license.png",
+"bytes": 52687,
+"sha256": "2005dc5914460ffb5bef271913fcbd491cb2d99c6fbd859e9fbb97ab150d6a87"
+},
+{
+"path": "game/items/lime.png",
+"bytes": 45244,
+"sha256": "d6b5f8be1d3609bc6d2843175ac0de9632a3a5bb1a4421cd45e6dab4774c0919"
+},
+{
+"path": "game/items/menu.png",
+"bytes": 49244,
+"sha256": "113b7e874ca73eb253ad012dd009edd0756a9a7946d790a2eb13b9401850e0d6"
+},
+{
+"path": "game/items/parrot.png",
+"bytes": 39651,
+"sha256": "78d438b32cb34e8254914123c6b2e84b4889afcae966593aa366df205e5627af"
+},
+{
+"path": "game/items/portrait.png",
+"bytes": 70521,
+"sha256": "826b9f318349a6e387e1bc9c47a5d77e45d28848459a7265279fd5b9de1aa92e"
+},
+{
+"path": "game/items/quill.png",
+"bytes": 23215,
+"sha256": "1596b187ce3d7d873e2bfcce275636a21d9c1698090a2ed8a83f93ab35da094a"
+},
+{
+"path": "game/items/stamp.png",
+"bytes": 45486,
+"sha256": "b5e25834e3a1ced6c964cc8fc87317bf99b23f5e1d3e5bfd52f72959bc857f5f"
+},
+{
+"path": "game/items/stamp_inked.png",
+"bytes": 34945,
+"sha256": "3c304018d2a9f3dbf0850d3f63201aaf5186eb6039843e44b0c09f209c8a48bd"
+},
+{
+"path": "game/items/ticket_13.png",
+"bytes": 45019,
+"sha256": "21c948217d5bd8ec4112d5b91867dbc00734cfbb691e1f7035a05b8be6cfb3aa"
+},
+{
+"path": "game/items/ticket_7.png",
+"bytes": 37837,
+"sha256": "ecbab677e53ed74ce13ec7a8eaed4a99f43310208fce50733af5f7e1d1c99cc1"
+},
+{
+"path": "game/items/ticket_big.png",
+"bytes": 46625,
+"sha256": "ff6edf8e4432fac21ae43833ce215ab92918b9d39a124050bd8a42710160abac"
+},
+{
+"path": "game/lang/de.json",
+"bytes": 91379,
+"sha256": "2fe23c76bade24a14c3b53472c02271f4056810fd02288b190d9e5d05fddf900"
+},
+{
+"path": "game/lang/es.json",
+"bytes": 88690,
+"sha256": "2ce02d28797fd8b5d0fb25368dd047b14a529ae0cff88c7d547d0387711ce158"
+},
+{
+"path": "game/lang/fr.json",
+"bytes": 92290,
+"sha256": "5b193620e2833eebde4302803d9bbfd83a2e1a1370c3adb5dbbd8e1c2a5ce67d"
+},
+{
+"path": "game/lang/it.json",
+"bytes": 88595,
+"sha256": "6f238e0c47abf95f91d83489dcc72ebc7a31de3eff93b489292074ef697dbfc9"
+},
+{
+"path": "game/music/ending.mp3",
+"bytes": 629797,
+"sha256": "24b4c77a1abd1045b5d1eaf3e686ff66975dd0a59c839ee7b2bf6f5f89a98618"
+},
+{
+"path": "game/music/harbor.mp3",
+"bytes": 1658937,
+"sha256": "a6e53735f92f54e36261f199227d9014303b1aac8f5c9638b61492b534d77c2c"
+},
+{
+"path": "game/music/office.mp3",
+"bytes": 1382374,
+"sha256": "607dae00643997d64e91f9387193d6418b653cf033a2f0b67929f477d611ba77"
+},
+{
+"path": "game/music/records.mp3",
+"bytes": 1055667,
+"sha256": "209c4eb45e2a17c9b75962fd8e1e23dc980a33eb1948a1f1e420d6fbae4a19cf"
+},
+{
+"path": "game/music/title.mp3",
+"bytes": 1153485,
+"sha256": "35735d4accb63c7a8e7754fcd4812523979daaec48c5c8a2b91578d9dd29bbaa"
+},
+{
+"path": "game/rooms/harbor.js",
+"bytes": 29973,
+"sha256": "059ef541eb716674a3fc5519ffbd147ef9b3a4c15e59928e2a46c7a942336029"
+},
+{
+"path": "game/rooms/office.js",
+"bytes": 27386,
+"sha256": "c3840040854dacf31f59b36e47acbf61d294278951ce2b3aa8fb18845721ed72"
+},
+{
+"path": "game/rooms/records.js",
+"bytes": 12561,
+"sha256": "62596473fa2c93170634d5a4a51dff75cf79e6881f193bb581f6dab9dfd20d9b"
+},
+{
+"path": "game/rooms/harbor/bg.jpg",
+"bytes": 1976874,
+"sha256": "b16707e781193ac61d356be0613764b3a25633f50a77c82e8a6f59945af092bb"
+},
+{
+"path": "game/rooms/harbor/chain.png",
+"bytes": 423494,
+"sha256": "92a3677fb405d0feb5bf47a906709dd6abcf95937972e0399e4268f242ccaf48"
+},
+{
+"path": "game/rooms/harbor/fg_arch.png",
+"bytes": 498049,
+"sha256": "1df6b07ee0a9f0deef3541018e5d565c4366675c887d12df9f8ab856a4a26196"
+},
+{
+"path": "game/rooms/harbor/fg_fountain.png",
+"bytes": 722437,
+"sha256": "91969363f336d726fe5c0256b2ecf0f90debc0e95e4537558258eead651cc86f"
+},
+{
+"path": "game/rooms/harbor/gate.png",
+"bytes": 514836,
+"sha256": "a9892475a9c20d57bf7e6f28771d2dcb7bbcae60f66dc77bca2b0a6b3e431d18"
+},
+{
+"path": "game/rooms/harbor/ink.png",
+"bytes": 294009,
+"sha256": "8effdedceddf99f4af3f6492d45575de35a0708171e3724298a58ada950b7d37"
+},
+{
+"path": "game/rooms/harbor/menu.png",
+"bytes": 21569,
+"sha256": "af667a7aae28e15620894f49db681f76ad180ed87c79a37d7a86a02ada3a55fd"
+},
+{
+"path": "game/rooms/harbor/shutter_open.png",
+"bytes": 87500,
+"sha256": "637ce8d7d0c4ebf6a85556c6abf5a122966613140daab45b3dfb190f21925ded"
+},
+{
+"path": "game/rooms/harbor/squid_blush.png",
+"bytes": 104324,
+"sha256": "7839824e098d9dc0ac29bda65c7aa952452dca1db1f2e16a6ba0421fdd0663cb"
+},
+{
+"path": "game/rooms/harbor/squid_hide.png",
+"bytes": 86015,
+"sha256": "698d5a2d89478e815ed46e447f4f38c1b0bb287cc8a5be93371eff58491697ab"
+},
+{
+"path": "game/rooms/harbor/squid_idle.png",
+"bytes": 91331,
+"sha256": "8d2809bd681ee790ad48c738d1e8d4f12dc1f095115494e2a7556dd85a8bea1b"
+},
+{
+"path": "game/rooms/harbor/squid_look.png",
+"bytes": 105116,
+"sha256": "896a1b5c928d8d0902b956a8cf0d6b37982d304ef14299760ca3426fe36a8809"
+},
+{
+"path": "game/rooms/harbor/water/anim.json",
+"bytes": 846,
+"sha256": "9c20e41b9d59439050506482e966bed984ea30264d627bf1c840e8dae7b02bf2"
+},
+{
+"path": "game/rooms/harbor/water/f00.webp",
+"bytes": 51102,
+"sha256": "b7f6cf676cb287ab3f5c4a267441a23dfb1918178bc398d48973e856b98fd2ad"
+},
+{
+"path": "game/rooms/harbor/water/f01.webp",
+"bytes": 50478,
+"sha256": "b56c3a8358c22564b4a5079234185b12c7cea647230686ef6bb39fac64f5cf18"
+},
+{
+"path": "game/rooms/harbor/water/f02.webp",
+"bytes": 51402,
+"sha256": "f37a643093aa0cfadd523ef23de1bd0e532e16bb15cf0674828c24ab87a5c079"
+},
+{
+"path": "game/rooms/harbor/water/f03.webp",
+"bytes": 51404,
+"sha256": "2d4a12ec1fa3e5d8fd4d990ac94bb60f6dc812bce26989eeec26d8ad168803b3"
+},
+{
+"path": "game/rooms/harbor/water/f04.webp",
+"bytes": 51282,
+"sha256": "f37b6b21175907a016634613efa1b4ad49f0e0dd2566ae524975431e7197d9c1"
+},
+{
+"path": "game/rooms/harbor/water/f05.webp",
+"bytes": 50340,
+"sha256": "1881b2b479cdbcabf20a641940f9ff3e6d0e2c22c50277b30deaefa5aed5b69a"
+},
+{
+"path": "game/rooms/harbor/water/f06.webp",
+"bytes": 50500,
+"sha256": "58fadc8c87cb085f12c5003831d430eaa7aec4618de6816334bb189af346a5a3"
+},
+{
+"path": "game/rooms/harbor/water/f07.webp",
+"bytes": 50854,
+"sha256": "3ce803cdfaedca717a156aaf5ef673f7b6e602a65756f4b7110ee3c7171434ad"
+},
+{
+"path": "game/rooms/harbor/water/f08.webp",
+"bytes": 50752,
+"sha256": "8a7097af1babd96e86e491031f589a20eec59efe5244fb88ac11e4830a370493"
+},
+{
+"path": "game/rooms/harbor/water/f09.webp",
+"bytes": 50694,
+"sha256": "f86ad7140ae1cd0b6f98adcc824ce53a545a95f41ff6442676b1d7199181b028"
+},
+{
+"path": "game/rooms/harbor/water/f10.webp",
+"bytes": 50702,
+"sha256": "10bcab45894f0d6ee5a4472b207f3e07d5be4cf28afc86b627a330706d17c8e2"
+},
+{
+"path": "game/rooms/harbor/water/f11.webp",
+"bytes": 51276,
+"sha256": "c2c6891f0257918d7277e081f48e5e0e24525951de845889eb6832dc3fc97235"
+},
+{
+"path": "game/rooms/harbor/water/f12.webp",
+"bytes": 50654,
+"sha256": "eaef325c8d65dffedad363c13963f8929b887beed663519a989a07202179faf4"
+},
+{
+"path": "game/rooms/harbor/water/f13.webp",
+"bytes": 50668,
+"sha256": "12d9976ead837a1c38eb82ebc8e2fa4f1ee5ff319120029ab82b6d0c080448fa"
+},
+{
+"path": "game/rooms/harbor/water/f14.webp",
+"bytes": 50740,
+"sha256": "4c0ac9373bfb839d65d3ca3076ebe17ce6d593de59c50af03db0c5481ec7ff11"
+},
+{
+"path": "game/rooms/harbor/water/f15.webp",
+"bytes": 51408,
+"sha256": "84fd9b7c67e9fb15871ea622dce4a16160e06508eba04d60e70dff9be076de49"
+},
+{
+"path": "game/rooms/harbor/water/f16.webp",
+"bytes": 50694,
+"sha256": "1bf7b7a14887e56b609c0f106e09e279bb6c8078280a3a5485b06829e23e8a4b"
+},
+{
+"path": "game/rooms/harbor/water/f17.webp",
+"bytes": 50642,
+"sha256": "d697fd2486becb933e9956da0241f264d6bdf938e9e68fd7a9fddf107d453255"
+},
+{
+"path": "game/rooms/harbor/water/f18.webp",
+"bytes": 50508,
+"sha256": "df6791b7e5ffc6791bb545a03e8469da45352b942f779bcc0c5ad88bebd2de65"
+},
+{
+"path": "game/rooms/harbor/water/f19.webp",
+"bytes": 50366,
+"sha256": "02f0215bbe2bccd9cdf2f0c6c4f2e3bcd9e541e9efffbc1cc447542e607ba11f"
+},
+{
+"path": "game/rooms/harbor/water/f20.webp",
+"bytes": 50860,
+"sha256": "79edeec5185b226505fcf5d384854b17786f0a465409724647aebfc0a19f1554"
+},
+{
+"path": "game/rooms/harbor/water/f21.webp",
+"bytes": 50594,
+"sha256": "8667c642664635b7e95a761adbb911bfc02c891997daead9e971f219be9cc1c1"
+},
+{
+"path": "game/rooms/harbor/water/f22.webp",
+"bytes": 50428,
+"sha256": "7cd922a360ab655b687e5f2bd44c0740c87d681bf3ca4e71e8bc2dc794b0788e"
+},
+{
+"path": "game/rooms/harbor/water/f23.webp",
+"bytes": 50452,
+"sha256": "870fa03b1f03b27bf50b4b740495fd622dc6eea52f4bc8630133e4e926234205"
+},
+{
+"path": "game/rooms/harbor/water/f24.webp",
+"bytes": 50348,
+"sha256": "9c7dc4c3a16d981d740a75f745061fe903182298494bc06504292fc8d5b9d904"
+},
+{
+"path": "game/rooms/harbor/water/f25.webp",
+"bytes": 50894,
+"sha256": "c4d661c3af32e6d228090a222485d007273eea8cd7251363b120de1049f052a1"
+},
+{
+"path": "game/rooms/harbor/water/f26.webp",
+"bytes": 50428,
+"sha256": "58233a6944cf3b8816f7f4bb241b485e58f64d21b2ad402cde5edc5c97bbc8f4"
+},
+{
+"path": "game/rooms/harbor/water/f27.webp",
+"bytes": 50580,
+"sha256": "b6add2c138891f0a4ee378744b5b52a53d6bc8eda0daae17f2baadb676e437d5"
+},
+{
+"path": "game/rooms/harbor/water/f28.webp",
+"bytes": 50592,
+"sha256": "3d50f4faadef4c84b334f6d637475563de9a8bdeb63485453e214061d0cd5f7f"
+},
+{
+"path": "game/rooms/harbor/water/f29.webp",
+"bytes": 50628,
+"sha256": "94ba40d9691f533e8e64ec39187aec9e547f3a47c665c6926d07e171e7141bbb"
+},
+{
+"path": "game/rooms/harbor/water/f30.webp",
+"bytes": 50676,
+"sha256": "a5300eee066f2ee6e252679a3e154478d3176e266e199d2d19e6a81516d65e1f"
+},
+{
+"path": "game/rooms/office/bg.jpg",
+"bytes": 1773440,
+"sha256": "89e38519176071b3013910eeaa4fc4e585652efba0e50da4d5f0f003b0b0386f"
+},
+{
+"path": "game/rooms/office/fg_counter.png",
+"bytes": 1640012,
+"sha256": "a010e7e81ffd5c5ceb2c4934736573a3a2e0e7acb26fb9ffe8deb9093110f030"
+},
+{
+"path": "game/rooms/office/sign13.png",
+"bytes": 179423,
+"sha256": "03667cf55d80bb68a17db4e2075c999121e82fc7fe559618bc436110587bf4bb"
+},
+{
+"path": "game/rooms/office/sign14.png",
+"bytes": 179215,
+"sha256": "ca1c53c1601621969d37f7ea3e563cb4424987581a0ce13efd122f47a719c190"
+},
+{
+"path": "game/rooms/office/sign7.png",
+"bytes": 176212,
+"sha256": "610f1d15d42adac0e0eab5fbded6e512387758ce4ac06444f989d9477c00dbda"
+},
+{
+"path": "game/rooms/office/sign8.png",
+"bytes": 179870,
+"sha256": "ace32645a66eaf0650bb572b9666350afd10ad2dc643148d308d310b34f6fa37"
+},
+{
+"path": "game/rooms/office/ticket_floor.png",
+"bytes": 9340,
+"sha256": "ba1e57a823f9c757f00fc11c05410550e5ab4a37a969fd515180409a69da028f"
+},
+{
+"path": "game/rooms/records/bg.jpg",
+"bytes": 1398128,
+"sha256": "6bc73c4b79a4e3bed60d68655d1f3cf02f323a102dd1771b7a05d025d3afcbb9"
+},
+{
+"path": "game/rooms/records/bottle.png",
+"bytes": 38415,
+"sha256": "89b1bd8b754e6f7a7881c6197b2bad6406e6a20dfed8facd6952c7712609b6d4"
+},
+{
+"path": "game/rooms/records/candle_gone.png",
+"bytes": 23170,
+"sha256": "5560dcddf44788b3709bd104c5012150948e4511df10ffae089f805df97a1031"
+},
+{
+"path": "game/rooms/records/eyepatch.png",
+"bytes": 54777,
+"sha256": "99e856dc4223450cbbb19ecf03b7b752febf15346e779a9e1a5dffe09f8f376f"
+},
+{
+"path": "game/rooms/records/filbert_idle.png",
+"bytes": 309864,
+"sha256": "9db48f8a9700558a10dac0d6b8ac6444e6cf662ffa491a6b61cd220dd2922e67"
+},
+{
+"path": "game/rooms/records/filbert_talk.png",
+"bytes": 312023,
+"sha256": "0919b4ccbb6bcc18c24487437b0ce4c20e7276f91f06edca40a455f3f312e4a0"
+},
+{
+"path": "game/rooms/records/filbert_turn.png",
+"bytes": 314124,
+"sha256": "6d72d9a29fc129b08b929c52516d1c8339954adca3339c5fae5a5517253164d4"
+},
+{
+"path": "game/scripts/form.js",
+"bytes": 2010,
+"sha256": "365be40a6333f6a0410dee72c2ee9b15a898ecebe8a4e51e493f4b32144f8ff1"
+},
+{
+"path": "game/sfx/amb_harbor.mp3",
+"bytes": 258973,
+"sha256": "0a47d663a643f4a3869830bbfd30a0ff70804b4e2df3544d050eae8c7670e720"
+},
+{
+"path": "game/sfx/chest.mp3",
+"bytes": 7898,
+"sha256": "30f3b442e936b9cd54ead414d970f1f5e5926c788eba26feeb12f51bb352e8a4"
+},
+{
+"path": "game/sfx/crunch.mp3",
+"bytes": 10068,
+"sha256": "5f3707b9bd894ad2349a268495584adc6e7985d80512d17d68b071d853a8dfad"
+},
+{
+"path": "game/sfx/ding.mp3",
+"bytes": 13771,
+"sha256": "6e64096143f47b96361073d54826edfc3a2146022fc86377423ca078a078c1ae"
+},
+{
+"path": "game/sfx/dip.mp3",
+"bytes": 2786,
+"sha256": "8280fabe53b5605475ccc6fecb195f13b0f7572d462493de654a4e93f3b66215"
+},
+{
+"path": "game/sfx/door.mp3",
+"bytes": 13950,
+"sha256": "5e813c0c3adacb6fa7f6f98b931994b428b664aeebe3a994b016c70d7c875538"
+},
+{
+"path": "game/sfx/drawer.mp3",
+"bytes": 8708,
+"sha256": "e799d9f59d0dd7e11250f820e3f9e91fd40e1145dd1bd3cfa7d746e5788077ea"
+},
+{
+"path": "game/sfx/gate_raise.mp3",
+"bytes": 47636,
+"sha256": "0d1dab292d1c82b7d666aa09a3e5c7b8f89bde6f91fe5a369370974f27df54c5"
+},
+{
+"path": "game/sfx/gate_slam.mp3",
+"bytes": 26425,
+"sha256": "453ca5d607ac4032f386a3691ca0b19e527057797ff75086174a31f4586ec82d"
+},
+{
+"path": "game/sfx/knock.mp3",
+"bytes": 8470,
+"sha256": "d186462cb10eb937642a43f6f0dc354a91dc8fc86fb2b6da37be618526a4e409"
+},
+{
+"path": "game/sfx/laugh.mp3",
+"bytes": 14968,
+"sha256": "37897a2d42d69a5d2a059f9eab47fb83202f4e7e1076c04f46119f1a3729435e"
+},
+{
+"path": "game/sfx/paper.mp3",
+"bytes": 11215,
+"sha256": "35627258705de425b026a5ebfdabf5982f34d6559d64ab934cb5baec15468949"
+},
+{
+"path": "game/sfx/rattle.mp3",
+"bytes": 19877,
+"sha256": "d585f61b41688a4657ab12aea3529d7140dc8146d43c1ff3211f63df48e02f39"
+},
+{
+"path": "game/sfx/shutter.mp3",
+"bytes": 6100,
+"sha256": "e3812f74963bb1b5b0db547437dd2fdbfa7fd1261cdacc890f35c10503b80ae9"
+},
+{
+"path": "game/sfx/splash.mp3",
+"bytes": 15909,
+"sha256": "bf9cd1c4942c89e6f049e8f264876a0f3aefa1f80486346c1323ed1095a3cbf4"
+},
+{
+"path": "game/sfx/squawk.mp3",
+"bytes": 5892,
+"sha256": "9f9e2fa5e1030ba42c4b927fdff8d6b172b828d6bc6a8b7c118b0a5ff82aa61c"
+},
+{
+"path": "game/sfx/squeak.mp3",
+"bytes": 8759,
+"sha256": "0c46ca2a456b0039ec83971a473bf83470e927abd5972462e7df811739db92fe"
+},
+{
+"path": "game/sfx/squirt.mp3",
+"bytes": 9546,
+"sha256": "955cd79d0072fe9e1847f3c2a1cc0c3004ed0a0353869b30574d3ade068dfd96"
+},
+{
+"path": "game/sfx/stamp.mp3",
+"bytes": 3698,
+"sha256": "cc009407fe858924dcc30319ecb4c98eaa594d51193a9639fac15c2c8e8756f7"
+},
+{
+"path": "game/sfx/ticket.mp3",
+"bytes": 14403,
+"sha256": "0c2bf46e6f225c47daac638477e4176f405ec0001c4cb5f692ed181345da3bc8"
+},
+{
+"path": "game/voice/agatha/021a1f8fec9d.mp3",
+"bytes": 114932,
+"sha256": "69aed4d191f15cb78aed6a8f7569bee03f8a02bc37efa43d623316eff2e64633"
+},
+{
+"path": "game/voice/agatha/02e486295474.mp3",
+"bytes": 29577,
+"sha256": "a5429815451285e82fa8f92020d94e0295c7f3cf2e4b8a9346f530ffd1f378d5"
+},
+{
+"path": "game/voice/agatha/09c5b7f308ba.mp3",
+"bytes": 26461,
+"sha256": "a4dd4a9e967c643cad3d7747bb0cb8a970b9a7d53b88c44f5be39181b46d9b7d"
+},
+{
+"path": "game/voice/agatha/0a38bd7acb9a.mp3",
+"bytes": 13162,
+"sha256": "31d18fbc802085eb7f3b0ba4fa387a2216055e1d382709583de1e17fee82abf5"
+},
+{
+"path": "game/voice/agatha/0bfe8b0af230.mp3",
+"bytes": 32796,
+"sha256": "8819fb69cdc5d055c267eca03759aeac5eab6c63400b80a203a7cfbdc0c09a36"
+},
+{
+"path": "game/voice/agatha/0c7b3bd42eb6.mp3",
+"bytes": 74391,
+"sha256": "03d4fbf3ea6d494921f8f1d2fe893265ea4636cca3bc0d7b8e5d41be2991c7e0"
+},
+{
+"path": "game/voice/agatha/0c9807c0243b.mp3",
+"bytes": 26089,
+"sha256": "4d833bf8dd8c9c759943e989d76c0b694e4da947be9db92241373324f25f1062"
+},
+{
+"path": "game/voice/agatha/0ca7a9a762dd.mp3",
+"bytes": 28333,
+"sha256": "edd2891e8095ec3a99c96da13e4e1224ced6e76b60083e7ee8b1045289754336"
+},
+{
+"path": "game/voice/agatha/0d9ec5bd0f81.mp3",
+"bytes": 12959,
+"sha256": "274c1e40772baae8975aab0f252be105f2a9e1070adc7a99ade82a4f82ba4d11"
+},
+{
+"path": "game/voice/agatha/0f20223d4fc8.mp3",
+"bytes": 9987,
+"sha256": "e866ef70675496059eb586841295656d7829953cfb4b4cca52f0bd634fc226ed"
+},
+{
+"path": "game/voice/agatha/1452347295ee.mp3",
+"bytes": 34516,
+"sha256": "c4bc062455a8caf94fc88884d16cc7caf7007ce2e7be834848ecadbbc45c0cc0"
+},
+{
+"path": "game/voice/agatha/1767ac43812e.mp3",
+"bytes": 57023,
+"sha256": "b095c73fcc6aa5a546fceab25dabd05af6d1aac33c322bfe9a95dbbcab039c5d"
+},
+{
+"path": "game/voice/agatha/18a8a7e29275.mp3",
+"bytes": 71261,
+"sha256": "19d5cdd4d6bf514447791acd2839b5409da6a7431029a0ac5372eea93fbbc9f6"
+},
+{
+"path": "game/voice/agatha/202179f745b3.mp3",
+"bytes": 17282,
+"sha256": "bbf59b97496f6869c046fc4769d3dbb3335540dffd94e3a9c312d9d1627569ab"
+},
+{
+"path": "game/voice/agatha/2340584c6474.mp3",
+"bytes": 63978,
+"sha256": "f45f1519f5912d8c29c3d7ce332adb1160755b7217def85aa9a2c7454ba4e456"
+},
+{
+"path": "game/voice/agatha/2dfbb8c5cb2a.mp3",
+"bytes": 17833,
+"sha256": "e2375138df2632a4cc8908b6ada2bff08d5e09bd27f7f8682410769547b98123"
+},
+{
+"path": "game/voice/agatha/3600b37b3cdb.mp3",
+"bytes": 17650,
+"sha256": "28686c55d41cd7b8b18e76a7dca09160e10cbdf5ca4dc0e3fb8ae637e41926ff"
+},
+{
+"path": "game/voice/agatha/3ae4096d1580.mp3",
+"bytes": 56203,
+"sha256": "65e5e80ecc95c84dabb922c44c2404fce7e1b862eeab0ace73028bde1bbbdea1"
+},
+{
+"path": "game/voice/agatha/3af2a9c276cb.mp3",
+"bytes": 65822,
+"sha256": "3c81841a3d2f5fbd43772b0e9bf3b4722ea1fcacad5e0f138138169fc3e9c763"
+},
+{
+"path": "game/voice/agatha/3dcf03927ca8.mp3",
+"bytes": 45879,
+"sha256": "d6a244fbd9ad337496d54934aa7aaf1b8f23257e2158863773b901f38127ed52"
+},
+{
+"path": "game/voice/agatha/4499d1e21bc2.mp3",
+"bytes": 37463,
+"sha256": "c7d42d19ef6ea88be5adece7195fe3a288e986278837ac44fc56818130c81b85"
+},
+{
+"path": "game/voice/agatha/44c73a358491.mp3",
+"bytes": 57005,
+"sha256": "ec41655b96e81bb0eb6d2c9abe1a3fc8a867b7ce514e3cc88ec891fbe26a66fa"
+},
+{
+"path": "game/voice/agatha/47121b0a20f9.mp3",
+"bytes": 32134,
+"sha256": "eef420f3280af4042d946372a272e949f9c774a2a03f74378da9bfee265bc930"
+},
+{
+"path": "game/voice/agatha/48c294a2bbd0.mp3",
+"bytes": 93242,
+"sha256": "16601f7408d6cc247e15836ee117b5e0b1e238a18bbaeb0e9c028041378727db"
+},
+{
+"path": "game/voice/agatha/4a999b6e0255.mp3",
+"bytes": 42384,
+"sha256": "4cfe1c52c7cd2b7ebcc5f1efaa2cf5ae1c811fe9768652d7fa3700637ca4e917"
+},
+{
+"path": "game/voice/agatha/4eaec4d20b66.mp3",
+"bytes": 14944,
+"sha256": "58056e235e9672f92157354421f8bac062b99cd6ab2ab355af360dd252f1ab85"
+},
+{
+"path": "game/voice/agatha/5278c4a75717.mp3",
+"bytes": 7819,
+"sha256": "373c8266e4fa47517c3cc6b50a8f64d9b145197ff8ec821114dc457ed3ad51fe"
+},
+{
+"path": "game/voice/agatha/5398188dfc1a.mp3",
+"bytes": 28027,
+"sha256": "c1fff3e2b805c58e14089e3e9389538e5a8c3fedce3d198662985418321878ae"
+},
+{
+"path": "game/voice/agatha/542e9b5ef8f5.mp3",
+"bytes": 10402,
+"sha256": "fd6f0fdc074a4f7638d0604dcfdbc136db3c20350690482073bbcca49cafbeae"
+},
+{
+"path": "game/voice/agatha/554537055842.mp3",
+"bytes": 10143,
+"sha256": "b22ba51f568757b7550dd06fab54946cd8f08bd332b10bf9647721db013475df"
+},
+{
+"path": "game/voice/agatha/58aa79f4fa63.mp3",
+"bytes": 71494,
+"sha256": "318d3f12308e583b0130aa66179fd4e7069dda20486eb65705c41c75df8e66a1"
+},
+{
+"path": "game/voice/agatha/590695016bc6.mp3",
+"bytes": 21440,
+"sha256": "f21876fc96a757b38119dd9badfd982601bdcb64e590ce0c18dcfdc4db4fd878"
+},
+{
+"path": "game/voice/agatha/595873f13b17.mp3",
+"bytes": 55831,
+"sha256": "0ec45eec4e060c4c2785f59650e0d6171c653c7502ba0e928438e0b109379538"
+},
+{
+"path": "game/voice/agatha/5df29defcaca.mp3",
+"bytes": 72326,
+"sha256": "5ec82f958679360d63b4b8658fde1c6fadef5369492766cb2b67f75c022ffa17"
+},
+{
+"path": "game/voice/agatha/5f97859dfa3a.mp3",
+"bytes": 31988,
+"sha256": "86501048a42d86519815b63753c4c0b88750d3d8f2b8bac46c6a5aaab355e037"
+},
+{
+"path": "game/voice/agatha/5fa5d9df473e.mp3",
+"bytes": 34821,
+"sha256": "6e540fec9df89b37cffb3aa0a2c8beb9ae290789cdcc9ec344b3be37d2410abc"
+},
+{
+"path": "game/voice/agatha/60b1ecdab72c.mp3",
+"bytes": 24461,
+"sha256": "ded1e9a7ac85e5c039edcf22b5df88c215f9e3837a594d35e495ea08ff225bac"
+},
+{
+"path": "game/voice/agatha/669b1cbf97b3.mp3",
+"bytes": 64235,
+"sha256": "288ff56bee7aebd010014b4d4cf1ac6673b361a4ae968752207d4bfa575dbd1e"
+},
+{
+"path": "game/voice/agatha/69d00fceb991.mp3",
+"bytes": 11600,
+"sha256": "4263cdb5d0223fa9788d06096ee54e7e517f1b19ef3f98afb37c01b9640ef5d6"
+},
+{
+"path": "game/voice/agatha/6bafe46952c1.mp3",
+"bytes": 33516,
+"sha256": "68b4b6160b660d44a46c20c8577e8b0218ab0dbb981c0c701069fdb4e586def7"
+},
+{
+"path": "game/voice/agatha/6d01cf76c16e.mp3",
+"bytes": 11317,
+"sha256": "82d66bb2567f5ef82771c837f670bcfb4d44911def044b3cff8a389cc12d5f3b"
+},
+{
+"path": "game/voice/agatha/6d25a1b6d004.mp3",
+"bytes": 16899,
+"sha256": "e2f5e97bc76e44048027ba00e1d78e991daf07a032a2681e1a91ce7e4e60eb8a"
+},
+{
+"path": "game/voice/agatha/6d68a5ecbef9.mp3",
+"bytes": 35784,
+"sha256": "c155ba51fa8f91100b20da66c87fdf17ea2c1e314ab62863fadc3a045023b156"
+},
+{
+"path": "game/voice/agatha/6ebb6b5a5c5c.mp3",
+"bytes": 61315,
+"sha256": "4b64fb3ef8ff2dfda15e46b80cc2c1c8dedc0d4bdbc78ff61a0347d2182fcd98"
+},
+{
+"path": "game/voice/agatha/715fd58c45d3.mp3",
+"bytes": 11810,
+"sha256": "89be5b2dc78c38dbd4dcc7ddfa8f0a5941826d81f055947f4068b9255b38a644"
+},
+{
+"path": "game/voice/agatha/73095fad2d85.mp3",
+"bytes": 83132,
+"sha256": "8600fa07a708f10478cb8df67499ff0f2eca86667b75e901d3ff67b8d5806a6e"
+},
+{
+"path": "game/voice/agatha/752015f9df37.mp3",
+"bytes": 76999,
+"sha256": "58bd70e8ccc0034930953975c0c3ca9f500ca5661550336b11cf1d0f691f58b2"
+},
+{
+"path": "game/voice/agatha/7806903e123a.mp3",
+"bytes": 24506,
+"sha256": "a0ebc7fd7cccd71b05c361ec88c6aa1720855db80d16f21774e72dbde52ce294"
+},
+{
+"path": "game/voice/agatha/7af28b46a8ac.mp3",
+"bytes": 43007,
+"sha256": "88c92b81fcb404bef89bf623f80dd99aab08e1dd908b5dd5260535a827e4f670"
+},
+{
+"path": "game/voice/agatha/7f6eaa7ba825.mp3",
+"bytes": 35786,
+"sha256": "a0c598701c79a877299da21060d5c0d27636db67fa9b917baf82b52fde0eaf2b"
+},
+{
+"path": "game/voice/agatha/8728849c7082.mp3",
+"bytes": 40290,
+"sha256": "7cc100d9dadcf1e1fc64db5830b7a2709a6588114a81956bfbe477c41b7d473c"
+},
+{
+"path": "game/voice/agatha/9116381ed44c.mp3",
+"bytes": 36651,
+"sha256": "5e310effaa7835d5d6b46cfddd300df85c1ccde161a6c1ca52be30ddc20487b2"
+},
+{
+"path": "game/voice/agatha/9412a4024ec2.mp3",
+"bytes": 60168,
+"sha256": "3ae37197c69dd669fb853b95130a60c191105bc78f038e95e20ed2127b3d0fb6"
+},
+{
+"path": "game/voice/agatha/98fe9f022529.mp3",
+"bytes": 88321,
+"sha256": "0ee03960c128c89e127a831223b6f01152e753a0a4f549c26b6bbbb20a21fe8d"
+},
+{
+"path": "game/voice/agatha/9e9854bb7648.mp3",
+"bytes": 45178,
+"sha256": "97bdbfdcf36c5da5dcfbebc32033cfd2b6644c5a3307cbca26bc75fc58b695a6"
+},
+{
+"path": "game/voice/agatha/9fc987178412.mp3",
+"bytes": 28524,
+"sha256": "7423cd8b21f86ff8477835c92053ed47ebc865ead3ad5c970a08acba16a415d1"
+},
+{
+"path": "game/voice/agatha/a178e2d23074.mp3",
+"bytes": 34586,
+"sha256": "4389776f057667313db27dd4fb133602a1739a4583ffc508713e61701e16bd45"
+},
+{
+"path": "game/voice/agatha/a3d5923ccd95.mp3",
+"bytes": 52252,
+"sha256": "e7063455b9159cd7fdaa5e016f71535974d7eeddde9e85827222eab18e40d538"
+},
+{
+"path": "game/voice/agatha/a45a8e2012da.mp3",
+"bytes": 41904,
+"sha256": "9c23d14697d9cb5a63149fee078e704b2a2207e41d70b694c8ef2b6dab8fdb69"
+},
+{
+"path": "game/voice/agatha/a4d943c262b6.mp3",
+"bytes": 25084,
+"sha256": "d9c7763fe986a82a372e7e5b1d88b8455b30b0dfa76d707b78adfff88f8accdc"
+},
+{
+"path": "game/voice/agatha/a573b538fce8.mp3",
+"bytes": 14337,
+"sha256": "cabe8466b797829961e5baa770013613e15572bccdb7dc95b90f9bf2b587f83a"
+},
+{
+"path": "game/voice/agatha/b1386fb22462.mp3",
+"bytes": 73897,
+"sha256": "37a376b09b594bec3f6e20fcc019770b459aac069c95828c796b8bbc571b3d0a"
+},
+{
+"path": "game/voice/agatha/b33d13138d2a.mp3",
+"bytes": 102403,
+"sha256": "bb25fce7837eaa22639d2c043e55e85b446cd7d050be0fb14aeb129415385fd6"
+},
+{
+"path": "game/voice/agatha/b5b56f844aa3.mp3",
+"bytes": 30872,
+"sha256": "3353f4844a93579e8fc3857281882624a4b4584d3fa64ed11cb09e629b4eefc3"
+},
+{
+"path": "game/voice/agatha/ba56009d4e2a.mp3",
+"bytes": 70303,
+"sha256": "05d4ae9895c5906073acd5f79c866839c50d1d4d8639173eccf081b3c9d97b89"
+},
+{
+"path": "game/voice/agatha/bb176026f969.mp3",
+"bytes": 33213,
+"sha256": "265a0218654bbfb2864150b71a5946f7259ec85f70cb2018be20742acad66ad7"
+},
+{
+"path": "game/voice/agatha/bc3559d9f069.mp3",
+"bytes": 29174,
+"sha256": "7cb13f6af0cb325fff782ac58eb6c240c2fe50cddd4f7535fc85a019af2455d4"
+},
+{
+"path": "game/voice/agatha/c7d3ae1c4c47.mp3",
+"bytes": 54510,
+"sha256": "9ead38f2fc5ef160d1f680f0826daaea1c32eb7067173a6c9611a8951aab1295"
+},
+{
+"path": "game/voice/agatha/ce9d809fb25e.mp3",
+"bytes": 49776,
+"sha256": "8f09affca7ba84aef1f3b0707820b0351187edd65a645346cccf3683a399fcad"
+},
+{
+"path": "game/voice/agatha/d02932a87f82.mp3",
+"bytes": 26514,
+"sha256": "72c7bed03c80da535083118ca019324ff7b24331604b55547e114f41268ddb2b"
+},
+{
+"path": "game/voice/agatha/d41402a951c0.mp3",
+"bytes": 50814,
+"sha256": "e642ed63974a7fdaba3b4cc0263917e50dd6d353352d92c2bf8b59515b5037a2"
+},
+{
+"path": "game/voice/agatha/d7bef7a41ce6.mp3",
+"bytes": 25004,
+"sha256": "aed53f272f541cd016569769ecd93536d5119a2ee273309493db74701c09dcd6"
+},
+{
+"path": "game/voice/agatha/d931d6756ecd.mp3",
+"bytes": 14525,
+"sha256": "0c181f28d8302887297c505f4fc42a09d920eefdad10184b445625df44b55e0b"
+},
+{
+"path": "game/voice/agatha/db6412574438.mp3",
+"bytes": 13869,
+"sha256": "c23267290dbddc53a3de251c4748b557bd724ff9f477d280447a133c498ac67e"
+},
+{
+"path": "game/voice/agatha/ddd56d786d64.mp3",
+"bytes": 40924,
+"sha256": "92c7b8e818656370fca21f3267bef1cb053992fbb1de1c69d3966b212ef798ee"
+},
+{
+"path": "game/voice/agatha/e0bfaa52f6a0.mp3",
+"bytes": 75127,
+"sha256": "eb4e2c4d575718f282636d0fd763aa85f48c561a9e319b9fb1e80de4e435a3e4"
+},
+{
+"path": "game/voice/agatha/e1ce9ae5abf3.mp3",
+"bytes": 41862,
+"sha256": "c4fec5e2c76c6484bbb1fe17362781e7a286fd6b98edfef0ac07bb17e319bf6c"
+},
+{
+"path": "game/voice/agatha/e783a0676d86.mp3",
+"bytes": 48614,
+"sha256": "3bdd7b939a4cafc2b3cde5019e7aa87552ea4da776b7ad70c76097c622d43fc8"
+},
+{
+"path": "game/voice/agatha/e87c3c972726.mp3",
+"bytes": 35604,
+"sha256": "d76b6baf69bb3f8043202e46b8b5c11b190e94eac4b7da62dd038551f3ec1035"
+},
+{
+"path": "game/voice/agatha/ecfb6b3611f9.mp3",
+"bytes": 70807,
+"sha256": "d1e33608adb80b7e86d0b650d4e2610f23a432d73e49cae54c825cfefeb90c4f"
+},
+{
+"path": "game/voice/agatha/f1641ca21d57.mp3",
+"bytes": 34508,
+"sha256": "1fbf7dea7aa0ce2442db8d4cba3aaf51a82cce848c87188791e280dbd62a98ca"
+},
+{
+"path": "game/voice/agatha/f781b8554ffc.mp3",
+"bytes": 54458,
+"sha256": "c683b3af243fe36d1c7ea7573a2bc7efc26a56a16a3ce5ca75a8062d20dd9b67"
+},
+{
+"path": "game/voice/agatha/f8ef6aa26af8.mp3",
+"bytes": 26689,
+"sha256": "1f3f923d380ded7378c364af9c8e140dc819c20144f4f9b47878efae13da5e9e"
+},
+{
+"path": "game/voice/agatha/fb0f488f0341.mp3",
+"bytes": 24906,
+"sha256": "21c4ee08eb9164de87ed4b92e803b095b4f99222f0e9b7f4c4094f35b18bc8b6"
+},
+{
+"path": "game/voice/agatha/fbcbd7016727.mp3",
+"bytes": 42859,
+"sha256": "6475d31de02fc9915790fa66cedfe8119579bd0e15532dc5424a3ef7cc721ba0"
+},
+{
+"path": "game/voice/agatha/fbdffcb74b7b.mp3",
+"bytes": 72859,
+"sha256": "799e6162a8470bebb45d9a52bb3e9be44569e6000efca8429a9939131cf8326d"
+},
+{
+"path": "game/voice/agatha/fc7f3762d3fe.mp3",
+"bytes": 61413,
+"sha256": "8e4de7017cf31d0c67d1ee98191936d7fb23b555c2fd6588d793dceee768af3d"
+},
+{
+"path": "game/voice/agatha/fefda9c2cd68.mp3",
+"bytes": 28136,
+"sha256": "1bad2294a7966f5e3aa24127fcd8eaf28b52fd3d7455a21f882584c4e4697496"
+},
+{
+"path": "game/voice/filbert/0d26d254b93a.mp3",
+"bytes": 55370,
+"sha256": "f5a55a322493074d494e8c3bf5f4fdad50474455e689c96ee80ff7d7afc35578"
+},
+{
+"path": "game/voice/filbert/0f12af17eb99.mp3",
+"bytes": 47726,
+"sha256": "5383527e639b970935d0a7b1f0ed32381284e4c045672d537ff909b37b0f78f3"
+},
+{
+"path": "game/voice/filbert/2508bd3baecc.mp3",
+"bytes": 45222,
+"sha256": "7489a22427be717053db4fc5d03cb68ba8939a370a1b2cec17b585e72ad7057f"
+},
+{
+"path": "game/voice/filbert/2b61ea08118c.mp3",
+"bytes": 90017,
+"sha256": "2e1e07e7ead2baffbd326ce0782bd425c5742c054f0b784e2859e421329c9581"
+},
+{
+"path": "game/voice/filbert/2ded2917b3e1.mp3",
+"bytes": 70419,
+"sha256": "ba3ef7d5316cab113e6533a08c7fcb633465296130e471cf4f3d1e27ad269271"
+},
+{
+"path": "game/voice/filbert/371ce8e51cc5.mp3",
+"bytes": 40180,
+"sha256": "a4dab4d19ac2e657a27569d5c71fef7ae563c8da95fc0905817375ff0de1357d"
+},
+{
+"path": "game/voice/filbert/433909ff8774.mp3",
+"bytes": 42879,
+"sha256": "0e35eadb98a94286b8c42429be597ca20ce5bbd34e0eb3c7139aa0b8793be113"
+},
+{
+"path": "game/voice/filbert/5c7a9fbc2fc0.mp3",
+"bytes": 126378,
+"sha256": "5b58ca25e662d44796ead2562ba8c4c2adcebbb6397b3e26eaf159b66e069c15"
+},
+{
+"path": "game/voice/filbert/5eb2651aa703.mp3",
+"bytes": 58239,
+"sha256": "c0448501174d9eb655e695341e91818d899ec2e6661a90267d3b45722387ca1a"
+},
+{
+"path": "game/voice/filbert/6593b40994d4.mp3",
+"bytes": 22625,
+"sha256": "4905793cce1f0f7230fd43f21ffe7ec11a27b33548b2666ea984326d7a0c08a5"
+},
+{
+"path": "game/voice/filbert/69b63b1d8524.mp3",
+"bytes": 35966,
+"sha256": "a38b3030088c828246865890072ee5dc0400f6df8e1de30845c6fa15bbcfae04"
+},
+{
+"path": "game/voice/filbert/6ca8a82d4c78.mp3",
+"bytes": 82674,
+"sha256": "adbda823b0c72225c83d5a8ce1ac5dd22fbbb07169487d868033cc6c06bb78fb"
+},
+{
+"path": "game/voice/filbert/7bc34d9e8fe2.mp3",
+"bytes": 62596,
+"sha256": "6594c07c549783774b2e38fc9b9ccaaa34192e03d0c23684c6d56c3e49ea8a23"
+},
+{
+"path": "game/voice/filbert/7fe0752d4578.mp3",
+"bytes": 34351,
+"sha256": "deda585304fb7b9ff9185cb61c37ef84d2fe368aa41a66844a95077a62c2229f"
+},
+{
+"path": "game/voice/filbert/8b6305ae83c8.mp3",
+"bytes": 85157,
+"sha256": "4b78882cee2902229c98fdde91f16922c8d42d94b2824fabf00c5e11d2f98fe3"
+},
+{
+"path": "game/voice/filbert/91e581c2be7f.mp3",
+"bytes": 62987,
+"sha256": "6bc98fda8912194d68fc0145a4eded2a5873e99d8a75f8c16a2b1472440b56e7"
+},
+{
+"path": "game/voice/filbert/946aed2f6bf1.mp3",
+"bytes": 58708,
+"sha256": "e9fe850684fe784c246a53ea26c40a54df8015873e7564dbe5a0bfa8da3bbfb9"
+},
+{
+"path": "game/voice/filbert/9af910e05166.mp3",
+"bytes": 42059,
+"sha256": "013b5a8caf06a9f02abef06488e054dde12c972ba6f83835bc86ce92b0e5666a"
+},
+{
+"path": "game/voice/filbert/b400413a1f62.mp3",
+"bytes": 57041,
+"sha256": "b23a3eab0bddf347b31b87a322f46193a14d8f1252c3f549a0341e56b1d3f66b"
+},
+{
+"path": "game/voice/filbert/c2bd3a7194e3.mp3",
+"bytes": 71227,
+"sha256": "2a041ca7e8fa51cd8407025b852d7d393928a4b8c4ca64b60efdaddd99a6821b"
+},
+{
+"path": "game/voice/filbert/c5f94fefb102.mp3",
+"bytes": 53708,
+"sha256": "20d6dc19a71afa176d16239c00931e5f7b1eaf505c9729d8a339c018ec8551d4"
+},
+{
+"path": "game/voice/filbert/cedd3d07110d.mp3",
+"bytes": 47969,
+"sha256": "63fc3dca2c77b44662dd65719332229a3b499a8ca68bc803b9f81792383c90b3"
+},
+{
+"path": "game/voice/filbert/e3f388151772.mp3",
+"bytes": 20331,
+"sha256": "b4604881c1c20166f166387076968ec5d46bfe06542e62e0247f776852c87abe"
+},
+{
+"path": "game/voice/filbert/e7aa8f4438c9.mp3",
+"bytes": 38712,
+"sha256": "d5d96724c0bf4dbfb939b0680c0e9148de776acb702b96f2e08e7317f675dbdd"
+},
+{
+"path": "game/voice/filbert/ea6bead11e09.mp3",
+"bytes": 37947,
+"sha256": "5a0b7439497dd2498bd6d0eb0eae5b6344ff414a2fbce068c376a6da6bd87abc"
+},
+{
+"path": "game/voice/filbert/efb9039845ac.mp3",
+"bytes": 51457,
+"sha256": "8a42a5d9e40710597b0b081b2d9cfb206170cb2f458412a0a4816188ef49dd68"
+},
+{
+"path": "game/voice/filbert/f86b0d3bc336.mp3",
+"bytes": 66490,
+"sha256": "5b2cdfcaaea746d1916e38894bf41338cb5ad7e9c3684088a865191a2de5eebe"
+},
+{
+"path": "game/voice/filbert/fcbace528cd2.mp3",
+"bytes": 82130,
+"sha256": "af4d83ee95d0bb1c75bacb0300f08880e8f456ad0177b558fe701066f4afbb31"
+},
+{
+"path": "game/voice/harbormaster/01c1a6fad3f8.mp3",
+"bytes": 15833,
+"sha256": "c9195d394c4dfc1198c71e2ccf808a156eec2ed1c8be3b4edf77a27cd3e4c138"
+},
+{
+"path": "game/voice/harbormaster/2d185a5b14e3.mp3",
+"bytes": 39095,
+"sha256": "53cea3b038be42fd06be797dba7158c6d2d9614eb7aee8ed2ff84cc60b4e797e"
+},
+{
+"path": "game/voice/harbormaster/3020a001e650.mp3",
+"bytes": 15307,
+"sha256": "05ebab6ab19e8096d3e9d503f70170bb8346abda16c1f56a282c111bec300aa6"
+},
+{
+"path": "game/voice/harbormaster/329a49385ccd.mp3",
+"bytes": 72521,
+"sha256": "f4565324e093194c3929e7fdf0ff5d27ec4d76a7c53aa59ca0077c70dab052e2"
+},
+{
+"path": "game/voice/harbormaster/33c40a54b039.mp3",
+"bytes": 50983,
+"sha256": "c6752a4952127161fa2d582973f2cba79a54956a55517f4ff94c4ca97f111eae"
+},
+{
+"path": "game/voice/harbormaster/38c5738bc715.mp3",
+"bytes": 35466,
+"sha256": "e19edd7f03df8980ed46b459fa5bd21edb471484960f54657028bd77234db58e"
+},
+{
+"path": "game/voice/harbormaster/391604f3a8f3.mp3",
+"bytes": 75156,
+"sha256": "d73661850c7f02fb96afe6bcf845ffa5e36d4be6bac7f8133cc95b0c981a7fef"
+},
+{
+"path": "game/voice/harbormaster/47bdfe893d7d.mp3",
+"bytes": 44306,
+"sha256": "2803b707a8557cd91cd79cdd280a54f946aad1ec6a84cdecfd9e30db47acd11e"
+},
+{
+"path": "game/voice/harbormaster/4c8f936f1c5d.mp3",
+"bytes": 60893,
+"sha256": "029287edf70c980c4c847c850845a0940c39a5bc8a3e1effd94c5b7878f523b6"
+},
+{
+"path": "game/voice/harbormaster/534f35b2ad10.mp3",
+"bytes": 89950,
+"sha256": "526d5015456f250698587f93991b63c5cb9d3ec8605908b70433711d345b20e4"
+},
+{
+"path": "game/voice/harbormaster/59d7734ec865.mp3",
+"bytes": 49526,
+"sha256": "b89f7d1cc9aaacfb698680f7e3ece01be242a4936eab0b9373fc6bfefa7e1cbe"
+},
+{
+"path": "game/voice/harbormaster/5e1fa81558d7.mp3",
+"bytes": 40454,
+"sha256": "c8215136c97e2bb1ca340d6e9806407c603cdb11f26e2f4a0f1cfaf908640c54"
+},
+{
+"path": "game/voice/harbormaster/62b3a31a8794.mp3",
+"bytes": 27226,
+"sha256": "198327b492df4dbaf42ee19c402e346a691b538d6794782890688283d63bb109"
+},
+{
+"path": "game/voice/harbormaster/70b8357bf4e7.mp3",
+"bytes": 11397,
+"sha256": "262b9e25528ee02ac67d8b2abe7b0c2834ddf84617ed73767eec621cdacec896"
+},
+{
+"path": "game/voice/harbormaster/8043c67f0e95.mp3",
+"bytes": 37118,
+"sha256": "b57f510f97ba2a40eeafca4a3e576637747afefa966ceedc99452bf172b28d0d"
+},
+{
+"path": "game/voice/harbormaster/875b6a368664.mp3",
+"bytes": 71220,
+"sha256": "a5e8a1f33a7b5a3a884d613d7bc95088fcc80a8d94c6eecab9600d742ae0dd8d"
+},
+{
+"path": "game/voice/harbormaster/8ab09d2a96b3.mp3",
+"bytes": 74762,
+"sha256": "7eaae62a4c5daadfd738b0e195c010db29ea4be826039f88707d786a7fd5a631"
+},
+{
+"path": "game/voice/harbormaster/97b7f56aef8b.mp3",
+"bytes": 14944,
+"sha256": "8aeacd1b1ff69908045d9efbcc06b1f496e640c57544a641ab924fa7538fce62"
+},
+{
+"path": "game/voice/harbormaster/9c10c4d7402d.mp3",
+"bytes": 64753,
+"sha256": "2d970247f7f543e5192a4169995f7516eceb5715981659d4fe018d3d9be0b7a1"
+},
+{
+"path": "game/voice/harbormaster/9e9eeadbde4c.mp3",
+"bytes": 50878,
+"sha256": "02259b20bbc8166d803bd8cfa6940c9d1b039bb6a316758b5b452e4b023b23e4"
+},
+{
+"path": "game/voice/harbormaster/a50878592848.mp3",
+"bytes": 68564,
+"sha256": "f235be28076604ff44e03f3e1ec7fcd0cf54885bba5366b40044993e2e7f775d"
+},
+{
+"path": "game/voice/harbormaster/a84085251b52.mp3",
+"bytes": 35544,
+"sha256": "0488d2845eb7fa2032d602b61e3774344c4eaa1b5c057d03f25c689271f6717e"
+},
+{
+"path": "game/voice/harbormaster/a8c4d3cf428e.mp3",
+"bytes": 15674,
+"sha256": "d82e35197ca0192c0c1f30d2dc94560a4f0d5243566b6a2a40fdb26f03f6a73e"
+},
+{
+"path": "game/voice/harbormaster/ba3e6558c776.mp3",
+"bytes": 89328,
+"sha256": "5c714ed43f8ae48f24ecd7e158d52f642f285582f545cfd225babee66c9ab989"
+},
+{
+"path": "game/voice/harbormaster/c134b2cad14a.mp3",
+"bytes": 73672,
+"sha256": "f18ba57b4077f179160e62940d5fc46b715026cfe0a129c33b53820d15eca6f4"
+},
+{
+"path": "game/voice/harbormaster/c20760f1f314.mp3",
+"bytes": 67058,
+"sha256": "724bb458ec0529c9949e36135c611c755a715e95cdd0128f642870156c915cd5"
+},
+{
+"path": "game/voice/harbormaster/c7892225d63f.mp3",
+"bytes": 89789,
+"sha256": "cbeb6c68aea44f102117ee2c2b534cac304206b28142b2ad7b2cb9b6d98acd6b"
+},
+{
+"path": "game/voice/harbormaster/c89b07133fb3.mp3",
+"bytes": 24647,
+"sha256": "3c3cde5fd6b115dd82fd79c77d5fd12a3720530834efdad5d6917230bfbb43bb"
+},
+{
+"path": "game/voice/harbormaster/cb0b8d9b5b51.mp3",
+"bytes": 43741,
+"sha256": "6803c9e7b745cda34bfb21483680081040adba5ffa0c067b5478fe0f4c2490e6"
+},
+{
+"path": "game/voice/harbormaster/d0447a13868b.mp3",
+"bytes": 33769,
+"sha256": "098a2b2c9310be0b601ac1eb9b53b5981aa2972942e6c493dbe5357a31db0aec"
+},
+{
+"path": "game/voice/harbormaster/d3e9e6f8d660.mp3",
+"bytes": 37896,
+"sha256": "abef656093485361f0644c21781885d927bcc572ccce6e1c71efbc8f5338f318"
+},
+{
+"path": "game/voice/harbormaster/e025db7bfee6.mp3",
+"bytes": 62609,
+"sha256": "3b3a5c2d4f59ffec19e4b0ff672c1fe9edea28143b6cd48ffdb9c17dddc6b23e"
+},
+{
+"path": "game/voice/harbormaster/ff03c402af58.mp3",
+"bytes": 66275,
+"sha256": "94860727041c8660119bb7fe0da384bc34b3ca073720bcd77d27c068877c3bcf"
+},
+{
+"path": "game/voice/mort/029e50c16d21.mp3",
+"bytes": 26673,
+"sha256": "e4a154505bb54deb17130c19d99cdfca2b075230658655166a99a495f318c2a7"
+},
+{
+"path": "game/voice/mort/0587204d40bc.mp3",
+"bytes": 69061,
+"sha256": "38c6d8f435bd5ab6f78d8be4d7955920a82d70eb0d2016168aabdf9e3688b5a4"
+},
+{
+"path": "game/voice/mort/0ba62b54e1bd.mp3",
+"bytes": 47079,
+"sha256": "c290057db61622fb4e9a480e3acacdf8283728921cbf769dc601a75828de9fe2"
+},
+{
+"path": "game/voice/mort/10a112e6e7a2.mp3",
+"bytes": 148797,
+"sha256": "eb3136f0cfee2973fe756f1761d4804dffd494dcd3b38b559d5522b7487949c3"
+},
+{
+"path": "game/voice/mort/11de44d7ab88.mp3",
+"bytes": 21564,
+"sha256": "1d9d6eb7e254f3632fbf5ad02e31d1ec0f79291b8ef0ac253c99de0f93911b4e"
+},
+{
+"path": "game/voice/mort/1c1f46795b3f.mp3",
+"bytes": 54104,
+"sha256": "5022104cf4898ef404850dcfc51310b52bde651a1d0aff133eedb7d94d5913e8"
+},
+{
+"path": "game/voice/mort/1f1bd8bb1c6b.mp3",
+"bytes": 14211,
+"sha256": "332a0671aae42c999a71ec06242cefdb06cf1d965b58da906edaa381c76a7f75"
+},
+{
+"path": "game/voice/mort/20cd86a05922.mp3",
+"bytes": 11867,
+"sha256": "0cf0e88d5f925ca0dc68e3435a5ad594da37637f271def965a6645080f8f6a73"
+},
+{
+"path": "game/voice/mort/26aee7199211.mp3",
+"bytes": 48073,
+"sha256": "13267b2767fe12306451c9ffefe933c0437974d17eb5a13f1d1edcd853fbdd65"
+},
+{
+"path": "game/voice/mort/2c90471046be.mp3",
+"bytes": 88551,
+"sha256": "c78006ccc501c8afa630496318150ce959ecca7765435b858d672e1477e68578"
+},
+{
+"path": "game/voice/mort/3fe8b7c4a7b7.mp3",
+"bytes": 48357,
+"sha256": "1eb61d32492edb8d967672bdf1e9dae52fa44fac45f35c2a9fef3a37d3cb26a4"
+},
+{
+"path": "game/voice/mort/591e85529df3.mp3",
+"bytes": 93177,
+"sha256": "deec5c745f8419ba3285cd81cdea960ee25a7813410880fbd561be6a80c3140d"
+},
+{
+"path": "game/voice/mort/598c5c46c61b.mp3",
+"bytes": 51130,
+"sha256": "ebf8dfa0ebab9af2fb6d6abae578f26e07dd246ce671204b130f0209c6ef710e"
+},
+{
+"path": "game/voice/mort/5f5d3c5156f3.mp3",
+"bytes": 72327,
+"sha256": "8c61070d7ce1263149ad083b4bbd03a139af377c5c7ec0f30dcc06f92cd3c1e6"
+},
+{
+"path": "game/voice/mort/6174c4a0f087.mp3",
+"bytes": 46508,
+"sha256": "b3184074b45540769e1e412c5f3c963b8c378c66882e539125893f240a4cda31"
+},
+{
+"path": "game/voice/mort/68bd47bad700.mp3",
+"bytes": 24452,
+"sha256": "9669057b3bdcc2dd28722cd9e0cdcd663d8682e320d0712eb7704aca276a75e5"
+},
+{
+"path": "game/voice/mort/6d5fee7bb147.mp3",
+"bytes": 92463,
+"sha256": "bb0455b3087d696d9c1744cc039e58597a3c8082a077e224b5771b93fef5dfab"
+},
+{
+"path": "game/voice/mort/777a93cd6639.mp3",
+"bytes": 33054,
+"sha256": "d47d81b01cb8ef7e5b85274c5a7c2c04381ab3769d3193600a6cc5bad83b275c"
+},
+{
+"path": "game/voice/mort/7c7068ed1b6a.mp3",
+"bytes": 41311,
+"sha256": "8d85080f7f30e0bf6251e71ead4d87072168f9a0ba86f600cc73d969616f0e0c"
+},
+{
+"path": "game/voice/mort/7fe4f1c0cdc7.mp3",
+"bytes": 47327,
+"sha256": "f815a47701663c21456fdc2c3a2296be53ee0b47f36895a53df598a436152926"
+},
+{
+"path": "game/voice/mort/801502523f4e.mp3",
+"bytes": 67106,
+"sha256": "850ceea729f81978fa30742a6c3df7c609c54c952571765a7aa6a731449fd445"
+},
+{
+"path": "game/voice/mort/8b5b6bcafc9c.mp3",
+"bytes": 82448,
+"sha256": "36557bdec8ac04d7f88a2b893d89f4d463745db901e3f84f65f6f3f71b4720e9"
+},
+{
+"path": "game/voice/mort/8c35751652bf.mp3",
+"bytes": 30840,
+"sha256": "2178a31934f341567cf16d2f1991237fbfe3256ce711819cb1f0cbbca0c933fa"
+},
+{
+"path": "game/voice/mort/979b18614708.mp3",
+"bytes": 34074,
+"sha256": "8fbbebc2e71c6e5da00376cf1c31b23ec45d632e53414b9235add4139fba56ff"
+},
+{
+"path": "game/voice/mort/9ea0dce88950.mp3",
+"bytes": 23824,
+"sha256": "fcf0a9b8ff2c6291f0f79928988ac543a92dafc1b882887dfd7a2d71544fd6b0"
+},
+{
+"path": "game/voice/mort/a8b1cc5ab9b7.mp3",
+"bytes": 95774,
+"sha256": "4d0e5df3926a019dda2e5138f2bd35955ab49d1bab6da8d525db829a2bb2d285"
+},
+{
+"path": "game/voice/mort/b3c77fc3a556.mp3",
+"bytes": 79839,
+"sha256": "36d9e4180308bf94b50668133ad19b6263253375174f1027f96c38f9713937f6"
+},
+{
+"path": "game/voice/mort/b8f4d9584d75.mp3",
+"bytes": 27930,
+"sha256": "e0b7aa8e1678b677376747c4d895a74234d98c5ea26c377cd08a9986d6aee97b"
+},
+{
+"path": "game/voice/mort/ba299fe995b9.mp3",
+"bytes": 60119,
+"sha256": "d50e40b67dcb17087606e1cf72718a4bc32d4549ad1386fb7b9530a804180b1d"
+},
+{
+"path": "game/voice/mort/c1a04a1cad50.mp3",
+"bytes": 19728,
+"sha256": "15579d6baea16da61cebb9ff93ec810ad9aeef0e7d3e134f2bab987f89b267e0"
+},
+{
+"path": "game/voice/mort/c5b93f37878b.mp3",
+"bytes": 26465,
+"sha256": "fe7aa60a230e5e462df9a96ffbf8d8d3d72bf05cec14cd05e882f0220e0dc841"
+},
+{
+"path": "game/voice/mort/c619da985fbb.mp3",
+"bytes": 91788,
+"sha256": "e2b276983e843b3da62be053d390b15cdbe58717dfc95df7d1a16206b5294755"
+},
+{
+"path": "game/voice/mort/c9d53746ee19.mp3",
+"bytes": 48275,
+"sha256": "23e52ecc8e2949356ff797da06cd15ac67cff4bb0e787beaaed88ead7f169bad"
+},
+{
+"path": "game/voice/mort/cb89c0f80b6b.mp3",
+"bytes": 41805,
+"sha256": "b205dca164598e4e631526c552e04af98f02320f056cdb51e86225acf473f528"
+},
+{
+"path": "game/voice/mort/cfea65a26862.mp3",
+"bytes": 65777,
+"sha256": "c2ff4904c2231407b86e8535a0204078ebc6bfe800bfd8147f6042d764553a0c"
+},
+{
+"path": "game/voice/mort/d6eac989735a.mp3",
+"bytes": 44751,
+"sha256": "30aaf04f16176e5ce7eeed1bcc3115359332fa2640d31e95e419df8b630d2661"
+},
+{
+"path": "game/voice/mort/d8e353ed4c5e.mp3",
+"bytes": 55526,
+"sha256": "f76118748c22161aad9aa13d09963e26640a8e1c60637d6c13dd80e148114958"
+},
+{
+"path": "game/voice/mort/da7f4910819f.mp3",
+"bytes": 29083,
+"sha256": "5efd2daa5104043c4cb595baa04bfc0a957d0e3409b41e17a526a0f8e7e8d890"
+},
+{
+"path": "game/voice/mort/dcbbe849dc15.mp3",
+"bytes": 94965,
+"sha256": "6633ca4894f8b54f1c95906bda4e7b0bb7db9dc94074dda082de3bd9a3662d8f"
+},
+{
+"path": "game/voice/mort/e66e414ca3b4.mp3",
+"bytes": 67785,
+"sha256": "f3388219a42719aaedb9f71e6600621f0cc6b7c0206a94e5763f0b785cac1d4e"
+},
+{
+"path": "game/voice/mort/f465e2fe35b5.mp3",
+"bytes": 45049,
+"sha256": "d5e9e06343f6d9577f497a8f607201afbed631d204ceddf48b661162f233abf6"
+},
+{
+"path": "game/voice/painter/0175db1a9eca.mp3",
+"bytes": 50355,
+"sha256": "515c8aa02930c291ab262ad53f52b2f779788a9234c348eb2e75f70d726c91b2"
+},
+{
+"path": "game/voice/painter/05ea191ab094.mp3",
+"bytes": 66527,
+"sha256": "43462f19a375ba1821bcea9c6c1ad0c7b34569e85d3eb34c572bcc92233018ba"
+},
+{
+"path": "game/voice/painter/08191df90020.mp3",
+"bytes": 55318,
+"sha256": "7cc9c214617b35778da6a20ace894c5490df6bed59a5b9c891ad4552d7bc4d00"
+},
+{
+"path": "game/voice/painter/0e3dfe145d84.mp3",
+"bytes": 66256,
+"sha256": "405463a6d8bfee760cdb46c450a6349bf70e4f00f3487e072dac434b48baf1e7"
+},
+{
+"path": "game/voice/painter/15bc8c561938.mp3",
+"bytes": 66063,
+"sha256": "cf197048f6f388679f74e56c9a39c479f5986b2600e2bf1eff9fa4fd0ca4dc13"
+},
+{
+"path": "game/voice/painter/177130ed6f2f.mp3",
+"bytes": 78807,
+"sha256": "6b5191c4c27da81dcce8701b927bf982a0d2ef8a0cba756c396645c25baa4352"
+},
+{
+"path": "game/voice/painter/190140181022.mp3",
+"bytes": 8008,
+"sha256": "96148fe614aaa64bf379822ae3edf763884601db1eb9015d7a342cb6bb0a03d8"
+},
+{
+"path": "game/voice/painter/1aa75a45aa0a.mp3",
+"bytes": 59813,
+"sha256": "44b5ccab847f2c47cdd07631c4e6f7b47d44c8edf2fce66cdef4f87d3e0a5751"
+},
+{
+"path": "game/voice/painter/1c662206d187.mp3",
+"bytes": 71171,
+"sha256": "fd61dbe269dff93a4fd40bbba4e15da32cd9d0e10c5e480d8acfa37e30e7f34a"
+},
+{
+"path": "game/voice/painter/3068ba1ac5cf.mp3",
+"bytes": 47543,
+"sha256": "a1813860974458e52c3d76db56299dd500ae7d1a5dbd96be38e4c26ed526b92b"
+},
+{
+"path": "game/voice/painter/31681a5b50f3.mp3",
+"bytes": 67333,
+"sha256": "3c8bd55c044ce273e3192201f3c09244f083a6768a493b5eb228294bc6766a52"
+},
+{
+"path": "game/voice/painter/39f75c697ee1.mp3",
+"bytes": 83333,
+"sha256": "298206b26791886377e3528be1962e97b952bfb65b4b264107852615065e89f4"
+},
+{
+"path": "game/voice/painter/3ef458c041b0.mp3",
+"bytes": 58338,
+"sha256": "0253efedd24d6941bd6442709aa34c753139ee729bb81e4be0941a60e39527b1"
+},
+{
+"path": "game/voice/painter/444533b0489f.mp3",
+"bytes": 36901,
+"sha256": "1e2001d667f458a57d1515f611fedc6024c2896e6b19f2316010d2168aa6302a"
+},
+{
+"path": "game/voice/painter/48822fab9697.mp3",
+"bytes": 63194,
+"sha256": "8b7e200a2e59057085f9307486e5218228bf24dbe33807754eaf105379cea70b"
+},
+{
+"path": "game/voice/painter/49331578fe34.mp3",
+"bytes": 78675,
+"sha256": "a9ca4258dc32aec0703fbc3d5e78010cc9eaefc7438c3ff272f6d506a211b2cb"
+},
+{
+"path": "game/voice/painter/49ca4ce03f8f.mp3",
+"bytes": 51305,
+"sha256": "38b45cf2d4a29c4c2b6be37f161a4fa8d1c0bcacecc2dd37df5b55c6c0468290"
+},
+{
+"path": "game/voice/painter/4bd74ede0466.mp3",
+"bytes": 55567,
+"sha256": "4a9f2de5a756eaa4055b28ff11d7d8e67992903fdb674a36da662fbb2f79b7e0"
+},
+{
+"path": "game/voice/painter/4f2afefd54e4.mp3",
+"bytes": 77115,
+"sha256": "ac1222bb043627b46e5c0f9c9adf4349d37ad4a5ff2f06b8323fffd8aa0949ee"
+},
+{
+"path": "game/voice/painter/51899c399731.mp3",
+"bytes": 41650,
+"sha256": "abc7320ed46c3d35fbcabf5487b5a912864bec0527d2fa0d28e8271eeb984a92"
+},
+{
+"path": "game/voice/painter/5edb855ad606.mp3",
+"bytes": 98369,
+"sha256": "55cca2baa069f52b2ab22b4f1ba1b2ae82b2a8a868d26dc340b65add0f0ac065"
+},
+{
+"path": "game/voice/painter/61752c0301ee.mp3",
+"bytes": 64104,
+"sha256": "bec4a3fb7b470fe6894432c23f1240ddb67040cc4540529f6c5949e056e62f62"
+},
+{
+"path": "game/voice/painter/658ddda48707.mp3",
+"bytes": 35388,
+"sha256": "19b6843c71b0ff5fc3b78fe98a4709ea316c697e2daba4d5a2284f6f12870471"
+},
+{
+"path": "game/voice/painter/6a2e5ae2f1da.mp3",
+"bytes": 68656,
+"sha256": "cb8e1ae6897985e21008f4f09f1184de18673eca26aaaf3d49db67038c406b36"
+},
+{
+"path": "game/voice/painter/6c08194387d3.mp3",
+"bytes": 46837,
+"sha256": "15b7d417f9415965deefa335fd30fbcee492310924f6889f96e39a8012cfe9be"
+},
+{
+"path": "game/voice/painter/7665a3403fc5.mp3",
+"bytes": 27380,
+"sha256": "cdb01b6d262f72bb7eb38129273a3f05df0dda7aa36416956aecb201d66e0aec"
+},
+{
+"path": "game/voice/painter/7a2d2e084b62.mp3",
+"bytes": 27361,
+"sha256": "648f0869b2df404347f895a70833e49e8293d24d2b824c3be0ba0307881374e9"
+},
+{
+"path": "game/voice/painter/7aba8a6827d8.mp3",
+"bytes": 54110,
+"sha256": "527d6edeabd42fc7ed401a140ab287c4922959feb0342a9b411b2aba4e563161"
+},
+{
+"path": "game/voice/painter/83ea4a02b1b4.mp3",
+"bytes": 71427,
+"sha256": "1223088d91a0280a11c4cec90585fd21add0f1feca39a2a7ffd6ed7f8bb443d2"
+},
+{
+"path": "game/voice/painter/8790c3fc3d2c.mp3",
+"bytes": 89110,
+"sha256": "46157b80ee627daf5efe2ff56ac5456bf2abf98a21a0526c6b22dc7baf142142"
+},
+{
+"path": "game/voice/painter/8b507b2c36b4.mp3",
+"bytes": 76387,
+"sha256": "21b328808eb3aeac76999e81d8933c0408100ea4ad22a43e103fef8fbbb863dd"
+},
+{
+"path": "game/voice/painter/8dff1c1d8758.mp3",
+"bytes": 24384,
+"sha256": "bcbb4272aa137dd4ed49fece795dcc7ac364b0d996b8647fbafe7ce41a6ef851"
+},
+{
+"path": "game/voice/painter/8f5276f3c735.mp3",
+"bytes": 62844,
+"sha256": "75720f9740871838e551d856f46d669aefe396cf9ce99a6e23bd84147f1f2115"
+},
+{
+"path": "game/voice/painter/9f360aecab20.mp3",
+"bytes": 107091,
+"sha256": "fde7ddd2bd13dbdb88136f386e4182c242d04e1f0f154ccad2b1ad35269fd98c"
+},
+{
+"path": "game/voice/painter/a08ed712f69c.mp3",
+"bytes": 15203,
+"sha256": "f61d269573fb9aaca656d03fc5a43be898f9af3cb214d2ddf8e7afe9b1ae188b"
+},
+{
+"path": "game/voice/painter/a1205729a62e.mp3",
+"bytes": 83600,
+"sha256": "030c45219e5d5fdb202c317796968b2f9bf00f2c2b0618b2420cfce778f904eb"
+},
+{
+"path": "game/voice/painter/a1760ee87998.mp3",
+"bytes": 41227,
+"sha256": "d1709e07efa9659437d87635ac29fe309cfcc264cf8889311cc7d61bdb9bf70d"
+},
+{
+"path": "game/voice/painter/a35d460d0aa3.mp3",
+"bytes": 17732,
+"sha256": "cbd38dea0271ba795c6b29a40358dc0f5c10f260bc8e7c9aab33f75ec330a219"
+},
+{
+"path": "game/voice/painter/a4440566d57b.mp3",
+"bytes": 49206,
+"sha256": "6931913701a00ebe3d4bc3c50d3a864ff3753262f4fe2054ed5355c73b0ccdf4"
+},
+{
+"path": "game/voice/painter/a68260ae5d5c.mp3",
+"bytes": 51554,
+"sha256": "6c550a921320033b48637404b7cab33a76b04859d9f7091b51b5262bd607063d"
+},
+{
+"path": "game/voice/painter/b22f3c709cd5.mp3",
+"bytes": 76540,
+"sha256": "77efd955a2976764de1d763dfb887c56a2f1b3f4fd5c9183d0a3722749f6b705"
+},
+{
+"path": "game/voice/painter/b738cee8e4fa.mp3",
+"bytes": 34818,
+"sha256": "4611828dd5af34dd243e36f7766cdaf1912ab1c48fac90316c52a6340f36d9c1"
+},
+{
+"path": "game/voice/painter/bb33d497762d.mp3",
+"bytes": 71502,
+"sha256": "0a37a8dd159f68d216b1cd56619795642fcab05d8bb1e0b69867417b1bedb5c8"
+},
+{
+"path": "game/voice/painter/be176b89311a.mp3",
+"bytes": 92499,
+"sha256": "6b0709acb841fa3e652b0e8e01dfac2ed251e507f4f219f527e8ae81c9f81236"
+},
+{
+"path": "game/voice/painter/c308fa81f0d5.mp3",
+"bytes": 57067,
+"sha256": "f39047285396d71bbbaa787f9c9fbca5a7f0abee6698e3a24ef8d02465642f33"
+},
+{
+"path": "game/voice/painter/c930a1786e8c.mp3",
+"bytes": 24960,
+"sha256": "7466483d53ec73e4bad860650e1c4eaf4728c4f822adadad0eda7f113f9c5973"
+},
+{
+"path": "game/voice/painter/cbce9940b465.mp3",
+"bytes": 57972,
+"sha256": "1386dd467ee3854abd4c65ff47998b187357a568dab2724c3719174ef838f145"
+},
+{
+"path": "game/voice/painter/cecdf47520d5.mp3",
+"bytes": 86579,
+"sha256": "077cbc3d3cd89ccc28bcc549be22141c52878e81414fd5b4bf146e324ac64bbd"
+},
+{
+"path": "game/voice/painter/d643eef2f859.mp3",
+"bytes": 79248,
+"sha256": "c2878eecd601e2dceb3cb8a70a176876cc5dfb4adfd10dbe41c37365b2697a48"
+},
+{
+"path": "game/voice/painter/dbaca7abb2f1.mp3",
+"bytes": 33189,
+"sha256": "5803b21a3264264f9c95b10b4e5dc7aebc03791d230b0dff52c94d5d27a6e659"
+},
+{
+"path": "game/voice/painter/e6261e74f6ad.mp3",
+"bytes": 77875,
+"sha256": "d4121823db15f742e08c05597d12e37465665cc374e0b63c9d309b8c6bf9326e"
+},
+{
+"path": "game/voice/painter/e702adc6e0b6.mp3",
+"bytes": 59531,
+"sha256": "515d9390084b207753984e9d0da87779985c7b6bcf483ffca4e7157a33917daa"
+},
+{
+"path": "game/voice/painter/e7ab30f3d9e6.mp3",
+"bytes": 85956,
+"sha256": "0c63f860625e9bf7671b43f82dc03cfd5be3c84ec15a35d0530a69333717b4b1"
+},
+{
+"path": "game/voice/painter/f1f13b7a980a.mp3",
+"bytes": 47207,
+"sha256": "938a64a423f0272ceb77a3b9afa9b5e61a7320396a278f91ab55b8133ada1ded"
+},
+{
+"path": "games/.keep",
+"bytes": 0,
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+},
+{
+"path": "scumm/audio_cache/017eb3f19cf540882521.pcmz",
+"bytes": 116562,
+"sha256": "78e5d8ac1f313b6e4c199c2cd90e3a15935c2675edde3adbfc001a7664a81b7a"
+},
+{
+"path": "scumm/audio_cache/01a0e03fe38129df553f.pcmz",
+"bytes": 208622,
+"sha256": "fb02cff2efa5fd3121392dcc9d90c0d2f817c06f636360d83f81d26bec942a1f"
+},
+{
+"path": "scumm/audio_cache/01f8d33918c1ec16713e.pcmz",
+"bytes": 109970,
+"sha256": "02dd520e6d036115140279b15c0f70346caccaf8492d88479bf2c19b1e0d6c61"
+},
+{
+"path": "scumm/audio_cache/03babc72a8b2b47ed6ae.pcmz",
+"bytes": 153750,
+"sha256": "4859786d5f91d2f0b547603c14643a8e2e1ae0379db00622340ed02655fc82c1"
+},
+{
+"path": "scumm/audio_cache/05a61046683cd1f03224.pcmz",
+"bytes": 197998,
+"sha256": "a7425f62d52b1d85bde85ff3ff90fabe5195450793701b29ef9d9255a6a99609"
+},
+{
+"path": "scumm/audio_cache/07fe926b82c972de7f2d.pcmz",
+"bytes": 168326,
+"sha256": "8f8f55f013b3bdde8a82a5dbbb789c6d06f71c3bb5dd2f0902f16066f55edeae"
+},
+{
+"path": "scumm/audio_cache/08e4da774b8895018166.pcmz",
+"bytes": 148058,
+"sha256": "0408ad64d49f9875b0e2a2ddc87473b501de02454aa516f146d6513dc409f966"
+},
+{
+"path": "scumm/audio_cache/0b033827a171bf40d84f.pcmz",
+"bytes": 171018,
+"sha256": "d9aed6f8b8b262d18d1e9a84876541ddd7eec930005a492895f5a574c47a05c9"
+},
+{
+"path": "scumm/audio_cache/0b41ebd3b55edf0ad07e.pcmz",
+"bytes": 112942,
+"sha256": "4aba6dea3365fb7155e30236e8d9b8e6701821495675d363a82f67f36e066cb2"
+},
+{
+"path": "scumm/audio_cache/0d6f6e46a604b5f3f789.pcmz",
+"bytes": 153506,
+"sha256": "13fe8db3fd8ace311326bb22bfa5fc51255eac1c6714a95194e4dd85f50789cb"
+},
+{
+"path": "scumm/audio_cache/0f5b6611cdfa9e43ede3.pcmz",
+"bytes": 6418,
+"sha256": "aa09f664dcd7ed7d6dd5e7458cd4bac52713126a5ba6ce535e1e4b42cb8175be"
+},
+{
+"path": "scumm/audio_cache/1088a18725f03a928a16.pcmz",
+"bytes": 2547254,
+"sha256": "333300d3da82af3b9ae8186a225d48272ac5c858a0033f221e49f76f62e1f316"
+},
+{
+"path": "scumm/audio_cache/1158850259a0a4c3a14e.pcmz",
+"bytes": 124886,
+"sha256": "6004a1d7c7c0ee02dec4e60b0b786325fcf13378142c2348c5def1c16d82d83b"
+},
+{
+"path": "scumm/audio_cache/11a5faa5d273d22218da.pcmz",
+"bytes": 123126,
+"sha256": "2b3771699096f611523fe671ecd36b2e5015fb8ac1ef243b032f7f9050173262"
+},
+{
+"path": "scumm/audio_cache/128dacaebf1ac7ccd203.pcmz",
+"bytes": 73930,
+"sha256": "964e832af250da39d01bbb917510f4c89d43281ef77544ac1b7d3f040e2fd20e"
+},
+{
+"path": "scumm/audio_cache/13939e1ebbcdec4e9acf.pcmz",
+"bytes": 142354,
+"sha256": "45af63bf49b02ea6eeef021322c253227ba3bf1e02dfd24124e95b284a2aef01"
+},
+{
+"path": "scumm/audio_cache/1633d2de977ea76c84a8.pcmz",
+"bytes": 97574,
+"sha256": "8a1ca9a34962179b9f4d1f9163701d6a504d54dec7ff6320cdfd1950fc0b9ab1"
+},
+{
+"path": "scumm/audio_cache/173bc66a007751ad3aca.pcmz",
+"bytes": 200922,
+"sha256": "2806874b1014488d4bde9ffff3abb7a585c5999fa98e3f2e80ad6eb268b9deaa"
+},
+{
+"path": "scumm/audio_cache/193b6f269dca374c6cf0.pcmz",
+"bytes": 76330,
+"sha256": "8e9750763cdebbf2dd22a9d1f8c42b06f3e794f76a463b44c52aa199fcec5677"
+},
+{
+"path": "scumm/audio_cache/193de8702c405eedd4e5.pcmz",
+"bytes": 187146,
+"sha256": "dc98161355012f25a2bb9ee67e2175b51e8ce142183a637b18e122abcc8b4e0b"
+},
+{
+"path": "scumm/audio_cache/1973c40d1f429a0b5da5.pcmz",
+"bytes": 13310,
+"sha256": "f1924184a989855affd77b8ab99d4f93e00963ebc8baf70fdf57358c1a03e97c"
+},
+{
+"path": "scumm/audio_cache/1b9c2bbcd4879626f40c.pcmz",
+"bytes": 123478,
+"sha256": "c7e9bd545ed7b19a3d9ef8f4c13ca8919b7e37633036e04fc9261c368f366531"
+},
+{
+"path": "scumm/audio_cache/1c1e5f87c56a47ba7f81.pcmz",
+"bytes": 73102,
+"sha256": "f84ff2785898f7af1f689763d7d55c0533810b93b448d3424356dcb11cfcb368"
+},
+{
+"path": "scumm/audio_cache/1c7362a516318c3868d5.pcmz",
+"bytes": 149590,
+"sha256": "13637feb38dd1fcd95072e7a4c34978dfe52300ea18ee9bd323006769a64f3b5"
+},
+{
+"path": "scumm/audio_cache/1e738c34e6431f5ee9fd.pcmz",
+"bytes": 171298,
+"sha256": "a97f434e677216b51f861bebe87d0dc2ba446be7fe5e4f2b6bdd36a30760a591"
+},
+{
+"path": "scumm/audio_cache/1f2364cf132bcef1600f.pcmz",
+"bytes": 95410,
+"sha256": "a680a0664f5e331965dc62ba0ac9fb8aec7b3cb17c6f73583072ef7aba8e9e88"
+},
+{
+"path": "scumm/audio_cache/20aa5bd5fd3442022e7a.pcmz",
+"bytes": 115214,
+"sha256": "c56f7dbc653373ff1bd519eeb7e31c56c09a097e23e179f8f0a78d7cab63e43e"
+},
+{
+"path": "scumm/audio_cache/21c8010c82c232ddfbc5.pcmz",
+"bytes": 21050,
+"sha256": "41db6bc0eb8d7d7e02351370686d94e8bc8d0af65dc15c570065343a55e49999"
+},
+{
+"path": "scumm/audio_cache/22ed0c1e9a2057fe37ad.pcmz",
+"bytes": 112270,
+"sha256": "c073b75bc3b7dbfcf602c59b15bd1f1b76fcb334b24886870340ab652e069e28"
+},
+{
+"path": "scumm/audio_cache/232be71e8909285720f9.pcmz",
+"bytes": 18014,
+"sha256": "f0e538f49827ea8700a638fd869c2b0fa666ccfc193a6925840742bd2887d254"
+},
+{
+"path": "scumm/audio_cache/24744e3c2fa94bd6cf74.pcmz",
+"bytes": 122522,
+"sha256": "e61df617e532c5daff9bd65e71f129152d6a5738276e5d5376438e61896bd21a"
+},
+{
+"path": "scumm/audio_cache/25129b437dfa44b5fa01.pcmz",
+"bytes": 187666,
+"sha256": "ee5cf5cc16f2723ee9c64d46d39e1080a0a7100d68e2b52955348f2d17ef26b3"
+},
+{
+"path": "scumm/audio_cache/2682704540d5e927505b.pcmz",
+"bytes": 191350,
+"sha256": "4c3d4c43af68222590993d92110711ca44e9d1e885563f1036dc9dfb05ca5f90"
+},
+{
+"path": "scumm/audio_cache/27bae5e92aea1ff16004.pcmz",
+"bytes": 60930,
+"sha256": "a265ccf078ec36ad0c19244b561a9a9685eaebe18ff882864fe0b3c8cdca383f"
+},
+{
+"path": "scumm/audio_cache/28c907da029dbd544d7f.pcmz",
+"bytes": 133498,
+"sha256": "8a0ea72c73ae52c0aed33a7df1e75d8e50335b58dbd82509032767dbe94c5c03"
+},
+{
+"path": "scumm/audio_cache/28fe809057409671dcf1.pcmz",
+"bytes": 65094,
+"sha256": "e1a35c169510d6a29a8b46b4e284edcbbd697f3cf2a3657dbd673cc3c6e5c203"
+},
+{
+"path": "scumm/audio_cache/2b9b16b1306f6ca856c9.pcmz",
+"bytes": 86474,
+"sha256": "6a1cb7851baaef612e1b67fa1749f1b6166902bd6dbaef149aa2c4c10aa419a8"
+},
+{
+"path": "scumm/audio_cache/2c096b43462362fe91d6.pcmz",
+"bytes": 134918,
+"sha256": "6f185b8b037cd6ef20ceb00ad95f943b56a1964447f03ac140c52119f4cf82c7"
+},
+{
+"path": "scumm/audio_cache/2d6244693eac29928e33.pcmz",
+"bytes": 34630,
+"sha256": "16d175ebd4883d00074dcc83eea105f5dc9b63028e75b1b15b56ca02f574967e"
+},
+{
+"path": "scumm/audio_cache/2e6347ef6af9c4cdee4c.pcmz",
+"bytes": 95478,
+"sha256": "e013e6cc257f04ef61cb62c035525c9fb293d3466bcdb7ea347b217d13c63b3d"
+},
+{
+"path": "scumm/audio_cache/2ec279050f5055733373.pcmz",
+"bytes": 113518,
+"sha256": "0c9974d1893964ea74d00f418742b40d1e14febd30ffea1eab72de2551cc81e5"
+},
+{
+"path": "scumm/audio_cache/2eea704c2c9861314155.pcmz",
+"bytes": 112822,
+"sha256": "b70458ebb7cb7aa91cbc1caa58018a7ffb2afcf3e652d3e2847e540a0454392f"
+},
+{
+"path": "scumm/audio_cache/2ef3f71d0b88e6e90e17.pcmz",
+"bytes": 186650,
+"sha256": "5a0e4e6f40295108d726d859ba5cc6f702e9fb597b942e2825701d7dd4ff9eae"
+},
+{
+"path": "scumm/audio_cache/2f54dec8b1c459f181c3.pcmz",
+"bytes": 58422,
+"sha256": "a8f0f92ba200320be3e7679f7e88551ad225a7326c726c362b7efd2980ba119b"
+},
+{
+"path": "scumm/audio_cache/31dde2252081b4059459.pcmz",
+"bytes": 146806,
+"sha256": "d67ee05ee69776e5e638a5c4b14ac5d7fb4003e81b94558e49d431dd1bbd876e"
+},
+{
+"path": "scumm/audio_cache/31fe9377076694103da8.pcmz",
+"bytes": 77978,
+"sha256": "fa08ecc81fbfac6a09632b19a787549b47c41e672dbac4091fd1521fc6d21d8e"
+},
+{
+"path": "scumm/audio_cache/327616e153718961166e.pcmz",
+"bytes": 40454,
+"sha256": "11a43f73a363b4dee3ad63e98b288ebe7f233b0c54f6391792ebfa0f0b3d74c9"
+},
+{
+"path": "scumm/audio_cache/342848d10f2570bd7b00.pcmz",
+"bytes": 76714,
+"sha256": "9902da565f77a318315fc43479fe4508d45c645fbec646be311fd801c583678b"
+},
+{
+"path": "scumm/audio_cache/346569988bf2e93a5754.pcmz",
+"bytes": 22722,
+"sha256": "0f35f72ca22515273e7ee191c3ea0504fedcb907d2c0e2c10c309931dd72b507"
+},
+{
+"path": "scumm/audio_cache/34a5d0d401e5c1e22904.pcmz",
+"bytes": 51058,
+"sha256": "c1ab0e4cfc5bb44d79301aba0fb0edbf3faa3246477f5f19aaee349e476ea790"
+},
+{
+"path": "scumm/audio_cache/3572bf6647e3d6fc5b8d.pcmz",
+"bytes": 10342,
+"sha256": "dbc7fa08230ac15a008cf4d9fece96caf3075b054dec0c4f5b37fb922f3f8092"
+},
+{
+"path": "scumm/audio_cache/35a8df0f8c86432f25ba.pcmz",
+"bytes": 169258,
+"sha256": "2ee89d243547c02505ede6e2236feec0ef5e724de28ac02ed495dc8e97b5ab95"
+},
+{
+"path": "scumm/audio_cache/371c49f5926307c227f4.pcmz",
+"bytes": 188510,
+"sha256": "5c9e85b3f0ba8bc9c8fcbe65578bb91dc1c85e0c17afd3124790430b75a93d53"
+},
+{
+"path": "scumm/audio_cache/37202cf74a486a72ac02.pcmz",
+"bytes": 64502,
+"sha256": "f58cdb5cac2d63c3ab0b97efb70e244c3fdb0409f33b310d7094a3f1ca9cd5c8"
+},
+{
+"path": "scumm/audio_cache/37aaabb076ef7c95d766.pcmz",
+"bytes": 174318,
+"sha256": "3c575498353a7e63bab13ef2042e9e987ee3544011aef8a5cec220153009dc58"
+},
+{
+"path": "scumm/audio_cache/3811cb563bc92ff65cfb.pcmz",
+"bytes": 190538,
+"sha256": "320d3ad8301e511205acf854744dd832fe1b67cd0135f516363ab481d273cad6"
+},
+{
+"path": "scumm/audio_cache/3c1fa4548f7dbec273b5.pcmz",
+"bytes": 93382,
+"sha256": "1e12abc89b67b551e0118a21a02d444588f02bfa5b3106878ded977593d69ecf"
+},
+{
+"path": "scumm/audio_cache/403cbfa400d09f719d6c.pcmz",
+"bytes": 40634,
+"sha256": "8ba306354629b977bd24a531f594f7b209af34f314675e2d3203cf503bbb4b60"
+},
+{
+"path": "scumm/audio_cache/408960f8863b67cdd5ea.pcmz",
+"bytes": 34778,
+"sha256": "14ef637fd0db42445c26acb3175bd17cbad8995a4868dba17679dda125470c89"
+},
+{
+"path": "scumm/audio_cache/4095247578aac23b7cab.pcmz",
+"bytes": 64930,
+"sha256": "5c99cbee4697eb83c0f4a73045dae54052e80aee274e850eac9b6ac48a933993"
+},
+{
+"path": "scumm/audio_cache/42f16b71abff71d3fc76.pcmz",
+"bytes": 123898,
+"sha256": "c1549d68f90a04845c131cccd0529cdcfe552360a4d9e32615146edb7d886caa"
+},
+{
+"path": "scumm/audio_cache/44234fcce0e8a1d2eb00.pcmz",
+"bytes": 110262,
+"sha256": "79c5f09379604ee0333a1af98ed6ef1f7062d94dc205bf1f26013667bf0513d0"
+},
+{
+"path": "scumm/audio_cache/45923e15d7aec5dd1b43.pcmz",
+"bytes": 9998,
+"sha256": "dd5bdfd83468aaeb45c9291c72b6d9308f00dc4f76d2af60d28e51624a9f5ec6"
+},
+{
+"path": "scumm/audio_cache/49c848b722a86910c1b5.pcmz",
+"bytes": 83190,
+"sha256": "60f40b8acfe55b15574c37817c3d1abcf76340c86baf48d10a8672502c112712"
+},
+{
+"path": "scumm/audio_cache/4a5f242ae50ad2416c36.pcmz",
+"bytes": 97230,
+"sha256": "d9efc7a02df36af9c0951ebe42f41daca23615195a7804049a476bcbfad55656"
+},
+{
+"path": "scumm/audio_cache/4ac16baa9b819c0efdb1.pcmz",
+"bytes": 17154,
+"sha256": "f8d5782dcfb7768403a22d92b44cb37c14f54ad42cd9a8ac565bc36b723ebd74"
+},
+{
+"path": "scumm/audio_cache/4c07759c91ddf774c373.pcmz",
+"bytes": 55302,
+"sha256": "37c39d857f2722f0895c8115a7b79966a5850b46d4c0f6edd0bd8480c891dc80"
+},
+{
+"path": "scumm/audio_cache/4c4ab65a0c8f05756be1.pcmz",
+"bytes": 128782,
+"sha256": "2dbe866741f738feb0d9fa07b59ac94b5bdbff4fd835e4c9066283dc4cfb93bc"
+},
+{
+"path": "scumm/audio_cache/4d0372cf817406240455.pcmz",
+"bytes": 2753810,
+"sha256": "6a44c676c332c13ff5b329e75deac51eb35d84aa83802375447a5786bff50f73"
+},
+{
+"path": "scumm/audio_cache/4dc17b674fe47691f46e.pcmz",
+"bytes": 201194,
+"sha256": "a14e2f7c4ca181a41e9c4492e184f1421a779d269150c9a3784735afa8a63d38"
+},
+{
+"path": "scumm/audio_cache/4eb1b8c9ec546a62feec.pcmz",
+"bytes": 183878,
+"sha256": "60a7e48ba8b2b05eaaefd9000c1a73144eb64c03b0ea5ba2f5d245707e0ce4f4"
+},
+{
+"path": "scumm/audio_cache/4f0ebd07512e72b3e3b6.pcmz",
+"bytes": 22846,
+"sha256": "9c6363777f249d2e2793b6e3810acc1a0c04d76b2ba3d169755a0b59ea10b0c8"
+},
+{
+"path": "scumm/audio_cache/5079396a7bb4638873ab.pcmz",
+"bytes": 31726,
+"sha256": "38b095f06fdcea797c62fc9d9547908ae8b9683d892f043d14d984ed5b47d771"
+},
+{
+"path": "scumm/audio_cache/50c7d802aa8f6d24177a.pcmz",
+"bytes": 120910,
+"sha256": "b797f670651622bc296119158aaa196af4311536118db16d3bb4e128a3f10bf1"
+},
+{
+"path": "scumm/audio_cache/519d6eb749e6b0b368c1.pcmz",
+"bytes": 179266,
+"sha256": "316cb39265745cd54b6a8fae9d96c245823c67333d2915da662cee66faad37b8"
+},
+{
+"path": "scumm/audio_cache/52ee3cb87717db701c42.pcmz",
+"bytes": 167282,
+"sha256": "72fcba4f5064277a4b6e35d1a4987a769866df764fd98e211a3e4d914caf9a40"
+},
+{
+"path": "scumm/audio_cache/5334b1116b408a12fc69.pcmz",
+"bytes": 163254,
+"sha256": "f3f1458a82dff247e1e65121cafb1b84bbc3a521e6a3be008feb73cdac63f2f1"
+},
+{
+"path": "scumm/audio_cache/54fe9997137ff10b6dcd.pcmz",
+"bytes": 126494,
+"sha256": "6e17032d3122bc1dfcccdea87ea6c5dd73e52e2be2b07271740edfae7e1c05a9"
+},
+{
+"path": "scumm/audio_cache/57df7eaaac62606a18c3.pcmz",
+"bytes": 75806,
+"sha256": "b30df89d08821769550d37a104e659b656e105836ce62623364375f9e1590f40"
+},
+{
+"path": "scumm/audio_cache/588548831920f4f8ea49.pcmz",
+"bytes": 110226,
+"sha256": "bd2420347d6011c7ccba370ce68624e2f25dda81dab71cc61eaadd5a36216c40"
+},
+{
+"path": "scumm/audio_cache/5c12f7b23c61c6148933.pcmz",
+"bytes": 143282,
+"sha256": "7176518b6656047663b2a67a98878ef07839c17c2dcb798cc921f4ebbb78052f"
+},
+{
+"path": "scumm/audio_cache/5c8b44a4033314d4172b.pcmz",
+"bytes": 183858,
+"sha256": "deda303eb350300ac9a431bc6c0b656662afe30b879f9d228e60ee34188ba693"
+},
+{
+"path": "scumm/audio_cache/5e4ddd3c95327f731336.pcmz",
+"bytes": 110850,
+"sha256": "74c8f7882a7dfc28170eddd8dc6abd75dfe1e27bd3267cdc657935b02f29571e"
+},
+{
+"path": "scumm/audio_cache/5e87ff1c3c21986cb372.pcmz",
+"bytes": 112370,
+"sha256": "33c21d8a80c861ce634d767c972039639a35726b0692cc4861f51b79c65ab7ae"
+},
+{
+"path": "scumm/audio_cache/5ef9eab66a02584d085d.pcmz",
+"bytes": 57310,
+"sha256": "8f39eb53f6fb63f33f32e795f4197a2ce6618d6878f5c8846e4b82393f2ae563"
+},
+{
+"path": "scumm/audio_cache/5f25495d8dd3543d857a.pcmz",
+"bytes": 22074,
+"sha256": "8d54c8d0bbaa920a41c54819bb1fe75bc05765e54b2b7387ab17fdbe59fa01a4"
+},
+{
+"path": "scumm/audio_cache/605aba3fe1ee743ab657.pcmz",
+"bytes": 2968490,
+"sha256": "01fef28a9583b13e0f5cb810b4a5c406a1033d457bf22930a21c99be4abe9796"
+},
+{
+"path": "scumm/audio_cache/659208e9b9216b88bb5c.pcmz",
+"bytes": 34894,
+"sha256": "17f64b1927de7a8b68403b02ee57cad8653afa5a054f0e846fd51fcc04e785c9"
+},
+{
+"path": "scumm/audio_cache/65c8f72c3dec1220611d.pcmz",
+"bytes": 258570,
+"sha256": "48f0ef497b1d6e144dec5e6696af6992c37d34f0da8308473cea8c0a09c48cb0"
+},
+{
+"path": "scumm/audio_cache/6c61a76ebdb2de0690e9.pcmz",
+"bytes": 9010,
+"sha256": "90196ba56f2d6965003b1d3ee92cb7565b2e4ffef93c5fc42e3c4e255fc44b49"
+},
+{
+"path": "scumm/audio_cache/6ce92dbd1dc3f34f6190.pcmz",
+"bytes": 119954,
+"sha256": "fc3cf19b0fb316e0953dc3f4be2207aadb84dfe4c51e3c645a3876f2e147d23e"
+},
+{
+"path": "scumm/audio_cache/6d504ef781c3164d35e5.pcmz",
+"bytes": 24974,
+"sha256": "08bb1f3fa9a74d25e90d134e032af406338616f405c5f3c717f8433fc9ebd7f2"
+},
+{
+"path": "scumm/audio_cache/6e6c1e0139860f13d3af.pcmz",
+"bytes": 4234,
+"sha256": "5a2a13103e820f44651cfa01f591d44459c6255668889c4bb8985da0bec4b5ae"
+},
+{
+"path": "scumm/audio_cache/6fcb58f5557c280ac082.pcmz",
+"bytes": 143194,
+"sha256": "10b299d38b844fe1369a7633fb518703de406737b745d5e27b29fea11e1e5e64"
+},
+{
+"path": "scumm/audio_cache/7007d0c15dc566b9d677.pcmz",
+"bytes": 81646,
+"sha256": "cb8cb054aa29cde12dbc634d912d1c1cd6416692d8443017be6c4e2be06b8604"
+},
+{
+"path": "scumm/audio_cache/70221db87b878abe3192.pcmz",
+"bytes": 33374,
+"sha256": "440fb8713bba181d9b0201491d700355b16e13a2de1af66b18b726d85d5b7a02"
+},
+{
+"path": "scumm/audio_cache/71aa46d9fe1bf5f598c2.pcmz",
+"bytes": 156766,
+"sha256": "2c072888d29dda9b8936cb9ae6cb94a90860d955864d46006146b36875d103e5"
+},
+{
+"path": "scumm/audio_cache/723986f36b5768388735.pcmz",
+"bytes": 32798,
+"sha256": "e905b0feefc7ee1ae98a0ac1bd9a86f17479b12d38b9656e5775253fde4fa5b4"
+},
+{
+"path": "scumm/audio_cache/737ef70d9f64f2b1529f.pcmz",
+"bytes": 140550,
+"sha256": "4cb5df6092d433e4d7d9e4468081b5a10f8d801b2ef5c03549f119ef108ece36"
+},
+{
+"path": "scumm/audio_cache/73db328e6da1f2640ea7.pcmz",
+"bytes": 71998,
+"sha256": "9825242b69263391befd9f39e73053eb0ad2e2fe651be6e777ed17e2dacba4a0"
+},
+{
+"path": "scumm/audio_cache/748beb0d96b4cdc4c986.pcmz",
+"bytes": 166338,
+"sha256": "1e12d4472ad139838b47a3cbbe5e47ffd297eb118b758e6debe94aa5e993736b"
+},
+{
+"path": "scumm/audio_cache/762d1479d38d8b3f638a.pcmz",
+"bytes": 211942,
+"sha256": "1fafe19ba3e42f16351fe9142cb0ed4e58b3349a92c098aec604b7caf0229095"
+},
+{
+"path": "scumm/audio_cache/76d7bbc14677b21d77a7.pcmz",
+"bytes": 72298,
+"sha256": "089a4fdda3738bc9a248fae621e80f713fd26f29c061b7d5b8c6587c49c4afc7"
+},
+{
+"path": "scumm/audio_cache/7856dfb8ed8bfeb15d49.pcmz",
+"bytes": 125426,
+"sha256": "575dfadcbb68d8808234903828fb0dac4207d0e60a93dc02a57fb1969298561a"
+},
+{
+"path": "scumm/audio_cache/79077def6d23ba3e6adf.pcmz",
+"bytes": 254706,
+"sha256": "947b21210fb3fe6ef6b7f1cab1f2bb87e47e955c5cd5f1c4704b48eefb239d9c"
+},
+{
+"path": "scumm/audio_cache/7a506ab3c92d40030b9e.pcmz",
+"bytes": 20430,
+"sha256": "a9f81eb5600187a6820a5cb7ba3b7b1fc7e72df8c79f1b247dbf5bb7aabdeee0"
+},
+{
+"path": "scumm/audio_cache/7ad8a60d38fabdede5fc.pcmz",
+"bytes": 23878,
+"sha256": "b4189ebd2f2fece3a76be0569527757fe4d1ab94979360a12a9a7c4c1d428dac"
+},
+{
+"path": "scumm/audio_cache/7b6fa67f6ac8e2346ced.pcmz",
+"bytes": 213706,
+"sha256": "bf26f613551edc41cd46011d936c3dd77ebaa90a454f27d2f5245555362ce53d"
+},
+{
+"path": "scumm/audio_cache/7b8f010b02ed6c1c4a29.pcmz",
+"bytes": 61134,
+"sha256": "f2acfbdc6c9650c44ebbe468f5769fcadf15a270938d2b13183fe1be371be9e9"
+},
+{
+"path": "scumm/audio_cache/7c8d6ec993855000878e.pcmz",
+"bytes": 56498,
+"sha256": "56d8a34d90ce11e866c19eeaadf7d34f3458a4a8dcbace9e9bdf361fe66a420a"
+},
+{
+"path": "scumm/audio_cache/813ef518a608542d6a61.pcmz",
+"bytes": 44238,
+"sha256": "0fa8ae10d204bf2af9b0aebe572187afe7a939d1cad41d02902ca17728654272"
+},
+{
+"path": "scumm/audio_cache/819b2b83936d5f69b55e.pcmz",
+"bytes": 95438,
+"sha256": "836e9039ab52dae2f1bf6274a36b13c8ed7c8bde77f2760ab5e23d437122c730"
+},
+{
+"path": "scumm/audio_cache/81fba65f5c50dfc95a5d.pcmz",
+"bytes": 327122,
+"sha256": "01ffa6af90d30f7be0f62a8695f5407db58f270aba33a70699d9fce397abd834"
+},
+{
+"path": "scumm/audio_cache/83146db3d3d72548edb8.pcmz",
+"bytes": 99950,
+"sha256": "124c235e6ba0d149e80dd030834503baebf2d473757de0cd861b7d4e83f529ed"
+},
+{
+"path": "scumm/audio_cache/838b664e629e7f08c051.pcmz",
+"bytes": 147354,
+"sha256": "46e0ba346164ca63ece2572582845d87ce55e7cad178c0e42c213bec60bb607e"
+},
+{
+"path": "scumm/audio_cache/8521836be4c984a59cdf.pcmz",
+"bytes": 103406,
+"sha256": "707f683adc66583f9ab42756465ad29069741a0792bbb2ffae4fda4202582486"
+},
+{
+"path": "scumm/audio_cache/858d646d699de932339e.pcmz",
+"bytes": 74482,
+"sha256": "420f833561a9875b778f56ee2e9d1bfe117cb157c4ef52be35f61c2e3114ead2"
+},
+{
+"path": "scumm/audio_cache/876c7e9d32a73ea8f831.pcmz",
+"bytes": 110050,
+"sha256": "73683d232791dd99deceef15ed17b6b806360eb985ab4d33b01a5a8ee31951bd"
+},
+{
+"path": "scumm/audio_cache/8808b7679f68f5048a5d.pcmz",
+"bytes": 69506,
+"sha256": "ecf382bab2751d6124eca28980853a32a7b170ebeb8689ee7fd55fc8ac518416"
+},
+{
+"path": "scumm/audio_cache/88647b3ab0d98a4def38.pcmz",
+"bytes": 206218,
+"sha256": "f8ecfd12276b01a5de784241c15ddeb5c44791d13cc14a4b64a30f6f38eed99b"
+},
+{
+"path": "scumm/audio_cache/89107e1ca9460c69e049.pcmz",
+"bytes": 18550,
+"sha256": "146417bfd180ee12f9288edc7aff1cae89838588e91f6efbf60b298495e9fb3c"
+},
+{
+"path": "scumm/audio_cache/8a18bf00bdc0062946f3.pcmz",
+"bytes": 102254,
+"sha256": "e9e9c15c8f22477b7c233b96ee34b7dfad743abedd82e7e3faa7ad67412f5be9"
+},
+{
+"path": "scumm/audio_cache/8a7988bfc8e70adf30b7.pcmz",
+"bytes": 116198,
+"sha256": "b56a8a8c5ac8745f0e0b45d51ce5a3ce94dcbd90af683b816544b591b4e4ab4c"
+},
+{
+"path": "scumm/audio_cache/8b56b305a67bbc1bf1fd.pcmz",
+"bytes": 84658,
+"sha256": "9685436390124f334a92e8e3b0c34ceaee62f872e4e628d0d5468ec60c4e5510"
+},
+{
+"path": "scumm/audio_cache/8ef7900aa17ca7041daf.pcmz",
+"bytes": 214554,
+"sha256": "51511170af8ea14d760dff67fa0c4dd8f157c368b873060efb8e919218bde6ac"
+},
+{
+"path": "scumm/audio_cache/8f36aaecc48cc7621166.pcmz",
+"bytes": 64802,
+"sha256": "da2e09378022e9239434760536859f5e9b6d4610835432efcd05c3a62bb7e6be"
+},
+{
+"path": "scumm/audio_cache/913f5ef31886d842ccc7.pcmz",
+"bytes": 171930,
+"sha256": "bfa555b218b6eed4e39e8218ac1707a0b3ea1fd2c43c1d6dab2927e8c6e76e6d"
+},
+{
+"path": "scumm/audio_cache/943498665dc3513496c7.pcmz",
+"bytes": 52146,
+"sha256": "d5f4177cb14818dfbe0139664be812187011887c8a91670a7aa4b7e5f6baf56f"
+},
+{
+"path": "scumm/audio_cache/94927088cfe238734a61.pcmz",
+"bytes": 62786,
+"sha256": "3f499c25b27140f961c8ce2da6040bbbc59ecd37d46b5c45f2f01f1ffd7f0a4a"
+},
+{
+"path": "scumm/audio_cache/979f9c1c5a3debb44575.pcmz",
+"bytes": 132862,
+"sha256": "fd6804ad2919dca16fbbf2d923c7d1ca2ecf93e95915ffc603c6ac8745218526"
+},
+{
+"path": "scumm/audio_cache/99a94e8f6c78e90dcf12.pcmz",
+"bytes": 3714894,
+"sha256": "f6478803eb7ef5586a80a8a1a7a7b0cc3eb955b6f4b4ccd3acce7e34f361caf8"
+},
+{
+"path": "scumm/audio_cache/99f227ac42108a791cc0.pcmz",
+"bytes": 53842,
+"sha256": "a273b9fa3ebb4e4ccecba529a1c3df53d839e554151a39d809dd029d018911fc"
+},
+{
+"path": "scumm/audio_cache/9b434fa16434c8fa047e.pcmz",
+"bytes": 75746,
+"sha256": "9ec468bafd53dc4069ad1762fc2b966470cc44ca9f758b4bd48497af39fe5212"
+},
+{
+"path": "scumm/audio_cache/9fbe130f8e4c1935bff4.pcmz",
+"bytes": 151230,
+"sha256": "39df7d2b260d14412dcdc09b07501c4e5de101e60b77b7e8f7ceca4619c0db5f"
+},
+{
+"path": "scumm/audio_cache/a185c6d9b3cef596c318.pcmz",
+"bytes": 85302,
+"sha256": "272aff9a65b9f0be0f48416688b0765cf87e8669ccf2ab2669ede6dfe50f91df"
+},
+{
+"path": "scumm/audio_cache/a1c48522ae6a812094a6.pcmz",
+"bytes": 100498,
+"sha256": "29132c8fc59e101ad3caafe9bae50e6886cb7c743f755eb3b1f2fed8379db78f"
+},
+{
+"path": "scumm/audio_cache/a25ff8fd14cd3217e824.pcmz",
+"bytes": 47782,
+"sha256": "2c8d0e6824e36e1ee8449cca9136059a2ab4fd4d51a3b95b6d6ef06f75a87f24"
+},
+{
+"path": "scumm/audio_cache/a2ae6238b8a7a78ec9ad.pcmz",
+"bytes": 151150,
+"sha256": "e3d0fcdef99eff6847a5e898169f9261ebc81d54ccebac61591abd9acc394acb"
+},
+{
+"path": "scumm/audio_cache/a34e5d60107837065273.pcmz",
+"bytes": 152510,
+"sha256": "e1ca675a82a7c1e10623fb8b45fbc85b42afec35c74ba3d03476eae2b72d8941"
+},
+{
+"path": "scumm/audio_cache/a4cac35e1818cba8cda4.pcmz",
+"bytes": 61834,
+"sha256": "bcf7b78e2ccd83f9a210965b0185198785442696144d4ff1c7e8b6afd27025d1"
+},
+{
+"path": "scumm/audio_cache/a50ffe46c17b07149d86.pcmz",
+"bytes": 159786,
+"sha256": "25f36454613c43fc8d077ab39f584f1d42526fd402021d265d3a629bf29db4bd"
+},
+{
+"path": "scumm/audio_cache/a85b7dc066c6dd59ce2f.pcmz",
+"bytes": 118530,
+"sha256": "a7d610af1c16b71996cb018e18ed860d837258a782c86d01163de18025281965"
+},
+{
+"path": "scumm/audio_cache/a98754dca000e17337be.pcmz",
+"bytes": 133914,
+"sha256": "81019fd149d5151b7aae289c27375f7ec6fcc80d61cdf9f15bc739cd6681a921"
+},
+{
+"path": "scumm/audio_cache/aa3a2a728d59c21d67f1.pcmz",
+"bytes": 55546,
+"sha256": "bfa6e24e1e7e6ea21b42ba8c69a00f9884fa1f9c445e9a7472d81bac375f8299"
+},
+{
+"path": "scumm/audio_cache/aa7486bbcef722b15fff.pcmz",
+"bytes": 105586,
+"sha256": "8cc240871c9ed956a22541c05c858da5d0bb1c85c4d519cd653ef9e09c9b3466"
+},
+{
+"path": "scumm/audio_cache/ae244e2041147843166b.pcmz",
+"bytes": 58838,
+"sha256": "5e547640e69218f55eb396e9d24fc20c40b0f5d7174683a13fb48071a30cd51f"
+},
+{
+"path": "scumm/audio_cache/aec633b1a38df703ea0a.pcmz",
+"bytes": 88042,
+"sha256": "76f34ed4ea04ba7a0c6c61d966cbc301114f63363793f6dfa348181b28c0af6b"
+},
+{
+"path": "scumm/audio_cache/af11b9a38243de2aa1bb.pcmz",
+"bytes": 98958,
+"sha256": "ac9b964249cada9a2c7324641a9ee80d6932fc34da18cd2a1a085fe4f171cc03"
+},
+{
+"path": "scumm/audio_cache/af7c11db4e5a9f1af889.pcmz",
+"bytes": 166118,
+"sha256": "a16fccd6b1d1dabe4a88bd3f7cc771db10dfda1a1b498b71ac02c2a579fbee15"
+},
+{
+"path": "scumm/audio_cache/b247eb2f63ca3a28ec4b.pcmz",
+"bytes": 187954,
+"sha256": "3ab9d57d292808f2656c4bdfd8ddc0021e3bcb61e3a9f3b5903716506788fb52"
+},
+{
+"path": "scumm/audio_cache/b2a7428fa57d8f44409c.pcmz",
+"bytes": 154610,
+"sha256": "2c58a5a988093082aa99495efd2ac4e247c9ea52f4beeeaf24e1b7442aa78d5c"
+},
+{
+"path": "scumm/audio_cache/b365fe29b72e14263422.pcmz",
+"bytes": 119802,
+"sha256": "3d9ce63215615084dfd278933a36e517726a467d682daf03afcb779d53374660"
+},
+{
+"path": "scumm/audio_cache/b3bd38ac033cff4378fc.pcmz",
+"bytes": 211210,
+"sha256": "6c0c7d2b4e820b382280cffd8468ccc9c6d46e27d00f8814aa900d7e6d295f12"
+},
+{
+"path": "scumm/audio_cache/b3c96620dc53f243fa0c.pcmz",
+"bytes": 63174,
+"sha256": "97cc1e913014f197e2a9a763fab007a2a9293cba7ae9be8672a60b3bd9e5e4e1"
+},
+{
+"path": "scumm/audio_cache/b74a4bf9d79b981f91b7.pcmz",
+"bytes": 124998,
+"sha256": "0d94bccd5dc9be7c2ba3cf37f67fac76283e2bdbcac1ad519a519d3b2d7bcf47"
+},
+{
+"path": "scumm/audio_cache/b7c002e156f5902adf52.pcmz",
+"bytes": 104498,
+"sha256": "5709c2df47b0e994789a27adaf787413439a35ff9f8a8400276ebc58bf4714f7"
+},
+{
+"path": "scumm/audio_cache/b8e9e664a4257e965644.pcmz",
+"bytes": 77586,
+"sha256": "59b6684b4160445cb3d6b34b7b89320015b3fa33331801d6356444460f7c0881"
+},
+{
+"path": "scumm/audio_cache/ba03eeaf022708f4b431.pcmz",
+"bytes": 99842,
+"sha256": "8257845278eeaff4a86104a94dc7e3703a3f1c5ae782cb65f3d157c460bd7b90"
+},
+{
+"path": "scumm/audio_cache/bb3645b186ec7cddd51a.pcmz",
+"bytes": 121510,
+"sha256": "4d70478f95d36bc907e41d5dbd0b689c8cf906a7e801099b01f432e3c618703e"
+},
+{
+"path": "scumm/audio_cache/bb920b5cb7d4edaa2f10.pcmz",
+"bytes": 55506,
+"sha256": "2780e57161deb2b8682676cf9841f92432b784544ff36cb738eb8059486f84c1"
+},
+{
+"path": "scumm/audio_cache/bbce54367e1f9d177752.pcmz",
+"bytes": 31958,
+"sha256": "2357c05683ad7ad4da10f95e3897d74091fbcbf766e5af298542dd7ab758e50d"
+},
+{
+"path": "scumm/audio_cache/be01faa8b7eb1b22329a.pcmz",
+"bytes": 79338,
+"sha256": "db7b2d08c15b577d13076d3b2075053ad5859b5f41517c398e22f94123ca0228"
+},
+{
+"path": "scumm/audio_cache/be328dfc1b382a5565b7.pcmz",
+"bytes": 32730,
+"sha256": "bb1ecdd1a4fa00f48a784b19eb4d87d909b1efbde8f63c99254118afc6f39fe7"
+},
+{
+"path": "scumm/audio_cache/bf2de32f025aa2b204e3.pcmz",
+"bytes": 139650,
+"sha256": "6bcd7c046f28d08792f7f080e4430d9c133b1b8a1462daa69252bd3b469b84e4"
+},
+{
+"path": "scumm/audio_cache/c25df07a867000c9bf1b.pcmz",
+"bytes": 73150,
+"sha256": "a2ea35c3ec954f9b2bd783e6fdcb3e6e16f3ee01ebd677024404c2d20a1fa195"
+},
+{
+"path": "scumm/audio_cache/c29778668394daa0a1ce.pcmz",
+"bytes": 42122,
+"sha256": "0faa944a622f10ef7faca4fc517294405c8affaf9b9b407a8ad868170a9bd868"
+},
+{
+"path": "scumm/audio_cache/c30f1ff765d3198e3e96.pcmz",
+"bytes": 162206,
+"sha256": "a3613f46cd87041f8ec8b4155901f7c398dde0e2f04e9a5fa46e5b1a67ea2f6f"
+},
+{
+"path": "scumm/audio_cache/c57ce7fc1770fc1ebc6c.pcmz",
+"bytes": 63018,
+"sha256": "a3c89c170edfc2eae60fc0dd8c16b804344583c8557cfac762a6d3554de8a1a3"
+},
+{
+"path": "scumm/audio_cache/c62e378b0561382530c2.pcmz",
+"bytes": 669666,
+"sha256": "3fa89b0cb3530ac3a61499348579d84d00dbfe3ddfd9635e65dbb456b6833f49"
+},
+{
+"path": "scumm/audio_cache/c657213e270fbfce78aa.pcmz",
+"bytes": 198010,
+"sha256": "b0afd041de6ff199d5d086d00d052d664b9ebfad11471331acbad466d36e8036"
+},
+{
+"path": "scumm/audio_cache/c7172c17e44a8547b110.pcmz",
+"bytes": 20726,
+"sha256": "7392c2ba09b952fff8827ad0a4d0b70f7e7d78418163dc54b5947503247ffa0d"
+},
+{
+"path": "scumm/audio_cache/c76856098ba05082dd10.pcmz",
+"bytes": 144042,
+"sha256": "c0a53c8a014520af592b30d77a1f622729a5101c2375ce8615c175a435fd0927"
+},
+{
+"path": "scumm/audio_cache/c98647be4ecb78458f7b.pcmz",
+"bytes": 166478,
+"sha256": "f9adb19d23a1f8b1dc6291b3466e8788d0a79249f4ca6772198e2fda3de73e2b"
+},
+{
+"path": "scumm/audio_cache/cad5549cc380c6c76c21.pcmz",
+"bytes": 29566,
+"sha256": "d67c742911d879adc303d8b5c6c8a7057d499c9bef649490bba2c22a6eff50cb"
+},
+{
+"path": "scumm/audio_cache/cb7f66755ad31095eee1.pcmz",
+"bytes": 165442,
+"sha256": "21ddf73dd86c26dd2f03493e984075628405595134bd7a5c03876029b768a57c"
+},
+{
+"path": "scumm/audio_cache/cc5a7fb0c377ad98d705.pcmz",
+"bytes": 23230,
+"sha256": "972d76f42cd84ec3f5885980b2d7d320c9ce7cdd334dea373c30b6e05881ffe8"
+},
+{
+"path": "scumm/audio_cache/cc712a454150e2a59203.pcmz",
+"bytes": 23430,
+"sha256": "8122a8bbe598e2bbfa2afbe522c28bf89738a1821d68a221bc74b39e2ca9561f"
+},
+{
+"path": "scumm/audio_cache/cdec730a74e173a63e1d.pcmz",
+"bytes": 55378,
+"sha256": "807292ab86c45284379dc9da1920da4ec1ac20f2fabeb21d4d237713f812b4b1"
+},
+{
+"path": "scumm/audio_cache/cefdbae67b96fa25fb58.pcmz",
+"bytes": 37910,
+"sha256": "4d27ebab2aabef9eef902d88313d261e9567425f8e0896e9e5bcbd2a02848b7a"
+},
+{
+"path": "scumm/audio_cache/cf8888f67070ceb7c05f.pcmz",
+"bytes": 132450,
+"sha256": "a344ff952dc69e42fbc7cb82031ae7ee698f90e9aadaacb0780614b1c496bba7"
+},
+{
+"path": "scumm/audio_cache/cf96280f96613f50cc9d.pcmz",
+"bytes": 51130,
+"sha256": "9097256eca2268fc74e852463e5be68a72f4b6b3907b97713c716cfb2d234299"
+},
+{
+"path": "scumm/audio_cache/d027dbf3d8b712a0b653.pcmz",
+"bytes": 137706,
+"sha256": "a2a32a55200eec9f16408fedc1731fb8b9e1bc976165ff55c5b6878ad45f8cb7"
+},
+{
+"path": "scumm/audio_cache/d108811c18066b70a170.pcmz",
+"bytes": 114902,
+"sha256": "e07d5ae135d5327c0311cf36ee8a75152fb9b0e244e9e56d61f6541078bb4e89"
+},
+{
+"path": "scumm/audio_cache/d1c7081df06b1592076a.pcmz",
+"bytes": 83198,
+"sha256": "c269b1f5c142da47e7fbed0a361142a44d1f0a2c306f8b302d7608471de25fa1"
+},
+{
+"path": "scumm/audio_cache/d20b9e638736bede5a16.pcmz",
+"bytes": 15714,
+"sha256": "d458b55bfeaf3f3cf139ea1d52528c9c45ff9e487fd4b4d8550b594c7638ffd9"
+},
+{
+"path": "scumm/audio_cache/d5ee7ec19cc5fc4e7acf.pcmz",
+"bytes": 90882,
+"sha256": "040a7bc7b4f4b5a86979e121a602099e1f00a6e2a31c50bc0d64b0831fdcbdab"
+},
+{
+"path": "scumm/audio_cache/d8c1840df272db22b49e.pcmz",
+"bytes": 81506,
+"sha256": "2d2faeb00314627a49d4c12002b6b05e2ec3b8547c89f2645765cc2aed330f4f"
+},
+{
+"path": "scumm/audio_cache/d8cc0e936f8455e261bb.pcmz",
+"bytes": 161838,
+"sha256": "2646bf215d6cfa50bcd22a74ca5840386078e44894d7c361758f4836f8e3f2f2"
+},
+{
+"path": "scumm/audio_cache/d8d3d9cf6c02f804d4a2.pcmz",
+"bytes": 81750,
+"sha256": "94418157bf8f50a00d8ee61028cecf008b39e78e93c96d5a7700a8d3058cdcf7"
+},
+{
+"path": "scumm/audio_cache/d8db5086c06aa80983dc.pcmz",
+"bytes": 119842,
+"sha256": "e0f1f52b8239262bacf9c832657441ac37a8c9895c927c903234bd6b2a900198"
+},
+{
+"path": "scumm/audio_cache/d9b590c5157bc9b03da8.pcmz",
+"bytes": 81274,
+"sha256": "81de93c7f611ae6cdaa173a3614a25e29bf0096609c2426f7d5008e726d7ea14"
+},
+{
+"path": "scumm/audio_cache/daa9afae6814cba76758.pcmz",
+"bytes": 17158,
+"sha256": "9319c0b4724f5ef0af2d4589c2b5e0f747d0bf98c6f6adf6a127567c45ae2438"
+},
+{
+"path": "scumm/audio_cache/dac7e0c975c31d7d3d1e.pcmz",
+"bytes": 29174,
+"sha256": "559494115e488e0b62d5801ba39c06dd3052f119a98c3343c328f6e0d87e2013"
+},
+{
+"path": "scumm/audio_cache/db4b42225d67cf999d42.pcmz",
+"bytes": 215910,
+"sha256": "fffe32c16b0a9073e25864d855cd965bac4eddd3e4cfdca11d3fa479eb2e6a7b"
+},
+{
+"path": "scumm/audio_cache/db574e08048890edbc71.pcmz",
+"bytes": 80002,
+"sha256": "ba60c2567419b20324d32c681e0ae9d39062aa9e6a373bf07f69ded5f113039a"
+},
+{
+"path": "scumm/audio_cache/dc17ee652846dcd7623a.pcmz",
+"bytes": 77718,
+"sha256": "94ee61ceaf99a9691b21162555cf26ba94b44e08d77a18565b283f1b35fb4397"
+},
+{
+"path": "scumm/audio_cache/dc6191840b25f11b39db.pcmz",
+"bytes": 92562,
+"sha256": "d64bc8b4e4b26ac36720146b4ee3c4b9fdcab142170960ede19ee4f754ca6da3"
+},
+{
+"path": "scumm/audio_cache/de20593c8a141fc4c3c5.pcmz",
+"bytes": 215026,
+"sha256": "78683a74d345e2e0ae4d6cbaa12b50220678c37e8d113a7182234287583edc16"
+},
+{
+"path": "scumm/audio_cache/dec2848a757f0b64c693.pcmz",
+"bytes": 230830,
+"sha256": "c10f412c0e84e4b1c9cf3003833fdbe88772a3db4f8b5940b3cd8dac01aa940d"
+},
+{
+"path": "scumm/audio_cache/ded18404295776e3c6f3.pcmz",
+"bytes": 210550,
+"sha256": "7ac87302e89c204d3befa42a7c9ae4321f9db1c172f32d8680eedc4ceac31117"
+},
+{
+"path": "scumm/audio_cache/e03f438c4eb2142dc24c.pcmz",
+"bytes": 237922,
+"sha256": "156e9368278c36d141f7edceb86474dfbffae599ee702b53f2398e40dd2b8085"
+},
+{
+"path": "scumm/audio_cache/e10eff26b281584483b8.pcmz",
+"bytes": 34394,
+"sha256": "ed771ca32d951784e37abf5951a2f2ee5b9bf2540ea1ebf50d77f23f6766f51c"
+},
+{
+"path": "scumm/audio_cache/e31d4bd0ba598a3f7707.pcmz",
+"bytes": 149366,
+"sha256": "ab3576fe1afd9ba4978f6121fa9e9b821133c56cb0d0ff2eff26e8960f36d8fd"
+},
+{
+"path": "scumm/audio_cache/e4a418acb3c81144bfe7.pcmz",
+"bytes": 132954,
+"sha256": "9441877206ccdf30e540b1ab95a6a183fab9a95a81f5a21f9b6a410d43b08833"
+},
+{
+"path": "scumm/audio_cache/e4e558f1c8c2a3b3b957.pcmz",
+"bytes": 153214,
+"sha256": "edc96df6eeb2076117b6672b187022deb423fa003bd82ad1ea5e0d1ceb6ee2fc"
+},
+{
+"path": "scumm/audio_cache/e64ccec83d557b53407d.pcmz",
+"bytes": 89866,
+"sha256": "395f9ab0d77f14b51865b46a60a9a28a1cc3fd3526da55ae92314258239b2609"
+},
+{
+"path": "scumm/audio_cache/e662e6e3519b6e936dd6.pcmz",
+"bytes": 53862,
+"sha256": "87612e4a558aa32b48176402a0c4a69819c0710f6a2e9a3ae0b69f1857df875e"
+},
+{
+"path": "scumm/audio_cache/e6c3a49d526d7d4ca37d.pcmz",
+"bytes": 157670,
+"sha256": "e6abdb029801292f2b9153e61de4dbdefcee5629791aecc88153bcdabb3d9325"
+},
+{
+"path": "scumm/audio_cache/e7818b8a68f8fb595447.pcmz",
+"bytes": 149190,
+"sha256": "c3c67c849d3ac0c1e93497c5e49750b3a3396db3b7672b5a0af16bed512574e9"
+},
+{
+"path": "scumm/audio_cache/e8209d18b4a0db43982e.pcmz",
+"bytes": 220634,
+"sha256": "cba45d5ffa2c07dcd7785a5373e8d97ca0bb05a0fea9e3aa3214b42b9f1b8aac"
+},
+{
+"path": "scumm/audio_cache/e842b369041ea90da138.pcmz",
+"bytes": 216914,
+"sha256": "bfcc3a16501868d734dd8f22be9cfa99b1b3383dbaa538ce45d31782cdb92d63"
+},
+{
+"path": "scumm/audio_cache/eaecfaec6390dcb70382.pcmz",
+"bytes": 94358,
+"sha256": "bd270a80902e116906c7ddfda25b043d6ff93c69a78c0934b2cb7c5d8d395e49"
+},
+{
+"path": "scumm/audio_cache/eb898fd21932a488f813.pcmz",
+"bytes": 161090,
+"sha256": "acd1d56aa6aef3153749dadf4a4ac974fb7bb95464f42a9a0c71dd76caccf2fa"
+},
+{
+"path": "scumm/audio_cache/ee5dd1a9dc83fca81941.pcmz",
+"bytes": 92566,
+"sha256": "c6a143c4a725ecc06a2edce2d48e6df1067929342d7484440bf0611e91811a7e"
+},
+{
+"path": "scumm/audio_cache/ef25d562c29101b2efd4.pcmz",
+"bytes": 130714,
+"sha256": "a56e3036dcedc16c7b932192ce2ab6e3195d969166445354918fc59f6ba5946e"
+},
+{
+"path": "scumm/audio_cache/f14d7aff22135fbeb412.pcmz",
+"bytes": 61934,
+"sha256": "f846d9d7bf0555069449f8d6ebb346c3c4a0e62d2ebf627a88d3e5350f9313d8"
+},
+{
+"path": "scumm/audio_cache/f2b47d349f223b831de7.pcmz",
+"bytes": 18694,
+"sha256": "bd087c41a118d7e64a4d58c204e50bdc1d300e417ec0d24f99e6c8c35af88717"
+},
+{
+"path": "scumm/audio_cache/f2bd7d82bfa6d7827a4c.pcmz",
+"bytes": 60890,
+"sha256": "287c3743289bcbff84744ffe17ec8e0df14241a8058e3ed3943b11842af7de7d"
+},
+{
+"path": "scumm/audio_cache/f4c7ef05c619b6b3ea02.pcmz",
+"bytes": 198026,
+"sha256": "6dda3223d3285e02887295caa61fe509c4ff4101f0dd68276919ff6248be6dfd"
+},
+{
+"path": "scumm/audio_cache/f65fe5794b0601285f39.pcmz",
+"bytes": 189806,
+"sha256": "219212f6f50429a3cd9d89626573a5bf321fc2662e127ee1d0cce7439f9e271b"
+},
+{
+"path": "scumm/audio_cache/fbf9e3070cf9c885b402.pcmz",
+"bytes": 1414634,
+"sha256": "31883ae0c0c4255ab1dd187dce89d2f2660c51ea13cdd47b574d8b71fd14bd60"
+},
+{
+"path": "scumm/audio_cache/fc3e5a73e5bc615f300d.pcmz",
+"bytes": 88402,
+"sha256": "b695176bfe41469a3f118499ad4195c85b0ea4b55b13063dd5db0dbe97fd240f"
+},
+{
+"path": "scumm/audio_cache/fd60552eb629e0905c13.pcmz",
+"bytes": 63422,
+"sha256": "69256d183ed4baf72dab2b69f3e6aae88f510deb6ef14caa54a06529a3742ef3"
+},
+{
+"path": "scumm/audio_cache/fd756f8e296243fb21d2.pcmz",
+"bytes": 100582,
+"sha256": "57146553bb0ab830b33133b12f12bf4c37ff0610e46596997963ba5c6df79e7f"
+},
+{
+"path": "scumm/audio_cache/fdf5dae073ac0a911a5c.pcmz",
+"bytes": 107754,
+"sha256": "2c20c3b8e9b2a44ac71d03951cca6e055d2b80a89ba1e8e9d7ea805e61a1730e"
+},
+{
+"path": "scumm/audio_cache/ff92ebad18a0f9359e78.pcmz",
+"bytes": 92442,
+"sha256": "68949e3de11fe8dad9a93de65b9d99d0c363fa9282b70617edd8816bf841ce00"
+},
+{
+"path": "tools/LICENSE-GPL-3.0.txt",
+"bytes": 35149,
+"sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+},
+{
+"path": "tools/ai_api.py",
+"bytes": 20590,
+"sha256": "a3202a6e5aced165691ca7846c8bc06124e696ec40c32fc71aadf014505716f8"
+},
+{
+"path": "tools/ai_gen.py",
+"bytes": 22697,
+"sha256": "227d79f41e5f76bbf6e11f6d3b44851644191375b47c73dbe80eb76712ca0e72"
+},
+{
+"path": "tools/akos_extract.py",
+"bytes": 37972,
+"sha256": "d3da148fef868dc64a72544a8f3d73bc78851c9c0710a2aa8a9ca999a4d6cd03"
+},
+{
+"path": "tools/bun_extract.py",
+"bytes": 26398,
+"sha256": "9a35b15d5f16bfcb6be840ad71befb6b250c877e275c367bd0b289071f597989"
+},
+{
+"path": "tools/colorlock.py",
+"bytes": 1837,
+"sha256": "6960c2c7f9465ce0f115c4fbd160d0695d638536056b5546cfe2d57013b6ec1d"
+},
+{
+"path": "tools/comfy.py",
+"bytes": 12013,
+"sha256": "458e8c4a034d89d26c22b2db3bc9489fa75ab3bf29296cb1771a01667429660b"
+},
+{
+"path": "tools/comfy_models.json",
+"bytes": 491,
+"sha256": "ed22a5d93b5a5b30c67c78c9bb08cf0498b06fbaec7d51bd73c7302534228abb"
+},
+{
+"path": "tools/export_web.py",
+"bytes": 7994,
+"sha256": "3daf35edffbac021df04269e2dd40681e8fe5a30be673904cbd21bbf8a965460"
+},
+{
+"path": "tools/hires.py",
+"bytes": 3170,
+"sha256": "b1d6b23e816e4ea3a81543e04694de9f2be39316a69f1d59d917dd21f5f9d89e"
+},
+{
+"path": "tools/library.py",
+"bytes": 12060,
+"sha256": "7662fe5f7e8a31fb40aad862247c1eb5bb24e35ad5f404724d05bf5dd406b5f0"
+},
+{
+"path": "tools/make_font.py",
+"bytes": 4467,
+"sha256": "3eeb72370beb277d1bc17bdee47b539a985fbf1d3fe8097bbb78d77a6540a6d4"
+},
+{
+"path": "tools/mcp_editor.py",
+"bytes": 12572,
+"sha256": "189942254acee247c05975b6195e6ace3a29f15a0eafbe77870d556f2eb3f8a9"
+},
+{
+"path": "tools/modcfg.py",
+"bytes": 6693,
+"sha256": "e0d5839ff69fbbc3a26e4cf9c70a341d99825eaf3c183b6286c6bd86551248ae"
+},
+{
+"path": "tools/objedit.py",
+"bytes": 4522,
+"sha256": "ac096d7a1edc22058f2b25fb0f9570cb09674a1dafa56119ed48b08bf0c9350b"
+},
+{
+"path": "tools/placeholders.py",
+"bytes": 4820,
+"sha256": "6f83c73f9cdcb45c13669d79567ed847e23a6897bc186890e6dbe904550814a9"
+},
+{
+"path": "tools/projects.py",
+"bytes": 44301,
+"sha256": "4daa500967d4a8555ad11c717fc84c931bb918c7479321bb1752c77afb13eb93"
+},
+{
+"path": "tools/scene.py",
+"bytes": 11348,
+"sha256": "5c4c14613494a497dabf69822b8dc71cc9a5fe7d656c9136288847c26edbfd56"
+},
+{
+"path": "tools/serve.py",
+"bytes": 36833,
+"sha256": "6ac0b40a82aabd8ce13cf98e45e5cac725e19562772b1215917a03374bcce49d"
+},
+{
+"path": "tools/byog/__init__.py",
+"bytes": 606,
+"sha256": "eda2b93c64a1f6646f7a0a888f0b8f9a3fef1c21a6586bc7eabbedfd49c7fb2f"
+},
+{
+"path": "tools/byog/browser.py",
+"bytes": 5972,
+"sha256": "0f7630980324a6562ac4a63af93ed088f975772b356c82d09dfb61ecb0598832"
+},
+{
+"path": "tools/byog/decoders.py",
+"bytes": 10209,
+"sha256": "35da67d837bcc8733e0248a80188200574d1b61a83f86448d903214c820caa37"
+},
+{
+"path": "tools/byog/extract.py",
+"bytes": 15379,
+"sha256": "5704907c3f72723646b5286398053bff672300ada3fd5d1fb0779783b8a5a4d6"
+},
+{
+"path": "tools/byog/fence.py",
+"bytes": 16822,
+"sha256": "7c8f26d1dad73b7c84e1bd4b9bdef6dd90cb3a1b4ca06b98fa53209b8e0806f8"
+},
+{
+"path": "tools/byog/gamedir.py",
+"bytes": 9456,
+"sha256": "fb97e721c8b1776dcdb6b3d4761b348802a3d6768e996cddd85ee7584cec8cdf"
+},
+{
+"path": "tools/byog/hdmodel.py",
+"bytes": 2095,
+"sha256": "ab71aadd70c3369c8700894d511caa5236625e3cd32c2398a0538577b5dbe225"
+},
+{
+"path": "tools/byog/iso9660.py",
+"bytes": 7384,
+"sha256": "e0047ff8c5e3c50f0a6aa09516def8bc0ca194b117b4173b9b72511df8768921"
+},
+{
+"path": "tools/byog/ltp_extras.py",
+"bytes": 12308,
+"sha256": "da5697c729689fb671548dbaa9b345c643e118a86bb46b0a0725d0d9aa63a493"
+},
+{
+"path": "tools/byog/upscale.py",
+"bytes": 6194,
+"sha256": "e5edc43ea824d7d1ca53e213871beae48ef8e49647f2a3d7cebfb1169db615d0"
+},
+{
+"path": "tools/js/gamesrc.mjs",
+"bytes": 5428,
+"sha256": "05cb0e88ebeba2a14c2a07b5838906e14333a43ad744adc96750e760afb33b19"
+},
+{
+"path": "tools/js/lines.mjs",
+"bytes": 6290,
+"sha256": "b39e4271223bd5f8fe1ba521cdae4be4c322aa2da25c95e5271e87f083faeb00"
+},
+{
+"path": "tools/js/package-lock.json",
+"bytes": 1025,
+"sha256": "ce14611614d35050b6f12c304d1a89cb76a86e22bc1406126df37c6db1fe7b74"
+},
+{
+"path": "tools/js/package.json",
+"bytes": 115,
+"sha256": "7d06a8a5db5b06190afd04c931c230a1b9fed6443c25fce5b358fb47d9029e09"
+},
+{
+"path": "tools/js/roomsrc.mjs",
+"bytes": 36508,
+"sha256": "7b1061075a93de7715229d8c350917d60a5619eba4bc458cd12a1ce1f26bc485"
+},
+{
+"path": "tools/js/steps_src.mjs",
+"bytes": 651,
+"sha256": "3e0841d7bf9acff27c6a643ffbbf6e8cb4a4d7208749b39f4fe25f5744f32da5"
+},
+{
+"path": "tools/js/strings.mjs",
+"bytes": 4904,
+"sha256": "28f27c56e22c1326a74a00673bc00908ab2ba9b5a7baf3ad45687b7592ee4f29"
+},
+{
+"path": "tools/js/node_modules/acorn/CHANGELOG.md",
+"bytes": 24556,
+"sha256": "d01a9c476275c0a46ae4164ae724729aaacfc812b76cd7e6fefe2cb76819f01e"
+},
+{
+"path": "tools/js/node_modules/acorn/LICENSE",
+"bytes": 1099,
+"sha256": "76a876cf886ff9be2a8b5e2e86514fed06223c8c9f0c1e9ee9606e93841e00b7"
+},
+{
+"path": "tools/js/node_modules/acorn/README.md",
+"bytes": 11759,
+"sha256": "b7783c23979634a89060164d8092e591639198b4460aefbed4ba9f8da478a977"
+},
+{
+"path": "tools/js/node_modules/acorn/package.json",
+"bytes": 1067,
+"sha256": "5c1ed7259579a7899b303f514b0194adcb9fe474fc7d136a84c6a45f10eefc84"
+},
+{
+"path": "tools/js/node_modules/acorn/bin/acorn",
+"bytes": 60,
+"sha256": "4c3eb6f1d8932790dbff043839f8ee7686bc614a59ef577e96fed618a4a4b1b8"
+},
+{
+"path": "tools/js/node_modules/acorn/dist/acorn.d.mts",
+"bytes": 22462,
+"sha256": "df8107deaf41869871690db7306f87b587e59660d659b1fbb64a7a30cea7cf36"
+},
+{
+"path": "tools/js/node_modules/acorn/dist/acorn.d.ts",
+"bytes": 22462,
+"sha256": "df8107deaf41869871690db7306f87b587e59660d659b1fbb64a7a30cea7cf36"
+},
+{
+"path": "tools/js/node_modules/acorn/dist/acorn.js",
+"bytes": 245232,
+"sha256": "fc3ed7b81e58464715d0291402892f22c3d86ea75302645a330390f85d8015c9"
+},
+{
+"path": "tools/js/node_modules/acorn/dist/acorn.mjs",
+"bytes": 233301,
+"sha256": "953573b8fdab71599749ea5f2b33d3e760c2116178f9423ee7458dbe39d59453"
+},
+{
+"path": "tools/js/node_modules/acorn/dist/bin.js",
+"bytes": 3329,
+"sha256": "fffd9df1d9158c4580068ad17c3176c34fe46f59021b8cd5780454994764dc30"
+},
+{
+"path": "tools/js/node_modules/acorn-walk/CHANGELOG.md",
+"bytes": 3913,
+"sha256": "d869142cd036770183e845016bd4a1c16df8061a9f66db220b723a09fde4e7e3"
+},
+{
+"path": "tools/js/node_modules/acorn-walk/LICENSE",
+"bytes": 1099,
+"sha256": "c2d8184ea9becd063aa40be243e8c6ec2c4f72828fdfe4b0752664ef73e96ed3"
+},
+{
+"path": "tools/js/node_modules/acorn-walk/README.md",
+"bytes": 4467,
+"sha256": "fb88ea37472b9f72ef2e9357f5d1a4611ab3ec7c23edfc6bea13303fe153649c"
+},
+{
+"path": "tools/js/node_modules/acorn-walk/package.json",
+"bytes": 1074,
+"sha256": "73c77feaf1224859bc6995cefe976d51cfd2abcd1edc0362df3149d8bd3633e3"
+},
+{
+"path": "tools/js/node_modules/acorn-walk/dist/walk.d.mts",
+"bytes": 5601,
+"sha256": "18190ee9c0ce0451e8a4bddfdab39d4ce50a22f7be5bfac436da7ee1d2e2cc30"
+},
+{
+"path": "tools/js/node_modules/acorn-walk/dist/walk.d.ts",
+"bytes": 5601,
+"sha256": "18190ee9c0ce0451e8a4bddfdab39d4ce50a22f7be5bfac436da7ee1d2e2cc30"
+},
+{
+"path": "tools/js/node_modules/acorn-walk/dist/walk.js",
+"bytes": 16739,
+"sha256": "1aa9615d8ea06e2126a21a4c21eb7b8b97a69e5eda256f06d2c48834a57cbf0e"
+},
+{
+"path": "tools/js/node_modules/acorn-walk/dist/walk.mjs",
+"bytes": 15271,
+"sha256": "24bc7ea73dcc319360090f4849746b7493bf234f951ea99ae0b89105981b1b42"
+},
+{
+"path": "tools/scumm/akos.py",
+"bytes": 3979,
+"sha256": "3c51e3f7afabafabac4186bebc52f5deca42e6fd8a869f1b8a24dc102de3adc8"
+},
+{
+"path": "tools/scumm/audio.py",
+"bytes": 14741,
+"sha256": "96f768a1ad07dc12c5864b4184459605b4b04574735a69da5df7e9f3fe279aef"
+},
+{
+"path": "tools/scumm/build.py",
+"bytes": 90684,
+"sha256": "fd8c640206115255df9240a453a38a8db02748f439c51f08377e48b462918a31"
+},
+{
+"path": "tools/scumm/compiler.py",
+"bytes": 80164,
+"sha256": "ec9e9ba0e8634e5efa05169cadd291719a7d84729bc7d8280bba3daff65ebd9f"
+},
+{
+"path": "tools/scumm/jsgame.py",
+"bytes": 10503,
+"sha256": "bf9e7d20e51a31d107b48a9d399c4315569cc34c2ff276068f3feb796e2fb985"
+},
+{
+"path": "tools/scumm/scummres.py",
+"bytes": 7673,
+"sha256": "4d1c3fead4729cc8a99b895c606640d04b242f81112edeaf71f7ddc579fb0e18"
+},
+{
+"path": "tools/scumm/scummwrite.py",
+"bytes": 13794,
+"sha256": "92aa213bdd5a066b8a205cfe697696fac8096f435484174b79aa0ad8eb0a1cd3"
+},
+{
+"path": "tools/scumm/v8asm.py",
+"bytes": 15990,
+"sha256": "2d9a9508608f4ac890c3a3baae5d4e300029a0817e60aca41e098fc1effaff81"
+},
+{
+"path": "tools/scumm/js/package-lock.json",
+"bytes": 594,
+"sha256": "3ce4c7bbd033c43f1d77cf30386c0422ef5b124cd42ff13c9340dff0133eaa75"
+},
+{
+"path": "tools/scumm/js/package.json",
+"bytes": 79,
+"sha256": "093650a6bab3b9cb43eaad8dc96ce8c908bc15c442ad8f2d261bd824b16015e9"
+},
+{
+"path": "tools/scumm/js/parse.mjs",
+"bytes": 602,
+"sha256": "7281a35a31b63553094b44809d6c2a62b9064facf70cea90d83087fb981452e7"
+},
+{
+"path": "tools/scumm/js/node_modules/acorn/CHANGELOG.md",
+"bytes": 24556,
+"sha256": "d01a9c476275c0a46ae4164ae724729aaacfc812b76cd7e6fefe2cb76819f01e"
+},
+{
+"path": "tools/scumm/js/node_modules/acorn/LICENSE",
+"bytes": 1099,
+"sha256": "76a876cf886ff9be2a8b5e2e86514fed06223c8c9f0c1e9ee9606e93841e00b7"
+},
+{
+"path": "tools/scumm/js/node_modules/acorn/README.md",
+"bytes": 11759,
+"sha256": "b7783c23979634a89060164d8092e591639198b4460aefbed4ba9f8da478a977"
+},
+{
+"path": "tools/scumm/js/node_modules/acorn/package.json",
+"bytes": 1067,
+"sha256": "5c1ed7259579a7899b303f514b0194adcb9fe474fc7d136a84c6a45f10eefc84"
+},
+{
+"path": "tools/scumm/js/node_modules/acorn/bin/acorn",
+"bytes": 60,
+"sha256": "4c3eb6f1d8932790dbff043839f8ee7686bc614a59ef577e96fed618a4a4b1b8"
+},
+{
+"path": "tools/scumm/js/node_modules/acorn/dist/acorn.d.mts",
+"bytes": 22462,
+"sha256": "df8107deaf41869871690db7306f87b587e59660d659b1fbb64a7a30cea7cf36"
+},
+{
+"path": "tools/scumm/js/node_modules/acorn/dist/acorn.d.ts",
+"bytes": 22462,
+"sha256": "df8107deaf41869871690db7306f87b587e59660d659b1fbb64a7a30cea7cf36"
+},
+{
+"path": "tools/scumm/js/node_modules/acorn/dist/acorn.js",
+"bytes": 245232,
+"sha256": "fc3ed7b81e58464715d0291402892f22c3d86ea75302645a330390f85d8015c9"
+},
+{
+"path": "tools/scumm/js/node_modules/acorn/dist/acorn.mjs",
+"bytes": 233301,
+"sha256": "953573b8fdab71599749ea5f2b33d3e760c2116178f9423ee7458dbe39d59453"
+},
+{
+"path": "tools/scumm/js/node_modules/acorn/dist/bin.js",
+"bytes": 3329,
+"sha256": "fffd9df1d9158c4580068ad17c3176c34fe46f59021b8cd5780454994764dc30"
+},
+{
+"path": "tools/scumm/parse_cache/0813c93ec31c8871a430efda.json.gz",
+"bytes": 70536,
+"sha256": "23f00e9d13ee3bfad6d2c74ec4436c1034ff80fb96c7475c5f06454087c74494"
+},
+{
+"path": "tools/scumm/parse_cache/3fc1a853d862bd4cd46a852b.json.gz",
+"bytes": 19942,
+"sha256": "3ab94bff9a2b8bc50453b8c41ac4f34beabf0855913eda752d4fb914aa8986bc"
+},
+{
+"path": "tools/scumm/parse_cache/50ca6b68726babc8418c574b.json.gz",
+"bytes": 31513,
+"sha256": "9dadec07073eecdfdef39af695b5335c522db8e6f91e41b3dd718deb13de3729"
+},
+{
+"path": "tools/scumm/parse_cache/b718e7eed9916b0ce5bd34fe.json.gz",
+"bytes": 5166,
+"sha256": "52ff7158fc231ce8b9efded9b5e3ab2b46d13c8ec2c453fcbe60a1c6fb96fb22"
+},
+{
+"path": "tools/scumm/parse_cache/ef19b9ab44ac9e004e20b688.json.gz",
+"bytes": 63539,
+"sha256": "6a07e71b0c58c21ae3f2a1ff4b2a2a54294e8ea56f6ec1a7ba4d4dfe5cc20733"
+},
+{
+"path": "tools/scumm/parse_cache/strings-3e4143f5c05f54ba63e9e839.json.gz",
+"bytes": 16781,
+"sha256": "a01c8dedd021c3b7170e703bb371e77097ef7063b34a15641b679a6b50118cc6"
+},
+{
+"path": "tools/templates/README.md",
+"bytes": 461,
+"sha256": "bf996e20a3e0b322869151cdb77af28917298b4c2d60543f36a040726b6ab152"
+},
+{
+"path": "tools/templates/new_game/game.js",
+"bytes": 1600,
+"sha256": "a617a00a324711ad813e993421368fd63c7cfdebe96f1ab75fad148150a2e266"
+},
+{
+"path": "tools/templates/new_game/room.js",
+"bytes": 479,
+"sha256": "76025899ed287f9e9836ca6c1691e2ac91aec70be74c838ffcf2fdf96c0b0d6d"
+},
+{
+"path": "tools/theme/build_original.py",
+"bytes": 13942,
+"sha256": "b4b5a200db65b2511bfca6f739665dc6294981c13df1f7067a5f20aac4703296"
+},
+{
+"path": "tools/theme/fonts/AlegreyaSans-Bold.ttf",
+"bytes": 266856,
+"sha256": "a3055a1893759bdbd7504bb22abc583769e7974c49353176eac0b03792c9fb8e"
+},
+{
+"path": "tools/theme/fonts/AlegreyaSans-ExtraBold.ttf",
+"bytes": 267996,
+"sha256": "3861f08a77d5c1b3b311055913443b07337a4b7abaff21a8cdb51fc0ae980b9e"
+},
+{
+"path": "tools/theme/fonts/AlegreyaSans-OFL.txt",
+"bytes": 4405,
+"sha256": "0677891e6a143f297350d260ad766ad33bfc18ed5fa4f213acf648d6b597ec1a"
+},
+{
+"path": "tools/theme/fonts/IMFellEnglishSC-OFL.txt",
+"bytes": 4452,
+"sha256": "2a3ca501fc4d5efcad9798531e3e06962b1e20c60e464f6cbd6c17630112c773"
+},
+{
+"path": "tools/theme/fonts/IMFellEnglishSC-Regular.ttf",
+"bytes": 183932,
+"sha256": "102324fb5434bb5da7963533426b0ad44c85bbc9e7755067535c9d11464a176b"
+},
+{
+"path": "tools/theme/fonts/NotoEmoji-OFL.txt",
+"bytes": 4330,
+"sha256": "500bb1ccf43df7bbb522112f9133a52b16e1c35e809632f5d8609b179152de5b"
+},
+{
+"path": "tools/theme/fonts/NotoEmoji.ttf",
+"bytes": 1982596,
+"sha256": "de6c18832938afc99caf132b39d6a30a19bac7f2e812e28db2535b4608d27551"
+},
+{
+"path": "tools/theme/fonts/PirataOne-OFL.txt",
+"bytes": 4427,
+"sha256": "e8ad3f3de5baeff6bac6e711d8c406e0a6b8a61d2944741532d8965d893a2681"
+},
+{
+"path": "tools/theme/fonts/PirataOne-Regular.ttf",
+"bytes": 56316,
+"sha256": "5347a2e155589ecf667d4b766613c8ee003edde9f83717fd24c09599a4b1ecc0"
+}
+]
+}
