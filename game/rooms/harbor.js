@@ -117,6 +117,15 @@ async function blackwoodPortrait(g) {
   });
 }
 
+// the lime crates' stencil (noticed when taking the first lime, or looking at the stall): Isla Agria, two peaks
+async function noticeCrates(g) {
+  if (g.flag('saw_crates')) return;
+  g.set('saw_crates');
+  await g.say("Scurvy-B-Gone limes. 'Fresh from ISLA AGRIA', it says on the crates.");
+  await g.say("There's a little picture of the island, too. An island with two peaks.");
+  if (g.flag('clue_portrait')) await foundIsle(g);
+}
+
 // the portrait's map + the lime crates' stencil: Blackwood's treasure is on Isla Agria
 async function foundIsle(g) {
   g.set('clue_isle');
@@ -293,9 +302,7 @@ export default {
       look: async g => {
         await g.say("A fruit stall. The sign says: 'SCURVY-B-GONE LIMES. Honor system. One piece of eight.'");
         if (g.flag('clue_isle')) return g.say("Limes from Isla Agria. Blackwood's island.");
-        g.set('saw_crates');
-        await g.say("The crates are stamped 'ISLA AGRIA', with a little picture of an island. An island with two peaks.");
-        if (g.flag('clue_portrait')) await foundIsle(g);
+        await noticeCrates(g);
       },
       hand: async g => {
         if (g.has('lime')) return g.say("I already have a lime. I'm not greedy. Just dishonest.");
@@ -306,6 +313,7 @@ export default {
         } else await g.say("Another one for the road. The honor system is really working out for me.");
         await g.gesture('use');
         g.give('lime');
+        await noticeCrates(g);       // the first lime: he can't miss where they come from
       },
       mouth: "I'd rather take one to go.",
     },
@@ -590,7 +598,7 @@ async function opening(g) {
     g.music('harbor');
     await g.fadeIn(2.0);
     await g.wait(600);
-    await g.walk(330, 380, 'E');
+    await g.walk(330, 380, 'S');      // facing the camera for the intro lines
     await g.say("Port Papeleo! The last place anybody saw Captain Mortimer Blackwood and his legendary treasure.");
     await g.say("That was in 1654. The trail's gone a little cold.");
     await g.wait(300);

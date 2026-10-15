@@ -87,8 +87,9 @@ wrong combinations with jokes.
             GOAL: leave Port Papeleo with the clue to Blackwood's treasure
                                |
         clue: Blackwood's 1654 portrait (ask the painter about the old, dark sample) + the lime
-        crates' stencil (look at the stall) -> Isla Agria; either order. Without it Guybrush
-        won't show his license yet ("Not yet. I didn't come all this way...").
+        crates' stencil -> Isla Agria; either order. Taking the first lime makes Guybrush notice the
+        crates ("Scurvy-B-Gone limes. 'Fresh from ISLA AGRIA'"), so the portrait is the only thing to
+        find. Without it Guybrush won't show his license yet ("Not yet. I didn't come all this way...").
                                |
                  show license to Harbor Master (harbor)
                                |

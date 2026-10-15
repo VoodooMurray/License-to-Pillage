@@ -138,7 +138,7 @@ def placeholder(w, h, name):
         font = ImageFont.truetype('/System/Library/Fonts/Supplemental/Georgia.ttf', 34 * S // 2)
         small = ImageFont.truetype('/System/Library/Fonts/Supplemental/Georgia.ttf', 14 * S // 2)
     except OSError:
-        font = small = ImageFont.load_default()
+        font, small = ImageFont.load_default(34 * S // 2), ImageFont.load_default(14 * S // 2)    # no Georgia: Pillow's own
     for text, f, y in ((name, font, Hh * 0.30), ('placeholder background: replace it in the level editor', small, Hh * 0.42)):
         tw = px.textlength(text, font=f)
         px.text(((W - tw) / 2 + 4, y + 4), text, font=f, fill=(20, 20, 30))
@@ -447,7 +447,7 @@ def icon_placeholder(name):
     try:
         f = ImageFont.truetype('/System/Library/Fonts/Supplemental/Georgia.ttf', 44)
     except OSError:
-        f = ImageFont.load_default()
+        f = ImageFont.load_default(44)
     t = name[:10]
     tw = dr.textlength(t, font=f)
     dr.text(((320 - tw) / 2, 88), t, font=f, fill=(255, 235, 170, 255))

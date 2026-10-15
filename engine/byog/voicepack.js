@@ -1,4 +1,4 @@
-// Guybrush's voice pack (License-to-Pillage-Guybrush-Voice-*.zip, a separate download) in the browser: dropped on the
+// Guybrush's voice pack (License-to-Pillage-Voice-Browser-*.zip or -Voice-Complete-*.zip, a separate download) in the browser: dropped on the
 // page, its voice files are kept in this browser's Cache Storage (served by ../../sw.js under game/voice/...) and its
 // lines join game/voice.json. The zip is read in place: the mp3s are stored uncompressed, so each one is a byte range of
 // the zip; only pack.json is inflated. The pack's decoded audio for ScummVM (scumm/audio_cache) is skipped.
@@ -20,7 +20,7 @@ export async function readPack(files) {
     if (!/\.zip$/i.test(f.path)) continue;
     let entries;
     try { entries = await zipEntries(f.file); } catch (err) { continue; }
-    const rel = n => n.replace(/^[^/]*Guybrush-Voice[^/]*\//, '');      // the zip's top folder
+    const rel = n => n.replace(/^[^/]*-Voice[^/]*\//, '');      // the zip's top folder (also 0.1.0's Guybrush-Voice names)
     const pj = entries.find(e => rel(e.name) === 'pack.json');
     if (!pj) continue;
     const meta = JSON.parse(await (await zipRead(f.file, pj)).text());

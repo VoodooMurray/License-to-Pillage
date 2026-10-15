@@ -1,0 +1,26 @@
+{
+ "source": "tools/candle_anim.py records --glow 26 --radius 14 --flame 143 207",
+ "frames": 24,
+ "fps": 12,
+ "scale": 4,
+ "atlas": [
+  {
+   "rect": [
+    117,
+    177,
+    52,
+    60
+   ],
+   "ax": 0,
+   "ay": 0
+  }
+ ],
+ "scumm_rects": [
+  [
+   117,
+   177,
+   52,
+   60
+  ]
+ ]
+}

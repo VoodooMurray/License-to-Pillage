@@ -50,28 +50,35 @@ def pcm_key(path, channels, af):
     return hashlib.sha1(f'{h.hexdigest()}|{channels}|{af}|{RATE}'.encode()).hexdigest()[:20]
 
 
-def pcmz_pack(pcm, channels):
-    """Lossless packing of s16le PCM for shipping (about 60% of the size): second differences per channel
-    (wrapping int16), low and high bytes split, lzma. 'PCMZ' u8 version, u8 channels, u32 frames, data."""
+def pcmz_pack(pcm, channels, shift=0):
+    """Packing of s16le PCM for shipping: second differences per channel (wrapping int16), low and high bytes split,
+    lzma. shift > 0 drops that many low bits first (rounded; shift 2 = 14-bit samples, noise far below the mp3
+    sources'). v1: 'PCMZ' u8 1, u8 channels, u32 frames, data; v2 adds u8 shift after the frames."""
     import lzma
     import numpy as np
     a = np.frombuffer(pcm, '<i2').reshape(-1, channels).astype(np.int32)
+    if shift:
+        a = (a + (1 << (shift - 1))) >> shift
     d1 = np.diff(a, axis=0, prepend=np.zeros((1, channels), np.int32))
     d2 = np.diff(d1, axis=0, prepend=np.zeros((1, channels), np.int32)).astype('<i2')
     b = d2.view(np.uint8).reshape(-1, 2)
-    return b'PCMZ' + struct.pack('<BBI', 1, channels, len(a)) + lzma.compress(b[:, 0].tobytes() + b[:, 1].tobytes(), preset=6)
+    head = struct.pack('<BBI', 2, channels, len(a)) + bytes([shift]) if shift else struct.pack('<BBI', 1, channels, len(a))
+    return b'PCMZ' + head + lzma.compress(b[:, 0].tobytes() + b[:, 1].tobytes(), preset=6)
 
 
 def pcmz_unpack(data):
     import lzma
     import numpy as np
-    assert data[:4] == b'PCMZ' and data[4] == 1, 'not a PCMZ v1 file'
+    assert data[:4] == b'PCMZ' and data[4] in (1, 2), 'not a PCMZ v1/v2 file'
     channels, frames = data[5], struct.unpack('<I', data[6:10])[0]
-    raw = np.frombuffer(lzma.decompress(data[10:]), np.uint8)
+    shift, body = (data[10], data[11:]) if data[4] == 2 else (0, data[10:])
+    raw = np.frombuffer(lzma.decompress(body), np.uint8)
     n = len(raw) // 2
     d2 = (raw[:n].astype(np.uint16) | (raw[n:].astype(np.uint16) << 8)).view(np.int16).reshape(frames, channels)
     d1 = np.cumsum(d2.astype(np.int64), axis=0).astype(np.int16)
     a = np.cumsum(d1.astype(np.int64), axis=0).astype(np.int16)
+    if shift:
+        a = np.clip(a.astype(np.int32) << shift, -32768, 32767)
     return a.astype('<i2').tobytes()
 
 

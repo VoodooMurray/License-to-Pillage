@@ -488,7 +488,7 @@ export function gameDrop(engine) {
         return;
       }
       const n = await addVoice(files);
-      if (!n) return say("Drop Guybrush's voice pack (License-to-Pillage-Guybrush-Voice….zip) to add his voice.");
+      if (!n) return say("Drop Guybrush's voice pack (License-to-Pillage-Voice-Browser….zip) to add his voice.");
       say(`Guybrush's voice is added (${n} lines).`);
       setTimeout(() => location.reload(), 1500);
     } catch (err) {

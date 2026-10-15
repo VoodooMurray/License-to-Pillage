@@ -67,6 +67,69 @@ def radial(w, h, cx, cy, r, stops):
     return Image.fromarray(out.astype(np.uint8))
 
 
+
+# ---------------------------------------------------------------- painted pieces (tools/theme/art, mod/artgen/ui.py)
+ART = os.path.join(HERE, 'art')
+
+
+def art(name):
+    for ext in ('.png', '.jpg'):
+        p = os.path.join(ART, name + ext)
+        if os.path.exists(p):
+            return Image.open(p).convert('RGBA')
+    return None
+
+
+def fit(im, w, h):
+    """The picture cropped to its visible pixels and scaled to fit w x h logical px (at the art scale)."""
+    im = im.crop(im.getchannel('A').point(lambda v: 255 if v > 24 else 0).getbbox())
+    k = min(w * S / im.width, h * S / im.height)
+    return im.resize((max(1, round(im.width * k)), max(1, round(im.height * k))), Image.LANCZOS)
+
+
+def place(w, h, piece, cx, cy):
+    """A transparent w x h logical canvas (art scale) with piece centred on (cx, cy)."""
+    im = Image.new('RGBA', (w * S, h * S), (0, 0, 0, 0))
+    im.alpha_composite(piece, (round(cx * S - piece.width / 2), round(cy * S - piece.height / 2)))
+    return im
+
+
+def tint(im, rgb, amount=0.55):
+    """The picture shifted towards a colour (the hot variants), alpha kept."""
+    a = np.asarray(im).astype(np.float32)
+    lum = a[..., :3].mean(2, keepdims=True) / 255.0
+    a[..., :3] = a[..., :3] * (1 - amount) + np.array(rgb, np.float32) * (0.35 + 0.9 * lum) * amount
+    return Image.fromarray(np.clip(a, 0, 255).astype(np.uint8))
+
+
+def lit_icon(icon):
+    """A hovered verb: brighter, with a warm glow round it."""
+    a = np.asarray(icon).astype(np.float32)
+    a[..., :3] = np.clip(a[..., :3] * 1.25 + 20, 0, 255)
+    bright = Image.fromarray(a.astype(np.uint8))
+    pad = 10 * S
+    out = Image.new('RGBA', (icon.width + 2 * pad, icon.height + 2 * pad), (0, 0, 0, 0))
+    glow = Image.new('RGBA', out.size, (255, 244, 190, 0))
+    m = Image.new('L', out.size, 0)
+    m.paste(icon.getchannel('A'), (pad, pad))
+    glow.putalpha(m.filter(ImageFilter.GaussianBlur(4 * S)).point(lambda v: min(255, v * 2)))
+    out.alpha_composite(glow)
+    out.alpha_composite(bright, (pad, pad))
+    return out
+
+
+def painted_coin(lit=None):
+    base = art('coin')
+    w, h = 116, 118
+    im = place(w, h, fit(base, 110, 110), 58, 59)
+    for verb, c, size in (('hand', (25, 54), 32), ('eye', (58, 34), 34), ('mouth', (91, 56), 32)):
+        icon = fit(art('icon_' + verb), size, size)
+        if lit == verb:
+            icon = lit_icon(icon)
+        im.alpha_composite(icon, (round(c[0] * S - icon.width / 2), round(c[1] * S - icon.height / 2)))
+    return im
+
+
 # ---------------------------------------------------------------- verb coin
 def emoji(ch, size_px):
     f = ImageFont.truetype(font_path('NotoEmoji.ttf'), int(size_px))
@@ -101,6 +164,11 @@ def engrave(base, mask, center, lit):
 
 
 def coin(lit=None):
+    if art('coin_full'):        # one painted coin with hand / eye / parrot, lit versions from mod/artgen/ui.py lit
+        name = {'hand': 'coin_lit_hand', 'look': 'coin_lit_eye', 'mouth': 'coin_lit_parrot'}.get(lit, 'coin_full')
+        return place(116, 118, fit(art(name) or art('coin_full'), 112, 112), 58, 59)
+    if all(art(n) for n in ('coin', 'icon_hand', 'icon_eye', 'icon_mouth')):
+        return painted_coin({'look': 'eye'}.get(lit, lit))
     w, h = 116, 118
     disc = radial(w, h, 50, 48, 64, [(0, GOLD[0]), (0.45, GOLD[1]), (0.85, GOLD[2]), (1.0, GOLD[3])])
     mask = Image.new('L', disc.size, 0)
@@ -119,45 +187,76 @@ def coin(lit=None):
 
 
 # ---------------------------------------------------------------- cursors, arrows
-def star_cursor(color):
-    im = canvas(80, 56)
+# Drawn at their own size like a cartoon cel (bold shape, thick wobbly ink outline, flat bright paint, one highlight
+# stroke), the way CMI's own read at a glance; the shapes are ours (a compass star, a fat arrow).
+def wobbly(pts, amt, seed, step=2.0):
+    """A closed polygon (logical px) redrawn by hand: edges subdivided, each point nudged a little."""
+    import random
+    rng = random.Random(seed)
+    out = []
+    for (x0, y0), (x1, y1) in zip(pts, pts[1:] + pts[:1]):
+        n = max(1, int(math.hypot(x1 - x0, y1 - y0) / step))
+        for k in range(n):
+            t = k / n
+            out.append((x0 + (x1 - x0) * t + rng.uniform(-amt, amt), y0 + (y1 - y0) * t + rng.uniform(-amt, amt)))
+    return out
+
+
+def cel(w, h, pts, fill, seed, ink=3.2, shade=None, shine=None):
+    """A cartoon cel: drop shadow, ink outline (the shape grown by ink px), paint, a darker lower half, a highlight."""
+    im = canvas(w, h)
     d = ImageDraw.Draw(im)
-    cx, cy = 34, 25
-    for ang in (0, 90, 180, 270):
-        a = math.radians(ang)
-        ux, uy = math.cos(a), math.sin(a)
-        vx, vy = -uy, ux
-        tip = (cx + ux * 15, cy + uy * 15)
-        b1 = (cx + ux * 4 + vx * 3.5, cy + uy * 4 + vy * 3.5)
-        b2 = (cx + ux * 4 - vx * 3.5, cy + uy * 4 - vy * 3.5)
-        d.polygon([P(*tip), P(*b1), P(*b2)], fill=color, outline=INK, width=SS * 3)
-    d.ellipse([P(cx - 2.2, cy - 2.2), P(cx + 2.2, cy + 2.2)], fill=INK)
+    out = wobbly(pts, 0.35, seed)
+    cx = sum(x for x, _ in pts) / len(pts); cy = sum(y for _, y in pts) / len(pts)
+    def grown(q, k):
+        return [(x + (x - cx) / max(1e-6, math.hypot(x - cx, y - cy)) * k, y + (y - cy) / max(1e-6, math.hypot(x - cx, y - cy)) * k) for x, y in q]
+    d.polygon([P(x + 1.6, y + 1.8) for x, y in grown(out, ink)], fill=(0, 0, 0, 90))           # shadow
+    d.polygon([P(*q) for q in grown(out, ink)], fill=INK)                                         # ink
+    d.polygon([P(*q) for q in out], fill=fill)                                                    # paint
+    if shade:                                # lit from the upper left: a darker rim along the lower right
+        d.polygon([P(*q) for q in out], fill=shade)
+        d.polygon([P(x - 0.9, y - 1.0) for x, y in grown(out, -1.0)], fill=fill)
+    if shine:
+        d.line([P(*q) for q in shine], fill=(255, 255, 255, 200), width=int(SS * S * 1.1), joint='curve')
     return finish(im)
+
+
+def star_cursor(color):
+    cx, cy = 34, 25
+    pts = []
+    for k in range(8):                       # 4 long points, 4 short ones between
+        a = math.radians(k * 45 - 90)
+        r = 14 if k % 2 == 0 else 5.5
+        pts.append((cx + math.cos(a) * r, cy + math.sin(a) * r))
+    hot = color[1] < 200
+    fill = (236, 60, 34, 255) if hot else (255, 255, 250, 255)
+    shade = (178, 30, 18, 255) if hot else (196, 206, 216, 255)
+    return cel(80, 56, pts, fill, 7, ink=2.6, shade=shade, shine=[(cx - 1.5, cy - 11), (cx - 1.2, cy - 5)])
 
 
 def hourglass():
-    im = canvas(80, 56)
-    m = emoji('⌛', 34 * S * SS)
-    cx, cy = P(39, 24)
-    fill = Image.new('RGBA', m.size, (250, 226, 150, 255))
-    fill.putalpha(m)
-    edge = Image.new('RGBA', m.size, INK)
-    edge.putalpha(m.filter(ImageFilter.MaxFilter(9)))
-    im.alpha_composite(edge, (int(cx - m.width / 2), int(cy - m.height / 2)))
-    im.alpha_composite(fill, (int(cx - m.width / 2), int(cy - m.height / 2)))
-    return finish(im)
+    if not art('hourglass'):
+        return Image.new('RGBA', (80 * S, 56 * S))
+    piece = fit(art('hourglass'), 30, 38)
+    a = piece.getchannel('A').point(lambda v: 255 if v > 40 else 0)
+    edge = Image.new('RGBA', piece.size, INK)
+    edge.putalpha(a.filter(ImageFilter.MaxFilter(2 * round(S * 1.4) + 1)))        # a thick ink edge around it
+    pad = Image.new('RGBA', piece.size, (0, 0, 0, 0))
+    pad.alpha_composite(edge); pad.alpha_composite(piece)
+    return place(80, 56, pad, 39, 24)
 
 
-ARROW = [(0, -16), (11, -4), (4, -4), (4, 14), (-4, 14), (-4, -4), (-11, -4)]      # points up, centred
+ARROW = [(0, -14), (10.5, -2), (4.5, -2), (4.5, 11), (-4.5, 11), (-4.5, -2), (-10.5, -2)]      # points up, centred
 
 
 def arrow(deg, color=(255, 214, 92, 255)):
-    im = canvas(80, 56)
-    d = ImageDraw.Draw(im)
+    hot = color[1] < 150
     a = math.radians(deg)
-    pts = [(39 + x * math.cos(a) - y * math.sin(a), 24 + x * math.sin(a) + y * math.cos(a)) for x, y in ARROW]
-    d.polygon([P(*p) for p in pts], fill=color, outline=INK, width=SS * 4)
-    return finish(im)
+    rot = lambda x, y: (39 + x * math.cos(a) - y * math.sin(a), 24 + x * math.sin(a) + y * math.cos(a))
+    fill = (240, 58, 30, 255) if hot else (255, 196, 48, 255)
+    shade = (176, 28, 14, 255) if hot else (222, 128, 20, 255)
+    return cel(80, 56, [rot(x, y) for x, y in ARROW], fill, 11 + deg, ink=3.0, shade=shade,
+               shine=[rot(-2, 8), rot(-2, -1), rot(-4.5, -3)])
 
 
 def tri(w, h, pts, color=(255, 214, 92, 255)):
@@ -169,6 +268,8 @@ def tri(w, h, pts, color=(255, 214, 92, 255)):
 # ---------------------------------------------------------------- chest
 def chest():
     w, h = 640, 472
+    if art('chest'):
+        return art('chest').convert('RGB').resize((w * S, h * S), Image.LANCZOS).convert('RGBA')
     W, H = w * S, h * S
     rng = np.random.default_rng(3)
     yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
@@ -193,32 +294,34 @@ def chest():
 
 
 # ---------------------------------------------------------------- fonts
-FONT_SPECS = {   # engine font number: (ttf, target average lowercase advance in logical px, cell height)
-    1: ('AlegreyaSans-ExtraBold.ttf', 11.0, 30),
-    3: ('AlegreyaSans-Bold.ttf', 7.4, 23),
-    4: ('PirataOne-Regular.ttf', 11.0, 36),
+FONT_SPECS = {   # engine font number: (ttf, capital height incl. the outline in logical px (as CMI's), cell height)
+    1: ('IMFellEnglish-Regular.ttf', 18.0, 30),
+    3: ('IMFellEnglish-Regular.ttf', 13.5, 23),
+    4: ('IMFellEnglish-Regular.ttf', 20.5, 36),
 }
+TRACK = -0.25     # logical px between letters beyond the font's own spacing (the outlines just touch, as in CMI)
 CHARS = [c for c in range(32, 127)] + [c for c in range(160, 256)] + [0x2018, 0x2019, 0x201C, 0x201D, 0x2013, 0x2014, 0x2026]
 
 
-def glyph_font(ttf_path, target_adv):
-    """The font at the size whose average lowercase advance (+ the outline) is target_adv logical px."""
+def glyph_font(ttf_path, cap):
+    """The font at the size whose capital H (+ the 1 px outline above and below) is cap logical px tall."""
     size = 20.0
     for _ in range(30):
         f = ImageFont.truetype(ttf_path, max(4, round(size * S)))
-        adv = sum(f.getlength(chr(c)) for c in range(97, 123)) / 26 / S + 2      # + the outline
-        if abs(adv - target_adv) < 0.15:
+        bb = f.getbbox('H')
+        h = (bb[3] - bb[1]) / S + 2
+        if abs(h - cap) < 0.1:
             break
-        size *= target_adv / adv
+        size *= cap / h
     return ImageFont.truetype(ttf_path, max(4, round(size * S))), size
 
 
-def build_font(ttf_path, n, out_dir, lo=False, target_adv=None, cell=None):
+def build_font(ttf_path, n, out_dir, lo=False, cap=None, cell=None):
     """An engine font atlas (fontN.png + fontN.json, see engine/font.js) from any TTF/OTF: white glyphs with a 1 px
-    black outline in cells of the engine font's height, sized like the font it replaces. lo: the 1x pixel look."""
-    target_adv = target_adv or FONT_SPECS[n][1]
+    black outline in cells of the engine font's height, letters as tall as the font it replaces. lo: the 1x pixel look."""
+    cap = cap or FONT_SPECS[n][1]
     cell = cell or FONT_SPECS[n][2]
-    f, size = glyph_font(ttf_path, target_adv)
+    f, size = glyph_font(ttf_path, cap)
     asc, desc = f.getmetrics()
     stroke = S                     # 1 logical px of outline
     top = (cell * S - (asc + desc)) // 2
@@ -228,10 +331,10 @@ def build_font(ttf_path, n, out_dir, lo=False, target_adv=None, cell=None):
     for code in CHARS:
         ch = chr(code)
         try:
-            adv = f.getlength(ch) / S + 2
+            adv = f.getlength(ch) / S + 1 + TRACK
         except Exception:  # noqa: BLE001 - a glyph the font lacks
             continue
-        aw = max(1, int(math.ceil(adv))) * S
+        aw = max(1, int(math.ceil(adv + 1))) * S
         g = Image.new('RGBA', (aw, cell * S), (0, 0, 0, 0))
         ImageDraw.Draw(g).text((stroke, top), ch, font=f, fill=(255, 255, 255, 255), stroke_width=stroke, stroke_fill=(0, 0, 0, 255))
         if lo:      # 1x pixels: shrink, harden, then each pixel 4x4
@@ -243,7 +346,7 @@ def build_font(ttf_path, n, out_dir, lo=False, target_adv=None, cell=None):
             g = Image.fromarray(a).resize((aw, cell * S), Image.NEAREST)
         if x + aw > Wd:
             x, y, rowh = 0, y + rowh + 2, 0
-        placed.append((code, g, x, y, int(math.ceil(adv))))
+        placed.append((code, g, x, y, round(adv) if lo else round(adv, 2)))
         x += aw + 2
         rowh = max(rowh, g.height)
     atlas = Image.new('RGBA', (Wd, y + rowh), (0, 0, 0, 0))

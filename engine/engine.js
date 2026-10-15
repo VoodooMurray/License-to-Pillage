@@ -93,12 +93,25 @@ export class Engine {
     if (mode !== 'hd') await this.setGraphics(mode, { quiet: true });
     try { this.voiceMap = await json(this.path('voice.json')); } catch (err) { this.voiceMap = {}; }
     this.voiceOn = localStorage.getItem('cmi-levels:voice') !== 'off';
+    // music on/off (F5); ?nomusic mutes it for this visit without changing the setting (tests)
+    this.audio.musicOn = !params.has('nomusic') && localStorage.getItem('cmi-levels:music') !== 'off';
     // text language: ?lang=de, else the last choice (F5 menu)
     this.lang = new Lang();
     await this.lang.load(params.get('lang') || (params.has('test') ? 'en' : localStorage.getItem('cmi-levels:lang')) || 'en', p => this.path(p));
     // actors
     for (const [id, def] of Object.entries(this.game.actors || {})) {
       const costume = await this.loadCostume(id, def);
+      // a stand-in main character brings his own name: "aliases" in his actor.json rename the shown text
+      // (the built-in hero: Guybrush Threepwood -> Drybrush Cheapwood) and "voice": false (or "mumble": engine/audio.js synthesizes one) keeps the old voice out
+      if (id === this.game.player && costume?.def?.aliases) {
+        this.aliases = Object.entries(costume.def.aliases).sort((x, y) => y[0].length - x[0].length);
+        this.playerMute = costume.def.voice === false || costume.def.voice === 'mumble';
+        this.playerMumble = costume.def.voice === 'mumble';
+        // his own recorded lines (original text -> file in his costume folder); lines without one: the mumble
+        this.playerLines = Object.fromEntries(Object.entries(costume.def.lines || {}).map(([k, v]) => [k, `${costume.path}/${v}`]));
+        // and his own pictures for the ones that show Guybrush ("images": game path -> path in the theme)
+        this.imageSwap = Object.fromEntries(Object.entries(costume.def.images || {}).map(([k, v]) => [k, ORIGINAL + v]));
+      }
       const a = new Actor(id, def, costume);
       if (def.anim) a.baseRole = def.anim;
       this.actors.set(id, a);
@@ -192,10 +205,15 @@ export class Engine {
   }
 
   // A costume, or null (the actor stays invisible) when it can't be loaded; the main character falls back to CMI's
-  // Guybrush (cmi/actors/guybrush) when the game's own costume is missing (e.g. a mod release before installing)
+  // Guybrush (cmi/actors/guybrush) when the game's own costume is missing (e.g. a mod release before installing), then to
+  // the built-in stand-in hero (engine/theme/original/actors/hero, mod/artgen/drybrush.py)
   async loadCostume(id, def) {
-    const paths = def.costume ? [def.costume] : [];
+    // ?standin: play as the stand-in even when Guybrush is there (to try him out)
+    const standin = id === this.game.player && new URLSearchParams(location.search).has('standin');
+    const paths = def.costume && !standin ? [def.costume] : [];
+    if (standin) paths.push(ORIGINAL + 'actors/hero');
     if (id === this.game.player && !paths.includes('cmi/actors/guybrush')) paths.push('cmi/actors/guybrush');
+    if (id === this.game.player) paths.push(ORIGINAL + 'actors/hero');      // the built-in stand-in (nothing of CMI)
     for (const p of paths) {
       try { const c = await Costume.load(this.path(p)); c.path = p; return c; } catch (err) { console.warn(`costume ${p}: ${err.message}`); }
     }
@@ -234,7 +252,11 @@ export class Engine {
   }
 
   // the shown text in the current language (engine/i18n.js)
-  t(s, ...args) { return this.lang ? this.lang.t(s, ...args) : s; }
+  t(s, ...args) {
+    const r = this.lang ? this.lang.t(s, ...args) : s;
+    if (!this.aliases || typeof r !== 'string') return r;
+    return this.aliases.reduce((x, [from, to]) => x.split(from).join(to), r);
+  }
 
   async setLang(code) {
     await this.lang.load(code, p => this.path(p));
@@ -244,7 +266,7 @@ export class Engine {
 
   // a speech entry's lines in the current language (say() wraps the English text for tests and scripts)
   shownLines(t) {
-    if (this.lang.code === 'en') return t.lines;
+    if (this.lang.code === 'en' && !this.aliases) return t.lines;
     if (t.text == null) return t.lines.map(l => this.t(l));
     const key = t.text + '\u0000' + t.width;
     this.wrapCache ??= new Map();
@@ -254,6 +276,7 @@ export class Engine {
 
   path(p) {
     if (!p) return p;
+    if (this.imageSwap?.[p]) return this.imageSwap[p];
     if (p.startsWith('cmi/') || p.startsWith('engine/') || p.startsWith('/') || p.startsWith('http')) return p;
     return this.base + '/' + p;
   }
@@ -288,6 +311,7 @@ export class Engine {
   update(dt) {
     this.time += dt;
     const room = this.room;
+    if (room && this.player) this.player.look = this.mouse.inside ? [this.mouse.x + this.camX, this.mouse.y] : null;
     if (room) for (const a of this.actorsIn(room.id)) a.update(dt, room, this.skipping);
     // timers
     if (this.timers.length) {
@@ -473,7 +497,7 @@ export class Engine {
       const img = lo && i === 0 ? lo.bg : imageNow(this.path(l.img));
       if (img) c.drawImage(img, l.x || 0, l.y || 0, l.w || room.width, l.h || room.height);
     });
-    room.drawAnims(c, this.time);
+    room.drawAnims(c, this.time, this);
     const list = [];
     for (const o of room.objects.values()) {
       const sp = room.objSprite(this, o);
@@ -1154,6 +1178,7 @@ export class Engine {
     const sp = this.textSpeed < 0.9 ? 'fast' : this.textSpeed > 1.2 ? 'slow' : 'normal';
     this.menu.items = [t('Resume'), t('Save game'), t('Load game'), t('Text speed: {0}', t(sp)),
       t('Voices: {0}', t(this.voiceOn ? 'on' : 'off')),
+      t('Music: {0}', t(this.audio.musicOn ? 'on' : 'off')),
       t('Graphics: {0} (Alt+0)', t({ hd: 'HD', original: 'original', vga: 'VGA', ega: 'EGA' }[this.gfxMode])),
       t('Language: {0}', LANGS[this.lang.code]), t('Restart'),
       // entries added by the page (engine.menuExtras: [{label(t), click(engine)}], e.g. engine/byog/)
@@ -1168,7 +1193,7 @@ export class Engine {
     this.fontBig.draw(c, title, 320 - tw / 2, 70, [255, 211, 83]);
     const m = this.menu;
     m.hover = -1;
-    const step = m.items.length > 8 ? 31 : 36;
+    const step = m.items.length > 9 ? 28 : m.items.length > 8 ? 31 : 36;
     m.items.forEach((it, i) => {
       const y = 150 + i * step, w = this.font.width(it);
       const hov = this.mouse.y >= y && this.mouse.y < y + 32 && Math.abs(this.mouse.x - 320) < w / 2 + 20;
@@ -1187,10 +1212,11 @@ export class Engine {
     else if (i === 2) { if (this.load('slot1')) this.menu = null; else m.msg = this.t('No saved game.'); }
     else if (i === 3) { this.textSpeed = this.textSpeed > 1.2 ? 0.7 : this.textSpeed < 0.9 ? 1 : 1.5; this.refreshMenu(); }
     else if (i === 4) { this.voiceOn = !this.voiceOn; localStorage.setItem('cmi-levels:voice', this.voiceOn ? 'on' : 'off'); this.refreshMenu(); }
-    else if (i === 5) this.setGraphics(this.nextGfxMode, { quiet: true }).then(() => this.refreshMenu());
-    else if (i === 6) this.setLang(this.lang.next()).then(() => { if (m.msg) m.msg = null; this.refreshMenu(); });
-    else if (i === 7) { localStorage.removeItem(this.saveKey('auto')); location.reload(); }
-    else this.menuExtras?.[i - 8]?.click(this);
+    else if (i === 5) { this.audio.setMusicOn(!this.audio.musicOn); localStorage.setItem('cmi-levels:music', this.audio.musicOn ? 'on' : 'off'); this.refreshMenu(); }
+    else if (i === 6) this.setGraphics(this.nextGfxMode, { quiet: true }).then(() => this.refreshMenu());
+    else if (i === 7) this.setLang(this.lang.next()).then(() => { if (m.msg) m.msg = null; this.refreshMenu(); });
+    else if (i === 8) { localStorage.removeItem(this.saveKey('auto')); location.reload(); }
+    else this.menuExtras?.[i - 9]?.click(this);
   }
 
   saveKey(slot) { return `cmi-levels:${this.game.id}:${slot}`; }
@@ -1309,13 +1335,15 @@ function makeApi(e) {
       e.texts.push(entry);
       const anim = a && a.room === e.room?.id && a.costume && !opts.noAnim && !a.noTalk;
       if (anim) { a.talking = true; if (!a.path.length) a.play('talk'); }
-      const voice = e.voiceOn && (e.voiceMap?.[`${who}|${text}`] || e.game.voice?.[text]);
+      const voice = e.voiceOn && (e.playerMute && who === e.game.player ? e.playerLines?.[text]
+        : e.voiceMap?.[`${who}|${text}`] || e.game.voice?.[text]);
       // the line can be skipped from the moment it shows, even while its voice is still loading
       const d = deferred();
       let t = null, skipped = false;
       const skip = () => { skipped = true; if (t) e.timers = e.timers.filter(x => x !== t); d.resolve(); };
       e.lineSkip = skip;
-      const vdur = voice ? await e.audio.voice(e.path(voice)) : 0;
+      const vdur = voice ? await e.audio.voice(e.path(voice))
+        : e.voiceOn && e.playerMumble && who === e.game.player ? e.audio.mumble(e.t(text)) : 0;
       if (!skipped) {
         // voiced lines end with the voice (as in CMI); text-only lines are timed by their length
         const ms = opts.ms ?? (vdur > 0 ? vdur * 1000 + 350 : (900 + e.t(text).length * 55) * e.textSpeed);

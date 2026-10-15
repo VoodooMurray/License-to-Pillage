@@ -487,8 +487,8 @@ def cmd_rebuild(a, argv):
     say('Rebuilt.')
 
 
-# ------------------------------------------------------------------ the optional Guybrush voice pack
-PACK_GLOB = 'License-to-Pillage-Guybrush-Voice'
+# ------------------------------------------------------------------ the optional voice packs
+PACK_PREFIXES = ('License-to-Pillage-Voice-', 'License-to-Pillage-Guybrush-Voice')     # (the second: 0.1.0's name)
 
 
 def find_pack(path=None):
@@ -501,9 +501,9 @@ def find_pack(path=None):
         except OSError:
             continue
         for n in names:
-            if '-Web-' in n:
+            if '-Voice-Browser-' in n or '-Web-' in n:
                 continue        # the browser's pack: dropped on the page, not installed here
-            if n.startswith(PACK_GLOB) and (n.endswith('.zip') or os.path.isfile(os.path.join(d, n, 'pack.json'))):
+            if n.startswith(PACK_PREFIXES) and (n.endswith('.zip') or os.path.isfile(os.path.join(d, n, 'pack.json'))):
                 return os.path.join(d, n)
     return None
 
@@ -521,7 +521,7 @@ def _pack_files(pack):
         z = zipfile.ZipFile(pack)
         for info in z.infolist():
             parts = info.filename.split('/', 1)
-            rel = parts[1] if len(parts) == 2 and parts[0].startswith(PACK_GLOB) else info.filename
+            rel = parts[1] if len(parts) == 2 and parts[0].startswith(PACK_PREFIXES) else info.filename
             if not info.is_dir() and ok(rel):
                 out[rel] = (lambda i=info: z.read(i))
     else:
@@ -536,7 +536,7 @@ def _pack_files(pack):
 def voice_pack_install(path, log=say):
     pack = find_pack(path)
     if not pack or not os.path.exists(pack):
-        fail('no voice pack found: python3 setup.py voice-pack "<License-to-Pillage-Guybrush-Voice-....zip>"')
+        fail('no voice pack found: python3 setup.py voice-pack "<License-to-Pillage-Voice-Complete-....zip>"')
     files = _pack_files(pack)
     if 'pack.json' not in files:
         fail(f'{pack} is not a License to Pillage voice pack (no pack.json)')
@@ -544,7 +544,7 @@ def voice_pack_install(path, log=say):
     entries = meta.get('entries') or {}
     if not any(r.startswith('scumm/audio_cache/') for r in files) and not shutil.which('ffmpeg'):
         fail(f'{os.path.basename(pack)} is the browser pack: drop it onto the game page in your browser. For this '
-             'installation (the ScummVM version too) use License-to-Pillage-Guybrush-Voice-<version>.zip.')
+             'installation (the ScummVM version too) use License-to-Pillage-Voice-Complete-<version>.zip.')
     vj = os.path.join(ROOT, 'game', 'voice.json')
     base = os.path.join(ROOT, 'game', 'voice.base.json')
     if not os.path.isfile(base):                    # the download's own voice map, kept for --remove

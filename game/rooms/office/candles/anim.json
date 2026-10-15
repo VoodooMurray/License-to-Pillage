@@ -1,0 +1,42 @@
+{
+ "source": "tools/candle_anim.py office --glow 22 --radius 8 --lamp --flame 201 135 --flame 280 161",
+ "frames": 24,
+ "fps": 12,
+ "scale": 4,
+ "atlas": [
+  {
+   "rect": [
+    180,
+    114,
+    45,
+    38
+   ],
+   "ax": 0,
+   "ay": 0
+  },
+  {
+   "rect": [
+    259,
+    133,
+    44,
+    49
+   ],
+   "ax": 182,
+   "ay": 0
+  }
+ ],
+ "scumm_rects": [
+  [
+   180,
+   114,
+   45,
+   38
+  ],
+  [
+   259,
+   133,
+   44,
+   49
+  ]
+ ]
+}

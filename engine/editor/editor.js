@@ -8,7 +8,7 @@ import { clamp } from '../util.js';
 import { bumpSteps } from '../steps.js';
 import { setPath, clone } from './paths.js';
 import { RoomDoc, KEY } from './model.js';
-import { api, setProject, getProject } from './api.js';
+import { api, setProject, getProject, editorMode, local } from './api.js';
 import { arrivals, movedValue, writable, befores } from './arrivals.js';
 import { ProjectTools } from './project.js';
 import { Scripts } from './scripts.js';
@@ -68,6 +68,7 @@ class Editor {
     this.arrivalCache = null;
     api.opening().then(r => { this.gameOpening = r.data?.opening || null; this.arrivalCache = null; if (this.panel) this.hitmapChanged(); this.panel?.refresh(['arrivals']); });
     this.buildDom();
+    editorMode().then(m => this.browserMode(m === 'browser'));
     this.project.load().then(() => { this.renderGames(); if (getProject()) { this.project.loadLibrary(); this.project.loadStyle(); this.project.loadTheme(); } });
     this.tools = new Tools(this, this.layer);
     this.panel = new Panel(this, this.side);
@@ -149,6 +150,9 @@ class Editor {
       this.gameSelect.blur();
       this.gameSelect.value = getProject() || '';
       if (v === '+') this.project.newGame();
+      else if (v === '>export') this.exportGame();
+      else if (v === '<import') this.importGame();
+      else if (v === '!forget') this.forgetBrowser();
       else if (v !== (getProject() || '')) this.project.go(v || null);
     });
   }
@@ -156,8 +160,55 @@ class Editor {
   renderGames() {
     const cur = getProject() || '';
     this.gameSelect.innerHTML = this.project.projects.map(p => `<option value="${p.key || ''}">${(p.title || p.dir).replace(/</g, '&lt;')}${p.reference ? ' (reference)' : ''}</option>`).join('')
-      + '<option value="+">+ New game…</option>';
+      + '<option value="+">+ New game…</option>'
+      + (this.browser ? '<option value=">export">⇩ Export this game (zip)…</option><option value="<import">⇧ Import a game (zip)…</option>'
+        + '<option value="!forget">Forget what this browser kept…</option>' : '');
     this.gameSelect.value = cur;
+  }
+
+  // ------------------------------------------------------------ no tools/serve.py (a static host): the browser backend
+  browserMode(on) {
+    this.browser = on;
+    if (!on) return;
+    const off = (id, why) => { const b = document.getElementById(id); if (b) { b.disabled = true; b.title = why; } };
+    off('ed-build', 'The ScummVM build needs the desktop editor (python3 setup.py editor)');
+    off('ed-comfy', '✨ AI pictures need the desktop editor (python3 setup.py editor) and a ComfyUI server');
+    document.getElementById('ed').classList.add('ed-browser');
+    this.renderGames();
+    if (!sessionStorage.getItem('ltp-editor-browser-note')) {
+      sessionStorage.setItem('ltp-editor-browser-note', '1');
+      this.notice('Browser editor: everything you make is saved in this browser. Game → Export keeps a copy as a zip '
+        + '(Import brings it back, here or in another browser). Building for ScummVM and ✨ AI pictures need the desktop editor.', 'info');
+    }
+  }
+
+  async exportGame() {
+    try {
+      const n = await (await local()).exportGame(getProject());
+      this.notice(`Exported ${n} files${getProject() ? '' : ' (the changes made in this browser)'}.`, 'info');
+    } catch (err) { this.notice(`Export: ${err.message}`, 'error'); }
+  }
+
+  importGame() {
+    const inp = document.createElement('input');
+    inp.type = 'file';
+    inp.accept = '.zip,application/zip';
+    inp.onchange = async () => {
+      const f = inp.files[0];
+      if (!f) return;
+      try {
+        this.notice('Importing…', 'info');
+        const key = await (await local()).importGame(f, this.project.projects.map(p => p.key).filter(Boolean));
+        this.project.go(key);
+      } catch (err) { this.notice(`Import: ${err.message}`, 'error'); }
+    };
+    inp.click();
+  }
+
+  async forgetBrowser() {
+    if (!confirm('Forget every game and change this browser kept? (Export what you want to keep first.)')) return;
+    await (await local()).forgetAll();
+    this.project.go(null);
   }
 
   layout() {

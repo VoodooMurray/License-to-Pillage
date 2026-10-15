@@ -7,7 +7,7 @@
 //   (clip: the sprite, also when moved by g.moveObj, is only drawn inside that room rect)
 //   look / hand / mouth: handler (fn(g) | string | [strings]), use: {itemId: handler, '*': handler} }
 // Room anims: [{ id, dir }] -> dir/anim.json {frames, fps, scale, atlas: [{rect: [x, y, w, h], ax, ay}]} + dir/fNN.webp
-//   (looping animated patches of the background, e.g. water; drawn right over the layers)
+//   (looping animated patches of the background, e.g. water; drawn right over the layers; onlyIf: [obj, state])
 
 import { piecewise, pointInPoly } from './util.js';
 import { WalkArea } from './walk.js';
@@ -82,7 +82,7 @@ export class Room {
     for (const d of this.def.anims || []) {
       const dir = engine.path(d.dir);
       json(dir + 'anim.json').then(m => {
-        const an = { ...m, fps: d.fps || m.fps, imgs: [], ready: 0 };
+        const an = { ...m, fps: d.fps || m.fps, imgs: [], ready: 0, onlyIf: d.onlyIf };
         this.anims.push(an);
         for (let i = 0; i < m.frames; i++) {
           const img = new Image();
@@ -93,9 +93,11 @@ export class Room {
     }
   }
 
-  drawAnims(c, time) {
+  drawAnims(c, time, engine) {
     for (const an of this.anims || []) {
       if (an.ready < an.frames) continue;
+      // onlyIf: [object id, state]: drawn only while that object is in that state (a candle that can be taken)
+      if (an.onlyIf && engine && this.objState(engine, an.onlyIf[0]).state !== an.onlyIf[1]) continue;
       const img = an.imgs[Math.floor(time * an.fps) % an.frames];
       const s = an.scale;
       for (const { rect: [x, y, w, h], ax, ay } of an.atlas) c.drawImage(img, ax, ay, w * s, h * s, x, y, w, h);

@@ -107,7 +107,10 @@ const game = {
     lime: {
       name: 'lime', icon: 'items/lime.png',
       verbs: { mouth: 'eat' },
-      look: "A Scurvy-B-Gone lime. Just looking at it makes my face pucker.",
+      look: async g => {
+        await g.say("A Scurvy-B-Gone lime. Just looking at it makes my face pucker.");
+        if (g.flag('saw_crates')) await g.say("Grown on Isla Agria, the crates said. Island of two peaks.");
+      },
       mouth: async g => {
         g.take('lime');
         g.sfx('crunch');

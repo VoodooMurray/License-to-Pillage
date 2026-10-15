@@ -2,8 +2,8 @@
  "name": "Original (built in)",
  "note": "Made by tools/theme/build_original.py; nothing of CMI.",
  "fonts": {
-  "1": "AlegreyaSans-ExtraBold.ttf",
-  "3": "AlegreyaSans-Bold.ttf",
-  "4": "PirataOne-Regular.ttf"
+  "1": "IMFellEnglish-Regular.ttf",
+  "3": "IMFellEnglish-Regular.ttf",
+  "4": "IMFellEnglish-Regular.ttf"
  }
 }

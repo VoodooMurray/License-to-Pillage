@@ -363,6 +363,8 @@ export default {
   id: 'office',
   size: [640, 480],
   layers: [{ img: R + 'bg.jpg' }],
+  // flickering flames + a breathing glow (tools/candle_anim.py)
+  anims: [{ id: 'candles', dir: R + 'candles/' }],
   music: 'office',
   scale: [[280, 0.41], [480, 1.05]],
   walk: {
@@ -417,7 +419,8 @@ export default {
       verbs: { hand: 'take a ticket from' },
       look: "A take-a-number machine. The numbers go up. The service doesn't.",
       hand: async g => {
-        if (g.has('ticket_big') || g.flag('swapped')) return g.say("I already have a number. A very, very big number.");
+        if (g.flag('swapped')) return g.say("I've got number seven now. I'm not going back to the end of the line. Not for the rest of my life. Or Mort's.");
+        if (g.has('ticket_big')) return g.say("I already have a number. A very, very big number.");
         await g.gesture('use');
         g.sfx('ticket');
         g.give('ticket_big');

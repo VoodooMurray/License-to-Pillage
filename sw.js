@@ -2,20 +2,23 @@
 // engine loads it like an installed copy's files:
 //   - the pieces made from their copy of The Curse of Monkey Island (cmi/..., game/actors/guybrush/...), only when the
 //     server doesn't have them itself (an installed copy: setup.py install);
-//   - Guybrush's voice pack (game/voice/...), whose lines are added to game/voice.json.
+//   - Guybrush's voice pack (game/voice/...), whose lines are added to game/voice.json;
+//   - what the level editor wrote in this browser on a host without tools/serve.py (engine/editor/local/: games/...,
+//     game/...; first, they are the newest copy).
 // Every other request goes to the server untouched.
 const CACHE = 'ltp-byog-1';
 const VOICE = 'ltp-voice-1';
+const EDIT = 'ltp-editor-1';
 const SCOPE = new URL(self.registration.scope).pathname;
-let kept = null;        // Promise of {cmi, voice: {path: stored path}, entries: voice lines}; keptNow: the same once there
+let kept = null;        // Promise of {cmi, voice: {path: stored path}, entries: voice lines, edit: {path: 1 | 0 (deleted)}}
 let keptNow = null;
 let native = null;      // Promise: the server has the CMI pieces itself (probed once per start of this worker); nativeNow
 let nativeNow = null;
 
 function load() {
   const read = (cache, key) => caches.open(cache).then(c => c.match(SCOPE + key)).then(r => (r ? r.json() : null)).catch(() => null);
-  return (kept = Promise.all([read(CACHE, 'byog/manifest.json'), read(VOICE, 'byog/voice.json')])
-    .then(([m, v]) => (keptNow = { cmi: m?.files || {}, voice: v?.files || {}, entries: v?.entries || {} })));
+  return (kept = Promise.all([read(CACHE, 'byog/manifest.json'), read(VOICE, 'byog/voice.json'), read(EDIT, '.editor/index.json')])
+    .then(([m, v, ed]) => (keptNow = { cmi: m?.files || {}, voice: v?.files || {}, entries: v?.entries || {}, edit: ed?.files || {} })));
 }
 
 function serverHasThem() {
@@ -51,11 +54,16 @@ self.addEventListener('fetch', e => {
   const url = new URL(req.url);
   if (url.origin !== location.origin || !url.pathname.startsWith(SCOPE)) return;
   const rel = decodeURIComponent(url.pathname.slice(SCOPE.length));
-  if (!/^(cmi\/|game\/)/.test(rel)) return;
+  if (!/^(cmi\/|games?\/)/.test(rel)) return;
   // not one of ours (the usual case): no detour
-  if (keptNow && !keptNow.voice[rel] && !(rel === 'game/voice.json' && voiced(keptNow)) && (!keptNow.cmi[rel] || nativeNow)) return;
+  if (keptNow && !(rel in keptNow.edit) && !keptNow.voice[rel] && !(rel === 'game/voice.json' && voiced(keptNow)) && (!keptNow.cmi[rel] || nativeNow)) return;
   e.respondWith((async () => {
     const k = await (kept || load());
+    if (rel in k.edit) {
+      if (!k.edit[rel]) return new Response('', { status: 404 });
+      const hit = await (await caches.open(EDIT)).match(new URL(rel.split('/').map(encodeURIComponent).join('/'), location.origin + SCOPE).href);
+      if (hit) return answer(req, hit);
+    }
     if (rel === 'game/voice.json' && voiced(k)) return voiceMap(req, k);
     if (k.voice[rel]) {
       const hit = await (await caches.open(VOICE)).match(SCOPE + k.voice[rel]);

@@ -28,7 +28,7 @@ Python 3.8 or newer is the only requirement for the browser version (on Windows:
   and Pillow if the system Python lacks them (needs the internet once), builds the ScummVM version and finds ScummVM
   (2.0 or newer; `--scummvm "<path>"` for another one).
 - **Optional packs** (separate downloads):
-  - `License-to-Pillage-Guybrush-Voice-Web-*.zip` (browser) / `...-Guybrush-Voice-*.zip` (browser + ScummVM):
+  - `License-to-Pillage-Voice-Browser-*.zip` (browser) / `License-to-Pillage-Voice-Complete-*.zip` (browser + ScummVM):
     Guybrush's voice. Browser: drop the zip onto the game. Installed copy: `python3 setup.py voice-pack "<zip>"`.
   - `License-to-Pillage-HD-*.zip`: sharper Guybrush, coin and fonts through an AI upscaler. Browser (Chrome or Edge
     with a graphics card): drop the zip onto the game, then the game once more. Installed copy:
@@ -55,8 +55,9 @@ Python 3.8 or newer is the only requirement for the browser version (on Windows:
   pictures need a ComfyUI server (address under ⚙ in the editor; model names in `tools/comfy_models.json`).
 - MCP: while the editor runs, `python3 tools/mcp_editor.py` exposes it to an assistant (list/get/patch rooms,
   generate art, build for ScummVM, export for the web).
-- The web version is plain files: any static web server can serve this folder (the editor's saving needs
-  `tools/serve.py`).
+- The web version is plain files: any static web server can serve this folder. Without `tools/serve.py` (e.g. GitHub
+  Pages) the level editor (`?edit`) runs its Python in the browser (`engine/editor/local/`): games are kept in that
+  browser and move as zips (Game → Export / Import); ScummVM builds and ✨ AI pictures need `python3 setup.py editor`.
 
 ## Troubleshooting
 - macOS says a `.command` file "can't be opened": right-click it → Open → Open.

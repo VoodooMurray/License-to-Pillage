@@ -127,7 +127,7 @@ async function openCage(g) {
     await g.say('filbert', "SQUAWK! Overtime is over! Do not disturb! SQUAWK!");
     return;
   }
-  if (!(g.has('form') || g.has('form_done'))) {
+  if (!(g.has('form') || g.has('form_done') || g.flag('form_in'))) {     // (the clerk keeps the filled form: handed in first, the cage still opens)
     await g.say("Come on out, birdie.");
     await g.say('filbert', "SQUAWK! No form, no service! SQUAWK!");
     return;
@@ -146,6 +146,10 @@ export default {
   id: 'records',
   size: [640, 480],
   layers: [{ img: R + 'bg.jpg' }],
+  // flickering flames + a breathing glow (tools/candle_anim.py)
+  // + sunlight with floating dust from the stained-glass window (tools/sunbeam_anim.py)
+  anims: [{ id: 'sunbeam', dir: R + 'sunbeam/' }, { id: 'candles', dir: R + 'candles/' },
+    { id: 'candle_desk', dir: R + 'candle_desk/', onlyIf: ['candle', 'lit'] }],     // the candle Guybrush can take
   music: 'records',
   tint: '#e8d2b4',
   scale: [[360, 0.83], [480, 1.18]],
@@ -175,7 +179,7 @@ export default {
       hand: async g => { await g.gesture('use'); return drawers(g); },
     },
     {
-      id: 'duster', name: 'feather duster', box: [402, 122, 44, 134], hotZ: 1, walkTo: [424, 388], face: 'N',
+      id: 'duster', name: 'feather duster', box: [402, 122, 44, 134], hotZ: 1, walkTo: [384, 390], face: 'NE',
       verbs: { hand: 'pluck a feather from' },
       look: "A feather duster, soft and very tickly. It hasn't touched a speck of dust in years.",
       hand: async g => {
@@ -249,7 +253,7 @@ export default {
       hand: g => grabCandle(g),
     },
     {
-      id: 'cage', name: 'birdcage', box: [444, 140, 78, 132], walkTo: [470, 400], face: 'N', hotZ: -1,
+      id: 'cage', name: 'birdcage', box: [444, 140, 78, 132], walkTo: [372, 412], face: 'NE', hotZ: -1,
       verbs: { hand: 'open' },
       look: async g => g.has('parrot') ? g.say("An empty birdcage. Filbert's out on business.") : g.say("An ornate birdcage. There's a green parrot inside wearing a tiny clerk's visor."),
       hand: g => openCage(g),
@@ -260,7 +264,7 @@ export default {
     filbert: {
       name: 'Filbert',
       hot: [-30, -110, 64, 110],
-      walkTo: [470, 400], face: 'N',
+      walkTo: [372, 412], face: 'NE',
       look: "A green parrot wearing a tiny clerk's visor. The name plate on the cage says 'FILBERT. Filing Parrot, Grade 3.'",
       verbs: { hand: 'open cage of' },
       hand: g => openCage(g),

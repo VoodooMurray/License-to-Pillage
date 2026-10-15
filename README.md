@@ -61,9 +61,9 @@ Right-click it, choose **Open**, then **Open** again.
 ## Optional: Guybrush's voice
 In this download Guybrush speaks in subtitles; the other characters are voiced. A separate voice pack voices his lines
 too (an AI-generated voice). It comes in two sizes:
-- **License-to-Pillage-Guybrush-Voice-Web** (about 14 MB), for the browser: drop the zip onto the game page (or onto
+- **License-to-Pillage-Voice-Browser** (about 14 MB), for the browser: drop the zip onto the game page (or onto
   the page that asks for your game). The browser keeps it like the game's pieces.
-- **License-to-Pillage-Guybrush-Voice** (about 49 MB), for the browser and ScummVM: drop it onto the page the same
+- **License-to-Pillage-Voice-Complete** (about 49 MB), for the browser and ScummVM: drop it onto the page the same
   way, or, for an installed copy, put the zip into this folder and double-click **Install** again (or run
   `python3 setup.py voice-pack "<path to the zip>"`; `python3 setup.py voice-pack --remove` takes it out again).
 
@@ -110,6 +110,12 @@ index.
 - edit License to Pillage's rooms: hotspots, walk areas, exits, characters, conversations, puzzles;
 - start **your own game** (Game → New game);
 - **Build** it for ScummVM and play it there, or **Export** it as a stand-alone web folder.
+
+**In the browser, nothing installed:** open the page with `?edit` (for example on GitHub Pages, or after
+`python3 setup.py web`). The same editor runs there: new games, rooms, items, characters, hotspots, texts, pictures
+(load your own) and mp3 sounds. What you make is **kept in that browser**; *Game → Export this game* saves it as a zip,
+*Import a game* brings it back (in any browser), and the zip's folder can go into `games/` of an installed copy.
+Building for ScummVM and ✨ AI pictures need the installed editor.
 
 Everything that comes from CMI can be swapped out for your own in the editor's **Game** section (side panel):
 - **Interface theme**: the verb coin (its four states), cursors, the eight exit arrows, the chest screen,

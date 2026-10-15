@@ -3,6 +3,7 @@
 
 import { LimbState } from './costume.js';
 import { deferred, dist } from './util.js';
+import { updateGoogly, googlyParts } from './googly.js';
 
 const DIRS8 = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
 const TICK = 1 / 12;           // CMI game frame
@@ -165,6 +166,7 @@ export class Actor {
       limb.step(dt, limb.anim.fps || fps);
       if (!limb.done) allDone = false;
     }
+    updateGoogly(this, dt, room, this.look);       // live googly eyes (costume frames with "eyes")
     if (this.animDone && (allDone || skipping)) {
       const a = this.animDone; this.animDone = null; a.resolve(true);
     }
@@ -227,6 +229,7 @@ export class Actor {
         out.push({ img, x, y: this.y + c.y * s, w, h, flip: limb.flip });
       }
     }
+    if (this.googly) out.push(...googlyParts(this));
     return out;
   }
 

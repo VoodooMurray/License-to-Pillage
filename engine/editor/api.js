@@ -1,8 +1,20 @@
-// The editor's calls to tools/serve.py (every /api request carries X-Editor: 1).
+// The editor's calls to tools/serve.py (every /api request carries X-Editor: 1). Without that server (a static host
+// such as GitHub Pages) the same calls go to the browser backend (local/backend.js: the editor's Python in Pyodide,
+// games kept in this browser).
 
 const HEADERS = { 'X-Editor': '1' };
 
+// 'server' (tools/serve.py answers) or 'browser', probed once
+let modeP = null;
+export function editorMode() {
+  return (modeP ??= fetch('/api/projects', { cache: 'no-store', headers: HEADERS })
+    .then(r => (r.headers.get('Content-Type') || '').includes('json') && r.status !== 404 ? r.json().then(d => (d && 'projects' in d ? 'server' : 'browser'))
+      .catch(() => 'browser') : 'browser', () => 'browser'));
+}
+export const local = () => import('./local/backend.js');
+
 async function call(method, path, body) {
+  if (await editorMode() === 'browser') return (await local()).call(method, path, body);
   let r;
   try {
     r = await fetch('/api' + path, {
@@ -66,6 +78,7 @@ export const api = {
 
   // POST /api/build streams JSON lines: {line} per build.py output line, then {done, warnings, out}
   buildStream: async (body, onLine) => {
+    if (await editorMode() === 'browser') return { error: 'The ScummVM build needs the desktop editor (python3 setup.py editor).' };
     let resp;
     try {
       resp = await fetch('/api/build', { method: 'POST', headers: { ...HEADERS, 'Content-Type': 'application/json' }, body: JSON.stringify(body) });

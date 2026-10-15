@@ -8,6 +8,17 @@ export class Audio {
     this.music = null;       // {name, src, gain}
     this.volumes = { music: 0.55, sfx: 0.8, voice: 1.0 };
     this.voiceSrc = null;
+    this.musicOn = true;
+  }
+
+  // the F5 menu's music switch: the track keeps running silently, so switching back resumes it
+  setMusicOn(on) {
+    this.musicOn = on;
+    if (!this.ctx || !this.music?.gain) return;
+    const g = this.music.gain.gain, now = this.ctx.currentTime;
+    g.cancelScheduledValues(now);
+    g.setValueAtTime(g.value, now);
+    g.linearRampToValueAtTime(on ? this.volumes.music : 0, now + 0.4);
   }
 
   // must be called from a user gesture
@@ -35,7 +46,7 @@ export class Audio {
     const gain = this.ctx.createGain();
     const now = this.ctx.currentTime;
     gain.gain.setValueAtTime(0, now);
-    gain.gain.linearRampToValueAtTime(this.volumes.music, now + fade);
+    gain.gain.linearRampToValueAtTime(this.musicOn ? this.volumes.music : 0, now + fade);
     src.connect(gain).connect(this.master);
     src.start();
     Object.assign(this.music, { src, gain });
@@ -104,6 +115,53 @@ export class Audio {
       this.voiceSrc = src;
       return buf.duration;
     } catch (e) { return 0; }
+  }
+
+  // A Kenny-style voice for a character without recordings ("voice": "mumble"): a fast, high, muffled run of syllables,
+  // as long as the text, the same every time for the same line. Resolves with its duration in seconds.
+  mumble(text, { pitch = 380 } = {}) {
+    if (!this.ctx || !text) return 0;
+    let seed = 0;
+    for (const ch of text) seed = (seed * 31 + ch.charCodeAt(0)) >>> 0;
+    const rnd = () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296);
+    const sr = this.ctx.sampleRate, out = [];
+    const VOWELS = [[700, 1200], [500, 1700], [400, 900], [600, 1000], [350, 1500]];     // F1, F2 (Hz)
+    for (const word of text.split(/\s+/).filter(Boolean)) {
+      const n = Math.max(1, Math.round(word.replace(/[^\p{L}\p{N}]/gu, '').length / 2.6));
+      for (let i = 0; i < n; i++) {
+        const dur = 0.06 + rnd() * 0.045, len = Math.round(dur * sr);
+        const f0 = pitch * (0.85 + rnd() * 0.35), glide = (rnd() - 0.4) * 0.25, [F1, F2] = VOWELS[Math.floor(rnd() * VOWELS.length)];
+        const harm = [];
+        for (let k = 1; k * f0 < 2400; k++) {
+          const f = k * f0, a = Math.exp(-(((f - F1) / 220) ** 2)) + 0.6 * Math.exp(-(((f - F2) / 300) ** 2)) + 0.15 / k;
+          harm.push([k, a]);
+        }
+        let ph = 0;
+        for (let j = 0; j < len; j++) {
+          const t = j / len, f = f0 * (1 + glide * t);
+          ph += 2 * Math.PI * f / sr;
+          let v = 0;
+          for (const [k, a] of harm) v += a * Math.sin(k * ph);
+          out.push(v * Math.min(1, t * 8) * Math.min(1, (1 - t) * 5) * 0.22);
+        }
+        for (let j = Math.round((0.012 + rnd() * 0.02) * sr); j > 0; j--) out.push(0);
+      }
+      if (/[.,!?;:]$/.test(word)) for (let j = Math.round(0.12 * sr); j > 0; j--) out.push(0);
+      else for (let j = Math.round(0.04 * sr); j > 0; j--) out.push(0);
+    }
+    const buf = this.ctx.createBuffer(1, out.length, sr);
+    buf.getChannelData(0).set(out);
+    this.stopVoice();
+    const src = this.ctx.createBufferSource();
+    src.buffer = buf;
+    const lp = this.ctx.createBiquadFilter();            // through the parka
+    lp.type = 'lowpass'; lp.frequency.value = 1150; lp.Q.value = 2;
+    const g = this.ctx.createGain();
+    g.gain.value = this.volumes.voice;
+    src.connect(lp).connect(g).connect(this.master);
+    src.start();
+    this.voiceSrc = src;
+    return buf.duration;
   }
 
   stopVoice() {

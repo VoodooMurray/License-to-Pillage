@@ -1,0 +1,26 @@
+{
+ "source": "tools/sunbeam_anim.py records --window 157 103 44 --floor 330 440 75",
+ "frames": 24,
+ "fps": 8,
+ "scale": 2,
+ "atlas": [
+  {
+   "rect": [
+    107,
+    53,
+    304,
+    427
+   ],
+   "ax": 0,
+   "ay": 0
+  }
+ ],
+ "scumm_rects": [
+  [
+   107,
+   53,
+   304,
+   427
+  ]
+ ]
+}

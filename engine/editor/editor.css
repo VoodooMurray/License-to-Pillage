@@ -264,3 +264,6 @@
 .ed-cards .ed-buttons { margin-left: auto; }
 .ed-standalone { color: #b9e4a5; }
 .ed-standalone.ed-dim { color: var(--dim); }
+#ed-top > button:disabled { opacity: .4; cursor: not-allowed; }
+/* the browser editor (no tools/serve.py): ✨ AI pictures need the desktop editor */
+#ed.ed-browser [data-act^="ai-"], #ed.ed-browser [data-act="talk-ai"] { display: none; }

@@ -827,6 +827,8 @@ class Builder:
         """The room's `anims` entries with their anim.json (frames, fps, scale, atlas tiles, scumm_rects)."""
         out = []
         for d in self.gm.rooms[rid].get('anims') or []:
+            if d.get('onlyIf'):        # tied to an object's state (a candle that can be taken): web only for now
+                continue
             m = json.load(open(game_path(d['dir'] + 'anim.json')))
             m.update(id=d['id'], dir=d['dir'], fps=d.get('fps', m['fps']))
             out.append(m)
