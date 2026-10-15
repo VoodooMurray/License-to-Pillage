@@ -221,17 +221,73 @@ def cel(w, h, pts, fill, seed, ink=3.2, shade=None, shine=None):
     return finish(im)
 
 
+def saturate(im, k, light=1.0):
+    """The picture with its colour strength scaled by k (alpha kept); k < 1 mutes towards grey, k > 1 pushes it."""
+    a = np.asarray(im).astype(np.float32)
+    lum = (a[..., 0] * 0.3 + a[..., 1] * 0.59 + a[..., 2] * 0.11)[..., None]
+    out = a.copy()
+    out[..., :3] = np.clip(lum + (a[..., :3] - lum) * k, 0, 255)
+    out[..., :3] = np.clip(out[..., :3] * light, 0, 255)
+    return Image.fromarray(out.astype(np.uint8))
+
+
+def red_hot(im):
+    """The light paint of a piece turned red (the ink stays): the hovered cursor, like CMI's."""
+    a = np.asarray(im).astype(np.float32)
+    lum = a[..., :3].mean(2, keepdims=True) / 255
+    red = np.array([240, 58, 30], np.float32)
+    a[..., :3] = np.where(lum > 0.35, red * (0.55 + 0.45 * lum), a[..., :3])
+    return Image.fromarray(a.astype(np.uint8))
+
+
+def inked(piece, hot, edge_px=1.3):
+    """A painted piece as a cursor: pale gold at rest, vivid gold when hot, with a bold ink edge and a soft shadow."""
+    m = round(S * 3)                                   # room for the edge and the shadow (no flat cuts at the tips)
+    big = Image.new('RGBA', (piece.width + 2 * m, piece.height + 2 * m), (0, 0, 0, 0))
+    big.alpha_composite(piece, (m, m))
+    piece = big
+    piece = saturate(piece, 1.5 if hot else 0.6, 1.0 if hot else 1.25)
+    a = piece.getchannel('A').point(lambda v: 255 if v > 40 else 0)
+    grow = a.filter(ImageFilter.MaxFilter(2 * max(1, round(S * edge_px)) + 1))
+    edge = Image.new('RGBA', piece.size, INK)
+    edge.putalpha(grow)
+    shade = Image.new('RGBA', piece.size, (0, 0, 0, 110))
+    shade.putalpha(grow.filter(ImageFilter.GaussianBlur(S * 0.8)))
+    pad = Image.new('RGBA', piece.size, (0, 0, 0, 0))
+    pad.alpha_composite(shade, (round(S * 0.8), round(S * 1.0)))
+    pad.alpha_composite(edge); pad.alpha_composite(piece)
+    return pad
+
+
 def star_cursor(color):
+    if art('cursor'):             # the painted sketched X (mod/artgen/ui.py pick cursor_x 8): cream at rest, red when hot
+        piece = fit(art('cursor'), 20, 20)
+        return place(80, 56, red_hot(piece) if color[1] < 200 else piece, 34, 25)
     cx, cy = 34, 25
-    pts = []
-    for k in range(8):                       # 4 long points, 4 short ones between
-        a = math.radians(k * 45 - 90)
-        r = 14 if k % 2 == 0 else 5.5
-        pts.append((cx + math.cos(a) * r, cy + math.sin(a) * r))
     hot = color[1] < 200
-    fill = (236, 60, 34, 255) if hot else (255, 255, 250, 255)
-    shade = (178, 30, 18, 255) if hot else (196, 206, 216, 255)
-    return cel(80, 56, pts, fill, 7, ink=2.6, shade=shade, shine=[(cx - 1.5, cy - 11), (cx - 1.2, cy - 5)])
+    lit, dark = ((248, 86, 56, 255), (170, 26, 16, 255)) if hot else ((255, 255, 250, 255), (150, 164, 184, 255))
+    im = canvas(80, 56)
+    d = ImageDraw.Draw(im)
+    pts = []                                   # (angle, radius, half-width angle)
+    for k in range(8):
+        pts.append((math.radians(k * 45 - 90), 16.5 if k % 2 == 0 else 10.5, 0.30 if k % 2 == 0 else 0.34))
+    def poly(ang, r, w, grow=0.0, side=0):
+        tip = (cx + math.cos(ang) * (r + grow), cy + math.sin(ang) * (r + grow))
+        l = (cx + math.cos(ang - w) * (2.5 + grow * 0.3), cy + math.sin(ang - w) * (2.5 + grow * 0.3))
+        rr = (cx + math.cos(ang + w) * (2.5 + grow * 0.3), cy + math.sin(ang + w) * (2.5 + grow * 0.3))
+        base = [tip, rr, (cx, cy), l]
+        return base if side == 0 else ([tip, rr, (cx, cy)] if side > 0 else [tip, (cx, cy), l])
+    for ang, r, w in pts:                                       # shadow, then the ink (every point grown)
+        d.polygon([P(x + 1.4, y + 1.6) for x, y in poly(ang, r, w, 1.6)], fill=(0, 0, 0, 90))
+    for ang, r, w in pts:
+        d.polygon([P(*q) for q in poly(ang, r, w, 1.7)], fill=INK)
+    d.ellipse([P(cx - 5.2, cy - 5.2), P(cx + 5.2, cy + 5.2)], fill=INK)
+    for ang, r, w in pts:                                       # paint: right half dark, left half lit
+        d.polygon([P(*q) for q in poly(ang, r, w, 0, -1)], fill=lit)
+        d.polygon([P(*q) for q in poly(ang, r, w, 0, 1)], fill=dark)
+    d.ellipse([P(cx - 2.6, cy - 2.6), P(cx + 2.6, cy + 2.6)], fill=INK)
+    d.ellipse([P(cx - 1.0, cy - 1.0), P(cx + 1.0, cy + 1.0)], fill=lit)
+    return finish(im)
 
 
 def hourglass():

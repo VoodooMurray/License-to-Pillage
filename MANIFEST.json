@@ -2,7 +2,7 @@
 "name": "License to Pillage",
 "version": "0.1.2",
 "built": "2026-10-15",
-"source_commit": "f4a691a",
+"source_commit": "527d9c5",
 "files": [
 {
 "path": "CLAUDE.md",
@@ -126,8 +126,8 @@
 },
 {
 "path": "engine/engine.js",
-"bytes": 68353,
-"sha256": "80adf48909186a5d8c1fcc295b655ec6b4a7416de72fe2bae4a1885534dabf97"
+"bytes": 68510,
+"sha256": "6e60d561a0e762cde6ad8be0a4dee07a2b0f2610f705e4912916ff23119ead4c"
 },
 {
 "path": "engine/font.js",
@@ -3341,13 +3341,13 @@
 },
 {
 "path": "engine/theme/original/lo/ui/cursor.png",
-"bytes": 2862,
-"sha256": "30de0f82be2cb1d40496b08ecc18d5c2067f8b84656f8c461a2d977174028800"
+"bytes": 2312,
+"sha256": "264e25da7b1d783d66d3790237ced1c76c64d41bd499bfdac1a83d5dfd3d7908"
 },
 {
 "path": "engine/theme/original/lo/ui/cursor_hot.png",
-"bytes": 2745,
-"sha256": "6a3e117e43f656c3994f8b844f2b5e65d0159e0c0b0034bc11d0ee8e1a8d397d"
+"bytes": 2133,
+"sha256": "d371719d9f109a76db203e8664e864193771d1d1f4a7a6826d0127db6fd65c5e"
 },
 {
 "path": "engine/theme/original/lo/ui/cursor_wait.png",
@@ -3486,13 +3486,13 @@
 },
 {
 "path": "engine/theme/original/ui/cursor.png",
-"bytes": 12559,
-"sha256": "3246a3296cf7a1ac9dd1fa355c480cef87a008276511700f6437d60913a881ca"
+"bytes": 12820,
+"sha256": "1523e2f17cc853f8af0c5cf74fbe5d123c73d64ba328413d93fe7cadf65ed709"
 },
 {
 "path": "engine/theme/original/ui/cursor_hot.png",
-"bytes": 11362,
-"sha256": "fd53b1c33e75c59506763bedaac7af06245856062cd69c8ba792fc26994bf186"
+"bytes": 10869,
+"sha256": "340e0583551283eb7f94f89d8995d387ae645edcf97f69384da153848615dcf6"
 },
 {
 "path": "engine/theme/original/ui/cursor_wait.png",
@@ -7576,33 +7576,33 @@
 },
 {
 "path": "tools/scumm/parse_cache/177714dc32251fb4bba77b05.json.gz",
-"bytes": 32165,
-"sha256": "1cd2832ef5ac0e19b198a7b767c9fa4b1f8440b7c0fb289b74b7b79277d82fab"
+"bytes": 32166,
+"sha256": "4ef4c782eddd75645901a3b23b26bdc0384ae9fe890adb93925312fed861af52"
 },
 {
 "path": "tools/scumm/parse_cache/26a408837ecc59b4b8fb4e1d.json.gz",
-"bytes": 70996,
-"sha256": "b7c15394b80968e199cb14ad79256f4858959abab9dd0f4916cbda245b2d302a"
+"bytes": 70997,
+"sha256": "35404d89e801c19343f89b53bfc2655dc36407b46027115df216f0419f64bffd"
 },
 {
 "path": "tools/scumm/parse_cache/b718e7eed9916b0ce5bd34fe.json.gz",
-"bytes": 5165,
-"sha256": "21deba1cd2582a8c01668922bc6a326a2fb74203d6652d3fbccbd0f754a8237b"
+"bytes": 5166,
+"sha256": "01f9fb07252fc52a6aa1c86fc4165b284458618f982067ee91d681b4c2a6b6ad"
 },
 {
 "path": "tools/scumm/parse_cache/bd4a0d99e57c8dbbedf47cea.json.gz",
-"bytes": 20327,
-"sha256": "8a57ff2fa4c2d5c46156d662ad1d3528e1b04a3c014ad91584997b231a5b7608"
+"bytes": 20328,
+"sha256": "ea33c3378edcfdac943a398b3eaa94c13b3c6c20532fe8f5bc641a81960a253c"
 },
 {
 "path": "tools/scumm/parse_cache/cebed4b0fc1d431bd03fa66c.json.gz",
-"bytes": 63842,
-"sha256": "09d501ab71cf0863a1689114808e5fe893549c5c215b7e0f3d6989d454b381ae"
+"bytes": 63843,
+"sha256": "93d04905d5635fe5617514e83ef77b334cab4f1ce453130e61625282cd347d84"
 },
 {
 "path": "tools/scumm/parse_cache/strings-770eb5842c439c0502a8da82.json.gz",
-"bytes": 16856,
-"sha256": "5017cdb669d1553a1ec31958142d2f2c68a3a41394a464a76c7f14c77805de82"
+"bytes": 16857,
+"sha256": "20eb25a78b884d9f4da428d53df0b6d4c265be89a1f37a871daf28e1ee7a25fd"
 },
 {
 "path": "tools/templates/README.md",
@@ -7621,13 +7621,13 @@
 },
 {
 "path": "tools/theme/build_original.py",
-"bytes": 19206,
-"sha256": "a1a1b2dd26b5de4876f310d0bfa92ac7715bb7987f1bedcacce7ce40a70eac67"
+"bytes": 22458,
+"sha256": "f45fc453b221d5419ae3c1b50c5329b479fc2f55d27d186bab65d9451d32b921"
 },
 {
 "path": "tools/theme/art/arrow.png",
-"bytes": 33706,
-"sha256": "c6f87575dab36cfeac17f9002077668171b6ff8d66cc3857762cf7aa906b6107"
+"bytes": 362958,
+"sha256": "8a4e656ea9fa438e30f1d447657c237e9ad419040522a563dce1d8597ed6bf79"
 },
 {
 "path": "tools/theme/art/chest.jpg",
@@ -7656,8 +7656,8 @@
 },
 {
 "path": "tools/theme/art/cursor.png",
-"bytes": 50022,
-"sha256": "3e03031498e3bcebe3fa2456f5d8f2e841496a4f633e49eeba22998b6bbc4e57"
+"bytes": 303448,
+"sha256": "39b0ec45ef0152a10766fb7acb696d15f0955366ca8660ccbb1cfe2315e211ef"
 },
 {
 "path": "tools/theme/art/hourglass.png",

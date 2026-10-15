@@ -199,6 +199,7 @@ export class Engine {
   // whether the player's CMI interface was extracted (cmi/), checked once
   async hasCmi() {
     if (this.cmiOk === undefined) {
+      if (new URLSearchParams(location.search).has('nocmi')) return (this.cmiOk = false);     // ?nocmi: the built-in interface, as for a player without CMI
       try { await json('cmi/fonts/font1.json'); this.cmiOk = true; } catch (err) { this.cmiOk = false; }
     }
     return this.cmiOk;
