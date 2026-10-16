@@ -61,6 +61,8 @@ def build_args():
     lang = (load() or {}).get('lang')
     if lang and lang != 'en':
         args += ['--lang', lang]          # the text language of the ScummVM version (setup.py --lang)
+    if (load() or {}).get('hero') == 'drybrush':
+        args += ['--hero', 'drybrush']    # the stand-in as the player (setup.py scummvm --hero)
     return args
 
 

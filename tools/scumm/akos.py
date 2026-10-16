@@ -41,15 +41,21 @@ def rle_codec1(codes, ncolors=32):
 
 
 def build(anims, cels, akpl, rgbs, ncolors=32):
-    """anims: {anim_number: {'frames': [(cel_index, dx, dy)], 'loop': bool}} (one entry per game frame);
+    """anims: {anim_number: {'frames': [(cel_index, dx, dy)], 'loop': bool}} (one entry per game frame), or
+    {anim_number: {'dirs': [W, E, S, N]}} with one such program per direction (the player: SCUMM's chore
+    anim * 4 + old direction, 0 W 1 E 2 S 3 N);
     cels: list of HxW uint8 code arrays; akpl: list of ncolors palette indices; rgbs: list of (r,g,b)."""
     nanim = max(anims) + 1 if anims else 1
     # AKSQ
     aksq = bytearray()
     starts = {}
-    for num in sorted(anims):
-        a = anims[num]
-        starts[num] = len(aksq)
+    progs = {(num, d): (a['dirs'][d] if 'dirs' in a else a) for num, a in anims.items() for d in range(4)}
+    for key in sorted(progs):
+        a = progs[key]
+        if 'dirs' not in anims[key[0]] and key[1] > 0:
+            starts[key] = starts[(key[0], 0)]
+            continue
+        starts[key] = len(aksq)
         pos = []
         for cel, dx, dy in a['frames']:
             pos.append(len(aksq))
@@ -58,7 +64,7 @@ def build(anims, cels, akpl, rgbs, ncolors=32):
                 aksq.append(cel)
             else:
                 aksq += struct.pack('>H', 0x8000 | cel)
-        target = starts[num] if a.get('loop', True) else pos[-1]
+        target = starts[key] if a.get('loop', True) else pos[-1]
         aksq += b'\xc0\x30' + struct.pack('<H', target)
     # AKCH: offset table (uint16 per chore) + chore records (mask 0x8000: limb 0 only)
     nchores = nanim * 4
@@ -66,12 +72,11 @@ def build(anims, cels, akpl, rgbs, ncolors=32):
     recs = bytearray()
     base = nchores * 2
     rec_off = {}
-    for num in sorted(anims):
-        rec_off[num] = base + len(recs)
-        recs += struct.pack('<H', 0x8000) + bytes([6]) + struct.pack('<HH', starts[num], 0)
-    for num in anims:
-        for d in range(4):
-            table[num * 4 + d] = rec_off[num]
+    for key in sorted(starts):
+        if starts[key] not in rec_off:
+            rec_off[starts[key]] = base + len(recs)
+            recs += struct.pack('<H', 0x8000) + bytes([6]) + struct.pack('<HH', starts[key], 0)
+        table[key[0] * 4 + key[1]] = rec_off[starts[key]]
     akch = struct.pack(f'<{nchores}H', *table) + bytes(recs)
     # cels
     akcd = bytearray()

@@ -42,13 +42,22 @@ class CompileError(Exception):
 TRANSLATION = {}
 
 
+ALIASES = {}            # build.py --hero drybrush: the stand-in's names (Guybrush -> Drybrush, ...)
+
+
+def alias(s):
+    for k in sorted(ALIASES, key=len, reverse=True):
+        s = s.replace(k, ALIASES[k])
+    return s
+
+
 def tr(s):
     if not TRANSLATION:
-        return s
+        return alias(s)
     m = re.match(r'(/[A-Za-z0-9_]+/)(.*)$', s, re.S)
     if m:
-        return m.group(1) + TRANSLATION.get(m.group(2), m.group(2))
-    return TRANSLATION.get(s, s)
+        return m.group(1) + alias(TRANSLATION.get(m.group(2), m.group(2)))
+    return alias(TRANSLATION.get(s, s))
 
 
 def js_quote(s, translate=True):

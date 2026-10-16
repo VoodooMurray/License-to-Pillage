@@ -92,12 +92,18 @@ sharper: your computer upscales the pieces made from your game with an AI upscal
 - Save and load from CMI's own menu.
 - The game opens in a window. Alt+Enter switches to fullscreen.
 
+**Hero:** play as Guybrush, or as **Drybrush Cheapwood**, a cheap homemade paintbrush puppet with googly eyes
+and his own voice (the stand-in hero when Guybrush isn't there yet).
+- Browser: F5 → Hero (when both are there): swaps him in on the spot. It is remembered.
+- ScummVM: double-click **Play in ScummVM as Drybrush** or **Play in ScummVM as Guybrush** (or
+  `python3 setup.py scummvm --hero drybrush`). It is remembered; a change rebuilds the game once (about a minute).
+
 **Languages:** the texts come in English, German, French, Spanish and Italian (the voices stay English).
 - Browser: F5 → Language.
 - ScummVM: `python3 setup.py rebuild --lang de` (or `fr`, `es`, `it`, `en`), or `install --lang de`. It is remembered.
 
 **Browser:**
-- F5 opens the menu (save, load, text speed, voices on/off, graphics, language).
+- F5 opens the menu (save, load, text speed, voices on/off, graphics, language, hero).
 - Alt+0 cycles the graphics: HD → CMI's original low-res → VGA → EGA.
 - Keep the little server window open while you play.
 

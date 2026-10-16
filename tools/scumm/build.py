@@ -28,6 +28,7 @@ import scummres as sr          # noqa: E402
 import scummwrite as sw        # noqa: E402
 import v8asm                   # noqa: E402
 import akos                    # noqa: E402
+import hero                    # noqa: E402
 import audio                   # noqa: E402
 from jsgame import Game, Func  # noqa: E402
 import jsgame                  # noqa: E402
@@ -58,7 +59,7 @@ MUSIC = {'harbor': 1260, 'office': 1285, 'records': 1460, 'title': 1099, 'ending
 MUSIC_SLOTS = (1260, 1285, 1460, 1515, 1099)     # the states a level-editor project's music goes into, in order
 MUSIC_FILES = {1099: '1099-M~1.IMX', 1260: '1260-T~1.IMX', 1285: '1285-B~1.IMX', 1460: '1460-C~1.IMX',
                1515: '1515-C~1.IMX'}
-OPTS = {'cmi_music': False, 'lang': 'en'}
+OPTS = {'cmi_music': False, 'lang': 'en', 'hero': 'guybrush'}    # hero: --hero drybrush = the stand-in (hero.py)
 TALK_COLORS = {'murray': 14, 'agatha': 227, 'mort': 228, 'painter': 229, 'filbert': 230, 'squid': 231, 'harbormaster': 232,
                '_narrator': 233}
 ART_LO, ART_HI = 24, 226     # palette range for room art + NPC costumes
@@ -429,7 +430,12 @@ def cel_path(c, info):
 
 
 def game_path(p):
+    if OPTS['hero'] == 'drybrush' and p in HERO_IMAGES:       # his own DOTT card / portrait / icon
+        return HERO_IMAGES[p]
     return os.path.join(GAME, p)
+
+
+HERO_IMAGES = {}
 
 
 def ref_palette():
@@ -446,9 +452,12 @@ def hex_rgb(c):
     return tuple(int(c[i:i + 2], 16) for i in (0, 2, 4))
 
 
+HERO_PAL = []   # --hero drybrush: his colours, kept in the top art slots of every room (his costume is in all of them)
+
+
 def make_palette(bg_rgb, sprites, ref, talk):
     """Quantizes the room image + its sprites into ART_LO..ART_HI; returns (palette768, lut function)."""
-    n = ART_HI - ART_LO + 1
+    n = ART_HI - ART_LO + 1 - len(HERO_PAL)
     parts = [bg_rgb]
     for sp in sprites:
         a = np.asarray(sp)
@@ -471,7 +480,9 @@ def make_palette(bg_rgb, sprites, ref, talk):
     q = sheet.quantize(colors=n, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE)
     qp = q.getpalette()[:n * 3]
     pal = bytearray(ref)
-    pal[ART_LO * 3:(ART_HI + 1) * 3] = bytes(qp) + bytes(n * 3 - len(qp))
+    pal[ART_LO * 3:(ART_LO + n) * 3] = bytes(qp) + bytes(n * 3 - len(qp))
+    for i, rgb in enumerate(HERO_PAL):
+        pal[(ART_LO + n + i) * 3:(ART_LO + n + i + 1) * 3] = bytes(rgb)
     for who, idx in TALK_COLORS.items():
         pal[idx * 3:idx * 3 + 3] = bytes(talk.get(who, (255, 255, 255)))
     return bytes(pal)
@@ -680,6 +691,8 @@ class Builder:
                 self.special_costume = {'num': n + 2, 'dir': os.path.dirname(gpath), 'anims': {'stand': still, **sp},
                                         'cels': {k: v for k, v in g['cels'].items() if k in used}, 'anim_nums': nums,
                                         'frames': frames, 'room': self.room_using(list(sp)) or 'office'}
+        if OPTS['hero'] == 'drybrush':            # Guybrush's own poses and gestures don't fit the stand-in
+            self.pose_costume = self.special_costume = None
 
     def room_using(self, names):
         """The room whose script source mentions one of these names as a string literal."""
@@ -772,6 +785,48 @@ class Builder:
             self.theme(f'costumes/c{num:04d}/c{num:04d}_{i:04d}.png', hd)
         height = max(im.height for im in cels_lo)
         c['height'] = height
+        return blk
+
+    def build_player_costume(self):
+        """The stand-in hero as costume 2 (tools/scumm/hero.py): four directions, pupils baked in. His colours
+        come from the palette entries every room shares (CMI's fixed ones, outside the art range), so one costume
+        fits all rooms; the HD theme gets his full-colour cels."""
+        progs = hero.frames()
+        shared = list(range(ART_HI + 1 - len(HERO_PAL), ART_HI + 1))     # his own slots, the same in every room
+        pal = bytearray(self.ref)
+        for i, rgb in zip(shared, HERO_PAL):
+            pal[i * 3:i * 3 + 3] = bytes(rgb)
+        cels_lo, cels_hd, index = [], [], {}
+        anims = {}
+        for num, dirs in progs.items():
+            out = []
+            for prog in dirs:
+                frames = []
+                for im, x, y, hold, w, h in prog:
+                    key = id(im)
+                    if key not in index:
+                        index[key] = len(cels_lo)
+                        cels_lo.append(shrink_rgba(im, (max(1, round(w)), max(1, round(h)))))
+                        cels_hd.append(im.resize((max(1, round(w)) * S, max(1, round(h)) * S), Image.LANCZOS))
+                    frames += [(index[key], x, y)] * max(1, hold)
+                out.append({'frames': frames, 'loop': num != 5})
+            anims[num] = {'dirs': out}
+        allpx = np.concatenate([np.asarray(im)[np.asarray(im)[:, :, 3] >= 128][:, :3] for im in cels_lo if im.getbbox()])
+        sub = np.array([[pal[i * 3], pal[i * 3 + 1], pal[i * 3 + 2]] for i in shared], np.float32)
+        near = lambda px: ((px[:, None, :].astype(np.float32) - sub[None]) ** 2).sum(-1).argmin(-1)
+        vals, counts = np.unique(near(allpx[::7]), return_counts=True)
+        top = [shared[int(v)] for v in vals[np.argsort(-counts)][:31]]
+        akpl = [0] + top
+        sub = np.array([[pal[i * 3], pal[i * 3 + 1], pal[i * 3 + 2]] for i in top], np.float32)
+        codes = []
+        for im in cels_lo:
+            a = np.asarray(im).astype(np.float32)
+            code = ((a[:, :, None, :3] - sub[None, None]) ** 2).sum(-1).argmin(-1).astype(np.uint8) + 1
+            code[a[:, :, 3] < 128] = 0
+            codes.append(code)
+        blk = akos.build(anims, codes, akpl, [(0, 0, 0)] + [tuple(pal[i * 3:i * 3 + 3]) for i in top])
+        for i, hd in enumerate(cels_hd):
+            self.theme(f'costumes/c0002/c0002_{i:04d}.png', hd)
         return blk
 
     def build_voice_costume(self):
@@ -1141,6 +1196,8 @@ class Builder:
             extra.append(('AKOS', self.costumes[who]['num'], self.build_costume(who, pal, rid)))
         if rid == FIRST_ROOM:
             extra.append(('AKOS', self.voice_costume, self.build_voice_costume()))
+            if OPTS['hero'] == 'drybrush':        # costume 2 = the stand-in (the index then points CMI's 2 here)
+                extra.append(('AKOS', 2, self.build_player_costume()))
             if self.pose_costume:
                 pc = self.pose_costume
                 extra.append(('AKOS', pc['num'], self.build_costume(None, pal, rid, c=pc, scale=1.0)))
@@ -1627,7 +1684,7 @@ class Builder:
                'items': ids.items, 'icons': ids.icons, 'vars': ids.flags, 'scripts': ids.scripts,
                'costumes': {k: v['num'] for k, v in self.costumes.items()}, 'voice_costume': self.voice_costume,
                'theme_files': len(self.theme_files), 'audio': self.audio_report,
-               'voice_tags': self.voices.used, 'lang': OPTS['lang'],
+               'voice_tags': self.voices.used, 'lang': OPTS['lang'], 'hero': OPTS['hero'],
                'warnings': self.warnings + getattr(self.cc, 'warnings', [])}
         json.dump(rep, open(os.path.join(LOG, 'build.json'), 'w'), indent=1)
         print(f'LA3 {len(la3) / 1e6:.2f} MB, LA0 {len(la0)} bytes, {len(ids.obj_defs)} objects, '
@@ -1819,6 +1876,16 @@ def game_strings():
     return out
 
 
+def use_standin():
+    """--hero drybrush: his costume as 2 (Builder), his names in every text, his voice for the player's lines and
+    his own versions of the pictures that show Guybrush."""
+    OPTS['hero'] = 'drybrush'
+    HERO_PAL[:] = hero.palette(24)
+    HERO_IMAGES.update(hero.images())
+    compiler_mod.ALIASES.update(hero.aliases())
+    audio.PLAYER_LINES.update(hero.lines())
+
+
 def load_translation(code):
     """--lang CODE: every shown text (lines, names, labels, choices) from the translation tables; the voices
     stay English. Missing entries stay English (tools/lang.py status lists them)."""
@@ -1895,6 +1962,8 @@ def main():
     ap.add_argument('--no-hd-theme', action='store_true', help="skip the HD theme (only the HD ScummVM fork reads it)")
     ap.add_argument('--audio-cache', action='append', default=[],
                     help='extra read-only folders of decoded audio (shipped with the mod: no ffmpeg needed)')
+    ap.add_argument('--hero', default='guybrush', choices=['guybrush', 'drybrush'],
+                    help='the player: CMI\'s Guybrush, or the stand-in Drybrush Cheapwood (his costume, names, voice, pictures)')
     ap.add_argument('--lang', default='en', choices=['en', 'de', 'fr', 'es', 'it'],
                     help='text language (<game>/lang/<code>.json + engine/lang/<code>.json); voices stay English')
     a = ap.parse_args()
@@ -1914,6 +1983,8 @@ def main():
         os.makedirs(d, exist_ok=True)
     if a.lang != 'en':
         load_translation(a.lang)
+    if a.hero == 'drybrush':
+        use_standin()
     running = scummvm_running()
     if running and not a.force:
         # the game files are read while playing (rooms load from COMI.LA3): never swap them underneath

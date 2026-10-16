@@ -103,15 +103,7 @@ export class Engine {
       const costume = await this.loadCostume(id, def);
       // a stand-in main character brings his own name: "aliases" in his actor.json rename the shown text
       // (the built-in hero: Guybrush Threepwood -> Drybrush Cheapwood) and "voice": false (or "mumble": engine/audio.js synthesizes one) keeps the old voice out
-      if (id === this.game.player && costume?.def?.aliases) {
-        this.aliases = Object.entries(costume.def.aliases).sort((x, y) => y[0].length - x[0].length);
-        this.playerMute = costume.def.voice === false || costume.def.voice === 'mumble';
-        this.playerMumble = costume.def.voice === 'mumble';
-        // his own recorded lines (original text -> file in his costume folder); lines without one: the mumble
-        this.playerLines = Object.fromEntries(Object.entries(costume.def.lines || {}).map(([k, v]) => [k, `${costume.path}/${v}`]));
-        // and his own pictures for the ones that show Guybrush ("images": game path -> path in the theme)
-        this.imageSwap = Object.fromEntries(Object.entries(costume.def.images || {}).map(([k, v]) => [k, ORIGINAL + v]));
-      }
+      if (id === this.game.player) this.heroSetup(costume);
       const a = new Actor(id, def, costume);
       if (def.anim) a.baseRole = def.anim;
       this.actors.set(id, a);
@@ -205,20 +197,46 @@ export class Engine {
     return this.cmiOk;
   }
 
+  // the player's costume brings its own text, voice and pictures: "aliases" in a stand-in's actor.json rename the
+  // shown text, "voice": false / "mumble" keeps the old voice out, "lines" are his recordings (lines without one:
+  // the mumble) and "images" his own versions of the pictures that show Guybrush
+  heroSetup(costume) {
+    const d = costume?.def?.aliases ? costume.def : null;
+    this.aliases = d ? Object.entries(d.aliases).sort((x, y) => y[0].length - x[0].length) : null;
+    this.playerMute = !!d && (d.voice === false || d.voice === 'mumble');
+    this.playerMumble = !!d && d.voice === 'mumble';
+    this.playerLines = d ? Object.fromEntries(Object.entries(d.lines || {}).map(([k, v]) => [k, `${costume.path}/${v}`])) : null;
+    this.imageSwap = d ? Object.fromEntries(Object.entries(d.images || {}).map(([k, v]) => [k, ORIGINAL + v])) : null;
+  }
+
   // A costume, or null (the actor stays invisible) when it can't be loaded; the main character falls back to CMI's
   // Guybrush (cmi/actors/guybrush) when the game's own costume is missing (e.g. a mod release before installing), then to
   // the built-in stand-in hero (engine/theme/original/actors/hero, mod/artgen/drybrush.py)
-  async loadCostume(id, def) {
-    // ?standin: play as the stand-in even when Guybrush is there (to try him out)
-    const standin = id === this.game.player && new URLSearchParams(location.search).has('standin');
+  async loadCostume(id, def, hero = null) {
+    // the stand-in even when Guybrush is there: ?standin, or the F5 menu's "Hero" choice (remembered)
+    const standin = id === this.game.player && (hero ? hero === 'standin' : new URLSearchParams(location.search).has('standin')
+      || localStorage.getItem('cmi-levels:hero') === 'standin');
     const paths = def.costume && !standin ? [def.costume] : [];
     if (standin) paths.push(ORIGINAL + 'actors/hero');
     if (id === this.game.player && !paths.includes('cmi/actors/guybrush')) paths.push('cmi/actors/guybrush');
     if (id === this.game.player) paths.push(ORIGINAL + 'actors/hero');      // the built-in stand-in (nothing of CMI)
     for (const p of paths) {
-      try { const c = await Costume.load(this.path(p)); c.path = p; return c; } catch (err) { console.warn(`costume ${p}: ${err.message}`); }
+      try {
+        const c = await Costume.load(this.path(p)); c.path = p;
+        // both heroes there? (then F5 offers the switch)
+        if (id === this.game.player) this.standinHero = p === ORIGINAL + 'actors/hero';
+        if (id === this.game.player) this.bothHeroes = p !== ORIGINAL + 'actors/hero' || await this.guybrushThere(def);
+        return c;
+      } catch (err) { console.warn(`costume ${p}: ${err.message}`); }
     }
     return null;
+  }
+
+  async guybrushThere(def) {
+    for (const p of [def.costume, 'cmi/actors/guybrush'].filter(Boolean)) {
+      try { await json(this.path(p) + '/actor.json'); return true; } catch (err) { /* not there */ }
+    }
+    return false;
   }
 
   useGfx(set) {
@@ -1182,6 +1200,7 @@ export class Engine {
       t('Music: {0}', t(this.audio.musicOn ? 'on' : 'off')),
       t('Graphics: {0} (Alt+0)', t({ hd: 'HD', original: 'original', vga: 'VGA', ega: 'EGA' }[this.gfxMode])),
       t('Language: {0}', LANGS[this.lang.code]), t('Restart'),
+      ...(this.bothHeroes ? [t('Hero: {0}', this.standinHero ? 'Drybrush' : 'Guybrush')] : []),
       // entries added by the page (engine.menuExtras: [{label(t), click(engine)}], e.g. engine/byog/)
       ...(this.menuExtras || []).map(x => x.label(t))];
   }
@@ -1217,7 +1236,24 @@ export class Engine {
     else if (i === 6) this.setGraphics(this.nextGfxMode, { quiet: true }).then(() => this.refreshMenu());
     else if (i === 7) this.setLang(this.lang.next()).then(() => { if (m.msg) m.msg = null; this.refreshMenu(); });
     else if (i === 8) { localStorage.removeItem(this.saveKey('auto')); location.reload(); }
-    else this.menuExtras?.[i - 9]?.click(this);
+    else if (i === 9 && this.bothHeroes) this.switchHero();
+    else this.menuExtras?.[i - (this.bothHeroes ? 10 : 9)]?.click(this);
+  }
+
+  // the other hero, swapped in place (costume, names, voice, pictures); remembered
+  async switchHero() {
+    const want = this.standinHero ? 'guybrush' : 'standin';
+    const id = this.game.player, a = this.player;
+    const costume = await this.loadCostume(id, this.game.actors[id], want);
+    if (!costume) return;
+    localStorage.setItem('cmi-levels:hero', want);
+    this.heroSetup(costume);
+    a.costume = costume;
+    a.speed = this.game.actors[id].speed || costume.def?.walk || a.speed;
+    a.googly = null;
+    a.play(a.path.length ? 'walk' : a.talking ? 'talk' : 'stand', { clear: true });
+    await preload(Object.values(this.game.items || {}).map(i => this.path(i.icon)));
+    this.refreshMenu();
   }
 
   saveKey(slot) { return `cmi-levels:${this.game.id}:${slot}`; }

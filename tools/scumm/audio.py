@@ -232,6 +232,9 @@ def write_bundle(path, files):
     return len(out)
 
 
+PLAYER_LINES = {}       # build.py --hero drybrush: English line -> the stand-in's own recording
+
+
 class Voices:
     """Voice lines of the web game, tagged for CMI."""
 
@@ -248,14 +251,20 @@ class Voices:
         self.cmi_used = set()   # CMI tags used by fixed lines
 
     def tag(self, speaker, text):
-        if f'{speaker}|{text}' in self.fixed:
+        if f'{speaker}|{text}' in self.fixed and not (PLAYER_LINES and speaker in ('guybrush', 'player')):
             tag = self.fixed[f'{speaker}|{text}']
             self.cmi_used.add(tag)
             return tag
-        rel = self.map.get(f'{speaker}|{text}')
-        if not rel:
-            return None
-        path = os.path.join(self.dir, rel)
+        if PLAYER_LINES and speaker in ('guybrush', 'player'):     # the stand-in: his voice or none (never Guybrush's)
+            path = PLAYER_LINES.get(text)
+            if not path:
+                return None
+            rel = os.path.relpath(path, self.dir)
+        else:
+            rel = self.map.get(f'{speaker}|{text}')
+            if not rel:
+                return None
+            path = os.path.join(self.dir, rel)
         if not os.path.exists(path):
             return None
         h = os.path.splitext(os.path.basename(rel))[0]

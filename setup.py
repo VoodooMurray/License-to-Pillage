@@ -7,7 +7,8 @@ this folder.
 
   python3 setup.py install [--cmi FOLDER] [--scummvm BINARY] [--no-scummvm] [--yes]
   python3 setup.py web            play in your browser
-  python3 setup.py scummvm        play inside CMI in ScummVM
+  python3 setup.py scummvm [--hero drybrush|guybrush]   play inside CMI in ScummVM (as Guybrush, or as the
+                                  stand-in Drybrush Cheapwood: remembered; a change rebuilds once)
   python3 setup.py editor         the level editor (browser)
   python3 setup.py rebuild        rebuild the ScummVM version (after editing the game)
   python3 setup.py voice-pack [ZIP] [--remove]   the optional Guybrush voice pack (a separate download)
@@ -163,6 +164,9 @@ def remember_lang(cfg, lang):
     if lang:
         cfg['lang'] = lang
         cfg_save(cfg)
+
+
+HEROES = ['guybrush', 'drybrush']
 
 
 def run_build(cfg, extra=()):
@@ -370,11 +374,18 @@ def cmd_scummvm(a, argv):
     if not binary or not os.path.isfile(binary):
         fail('no ScummVM found. Install it from https://www.scummvm.org, then: python3 setup.py install --scummvm "<path>"\n'
              f'  (or add the folder {os.path.join(ROOT, "scumm", "game")} as a game in your own ScummVM)')
-    if not os.path.isfile(os.path.join(ROOT, 'scumm', 'game', 'COMI.LA3')):
+    if a.hero:
+        cfg['hero'] = a.hero
+        cfg_save(cfg)
+    hero = cfg.get('hero', 'guybrush')
+    built = os.path.isfile(os.path.join(ROOT, 'scumm', 'game', 'COMI.LA3'))
+    if not built or cfg.get('built_hero', 'guybrush') != hero:
         ensure_deps(argv)
-        step('Building the ScummVM version first')
+        step('Building the ScummVM version first' if not built else
+             f'Rebuilding the ScummVM version with {"Drybrush" if hero == "drybrush" else "Guybrush"} as the hero (once)')
         run_build(cfg)
         cfg['ltp_built'] = True
+        cfg['built_hero'] = hero
         cfg_save(cfg)
     ini = write_ini(cfg)
     say(f'Starting {TITLE} in ScummVM {cfg.get("scummvm_version") or ""} ...')
@@ -480,9 +491,13 @@ def cmd_rebuild(a, argv):
     if a.game:
         extra += ['--game', a.game]
     remember_lang(cfg, a.lang)
+    if a.hero:
+        cfg['hero'] = a.hero
+        cfg_save(cfg)
     run_build(cfg, extra)
     if not a.game:
         cfg['ltp_built'] = True
+        cfg['built_hero'] = cfg.get('hero', 'guybrush')
         cfg_save(cfg)
     say('Rebuilt.')
 
@@ -645,10 +660,12 @@ def main():
         w.add_argument('--no-browser', action='store_true')
     s = sub.add_parser('scummvm')
     s.add_argument('--scummvm', help='this ScummVM program instead of the one found at install')
+    s.add_argument('--hero', choices=HEROES, help='play as Guybrush or as the stand-in Drybrush Cheapwood (remembered)')
     r = sub.add_parser('rebuild')
     r.add_argument('--cmi-music', action='store_true', help="CMI's own music instead of the chapter's")
     r.add_argument('--game', help='a level-editor project (games/KEY) instead of License to Pillage')
     r.add_argument('--lang', choices=LANGS, help='text language (en de fr es it; voices stay English), remembered')
+    r.add_argument('--hero', choices=HEROES, help='Guybrush or the stand-in Drybrush Cheapwood, remembered')
     h = sub.add_parser('hd', help='the optional HD pack: sharper Guybrush and interface in the browser (or --remove)')
     h.add_argument('path', nargs='?', help='the HD pack zip (default: one in or next to this folder)')
     h.add_argument('--remove', action='store_true')

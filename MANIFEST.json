@@ -1,8 +1,8 @@
 {
 "name": "License to Pillage",
 "version": "0.1.2",
-"built": "2026-10-15",
-"source_commit": "527d9c5",
+"built": "2026-10-16",
+"source_commit": "4103f8f",
 "files": [
 {
 "path": "CLAUDE.md",
@@ -40,6 +40,26 @@
 "sha256": "3de2f09d2356f62e8d89980dd5b0cbcc55abd9bbffa857d9956057ed9c15ff75"
 },
 {
+"path": "Play in ScummVM as Drybrush.bat",
+"bytes": 463,
+"sha256": "154ebbe877487b19cc5f25d56a51fc355f39a5d169c42e9292f9b3f603632553"
+},
+{
+"path": "Play in ScummVM as Drybrush.command",
+"bytes": 619,
+"sha256": "de0b531844a0cdd9ac79d3769ce64234151b3c0626eebb70ff3727497825b26e"
+},
+{
+"path": "Play in ScummVM as Guybrush.bat",
+"bytes": 463,
+"sha256": "aae85024a7accaa5bfd53278f36a6e0c10ea3f169d7fefa5252f3991bbb41ef2"
+},
+{
+"path": "Play in ScummVM as Guybrush.command",
+"bytes": 619,
+"sha256": "e02c5929154d8f3e5a7a888e7f671094592a4a7369da879754fcabcccd7eaf4f"
+},
+{
 "path": "Play in ScummVM.bat",
 "bytes": 403,
 "sha256": "4d17615a0fd5a1937b93594928290f97bd15f77666203b61c27416d7413795eb"
@@ -51,8 +71,8 @@
 },
 {
 "path": "README.md",
-"bytes": 9902,
-"sha256": "12e54ef79d9d6f082d55cbb3ff350a99785ada41971ab426c7e8f97186b01f41"
+"bytes": 10388,
+"sha256": "e71c5cf8b8d4040f86afdbec87cc97d7ab088b5af72c735d99965c49d821401e"
 },
 {
 "path": "VERSION",
@@ -86,8 +106,8 @@
 },
 {
 "path": "setup.py",
-"bytes": 28713,
-"sha256": "961be109338ab69b940b3bf00630128c2ecf5cb31faa9a05a1c3ffd028c42eba"
+"bytes": 29587,
+"sha256": "6b22da2747df7edcf506cce4b595e29df740b5eae6c203c0738579658d699d29"
 },
 {
 "path": "sw.js",
@@ -126,8 +146,8 @@
 },
 {
 "path": "engine/engine.js",
-"bytes": 68510,
-"sha256": "6e60d561a0e762cde6ad8be0a4dee07a2b0f2610f705e4912916ff23119ead4c"
+"bytes": 70196,
+"sha256": "42b376b2a6f491c1f1021eb2c86c36bb93be33040baa8b9e8f4688e19b7777e4"
 },
 {
 "path": "engine/font.js",
@@ -7266,8 +7286,8 @@
 },
 {
 "path": "tools/modcfg.py",
-"bytes": 6693,
-"sha256": "e0d5839ff69fbbc3a26e4cf9c70a341d99825eaf3c183b6286c6bd86551248ae"
+"bytes": 6839,
+"sha256": "d2e2518bfe6f8a0df0c0716860d085ce5ab0e47ad53a1f59beac7396f8281c32"
 },
 {
 "path": "tools/objedit.py",
@@ -7471,23 +7491,28 @@
 },
 {
 "path": "tools/scumm/akos.py",
-"bytes": 3979,
-"sha256": "3c51e3f7afabafabac4186bebc52f5deca42e6fd8a869f1b8a24dc102de3adc8"
+"bytes": 4383,
+"sha256": "4265d9ddf4a1b5b9948950d661de4ffc0bcc5803c72fb268ca9c78e1235802e0"
 },
 {
 "path": "tools/scumm/audio.py",
-"bytes": 15171,
-"sha256": "0b4970d4dc76eb935fa11e9d96482b55b42c148ec10287d4ed4797bc95043c3a"
+"bytes": 15626,
+"sha256": "767a1e9924fd1d4c4572cba60d7ec51eec8574b291d9d354d23d4e5f14fc1ba7"
 },
 {
 "path": "tools/scumm/build.py",
-"bytes": 90823,
-"sha256": "add32936b228b7c163af0e6fed5ef72c0c6cce878123e7e7abec20cc1d558341"
+"bytes": 94778,
+"sha256": "5e7e902adc5f0c113e2a747f1eed80b9e94231db07c2cce9d52fbea5afb76a1e"
 },
 {
 "path": "tools/scumm/compiler.py",
-"bytes": 80164,
-"sha256": "ec9e9ba0e8634e5efa05169cadd291719a7d84729bc7d8280bba3daff65ebd9f"
+"bytes": 80407,
+"sha256": "3987cb465e12aea384c06cd53ca450db2d3d7c9181c70deacdb1881ac410b7eb"
+},
+{
+"path": "tools/scumm/hero.py",
+"bytes": 6914,
+"sha256": "e23f4a66ace243efab305d5031fddb377dd259a0a9052d6ba0b38f0988e987f7"
 },
 {
 "path": "tools/scumm/jsgame.py",
@@ -7577,32 +7602,32 @@
 {
 "path": "tools/scumm/parse_cache/177714dc32251fb4bba77b05.json.gz",
 "bytes": 32166,
-"sha256": "4ef4c782eddd75645901a3b23b26bdc0384ae9fe890adb93925312fed861af52"
+"sha256": "22fccb539522582c393db085d3a5575e4d955aa143372aed2a88170e5177d896"
 },
 {
 "path": "tools/scumm/parse_cache/26a408837ecc59b4b8fb4e1d.json.gz",
 "bytes": 70997,
-"sha256": "35404d89e801c19343f89b53bfc2655dc36407b46027115df216f0419f64bffd"
+"sha256": "75369f325a06b7f69b458104d99a01eb742b4f27461b5bf868c90061952c9b2c"
 },
 {
 "path": "tools/scumm/parse_cache/b718e7eed9916b0ce5bd34fe.json.gz",
 "bytes": 5166,
-"sha256": "01f9fb07252fc52a6aa1c86fc4165b284458618f982067ee91d681b4c2a6b6ad"
+"sha256": "4950bdc04671d02f94a209cbb50b6c4ae2d13d23c6fbf8ec7e84c8bbc5a103dc"
 },
 {
 "path": "tools/scumm/parse_cache/bd4a0d99e57c8dbbedf47cea.json.gz",
 "bytes": 20328,
-"sha256": "ea33c3378edcfdac943a398b3eaa94c13b3c6c20532fe8f5bc641a81960a253c"
+"sha256": "79ead705b815ca7934d2d64018df52421a04763209fc6f74e8dfdec3f80a738a"
 },
 {
 "path": "tools/scumm/parse_cache/cebed4b0fc1d431bd03fa66c.json.gz",
 "bytes": 63843,
-"sha256": "93d04905d5635fe5617514e83ef77b334cab4f1ce453130e61625282cd347d84"
+"sha256": "056cd665a7d53e5fbd9b3664a1916b3d62e38845daaaf992736b90fe80f62a7d"
 },
 {
 "path": "tools/scumm/parse_cache/strings-770eb5842c439c0502a8da82.json.gz",
 "bytes": 16857,
-"sha256": "20eb25a78b884d9f4da428d53df0b6d4c265be89a1f37a871daf28e1ee7a25fd"
+"sha256": "aea885b4998e967226caaf2d693ef8983766d9392f5f9a40e3d5538283d11a9a"
 },
 {
 "path": "tools/templates/README.md",
